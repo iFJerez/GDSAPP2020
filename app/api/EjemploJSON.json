@@ -1,0 +1,13 @@
+
+   [{
+       "id_nombre": 1,
+       "zona": "Zona1",
+       "nombre": "Matias",
+       "data": [
+         {"arbol": "arbol 1", "grados": "30º", "diferencia": "-2" },
+         {"arbol": "arbol 2", "grados": "10º", "diferencia": "-2" },
+         {"arbol": "arbol 3", "grados": "25º", "diferencia": "-2" },
+         {"arbol": "arbol 4", "grados": "20º", "diferencia": "-2" },
+         {"arbol": "arbol 5", "grados": "30º", "diferencia": "-2" }
+       ]
+   }]

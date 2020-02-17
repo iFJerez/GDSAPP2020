@@ -1,0 +1,63 @@
+[
+   {
+       "id_sala": 1,
+       "cadena": "lider",
+       "desc_sala": "Lider Punta del Cerro",
+       "numero": 35,
+       "estado": 0,
+       "indicadores": [
+         {"indicador": "osa", "valor": "85M", "diferencia": "20" },
+         {"indicador": "precios", "valor": "56$", "diferencia": "-15" },
+         {"indicador": "promocion", "valor": "67%", "diferencia": "15" },
+         {"indicador": "catalogo", "valor": "45%", "diferencia": "15" },
+         {"indicador": "precios", "valor": "56$", "diferencia": "-33" }
+         
+       ]
+   },
+   {
+     "id_sala": 2,
+     "cadena": "jumbo",
+     "desc_sala": "Jumbo Bajo del Puente sin Filtros asdskas dakjd kajsd ",
+     "numero": 99,
+     "estado": 1,
+     "indicadores": [
+       {"indicador": "osa", "valor": "85M", "diferencia": "20" },
+       {"indicador": "precios", "valor": "56$", "diferencia": "-15" },
+       {"indicador": "promocion", "valor": "67%", "diferencia": "15" },
+       {"indicador": "catalogo", "valor": "45%", "diferencia": "15" },
+       {"indicador": "precios", "valor": "56$", "diferencia": "-33" },
+       {"indicador": "osa", "valor": "85M", "diferencia": "20" },
+       {"indicador": "precios", "valor": "56$", "diferencia": "-15" },
+       {"indicador": "promocion", "valor": "67%", "diferencia": "15" },
+       {"indicador": "catalogo", "valor": "45%", "diferencia": "15" },
+       {"indicador": "precios", "valor": "56$", "diferencia": "-33" }
+       
+     ]
+ },
+ {
+   "id_sala": 3,
+   "cadena": "sin Cadena",
+   "desc_sala": "sala 3",
+   "estado": 2,
+   "indicadores": [
+     {"indicador": "osa", "valor": 22 },
+     {"indicador": "precios", "valor": 33 }
+   ]
+ },
+ {
+   "id_sala": 4,
+   "cadena": "lider",
+   "desc_sala": "Lider daks jdaskdj aksjdh a",
+   "estado": 0,
+   "indicadores": [
+     {"indicador": "osa", "valor": 90 },
+     {"indicador": "precios", "valor": 88 }
+   ]
+ }
+ ]
+
+
+
+
+
+  

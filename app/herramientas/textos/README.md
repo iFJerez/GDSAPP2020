@@ -1,0 +1,8 @@
+# TEXT A
+
+fontWeight: bold
+TAMAÑO: SIZE_LETRA_X_LARGE
+COLOR: COLOR_NEGRO
+
+## ESTADO DE TAREAS
+

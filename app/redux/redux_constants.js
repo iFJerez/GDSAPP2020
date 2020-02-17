@@ -1,0 +1,26 @@
+export const LOGON = 'LOGON';
+export const INCREASE_COUNTER = 'INCREASE_COUNTER';
+export const DECREASE_COUNTER = 'DECREASE_COUNTER';
+
+
+export const USER_HOME_NEW = 'USER_HOME_NEW';
+export const USER_SALAS_NEW = 'USER_SALAS_NEW';
+export const USER_DUO_NEW = 'USER_DUO_NEW';
+
+
+export const USER_SALAS_CONTAR_VISTA= 'USER_SALAS_CONTAR_VISTA';
+export const USER_SALAS_VISTA = 'USER_SALAS_VISTA';
+
+
+export const USER_GET_SALA_OK = 'USER_GET_SALA_OK';
+export const USER_GET_SALA_REQUEST = 'USER_GET_SALA_REQUEST';
+export const USER_GET_SALA_ERROR = 'USER_GET_SALA_ERROR';
+
+
+export const USER_MODAL= 'USER_MODAL';
+export const USER_HELP= 'USER_HELP';
+
+export const VISTA_SALAS= 'VISTA_SALAS';
+
+
+
