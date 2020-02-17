@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>9CB11CA2-EC86-4F20-8828-18F8B9CDA0EF</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9CB11CA2-EC86-4F20-8828-18F8B9CDA0EF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>ComGdsnetApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ComGdsnetApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>596739958.95815897</real>
+			<key>timeStoppedRecording</key>
+			<real>596739960.43029797</real>
+			<key>title</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>9CB11CA2-EC86-4F20-8828-18F8B9CDA0EF</string>
+		</dict>
+		<key>B84F610B-006D-4061-9C31-4B950B9F418F</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B84F610B-006D-4061-9C31-4B950B9F418F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>ComGdsnetApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ComGdsnetApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>596738872.23228598</real>
+			<key>timeStoppedRecording</key>
+			<real>596738879.38848305</real>
+			<key>title</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>B84F610B-006D-4061-9C31-4B950B9F418F</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

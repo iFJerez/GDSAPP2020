@@ -1,2 +1,2 @@
-# GDSAPP2020
-Aplicacin Integral
+# ComGdsnetApp
+ GdsApp2020
