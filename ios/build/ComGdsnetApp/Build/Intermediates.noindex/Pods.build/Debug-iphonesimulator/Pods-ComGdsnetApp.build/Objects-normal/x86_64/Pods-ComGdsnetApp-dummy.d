@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/ios/Pods/Target\ Support\ Files/Pods-ComGdsnetApp/Pods-ComGdsnetApp-dummy.m
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/Pods/Target\ Support\ Files/Pods-ComGdsnetApp/Pods-ComGdsnetApp-dummy.m

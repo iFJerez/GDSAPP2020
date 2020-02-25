@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/ios/Pods/DoubleConversion/double-conversion/cached-powers.cc \
-  /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/ios/Pods/Target\ Support\ Files/DoubleConversion/DoubleConversion-prefix.pch \
-  /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/ios/Pods/DoubleConversion/double-conversion/utils.h \
-  /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/ios/Pods/DoubleConversion/double-conversion/cached-powers.h \
-  /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/ios/Pods/DoubleConversion/double-conversion/diy-fp.h
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/Pods/DoubleConversion/double-conversion/cached-powers.cc \
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/Pods/Target\ Support\ Files/DoubleConversion/DoubleConversion-prefix.pch \
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/Pods/DoubleConversion/double-conversion/utils.h \
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/Pods/DoubleConversion/double-conversion/cached-powers.h \
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/Pods/DoubleConversion/double-conversion/diy-fp.h

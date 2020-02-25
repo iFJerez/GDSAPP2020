@@ -1,6 +1,8 @@
 dependencies: \
-  /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/ios/ComGdsnetApp/main.m \
-  /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/ios/ComGdsnetApp/AppDelegate.h \
-  /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/ios/Pods/Headers/Public/React-Core/React/RCTBridgeDelegate.h \
-  /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/ios/Pods/Headers/Public/React-Core/React/RCTJavaScriptLoader.h \
-  /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/ComGdsnetApp/main.m \
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/ComGdsnetApp/AppDelegate.h \
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/Pods/Headers/Public/React-Core/React/RCTBridgeDelegate.h \
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/Pods/Headers/Public/React-Core/React/RCTJavaScriptLoader.h \
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/Pods/Headers/Public/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/martinstone/Documents/GitHub/GDSAPP2020/ios/Pods/Headers/Public/React-Core/React/RCTPackagerConnection.h
