@@ -6,7 +6,7 @@ import AplicacionNavigation from './AplicacionNavigation'
 import ModalScreen from '../screens/ModalScreen'
 import HelpScreen from '../screens/HelpScreen'
 import Activity from '../screens/ActivityScreen'
-import FlashMessage from "react-native-flash-message";
+
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
@@ -41,16 +41,13 @@ class Applicacion extends React.Component {
   
   render() {
     return (
- 
- <View style={{flex: 1}}>
-      <FlashMessage position="top" />
+
+      <View style={{flex: 1}}>
+
         <AplicacionNavigation />
         <ModalScreen />
-        
         <HelpScreen />
-
-
-  
+ 
  </View>
     )
   }

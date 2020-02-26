@@ -6,6 +6,8 @@ import { Provider } from 'react-redux';
 
 // Imports: Screens
 import Aplicacion from './app/aplicacion/Aplicacion'
+import FlashMessage from "react-native-flash-message"
+
 
 
 // Imports: Redux Persist Persister
@@ -20,8 +22,9 @@ export default App = () => {
         loading={null}
         persistor={persistor}
       >
-        
+       
         <Aplicacion />
+        <FlashMessage />
         
       </PersistGate>
     </Provider>

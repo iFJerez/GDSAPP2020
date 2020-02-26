@@ -4,7 +4,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Modal from "react-native-modal";
-import colores from '../herramientas/Colors'
+import * as colores from '../herramientas/Const'
 import Icon from '../herramientas/Icon'
 import ListaDesplegable from '../components/ListaDesplegable'
 import TextHelp from '../components/TextoHelp'
@@ -42,7 +42,7 @@ class ModalScreen extends React.Component {
       <Modal
       testID={'modal'}
       isVisible={this.props.ms_help}
-      backdropColor={colores.COLOR_QUINTENARIO_CLARO}
+      backdropColor={colores.COLOR}
       backdropOpacity={0.5}
       animationInTiming={800}
       animationOutTiming={1000}

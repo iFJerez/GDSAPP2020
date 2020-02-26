@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import SalasMenu from '../components/salas/SalasMenu'
 import SalasListado from '../components/salas/SalasListado'
+import {funMessage} from '../herramientas/Mensaje'
 
 
 
@@ -26,7 +27,15 @@ const {vista_salas, funViewSalasONOFF} = this.props;
         <Text adjustsFontSizeToFit={true}>   Salas</Text>
         
            <Button title="SalaResumen" onPress={() => this.props.navigation.navigate('SalaResumen')}
+           
         />
+
+          <Button
+            title="Nose"
+            onPress={()=>{funMessage('Mensaje', 'Nueva Descripcion')}}
+            style={styles.loginButton}
+          />
+
         <SalasMenu 
           funViewSalasONOFF={()=>funViewSalasONOFF(!vista_salas)}
           vista_salas={vista_salas}
