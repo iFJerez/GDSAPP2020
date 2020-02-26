@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Button, Dimensions, SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Alert } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-
+import {funMessage} from '../herramientas/Mensaje'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
@@ -28,6 +28,14 @@ const {funUserModal, loggedIn, ms_help, home_modal, funUserHelp} = this.props;
       
           <Text style={styles.loggedInText}>Logged In: </Text>
           <Text style={styles.loggedInText}>{`${loggedIn}`}</Text>
+
+          <Button
+            title="Nose"
+            onPress={()=>{funMessage('Mensaje', 'Nueva Descripcion')}}
+            style={styles.loginButton}
+          />
+
+
           <Button
             title="Abrir Modal"
             onPress={()=>funUserModal(!home_modal)}

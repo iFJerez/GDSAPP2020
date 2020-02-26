@@ -5,7 +5,7 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import IconApp from '../herramientas/Icon'
-import colores from '../herramientas/Colors'
+import * as colores from '../herramientas/Const'
 import HomeScreen from '../screens/HomeScreen'
 import SalasScreen from '../screens/SalasScreen'
 import Settingscreen from '../screens/Settingscreen'

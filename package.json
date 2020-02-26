@@ -14,6 +14,7 @@
     "expo-font": "^7.0.0",
     "react": "16.9.0",
     "react-native": "0.61.5",
+    "react-native-flash-message": "^0.1.15",
     "react-native-gesture-handler": "^1.5.3",
     "react-native-indicators": "^0.17.0",
     "react-native-modal": "^11.5.3",
