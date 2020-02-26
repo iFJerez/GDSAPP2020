@@ -43,12 +43,10 @@ class Applicacion extends React.Component {
     return (
 
       <View style={{flex: 1}}>
-
         <AplicacionNavigation />
         <ModalScreen />
         <HelpScreen />
- 
- </View>
+     </View>
     )
   }
 }
