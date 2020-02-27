@@ -12,12 +12,16 @@ import ActionCreators from '../../redux/actions';
 // Screen: Counter
 class TouchIndicador extends React.Component {
 
- funExec(){
-  const {data, ver_detalle, funVerDetalle, funGuardaDetalle} = this.props;
-  //const {funVerDetalle, funGuardaDetalle, ver_detalle} = this.props;
-  funMessage('message', JSON.stringify(data))
-  funGuardaDetalle(data)
-  funVerDetalle(!ver_detalle)
+  funExec(){
+  const {data, ver_detalle, funVerDetalle, funGuardaDetalle, funGuardaDetalleVer} = this.props;
+
+
+   new Promise((resolve, reject) => {
+   resolve(funGuardaDetalleVer(data, !ver_detalle) )
+  }).then(res=>{
+   
+
+  })
 
 }
 

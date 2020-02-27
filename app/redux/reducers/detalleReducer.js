@@ -25,6 +25,14 @@ const detalleReducer = (state = initialState, action) => {
         data_detalle: action.data_detalle,
       }
     }
+    case types.DETALLES_GUARDA_DATA_VER: {
+      console.log('GUARDANDO DATA + VER DETALLE');
+      return {
+        ...state,
+        ver_detalle: action.ver_detalle,
+        data_detalle: action.data_detalle,
+      }
+    }
     // Default
     default: {
       return state;

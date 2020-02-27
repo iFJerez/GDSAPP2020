@@ -6,8 +6,7 @@ import { bindActionCreators } from 'redux';
 import Modal from "react-native-modal";
 import * as colores from '../herramientas/Const'
 import Icon from '../herramientas/Icon'
-import ListaDesplegable from '../components/ListaDesplegable'
-import TextHelp from '../components/TextoHelp'
+import Detalles from '../components/detalle/DetalleSala'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
@@ -18,37 +17,37 @@ class ModalScreen extends React.Component {
 
   render() {
 
+    const {funVerDetalle, ver_detalle, data_detalle} = this.props;
+
     return (
       <Modal
       testID={'modal'}
-      isVisible={this.props.ver_detalle}
-      backdropColor={colores.COLOR}
+      isVisible={ver_detalle}
+      backdropColor={colores.COLOR_GRIS}
       backdropOpacity={0.5}
       animationInTiming={800}
-      animationOutTiming={1000}
-      onSwipeComplete={()=>this.props.funVerDetalle(!this.props.ver_detalle)}
-      onBackdropPress={()=>this.props.funVerDetalle(!this.props.ver_detalle)}
+      animationOutTiming={300}
+      onSwipeComplete={()=>funVerDetalle(!ver_detalle)}
+      onBackdropPress={()=>funVerDetalle(!ver_detalle)}
       swipeDirection={['down']}
       scrollOffsetMax={400 - 300} 
       style={styles.modal}>
       <View style={styles.scrollableModal}>
-
       <View style={styles.scrollableModalContent1}>
-        <TouchableOpacity onPress={()=>this.props.funVerDetalle(!this.props.ver_detalle)} >
+        <TouchableOpacity onPress={()=>funVerDetalle(!ver_detalle)} >
              <Icon
               name={'ios-arrow-down'}
               size={30}
               color={'#bbb'}
-              ></Icon>
-              
+              ></Icon>      
         </TouchableOpacity>
         <ScrollView
           ref={this.scrollViewRef}
           onScroll={this.handleOnScroll}
           scrollEventThrottle={16}
           >
-
-            <Text>{JSON.stringify(this.props.data_detalle)}</Text>
+            <Text>{JSON.stringify(data_detalle)}</Text>
+            <Detalles data={data_detalle}  />
 
         </ScrollView>
         </View>
@@ -64,18 +63,18 @@ const styles = StyleSheet.create({
   modal: {
     justifyContent: 'flex-end',
     margin: 0,
+    flex: 1,
+
     
   },
   scrollableModal: {
-    height: '70%',
-    
- 
+    height: '80%',
+    backgroundColor: colores.COLOR_GRIS_D,
   },
   scrollableModalContent1: {
     paddingHorizontal: 20,
-    paddingBottom: 50,
-    borderRadius: 5,
-    backgroundColor: '#fff',
+    paddingBottom: 100,
+    borderRadius: 3,
     alignItems: 'center',
     justifyContent: 'center',
 

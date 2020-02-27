@@ -25,9 +25,7 @@ const {vista_salas, funViewSalasONOFF} = this.props;
     return (
       <SafeAreaView style={styles.container}>
         <Text adjustsFontSizeToFit={true}>   Salas</Text>
-        
            <Button title="SalaResumen" onPress={() => this.props.navigation.navigate('SalaResumen')}
-           
         />
 
           <Button
