@@ -21,7 +21,6 @@ const persistConfig = {
     'counterReducer',
     'userReducer',
     'detalleReducer'
-
   ],
   // Blacklist (Don't Save Specific Reducers)
   blacklist: [

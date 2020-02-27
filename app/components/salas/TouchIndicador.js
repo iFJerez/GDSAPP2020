@@ -13,15 +13,8 @@ import ActionCreators from '../../redux/actions';
 class TouchIndicador extends React.Component {
 
   funExec(){
-  const {data, ver_detalle, funVerDetalle, funGuardaDetalle, funGuardaDetalleVer} = this.props;
-
-
-   new Promise((resolve, reject) => {
-   resolve(funGuardaDetalleVer(data, !ver_detalle) )
-  }).then(res=>{
-   
-
-  })
+  const {data, ver_detalle,  funGuardaDetalleVer} = this.props;
+  funGuardaDetalleVer(data, !ver_detalle) 
 
 }
 
