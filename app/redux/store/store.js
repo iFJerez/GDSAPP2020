@@ -18,12 +18,13 @@ const persistConfig = {
   // Whitelist (Save Specific Reducers)
   whitelist: [
     'authReducer',
-    'counterReducer',
     'userReducer',
+    'counterReducer',
+    'detalleReducer',
   ],
   // Blacklist (Don't Save Specific Reducers)
   blacklist: [
-   // 'counterReducer',
+
   ],
 };
 

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, FlatList, Image, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import Indicadores from './Indicadores'
+import TouchIndicador from './TouchIndicador'
 import TextTypeC from '../../herramientas/textos/TextTypeC'
 import * as constants from '../../herramientas/Const'
 import data from '../../api/cadenas.json'
@@ -17,7 +17,7 @@ export default class ListadoContraido extends Component {
           numColumns={4}
           key={1}
           data={item}
-          renderItem={({item}) => <Indicadores data={item} />}
+          renderItem={({item}) => <TouchIndicador data={item} />}
           keyExtractor={(item, index) => '' + index}
   />   
       )

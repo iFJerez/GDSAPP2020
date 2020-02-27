@@ -23,4 +23,8 @@ export const USER_HELP= 'USER_HELP';
 export const VISTA_SALAS= 'VISTA_SALAS';
 
 
+export const DETALLES_VIEW= 'DETALLES_VIEW';
+export const DETALLES_GUARDA_DATA= 'DETALLES_GUARDA_DATA';
+
+
 

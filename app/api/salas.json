@@ -21,7 +21,14 @@
      "numero": 99,
      "estado": 1,
      "indicadores": [
-       {"indicador": "osa", "valor": "85M", "diferencia": "20" },
+       {"indicador": "osa", "valor": "85M", "diferencia": "20", 
+        "detalles": [
+          {"agrupador": "agrupador", "producto": "producto 1", "presencia": "presencia", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "producto": "producto 2", "presencia": "presencia", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "producto": "producto 2", "presencia": "presencia", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"prducto": "dahshh gfhhdajsd ", "valor": false},
+          {"prducto": "dahshh  jashg jahsg  ", "valor": false, "foto": "ERTYUIKTRE"}
+        ] },
        {"indicador": "precios", "valor": "56$", "diferencia": "-15" },
        {"indicador": "promocion", "valor": "67%", "diferencia": "15" },
        {"indicador": "catalogo", "valor": "45%", "diferencia": "15" },
