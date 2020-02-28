@@ -8,7 +8,6 @@ const initialState = {
   duo_new: 1,
   salas_new: 1,
   isSuccess: false,
-  vista_salas: true,
   dataSala: [],
   isRefresh: false,
   
@@ -17,14 +16,7 @@ const initialState = {
 // Reducers (Modifies The State And Returns A New State)
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
-    case types.VISTA_SALAS: {
-      console.log(state.status, 'VISTA_SALAS');
-      return {
-        ...state,
-        vista_salas: action.vista_salas,
-        status: 'vista_salas on-off',
-      }
-    }
+
     case types.USER_HELP: {
       console.log(state.status, 'USER_HELP');
       return {

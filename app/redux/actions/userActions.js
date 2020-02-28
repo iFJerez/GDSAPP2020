@@ -4,11 +4,6 @@ import * as types from '../redux_constants';
 import json_salas from '../../api/salas.json'
 
 
-export const funViewSalasONOFF = (vista_salas) => (
-  {
-  type: types.VISTA_SALAS,
-  vista_salas: vista_salas,
-});
 
 export const funUserHelp = (ms_help) => (
   {

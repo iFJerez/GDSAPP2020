@@ -1,23 +1,23 @@
 import * as types from '../redux_constants'; 
 // Initial State
 const initialState = {
-  data_detalle: []
+  ver_detalle: false,
 
 };
 
 // Reducers (Modifies The State And Returns A New State)
-const detalleReducer = (state = initialState, action) => {
+const flashReducer = (state = initialState, action) => {
   switch (action.type) {
 
         // Guarda Detalle de Sala
-    case types.DETALLES_GUARDA_DATA: {
-      console.log('GUARDANDO DATA');
+    case types.DETALLES_VIEW: {
+      console.log('VER DETALLE');
       return {
         ...state,
-        data_detalle: action.data_detalle,
+        ver_detalle: action.ver_detalle,
       }
     }
-    // Default
+  
     default: {
       return state;
     }
@@ -25,4 +25,4 @@ const detalleReducer = (state = initialState, action) => {
 };
 
 // Exports
-export default detalleReducer;
+export default flashReducer;

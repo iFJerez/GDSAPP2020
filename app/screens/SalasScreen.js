@@ -3,7 +3,6 @@ import React from 'react';
 import { Button, SafeAreaView, StyleSheet, Text } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import SalasMenu from '../components/salas/SalasMenu'
 import SalasListado from '../components/salas/SalasListado'
 import {funMessage} from '../herramientas/Mensaje'
 
@@ -19,9 +18,6 @@ class Home extends React.Component {
 
   render() {
 
-const {vista_salas, funViewSalasONOFF} = this.props;
-
-
     return (
       <SafeAreaView style={styles.container}>
         <Text adjustsFontSizeToFit={true}>   Salas</Text>
@@ -34,12 +30,7 @@ const {vista_salas, funViewSalasONOFF} = this.props;
             style={styles.loginButton}
           />
 
-        <SalasMenu 
-          funViewSalasONOFF={()=>funViewSalasONOFF(!vista_salas)}
-          vista_salas={vista_salas}
-        />
-        <SalasListado 
-          vista_salas={vista_salas}/>
+        <SalasListado />
 
       </SafeAreaView>
     )
@@ -59,7 +50,6 @@ const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
     
-    vista_salas: state.userReducer.vista_salas,
     
   };
 };

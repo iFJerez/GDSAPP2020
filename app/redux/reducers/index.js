@@ -2,10 +2,11 @@
 import { combineReducers } from 'redux';
 
 // Imports: Reducers
-import authReducer from './authReducer';
-import counterReducer from './counterReducer';
+import authReducer from './authReducer'
+import counterReducer from './counterReducer'
 import userReducer from  './userReducer'
 import detalleReducer from './detalleReducer'
+import flashReducer from './flashReducer'
 
 // Redux: Root Reducer
 const rootReducer = combineReducers({
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
   counterReducer: counterReducer,
   userReducer: userReducer,
   detalleReducer: detalleReducer,
+  flashReducer: flashReducer,
 });
 
 // Exports

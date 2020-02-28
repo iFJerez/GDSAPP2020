@@ -15,6 +15,27 @@ import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 // Screen: Counter 14932
 class ModalScreen extends React.Component {
 
+  constructor(props) {
+    super(props);
+    // No llames this.setState() aquí!
+    this.state = { scrollOffset: 0, scrollViewRef: 0 };
+
+    this.scrollViewRef = React.createRef();
+    
+  }
+
+  handleOnScroll = event => {
+    this.setState({
+      scrollOffset: event.nativeEvent.contentOffset.y,
+    });
+  };
+  handleScrollTo = p => {
+    if (this.scrollViewRef.current) {
+      this.scrollViewRef.current.scrollTo(p);
+    }
+  };
+
+
   render() {
 
     const {funVerDetalle, ver_detalle, data_detalle} = this.props;
@@ -106,7 +127,7 @@ const mapStateToProps = (state) => {
   return {
 
     
-    ver_detalle: state.detalleReducer.ver_detalle,
+    ver_detalle: state.flashReducer.ver_detalle,
     data_detalle: state.detalleReducer.data_detalle,
 
   };

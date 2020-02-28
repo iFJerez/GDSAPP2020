@@ -91,7 +91,7 @@ const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
     
-    vista_salas: state.userReducer.vista_salas,
+    
     
   };
 };

@@ -15,10 +15,7 @@ export default class DetalleIndicadores extends Component {
       return data.detalles.map((v, i)=>{
         if(v.presencia==null){
         return(
-        <View>
-          <Text>{v.producto}</Text>
-        <IPresencia valor={v.presencia}/>
-        </View>
+          null
         )
       }
       else{
