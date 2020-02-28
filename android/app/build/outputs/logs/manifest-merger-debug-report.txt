@@ -1,17 +1,17 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from [:@react-native-community_async-storage] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-gesture-handler] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-reanimated] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-28:12
-MERGED from [:react-native-vector-icons] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.61.5] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/707bf72f01a38dffca6a53eb8b6439b3/AndroidManifest.xml:2:1-13:12
-MERGED from [org.webkit:android-jsc:r245459] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/7b3ff69a2cdac29218a3edf2ae9d09f9/AndroidManifest.xml:2:1-11:12
+ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:@react-native-community_async-storage] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-gesture-handler] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-28:12
+MERGED from [:react-native-vector-icons] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/37eab8b2ed6093418c7a3f80b34d3cf0/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/e41513638c1310c903da832c496d6b87/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/20610096f27d3da79be124ee796cc108/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/8b4c3d07eb52fabb2f62f27e2497c7e0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/cef6394e4189d0217775c274ea0f92be/AndroidManifest.xml:2:1-9:12
@@ -48,38 +48,38 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mac_gdsnet
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/bb5a0daf3d60622538d60f923298579b/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/52207eca76d6cd9144d70c4684cebf95/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/101b2bc77e17b3a653294d09775272f3/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 	package
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:2:3-29
-		INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:2:3-29
-		INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:2:3-29
+		INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:2:3-29
+		INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
-		INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml:3:5-51
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
-		INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-26:19
-MERGED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-26:19
-MERGED from [com.facebook.react:react-native:0.61.5] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/707bf72f01a38dffca6a53eb8b6439b3/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.61.5] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/707bf72f01a38dffca6a53eb8b6439b3/AndroidManifest.xml:11:5-20
+ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-26:19
+MERGED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-26:19
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/37eab8b2ed6093418c7a3f80b34d3cf0/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/37eab8b2ed6093418c7a3f80b34d3cf0/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/172dc58a62b3ef7c6ca43b4fe6cb626e/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/172dc58a62b3ef7c6ca43b4fe6cb626e/AndroidManifest.xml:11:5-20
 MERGED from [androidx.core:core:1.0.1] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/064a102cff3758e6eed685a2d0efea1d/AndroidManifest.xml:22:5-89
@@ -89,71 +89,71 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mac_
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/064a102cff3758e6eed685a2d0efea1d/AndroidManifest.xml:22:18-86
 	android:label
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:8:7-39
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:8:7-39
 	tools:ignore
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml:7:75-114
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:7:75-114
 	android:roundIcon
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:10:7-52
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:10:7-52
 	tools:targetApi
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml:7:54-74
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:7:54-74
 	android:icon
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:9:7-41
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:9:7-41
 	android:allowBackup
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:11:7-34
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:11:7-34
 	android:theme
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:12:7-38
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:12:7-38
 	android:usesCleartextTraffic
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml:7:18-53
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:7:18-53
 	android:name
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:7:7-38
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:7:7-38
 activity#com.comgdsnetapp.MainActivity
-ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:13:7-22:18
+ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:13:7-22:18
 	android:label
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:15:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:17:9-51
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:17:9-51
 	android:configChanges
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:16:9-79
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:16:9-79
 	android:name
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:14:9-37
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:14:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:18:9-21:25
+ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:18:9-21:25
 action#android.intent.action.MAIN
-ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:19:13-65
+ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:19:13-65
 	android:name
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:19:21-62
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:19:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:20:13-73
+ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:20:13-73
 	android:name
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:20:23-70
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:20:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:23:7-84
+ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:23:7-84
 	android:name
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml:23:17-81
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:23:17-81
 uses-sdk
-INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml
-MERGED from [:@react-native-community_async-storage] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:@react-native-community_async-storage] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-gesture-handler] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:react-native-vector-icons] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.5] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/707bf72f01a38dffca6a53eb8b6439b3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.5] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/707bf72f01a38dffca6a53eb8b6439b3/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/7b3ff69a2cdac29218a3edf2ae9d09f9/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/7b3ff69a2cdac29218a3edf2ae9d09f9/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml
+MERGED from [:@react-native-community_async-storage] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_async-storage] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:react-native-vector-icons] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/37eab8b2ed6093418c7a3f80b34d3cf0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/37eab8b2ed6093418c7a3f80b34d3cf0/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/e41513638c1310c903da832c496d6b87/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/e41513638c1310c903da832c496d6b87/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/20610096f27d3da79be124ee796cc108/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/20610096f27d3da79be124ee796cc108/AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/8b4c3d07eb52fabb2f62f27e2497c7e0/AndroidManifest.xml:5:5-7:41
@@ -226,39 +226,39 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mac_gdsnet/.gradle
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/52207eca76d6cd9144d70c4684cebf95/AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/101b2bc77e17b3a653294d09775272f3/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/101b2bc77e17b3a653294d09775272f3/AndroidManifest.xml:5:5-7:41
-INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml:5:5-77
+ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:5:5-77
 	android:name
-		ADDED from /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/src/debug/AndroidManifest.xml:5:22-75
+		ADDED from /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-81
+ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-78
+		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-78
 provider#cl.json.RNShareFileProvider
-ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-25:20
+ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-25:20
 	android:grantUriPermissions
-		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-47
+		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-47
 	android:authorities
-		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-72
+		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-72
 	android:exported
-		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
 	tools:replace
-		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-48
+		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-48
 	android:name
-		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-55
+		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-55
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-24:52
+ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-24:52
 	android:resource
-		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:17-61
+		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:17-61
 	tools:replace
-		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:17-49
+		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:17-49
 	android:name
-		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:17-67
+		ADDED from [:react-native-share] /Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:17-67

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/20610096f27d3da79be124ee796cc108/res/values-v21/values-v21.xml",
