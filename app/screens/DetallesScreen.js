@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import Modal from "react-native-modal";
 import * as colores from '../herramientas/Const'
 import Icon from '../herramientas/Icon'
-import Detalles from '../components/detalle/DetalleSala'
+import DetalleASala from '../components/detalle/DetalleASala'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
@@ -47,7 +47,7 @@ class ModalScreen extends React.Component {
           scrollEventThrottle={16}
           >
             <Text>{JSON.stringify(data_detalle)}</Text>
-            <Detalles data={data_detalle}  />
+            <DetalleASala data={data_detalle}  />
 
         </ScrollView>
         </View>

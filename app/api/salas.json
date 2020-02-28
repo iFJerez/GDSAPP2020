@@ -23,11 +23,13 @@
      "indicadores": [
        {"indicador": "osa", "valor": "85M", "diferencia": "20", 
         "detalles": [
-          {"agrupador": "agrupador", "producto": "producto 1", "presencia": "presencia", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "producto": "producto 2", "presencia": "presencia", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "producto": "producto 2", "presencia": "presencia", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"prducto": "dahshh gfhhdajsd ", "valor": false},
-          {"prducto": "dahshh  jashg jahsg  ", "valor": false, "foto": "ERTYUIKTRE"}
+          {"agrupador": "agrupador", "producto": "producto 1", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "producto": "producto 2", "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "producto": "producto 3", "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "producto": "producto 4",  "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "producto": "producto 5", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "producto": "producto 6", "valor": true, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+          
         ] },
        {"indicador": "precios", "valor": "56$", "diferencia": "-15" },
        {"indicador": "promocion", "valor": "67%", "diferencia": "15" },

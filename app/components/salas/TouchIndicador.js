@@ -14,8 +14,8 @@ class TouchIndicador extends React.Component {
 
   funExec(){
   const {data, ver_detalle,  funGuardaDetalleVer} = this.props;
-  funGuardaDetalleVer(data, !ver_detalle) 
-
+ funGuardaDetalleVer(data, !ver_detalle) 
+// funMessage('hola', 'mensaje')
 }
 
   render() {

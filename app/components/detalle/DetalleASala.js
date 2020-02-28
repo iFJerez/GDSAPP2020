@@ -10,7 +10,7 @@ export default class DetalleSala extends Component {
     return (
       <View style={styles.container}>
          <Indicador data={data}  />
-         <DetalleIndicadores />
+         <DetalleIndicadores data={data} />
       </View>
     );
   }
