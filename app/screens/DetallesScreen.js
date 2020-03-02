@@ -1,27 +1,23 @@
 // Imports: Dependencies
-import React from 'react';
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import Modal from "react-native-modal";
-
+import React from 'react'
+import {TouchableOpacity, StyleSheet, Text, View} from 'react-native'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import Modal from "react-native-modal"
+import Icon from '../herramientas/Icon'
+import * as colores from '../herramientas/Const'
 
 // Imports: Redux Actions
-import ActionCreators from '../redux/actions';
-import { ScrollView } from 'react-native-gesture-handler';
-
-
-
+import ActionCreators from '../redux/actions'
+import { ScrollView } from 'react-native-gesture-handler'
+import DetalleASala from '../components/detalle/DetalleASala'
 
 // Screen: Counter 14932
 class ModalScreen extends React.Component {
-
-
+  
   constructor(props) {
     super(props);
-    // No llames this.setState() aquí!
     this.state = { scrollOffset: 0, scrollViewRef: 0 };
-
     this.scrollViewRef = React.createRef();
     
   }
@@ -64,40 +60,39 @@ try {
 }
 
   render() {
+
+    const {funVerDetalle, ver_detalle, data_detalle} = this.props;
     return (
       <Modal
       testID={'modal'}
-      isVisible={this.props.home_modal}
-      onSwipeComplete={()=>this.props.funUserModal(!this.props.home_modal)}
+      backdropColor={colores.COLOR_GRIS}
+      backdropOpacity={0.5}
+      isVisible={ver_detalle}
+      onSwipeComplete={()=>funVerDetalle(!data_detalle)}
       swipeDirection={['down']}
       scrollTo={this.handleScrollTo}
       scrollOffset={this.state.scrollOffset}
-      scrollOffsetMax={300} // content height - ScrollView height
+     // scrollOffsetMax={300000} // content height - ScrollView height
+      onSwipeComplete={()=>funVerDetalle(!ver_detalle)}
+      onBackdropPress={()=>funVerDetalle(!ver_detalle)}
       style={styles.modal}>
       <View style={styles.scrollableModal}>
+      <View style={styles.view_close}>
+      <TouchableOpacity style={styles.view_close} onPress={()=>funVerDetalle(!ver_detalle)} >
+             <Icon
+              name={'ios-arrow-down'}
+              size={30}
+              color={'#bbb'}
+              ></Icon>      
+        </TouchableOpacity>
+      </View>
         <ScrollView
-          ref={this.scrollViewRef}
           onScroll={this.handleOnScroll}
-          scrollEventThrottle={16}>
+          scrollEventThrottle={10}>
           <View style={styles.scrollableModalContent1}>
-            <Text style={styles.scrollableModalText1}>
-              You can scroll me up! 👆
-            </Text>
-          </View>
-          <View style={styles.scrollableModalContent2}>
-            <Text style={styles.scrollableModalText2}>
-              Same here as well! ☝
-            </Text>
-          </View>
-          <View style={styles.scrollableModalContent1}>
-            <Text style={styles.scrollableModalText1}>
-            otra vez👆
-            </Text>
-          </View>
-          <View style={styles.scrollableModalContent2}>
-            <Text style={styles.scrollableModalText2}>
-             again ☝
-            </Text>
+          <Text>{JSON.stringify(data_detalle)}</Text>
+            <DetalleASala data={data_detalle}/>
+           
           </View>
         </ScrollView>
       </View>
@@ -114,13 +109,16 @@ const styles = StyleSheet.create({
     margin: 0,
   },
   scrollableModal: {
-    height: 500,
+    height: '80%',
+    backgroundColor: colores.COLOR_GRIS_D,
   },
   scrollableModalContent1: {
-    height: 300,
-    backgroundColor: '#87BBE0',
+    flex: 1,
+    
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 20,
+    paddingVertical: 30
   },
   scrollableModalText1: {
     fontSize: 20,
@@ -136,16 +134,20 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: 'white',
   },
+  view_close: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%'
+  }
 });
 
 // Map State To Props (Redux Store Passes State To Component)
 const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
-    counter: state.counterReducer.counter,
-    loggedIn: state.authReducer.loggedIn,
-    dataSala: state.userReducer.dataSala,
-    home_modal: state.userReducer.home_modal,
+    
+    ver_detalle: state.flashReducer.ver_detalle,
+    data_detalle: state.detalleReducer.data_detalle,
   };
 };
 

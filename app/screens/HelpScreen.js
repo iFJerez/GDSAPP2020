@@ -62,22 +62,12 @@ class ModalScreen extends React.Component {
               size={30}
               color={'#bbb'}
               ></Icon>
-              
         </TouchableOpacity>
-        <ScrollView
-          ref={this.scrollViewRef}
-          onScroll={this.handleOnScroll}
-          scrollEventThrottle={16}
-          >
-          
-            
-            
+            <ScrollView
+              ref={this.scrollViewRef}
+              onScroll={this.handleOnScroll}
+              scrollEventThrottle={16}>
             <TextHelp />
-
-
-
-            
-
             <ListaDesplegable />
 
         </ScrollView>

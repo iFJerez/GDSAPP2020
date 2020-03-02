@@ -6,13 +6,27 @@ import Icon from '../../herramientas/IconSimple'
 
 
 export default class SalasListadoInCo extends Component {
+
+funLlenar(){
+  const {valor} = this.props
+  if(valor != null) {
+    return(
+          <View style={styles.container}>
+              <Text>{valor?<Icon name={'ios-arrow-dropup-circle'} size={constants.ICON_SMALL} color={constants.COLOR_PRIMARIO}/>:<Icon name={'ios-arrow-dropdown-circle'} size={constants.ICON_SMALL} color={constants.COLOR_SECUNDARIO}/>}</Text>  
+          </View>
+        )
+  }
+
+}
+
   render() {
-    const {valor} = this.props
-    return (
-      <View style={styles.container}>
-          <Text>{valor?<Icon name={'ios-arrow-dropup-circle'} size={20} color={constants.COLOR_PRIMARIO}/>:<Icon name={'ios-arrow-dropdown-circle'} size={20} color={constants.COLOR_SECUNDARIO}/>}</Text>  
+    
+    return  (
+      <View>
+          {this.funLlenar()}
       </View>
-    );
+   )
+    
   }
 
 }

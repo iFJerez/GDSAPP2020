@@ -1,26 +1,34 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, Text} from 'react-native';
-import Indicador from '../salas/Indicadores'
+
 import IPresencia from './IPresencia'
+import IPrecio from './IPrecio'
 import {funMessage} from '../../herramientas/Mensaje'
-import DetalleIndicadoresFilas from './DetalleIndicadoresFila'
 
 
 
-export default class DetalleIndicadores extends Component {
+export default class DetalleIndicadoresFila extends Component {
 
   funIndicadores(){
     const {data} = this.props
 
-    try {
-      return data.detalles.map((v, i)=>{
-        return(
-          <DetalleIndicadoresFilas data={v} />
+try {
+
+        return(      
+        <View style={styles.view_fila}>
+          <Text>{data.producto}</Text>
+          <Text>{JSON.stringify(data.presencia)}</Text>
+          <IPresencia valor={data.presencia}/>
+          <IPrecio valor={data.precio}/>
+        </View>
         )
-      })
+      
+        
       
     } catch (error) {
-      funMessage('Error', 'Pasando a Filas: ' + error)
+
+      funMessage('Mensaje', 'Error  DetalleIndicadoresFila' + error)
+      
     }
 
 
@@ -28,10 +36,9 @@ export default class DetalleIndicadores extends Component {
 
 
   render() {
-    const {data} = this.props
+    
     return (
       <View style={styles.container}>
-         <Indicador data={data}  />
          {this.funIndicadores()}
       </View>
     );
