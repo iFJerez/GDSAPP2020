@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mac_gdsnet/Documents/gds_app/ComGdsnetApp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "/Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/064a102cff3758e6eed685a2d0efea1d/res/values-en-rIN/values-en-rIN.xml",
