@@ -6,11 +6,11 @@
        "numero": 35,
        "estado": 0,
        "indicadores": [
-         {"indicador": "osa", "valor": "85M", "diferencia": "20" },
-         {"indicador": "precios", "valor": "56$", "diferencia": "-15" },
-         {"indicador": "promocion", "valor": "67%", "diferencia": "15" },
-         {"indicador": "catalogo", "valor": "45%", "diferencia": "15" },
-         {"indicador": "precios", "valor": "56$", "diferencia": "-33" }
+         {"indicador": "osa", "valor": "85", "diferencia": "20" },
+         {"indicador": "precios", "valor": "86", "diferencia": "-15" },
+         {"indicador": "promocion", "valor": "67", "diferencia": "15" },
+         {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
+         {"indicador": "precios", "valor": "86", "diferencia": "-33" }
          
        ]
    },
@@ -21,7 +21,7 @@
      "numero": 99,
      "estado": 1,
      "indicadores": [
-       {"indicador": "osa", "valor": "85M", "diferencia": "20", 
+       {"indicador": "osa", "valor": "85", "diferencia": "20", 
         "detalles": [
           {"agrupador": "agrupador", "producto": "producto 1", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
           {"agrupador": "agrupador", "producto": "producto 2", "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -31,15 +31,15 @@
           {"agrupador": "agrupador", "producto": "producto 6", "valor": true, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
           
         ] },
-       {"indicador": "precios", "valor": "56$", "diferencia": "-15" },
-       {"indicador": "promocion", "valor": "67%", "diferencia": "15" },
-       {"indicador": "catalogo", "valor": "45%", "diferencia": "15" },
-       {"indicador": "precios", "valor": "56$", "diferencia": "-33" },
-       {"indicador": "osa", "valor": "85M", "diferencia": "20" },
-       {"indicador": "precios", "valor": "56$", "diferencia": "-15" },
-       {"indicador": "promocion", "valor": "67%", "diferencia": "15" },
-       {"indicador": "catalogo", "valor": "45%", "diferencia": "15" },
-       {"indicador": "precios", "valor": "56$", "diferencia": "-33" }
+       {"indicador": "precios", "valor": "86", "diferencia": "-15" },
+       {"indicador": "promocion", "valor": "67", "diferencia": "15" },
+       {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
+       {"indicador": "precios", "valor": "86", "diferencia": "-33" },
+       {"indicador": "osa", "valor": "85", "diferencia": "20" },
+       {"indicador": "precios", "valor": "86", "diferencia": "-15" },
+       {"indicador": "promocion", "valor": "67", "diferencia": "15" },
+       {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
+       {"indicador": "precios", "valor": "86", "diferencia": "-33" }
        
      ]
  },
