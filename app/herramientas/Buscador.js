@@ -99,7 +99,6 @@ class Buscador extends Component {
             >
               <TextInput
                 onChangeText={(text) => this.props.filterSearch(text)}
-                value={()=>this.props.searchText}
                 onBlur={()=>this.handleSearchOpen()}
                 style={styles.textInput}
                 autofocus

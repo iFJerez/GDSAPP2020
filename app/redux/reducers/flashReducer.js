@@ -2,6 +2,7 @@ import * as types from '../redux_constants';
 // Initial State
 const initialState = {
   ver_detalle: false,
+  ver_activity: false
 
 };
 
@@ -15,6 +16,13 @@ const flashReducer = (state = initialState, action) => {
       return {
         ...state,
         ver_detalle: action.ver_detalle,
+      }
+    }
+    case types.VER_ACTIVITY: {
+      console.log('VER ACTIVITY');
+      return {
+        ...state,
+        ver_activity: action.ver_activity,
       }
     }
   

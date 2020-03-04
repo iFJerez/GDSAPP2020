@@ -26,5 +26,7 @@ export const USER_HELP= 'USER_HELP';
 export const DETALLES_VIEW= 'DETALLES_VIEW';
 export const DETALLES_GUARDA_DATA= 'DETALLES_GUARDA_DATA';
 
+export const VER_ACTIVITY= 'VER_ACTIVITY';
+
 
 

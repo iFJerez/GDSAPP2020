@@ -59,6 +59,20 @@ try {
 
 }
 
+
+funMostrarDastos(){
+
+  // Mostrar datos se crea para enviar la informacion una vez, debido a que el Render lo hacia 2 veces
+
+  const {ver_detalle, data_detalle} = this.props;
+  if(ver_detalle){
+    return(
+      <DetalleASala data={data_detalle}/>
+    )
+  }
+
+}
+
   render() {
 
     const {funVerDetalle, ver_detalle, data_detalle} = this.props;
@@ -90,9 +104,8 @@ try {
           onScroll={this.handleOnScroll}
           scrollEventThrottle={10}>
           <View style={styles.scrollableModalContent1}>
-          <Text>{JSON.stringify(data_detalle)}</Text>
-            <DetalleASala data={data_detalle}/>
-           
+         
+            {this.funMostrarDastos()}
           </View>
         </ScrollView>
       </View>
@@ -114,11 +127,8 @@ const styles = StyleSheet.create({
   },
   scrollableModalContent1: {
     flex: 1,
+    paddingVertical: 30,
     
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 20,
-    paddingVertical: 30
   },
   scrollableModalText1: {
     fontSize: 20,

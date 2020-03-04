@@ -8,6 +8,13 @@ export function funVerDetalle(ver_detalle) {
   }
 }
 
+export function funVerActivity(ver_activity) {
+  return {
+    type: types.VER_ACTIVITY,
+    ver_activity: ver_activity
+  }
+}
+
 
 
 

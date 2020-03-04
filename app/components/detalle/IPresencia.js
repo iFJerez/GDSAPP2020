@@ -5,7 +5,7 @@ import Icon from '../../herramientas/IconSimple'
 
 
 
-export default class SalasListadoInCo extends Component {
+export default class IPresencia extends Component {
 
 funLlenar(){
   const {valor} = this.props
@@ -33,10 +33,9 @@ funLlenar(){
 
 const styles = StyleSheet.create({
   container: {
-    width: 70,
+    flex: 1,
     backgroundColor: constants.COLOR_BLANCO,
-    borderColor: constants.COLOR_GRIS_F,
-    borderWidth: 1,
+    
     marginHorizontal: 8,
     marginVertical: 3,
     borderRadius: 20

@@ -34,9 +34,7 @@ class ModalScreen extends React.Component {
       this.scrollViewRef.current.scrollTo(p);
     }
   };
-
-
-
+  
   render() {
     return (
       <Modal
@@ -51,18 +49,17 @@ class ModalScreen extends React.Component {
       swipeDirection={['down']}
       scrollTo={this.handleScrollTo}
       scrollOffset={this.state.scrollOffset}
-      scrollOffsetMax={400 - 300} // content height - ScrollView height
+      scrollOffsetMax={400 - 300} 
       style={styles.modal}>
       <View style={styles.scrollableModal}>
-
       <View style={styles.scrollableModalContent1}>
-        <TouchableOpacity onPress={()=>this.props.funUserHelp(!this.props.ms_help)} >
-             <Icon
-              name={'ios-arrow-down'}
-              size={30}
-              color={'#bbb'}
-              ></Icon>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={()=>this.props.funUserHelp(!this.props.ms_help)} >
+                <Icon 
+                      name={'ios-arrow-down'}
+                      size={30}
+                      color={'#bbb'}
+                  ></Icon>
+            </TouchableOpacity>
             <ScrollView
               ref={this.scrollViewRef}
               onScroll={this.handleOnScroll}

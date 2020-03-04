@@ -10,8 +10,6 @@ import * as constants from '../../herramientas/Const'
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
 
-// Screen Dimensions
-const { height, width } = Dimensions.get('window');
 
 // Screen: Counter
 class SalasListado extends React.Component {

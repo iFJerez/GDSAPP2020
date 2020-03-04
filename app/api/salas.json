@@ -17,19 +17,19 @@
    {
      "id_sala": 2,
      "cadena": "jumbo",
-     "desc_sala": "Jumbo Bajo del Puente sin Filtros asdskas dakjd kajsd ",
+     "desc_sala": "Jumbo Bajo del Puente sin Filtros...",
      "numero": 99,
      "estado": 1,
      "indicadores": [
        {"indicador": "osa", "valor": "85M", "diferencia": "20", 
         "detalles": [
-          {"agrupador": "agrupador", "producto": "producto 1", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "producto": "producto 2", "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "producto": "producto 3", "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "producto": "producto 4",  "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "producto": "producto 5", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "producto": "producto 6", "valor": true, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "producto": "producto 7", "presencia": false, "precio": "780", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+          {"agrupador": "agrupador", "titulo": "Producto 1", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
           
         ] },
        {"indicador": "precios", "valor": "56$", "diferencia": "-15" },
