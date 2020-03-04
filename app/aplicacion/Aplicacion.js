@@ -6,7 +6,7 @@ import AplicacionNavigation from './AplicacionNavigation'
 import ModalScreen from '../screens/ModalScreen'
 import HelpScreen from '../screens/HelpScreen'
 import DetallesScreen from '../screens/DetallesScreen'
-import Activity from '../screens/ActivityScreen'
+
 
 
 // Imports: Redux Actions
@@ -35,7 +35,7 @@ class Applicacion extends React.Component {
           resolve(funGetSalas())
           
       }).then(res=>{
-        console.log()
+        console.log('Aplicacion:Inicio')
         this.setState({dato: 'recibe'}
         )})
    }
@@ -48,6 +48,7 @@ class Applicacion extends React.Component {
         <ModalScreen />
         <HelpScreen />
         <DetallesScreen />
+        
      </View>
     )
   }

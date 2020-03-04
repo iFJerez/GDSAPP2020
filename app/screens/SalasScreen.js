@@ -1,11 +1,11 @@
 // Imports: Dependencies
 import React from 'react';
-import { Button, SafeAreaView, StyleSheet, Text } from 'react-native';
+import { Button, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import SalasMenu from '../components/salas/SalasMenu'
 import SalasListado from '../components/salas/SalasListado'
 import {funMessage} from '../herramientas/Mensaje'
+import Activity from './ActivityScreen'
 
 
 
@@ -15,33 +15,44 @@ import ActionCreators from '../redux/actions';
 // Screen: Counter
 class Home extends React.Component {
 
+  funRevisarData(){
+    const {dataSala} = this.props;
+
+    if(dataSala){
+      return(
+        <SafeAreaView style={styles.container}>
+            
+            <Button title="SalaResumen" onPress={() => this.props.navigation.navigate('SalaResumen')}
+            />
+
+              <Button
+                title="Nose"
+                onPress={()=>{funMessage('Mensaje', 'Nueva Descripcion')}}
+                style={styles.loginButton}
+              />
+
+              <SalasListado />
+              </SafeAreaView>
+        )
+    }
+    else {
+      return(
+      <Activity />
+      )
+    }
+  }
 
 
   render() {
 
-const {vista_salas, funViewSalasONOFF} = this.props;
-
 
     return (
-      <SafeAreaView style={styles.container}>
-        <Text adjustsFontSizeToFit={true}>   Salas</Text>
-           <Button title="SalaResumen" onPress={() => this.props.navigation.navigate('SalaResumen')}
-        />
+      <View style={styles.container}>
 
-          <Button
-            title="Nose"
-            onPress={()=>{funMessage('Mensaje', 'Nueva Descripcion')}}
-            style={styles.loginButton}
-          />
 
-        <SalasMenu 
-          funViewSalasONOFF={()=>funViewSalasONOFF(!vista_salas)}
-          vista_salas={vista_salas}
-        />
-        <SalasListado 
-          vista_salas={vista_salas}/>
+        {this.funRevisarData()}
 
-      </SafeAreaView>
+      </View>
     )
   }
 }
@@ -58,8 +69,7 @@ const styles = StyleSheet.create({
 const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
-    
-    vista_salas: state.userReducer.vista_salas,
+    dataSala: state.userReducer.dataSala,
     
   };
 };

@@ -10,8 +10,6 @@ import * as constants from '../../herramientas/Const'
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
 
-// Screen Dimensions
-const { height, width } = Dimensions.get('window');
 
 // Screen: Counter
 class SalasListado extends React.Component {
@@ -41,25 +39,11 @@ class SalasListado extends React.Component {
     }
 
  crearSala(item){
-
-  const {vista_salas} = this.props;
-
-    if (vista_salas){
-      return( 
-        <View style={styles.container}>
-            <Listado item={item}/>
-        </View>
-      )
-    }
-else{
-  return(
+  return( 
     <View style={styles.container}>
-            <Listado item={item}/>
-
+          <Listado item={item}/>
     </View>
-    
   )
-}
 }
 
 
@@ -67,13 +51,6 @@ else{
 
 
   render() {
-const {vista_salas} = this.props;
-const config1 = {
-  
-}
-
-const ifOnOff = vista_salas?1:2
-
 
     return (
       <View style={styles.container}>
@@ -81,8 +58,8 @@ const ifOnOff = vista_salas?1:2
         
 
             <FlatList  
-                numColumns={ifOnOff}
-                key={ifOnOff}
+                numColumns={1}
+                key={1}
                 data={this.state.dataSala}
                 renderItem={({item}) => this.crearSala(item)}
                 keyExtractor={(item, index) => '' + index}
@@ -103,7 +80,7 @@ const styles = StyleSheet.create({
 
   },
   st_indicadores: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     flex: 1,
     
 
