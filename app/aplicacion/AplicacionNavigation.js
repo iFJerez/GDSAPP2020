@@ -8,9 +8,10 @@ import IconApp from '../herramientas/Icon'
 import * as colores from '../herramientas/Const'
 import HomeScreen from '../screens/HomeScreen'
 import SalasScreen from '../screens/SalasScreen'
+import UsuarioScreen from '../screens/UsuarioScreen'
 import Settingscreen from '../screens/Settingscreen'
 import SalaResumen from '../screens/SalasResumen'
-import ModalScreen from '../screens/ModalScreen'
+
 
 import React from 'react';
 import { connect } from 'react-redux';
@@ -74,7 +75,8 @@ class Home extends React.Component {
       {
         Home: HomeScreen,
         Salas: SalasStack,
-        Settings: Settingscreen
+        Settings: Settingscreen,
+        Usuario: UsuarioScreen
       },
       {
         defaultNavigationOptions: ({ navigation }) => ({
@@ -90,6 +92,9 @@ class Home extends React.Component {
               IconComponent = SalasIcon(this.props.duo_new);
             } else if (routeName === 'Salas') {
               iconName = `ios-cart`;
+              IconComponent = UltimaIcon(this.props.salas_new);
+            }else if (routeName === 'Usuario') {
+              iconName = `ios-body`;
               IconComponent = UltimaIcon(this.props.salas_new);
             }
     
