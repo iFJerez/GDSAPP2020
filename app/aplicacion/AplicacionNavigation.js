@@ -40,7 +40,7 @@ const SalasStack = createStackNavigator(
     initialRouteName: 'Salas',
     defaultNavigationOptions: {
       headerStyle: {
-        backgroundColor: '#f4511e',
+        backgroundColor: colores.COLOR_PRIMARIO,
       },
       headerTintColor: '#fff',
   
