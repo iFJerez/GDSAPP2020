@@ -1,48 +1,16 @@
 // Imports: Dependencies
 import React from 'react';
-import { Button, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, Text, View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import SalasListado from '../components/salas/SalasListado'
-import {funMessage} from '../herramientas/Mensaje'
-import Activity from './ActivityScreen'
-
-
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
 
 // Screen: Counter
-class Home extends React.Component {
+class UsuarioScreen extends React.Component {
 
-  funRevisarData(){
-    const {dataSala} = this.props;
-
-    if(dataSala){
-      return(
-        <SafeAreaView style={styles.container}>
-            
-            <Button title="SalaResumen" onPress={() => this.props.navigation.navigate('SalaResumen')}
-            />
-
-              <Button
-                title="Nose"
-                onPress={()=>{funMessage('Mensaje', 'Nueva Descripcion')}}
-                style={styles.loginButton}
-              />
-
-              <SalasListado />
-              </SafeAreaView>
-        )
-    }
-    else {
-      return(
-      <Activity />
-      )
-    }
-  }
-
-
+ 
   render() {
 
 
@@ -50,7 +18,7 @@ class Home extends React.Component {
       <View style={styles.container}>
 
 
-        {this.funRevisarData()}
+        <Text style={{fontSize: 100}}> Usuario en Creacion </Text>
 
       </View>
     )
@@ -61,6 +29,7 @@ class Home extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+
   },
   
 });
@@ -87,4 +56,4 @@ function mapDispatchToProps(dispatch) {
 }
 
 // Exports
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(UsuarioScreen);
