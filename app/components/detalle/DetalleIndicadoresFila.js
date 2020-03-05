@@ -4,7 +4,7 @@ import { StyleSheet, View, Picker} from 'react-native';
 import IPresencia from './IPresencia'
 import IPrecio from './IPrecio'
 import IPorcentaje from './IPorcentaje'
-
+import IPromocion from './IPromocion'
 
 import Titulo from './Titulo'
 import Subtitulo from './Subtitulo'
@@ -32,10 +32,11 @@ try {
          
             <ScrollView horizontal={true}  style={styles.view_scroll}>
                  <View style={styles.view_indicadores}>
+                 <IPromocion valor={data.promocion} />
                   <IPresencia valor={data.presencia}/>
                   <IPrecio valor={data.precio}/>
                   <IPorcentaje valor={data.porcentaje} />
-                  <IPorcentaje valor={data.porcentaje} />
+
                   </View>
             </ScrollView>
 

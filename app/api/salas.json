@@ -26,9 +26,9 @@
           {"agrupador": "agrupador", "titulo": "Producto 1", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
           {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
           {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "A1", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "promocion": "A2", "exhibicion": "caja", "porcentaje": "80%"},
+          {"agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "promocion": "A3", "exhibicion": "caja", "porcentaje": "80%"},
           {"agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
           
         ] },
