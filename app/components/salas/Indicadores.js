@@ -6,8 +6,6 @@ import TextTypeB from '../../herramientas/textos/TextTypeB'
 import * as constants from '../../herramientas/Const'
 import IconDiferencia from '../../herramientas/IconDiferencia'
 
-
-
 export default class SalasListadoInCo extends Component {
   render() {
     const {data} = this.props
@@ -31,7 +29,7 @@ export default class SalasListadoInCo extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    width: 70,
+    width: 75,
     backgroundColor: constants.COLOR_BLANCO,
     borderColor: constants.COLOR_GRIS_F,
     borderWidth: 1,

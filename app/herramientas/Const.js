@@ -1,6 +1,6 @@
 
 
-
+export const ICON_VERY_SMALL= 20
 export const ICON_SMALL= 30
 export const ICON_MEDIUM= 40
 export const ICON_LARGE= 50

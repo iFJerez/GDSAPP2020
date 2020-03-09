@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, Text} from 'react-native';
-
+import Buscador from './BuscadorSalas'
 
 
 export default class SalasMenu extends Component {
@@ -8,14 +8,11 @@ export default class SalasMenu extends Component {
 
   render() {
 
-    
+    const {filterSearch} = this.props;
 
     return (
       <View style={styles.container}>
-        <Text>
-          Menu Salas
-        </Text>
-
+          <Buscador filterSearch={filterSearch}/>
       </View>
     );
   }
@@ -24,8 +21,9 @@ export default class SalasMenu extends Component {
 
 const styles = StyleSheet.create({
   container: {
-   
-   width: '100%',
-   
-  }
+
+    
+  },
+
+
 });

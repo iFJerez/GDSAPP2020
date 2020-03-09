@@ -8,9 +8,13 @@
 		<data>
 		TneGhDkoD7Q01Gl8e5EScUBsgfM=
 		</data>
-		<key>Base.lproj/LaunchScreen.nib</key>
+		<key>Base.lproj/LaunchScreen.nib/objects-13.0+.nib</key>
 		<data>
-		989rSgVuNzdq0+4WmDx13QwJ+fw=
+		/J+z/7dhH7WcivaTR09TAnmykfQ=
+		</data>
+		<key>Base.lproj/LaunchScreen.nib/runtime.nib</key>
+		<data>
+		9MYhvv8YWKnw75XwiZ4r/Yhf76s=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -48,6 +52,22 @@
 		<data>
 		SyvObHkkk6SlcWtv7C2+/olJLD8=
 		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
+		<data>
+		OGPOMv0LkN+98GkggDQcBibUZk8=
+		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/XCTAutomationSupport</key>
+		<data>
+		76Mf6x2aLge9pMTTnfd9xPAV1G0=
+		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/_CodeSignature/CodeResources</key>
+		<data>
+		dz9607MmqKVrtwuy2phqXTw27i4=
+		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/version.plist</key>
+		<data>
+		6MXj3acPmvECwyiIwFONRsIpgDk=
+		</data>
 		<key>Frameworks/XCTest.framework/Info.plist</key>
 		<data>
 		DQ4GPJ7FuM6H+FaCC/2wxhPSGCQ=
@@ -77,9 +97,13 @@
 		<data>
 		xKX69bDGMJa2TcU/BC9ypZ06rsI=
 		</data>
+		<key>Frameworks/libXCTestSwiftSupport.dylib</key>
+		<data>
+		DjkU1iwRPJ1oLH/Ox0vn+gbA+DM=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		IlTJixMfz4laE6QcVCfJiRxUgM8=
+		eM4+RkoZYpAM9ehES1wf0+D7YF0=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -143,15 +167,26 @@
 			eVXKFBJ7MEEsEU6xPP1wK12rJl/rGIDRaV1zyqgkzeE=
 			</data>
 		</dict>
-		<key>Base.lproj/LaunchScreen.nib</key>
+		<key>Base.lproj/LaunchScreen.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			989rSgVuNzdq0+4WmDx13QwJ+fw=
+			/J+z/7dhH7WcivaTR09TAnmykfQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			q4EM+CiLUQyQyp8hZ0En1JWzH83jSalrof5Porb2f8M=
+			tdPW9BOM4OR5xqHenvIVsHPTBCeE0KAWQkyl696056A=
+			</data>
+		</dict>
+		<key>Base.lproj/LaunchScreen.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9MYhvv8YWKnw75XwiZ4r/Yhf76s=
+			</data>
+			<key>hash2</key>
+			<data>
+			UFQ3PuozRGMQh9mhh/+LY2a3wpaCPvWonLcIlN9vCrg=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -253,6 +288,50 @@
 			fh3QPdTOkLZYBSVUzXRZ3xZxZxc4mlUvpMbVal+JM+Y=
 			</data>
 		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OGPOMv0LkN+98GkggDQcBibUZk8=
+			</data>
+			<key>hash2</key>
+			<data>
+			UXjx+dzbH/VUdL1VrjpVNceWMlj3rQw+BT8iPYNyHX8=
+			</data>
+		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/XCTAutomationSupport</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			76Mf6x2aLge9pMTTnfd9xPAV1G0=
+			</data>
+			<key>hash2</key>
+			<data>
+			zxQojWPPAT9d5MhhhtqjiKa8ajefe1sbL9YPQ5FToWM=
+			</data>
+		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dz9607MmqKVrtwuy2phqXTw27i4=
+			</data>
+			<key>hash2</key>
+			<data>
+			mzlD+A+oDWtL/lanJNY6K9wKXpMYXXZzhbcmHn9IU2A=
+			</data>
+		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6MXj3acPmvECwyiIwFONRsIpgDk=
+			</data>
+			<key>hash2</key>
+			<data>
+			A7eEgXfoApba0i1QcUkjoURwTLNAyVLq7o5r3CXdxx0=
+			</data>
+		</dict>
 		<key>Frameworks/XCTest.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -319,6 +398,17 @@
 			<key>hash2</key>
 			<data>
 			jJ/zKe1SwWk9KkZ4MXV01NPW4QiHpU1aZhpfTDknkp0=
+			</data>
+		</dict>
+		<key>Frameworks/libXCTestSwiftSupport.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DjkU1iwRPJ1oLH/Ox0vn+gbA+DM=
+			</data>
+			<key>hash2</key>
+			<data>
+			6/hmEcPJ7UVcwq1OD63w8JeYVRJTmiYn10aCiZcVqlA=
 			</data>
 		</dict>
 		<key>Ionicons.ttf</key>

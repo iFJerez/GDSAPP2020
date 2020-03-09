@@ -4,7 +4,7 @@ import { Dimensions, FlatList, StyleSheet, Text, View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Listado from './Listado'
-import Buscador from '../../herramientas/Buscador'
+import SalaMenu from './SalasMenu'
 import * as constants from '../../herramientas/Const'
 
 // Imports: Redux Actions
@@ -13,14 +13,11 @@ import ActionCreators from '../../redux/actions';
 
 // Screen: Counter
 class SalasListado extends React.Component {
-
   constructor(props){
     super(props)
     this.state = {  
       dataSala: props.dataSala
     }
-
-    
   }
 
   filterSearch=(text) => {
@@ -31,11 +28,7 @@ class SalasListado extends React.Component {
     return itemData.indexOf(textData) > -1
   
     })
-    
-    
-    //alert(JSON.stringify(newData))
     this.setState({dataSala: newData })
-    
     }
 
  crearSala(item){
@@ -46,17 +39,12 @@ class SalasListado extends React.Component {
   )
 }
 
-
-
-
-
   render() {
 
     return (
       <View style={styles.container}>
-        <Buscador  filterSearch={this.filterSearch}/> 
         
-
+            <SalaMenu  filterSearch={this.filterSearch} />
             <FlatList  
                 numColumns={1}
                 key={1}
@@ -79,8 +67,14 @@ const styles = StyleSheet.create({
 
 
   },
-  st_indicadores: {
-    flexDirection: 'column',
+  st_menu: {
+    
+    flex: 1,
+    
+
+  },
+  st_salas: {
+    
     flex: 1,
     
 

@@ -47,7 +47,7 @@ class Applicacion extends React.Component {
         <AplicacionNavigation />
         <ModalScreen />
         <HelpScreen />
-        <DetallesScreen />
+
         
      </View>
     )

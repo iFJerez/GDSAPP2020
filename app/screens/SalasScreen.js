@@ -6,6 +6,7 @@ import { bindActionCreators } from 'redux';
 import SalasListado from '../components/salas/SalasListado'
 import {funMessage} from '../herramientas/Mensaje'
 import Activity from './ActivityScreen'
+import DetallesScreen from './DetallesScreen'
 
 
 
@@ -21,17 +22,9 @@ class Home extends React.Component {
     if(dataSala){
       return(
         <SafeAreaView style={styles.container}>
-            
-            <Button title="SalaResumen" onPress={() => this.props.navigation.navigate('SalaResumen')}
-            />
-
-              <Button
-                title="Nose"
-                onPress={()=>{funMessage('Mensaje', 'Nueva Descripcion')}}
-                style={styles.loginButton}
-              />
-
+          
               <SalasListado />
+              <DetallesScreen />
               </SafeAreaView>
         )
     }
