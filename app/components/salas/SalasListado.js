@@ -1,6 +1,6 @@
 // Imports: Dependencies
-import React, { Component } from 'react';
-import { Dimensions, FlatList, StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { FlatList, StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Listado from './Listado'
@@ -9,7 +9,6 @@ import * as constants from '../../herramientas/Const'
 
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
-
 
 // Screen: Counter
 class SalasListado extends React.Component {
@@ -51,8 +50,7 @@ class SalasListado extends React.Component {
                 data={this.state.dataSala}
                 renderItem={({item}) => this.crearSala(item)}
                 keyExtractor={(item, index) => '' + index}
-        />   
-
+        /> 
  </View>
     );
   }

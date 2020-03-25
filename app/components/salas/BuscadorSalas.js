@@ -11,6 +11,10 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import * as constants  from '../../herramientas/Const';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import ActionCreators from '../../redux/actions'
 
 const easing = Easing.out(Easing.ease);
 
@@ -79,6 +83,8 @@ class Buscador extends Component {
 
   render() {
 
+    const {funVerSalaFiltro, ver_sala_filtro} = this.props;
+
 
     return (
       <View style={[styles.header, styles.fill, styles.row, styles.center]}>
@@ -136,9 +142,13 @@ class Buscador extends Component {
                 Ordenar por:
               </Text>
           <View style={styles.headerDropDownContainer}>
-          <Text style={styles.orderByText}>
+     
+                   <TouchableOpacity onPress={()=>{funVerSalaFiltro(!ver_sala_filtro)}}>
+                   <Text style={styles.orderByText}>
                    mayor
-          </Text>
+                   </Text>
+                   </TouchableOpacity>
+
           </View>
         </Animated.View>
         </Animated.View>
@@ -148,7 +158,33 @@ class Buscador extends Component {
   }
 }
 
-export default Buscador;
+// Map State To Props (Redux Store Passes State To Component)
+const mapStateToProps = (state) => {
+  // Redux Store --> Component
+  return {
+    
+    ver_sala_filtro: state.flashReducer.ver_sala_filtro,
+    
+  };
+};
+
+// Map Dispatch To Props (Dispatch Actions To Reducers. Reducers Then Modify The Data And Assign It To Your Props)
+function mapDispatchToProps(dispatch) {
+  const combiner = Object.assign({},
+    ActionCreators,
+    { dispatch },
+  );
+  return bindActionCreators(
+    combiner,
+    dispatch,
+  );
+}
+
+// Exports
+export default connect(mapStateToProps, mapDispatchToProps)(Buscador);
+
+
+
 
 
 
