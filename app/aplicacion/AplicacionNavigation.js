@@ -4,7 +4,7 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import IconApp from '../herramientas/Icon'
+import IconApp from '../herramientas/IconAntDesign'
 import * as colores from '../herramientas/Const'
 import HomeScreen from '../screens/HomeScreen'
 import SalasScreen from '../screens/SalasScreen'
@@ -41,9 +41,9 @@ const SalasStack = createStackNavigator(
     initialRouteName: 'Salas',
     defaultNavigationOptions: {
       headerStyle: {
-        backgroundColor: colores.COLOR_PRIMARIO,
+        backgroundColor: colores.COLOR_PRIMARIO_OSCURO,
       },
-      headerTintColor: '#fff',
+      headerTintColor: colores.COLOR_BLANCO,
   
       headerBackTitle: ' ',
       headerTitleStyle: {
@@ -85,16 +85,16 @@ class Home extends React.Component {
             let IconComponent = IconApp;
             let iconName;
             if (routeName === 'Home') {
-              iconName = `ios-home`;
+              iconName = `home`;
               IconComponent = HomeIcon(this.props.counter);
             } else if (routeName === 'Settings') {
               iconName = `ios-square`;
               IconComponent = SalasIcon(this.props.duo_new);
             } else if (routeName === 'Salas') {
-              iconName = `ios-cart`;
+              iconName = `shoppingcart`;
               IconComponent = UltimaIcon(this.props.salas_new);
             }else if (routeName === 'Usuario') {
-              iconName = `ios-body`;
+              iconName = `user`;
               IconComponent = UltimaIcon(this.props.salas_new);
             }
     
@@ -103,7 +103,7 @@ class Home extends React.Component {
         }),
         tabBarOptions: {
           activeTintColor: colores.COLOR_PRIMARIO,
-          inactiveTintColor: 'gray',
+          inactiveTintColor: colores.COLOR_GRIS,
         },
       }
     )
