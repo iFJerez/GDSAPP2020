@@ -34,6 +34,8 @@ target 'ComGdsnetApp' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  #agregado mstone
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
 
   target 'ComGdsnetAppTests' do

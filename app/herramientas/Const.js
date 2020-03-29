@@ -33,7 +33,7 @@ export const COLOR_CELESTE="#3390D3";
 export const COLOR_CELESTE_OSCURO="#1C7ABD";
 
 
-export const COLOR_PRIMARIO_CLARO="#44bbc8";
+export const COLOR_PRIMARIO_CLARO="#33cccc";
 export const COLOR_SECUNDARIO_CLARO="#f5826f";
 export const COLOR_TERNARIO_CLARO="#aaaaac";
 export const COLOR_CUATERNARIO_CLARO="#f2f2f2";

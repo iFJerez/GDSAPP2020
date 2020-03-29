@@ -9,7 +9,7 @@ import ReactNativePickerModule from 'react-native-picker-module'
 export default class SalasListadoInCo extends Component {
 
   state = {
-    selectedValue: null,
+    selectedValue: 'Sin Objeción',
     data: [
       "Sin Objeción",
       "Producto Bloqueado",

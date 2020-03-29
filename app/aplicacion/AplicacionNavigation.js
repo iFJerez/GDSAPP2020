@@ -4,15 +4,16 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import IconApp from '../herramientas/IconAntDesign'
+import IconApp from '../herramientas/IconTabNav'
 import * as colores from '../herramientas/Const'
 import HomeScreen from '../screens/HomeScreen'
 import SalasScreen from '../screens/SalasScreen'
 import UsuarioScreen from '../screens/UsuarioScreen'
 import Settingscreen from '../screens/Settingscreen'
 import SalaResumen from '../screens/SalasResumen'
+import PendienteEnvio from '../components/pendientesEnvio/PendienteEnvio'
 
-
+import {View} from 'react-native'
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -70,7 +71,8 @@ class Home extends React.Component {
 
 
   render() {
-
+    
+    
     let TabNavigator =  createBottomTabNavigator(
       {
         Home: HomeScreen,
@@ -78,6 +80,7 @@ class Home extends React.Component {
         Settings: Settingscreen,
         Usuario: UsuarioScreen
       },
+ 
       {
         defaultNavigationOptions: ({ navigation }) => ({
           tabBarIcon: ({ tintColor }) => {
@@ -112,7 +115,10 @@ class Home extends React.Component {
 
 
     return (
-   <Navigation />
+  <View style={{flex: 1}}>
+      <Navigation />
+      <PendienteEnvio />
+   </View>
     )
   }
 }

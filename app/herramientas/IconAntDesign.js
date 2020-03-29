@@ -1,25 +1,32 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+
 import Ionicons from 'react-native-vector-icons/AntDesign';
+import { Text, View } from 'react-native';
+
 import * as colores from '../herramientas/Const'
+
 
 
 export default class IconApp extends React.Component {
   render() {
     const { name, numero, color, size } = this.props;
     return (
-      <View style={{ width: 24, height: 24, margin: 5 }}>
+      
+ 
+
+
+        <View style={{flex: 1}}>
         <Ionicons name={name} size={size} color={color} />
         {numero > 0 && (
           <View
             style={{
               position: 'absolute',
-              right: -6,
-              top: -3,
+              right: -2,
+              top: -2,
               backgroundColor: colores.COLOR_SECUNDARIO,
-              borderRadius: 6,
-              width: 12,
-              height: 12,
+              borderRadius: 10,
+              width: 15,
+              height: 15,
               justifyContent: 'center',
               alignItems: 'center',
             }}
@@ -30,6 +37,7 @@ export default class IconApp extends React.Component {
           </View>
         )}
       </View>
+      
     );
   }
 }
