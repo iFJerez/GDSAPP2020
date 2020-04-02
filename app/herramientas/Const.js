@@ -11,6 +11,8 @@ export const SIZE_LETRA_LARGE= 13
 export const SIZE_LETRA_X_LARGE= 15
 export const SIZE_LETRA_XX_LARGE= 18
 export const SIZE_LETRA_XXX_LARGE= 20
+export const SIZE_LETRA_XXXX_LARGE= 25
+export const SIZE_LETRA_XXXXX_LARGE= 30
 
 export const COLOR_NEGRO="#000";
 export const COLOR_BLANCO="#FFF";
