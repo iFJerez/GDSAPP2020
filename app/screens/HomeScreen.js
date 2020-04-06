@@ -1,11 +1,13 @@
 // Imports: Dependencies
 import React from 'react';
-import { SafeAreaView, StyleSheet,Text } from 'react-native';
+import { SafeAreaView, StyleSheet,View, StatusBar} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {funMessage} from '../herramientas/Mensaje'
+import LinearGradient from 'react-native-linear-gradient';
 import data from '../api/home.json'
 import CardIndicadores from '../components/home/CardIndicadores'
+import * as constants from '../herramientas/Const'
+import TextTypeHome from '../herramientas/textos/TextTypeHome'
 
 
 // Imports: Redux Actions
@@ -23,10 +25,27 @@ class Home extends React.Component {
 const {} = this.props;
 
     return (
-      <SafeAreaView style={styles.container}>
-      <Text>{JSON.stringify(data)}</Text>
-      <CardIndicadores data={data} />
+      <LinearGradient colors={['#3F93A4', '#016a7c']} style={{flex: 1, width: '100%'}}>
+          <StatusBar barStyle="light-content" />
+      <SafeAreaView style={styles.container}>    
+      
+           <View style={styles.styTarjeta}>
+              <CardIndicadores data={data} />
+          </View>
+          <LinearGradient colors={['#3F93A4', '#016a7c']} style={{flex: 1, width: '100%'}}>
+      
+          <View style={styles.styTop}>
+          <TextTypeHome text={'Home'}/>
+          </View>
+          </LinearGradient>
+          <View style={styles.styDown}>
+
+     
+            
+            </View>
+        
       </SafeAreaView>
+      </LinearGradient>
     )
   }
 }
@@ -37,7 +56,24 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+
   },
+
+  styTop: {flex: 1, marginTop:80,  marginLeft: 30, 
+},
+  styDown: {flex: 3, width: '100%',  backgroundColor: constants.COLOR_GRIS_D},
+  styTarjeta: {
+    position: 'absolute',
+    top: 180,
+    width: '90%',
+    backgroundColor: constants.COLOR_BLANCO,
+    borderRadius: 6,
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 100,
+    padding: 10,
+
+  }
   
 });
 
