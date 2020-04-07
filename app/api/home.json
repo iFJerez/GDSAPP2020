@@ -11,6 +11,30 @@
          {"indicador": "precios", "valor": "86", "diferencia": "-33" },
          {"indicador": "tareas", "valor": "56", "diferencia": "5" }
          
+       ],
+       "ranking": [
+            {
+              "id_sala": 1,
+              "cadena": "lider",
+              "desc_sala": "Lider Punta del Cerro",
+              "numero": 35,
+              "estado": 0,
+              "indicadores": [
+                {"indicador": "osa", "valor": "85", "diferencia": "20" }
+              ]
+          },
+          {
+            "id_sala": 2,
+            "cadena": "jumbo",
+            "desc_sala": "nuevo del puerto",
+            "numero": 35,
+            "estado": 0,
+            "indicadores": [
+              {"indicador": "osa", "valor": "85", "diferencia": "20" }
+            ]
+        }
+
+
        ]
    }
  ]
