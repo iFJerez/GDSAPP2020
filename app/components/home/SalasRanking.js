@@ -31,15 +31,15 @@ class SalasListado extends React.Component {
 
     return (
       <View style={styles.container}>
-        
-            
-            <FlatList  
-                numColumns={1}
-                key={1}
-                data={this.state.dataSala}
-                renderItem={({item}) => this.crearSala(item)}
-                keyExtractor={(item, index) => '' + index}
-        /> 
+        <View style={styles.card}>            
+        <FlatList  
+            numColumns={1}
+            key={1}
+            data={this.state.dataSala}
+            renderItem={({item}) => this.crearSala(item)}
+            keyExtractor={(item, index) => '' + index}
+         /> 
+    </View>
  </View>
     );
   }
@@ -48,9 +48,14 @@ class SalasListado extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-   flex:1,
-   backgroundColor: constants.COLOR_GRIS_E, 
-
+    flex: 1,
+    padding: 10,
+  },
+  card: {
+    flex: 1,
+    borderRadius: 5,
+    padding: 2,
+    backgroundColor: constants.COLOR_BLANCO
 
 
   },

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as constants from '../../herramientas/Const'
 import Carousel, { Pagination }  from 'react-native-snap-carousel';
+import SalasRanking from './SalasRanking'
 
 
 // Imports: Redux Actions
@@ -48,6 +49,7 @@ _renderItem({item,index}){
         marginRight: 25, }}>
       <Text style={{fontSize: 30}}>{item.title}</Text>
       <Text>{item.text}</Text>
+      <SalasRanking />
     </View>
 
   )

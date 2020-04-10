@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     borderRadius: 5,
     padding: 5,
+    
   },
   
   st_indicadores_progres: {flex: 1, marginHorizontal: 10},

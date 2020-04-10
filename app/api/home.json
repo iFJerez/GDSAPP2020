@@ -32,7 +32,17 @@
             "indicadores": [
               {"indicador": "osa", "valor": "85", "diferencia": "20" }
             ]
-        }
+        },
+        {
+          "id_sala": 3,
+          "cadena": "jumbo",
+          "desc_sala": "Otro Jumbo",
+          "numero": 35,
+          "estado": 0,
+          "indicadores": [
+            {"indicador": "osa", "valor": "89", "diferencia": "-20" }
+          ]
+      }
 
 
        ]

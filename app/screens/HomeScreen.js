@@ -1,16 +1,17 @@
 // Imports: Dependencies
 import React from 'react';
-import { SafeAreaView, StyleSheet,View, StatusBar} from 'react-native';
+import { SafeAreaView, StyleSheet,View, StatusBar, ScrollView} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import LinearGradient from 'react-native-linear-gradient';
 import data from '../api/home.json'
 import CardIndicadores from '../components/home/CardIndicadores'
 import * as constants from '../herramientas/Const'
-import TextTypeHome from '../herramientas/textos/TextTypeHome'
+
 import SalaRanking from '../components/home/SalasRanking'
-
-
+import HomeCarousel from '../components/home/HomeCarousel'
+import HomeTitulo from '../components/home/HomeTitulo'
+import HomeCarouselComponents from '../components/home/HomeCarouselComponents'
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
 
@@ -26,31 +27,32 @@ class Home extends React.Component {
 const {} = this.props;
 
     return (
+      <View style={styles.container}>   
+         <StatusBar barStyle="light-content" />
+ 
+       <View style={styles.styTarjeta}>
       <LinearGradient colors={['#3F93A4', '#016a7c']} style={{flex: 1, width: '100%'}}>
-          <StatusBar barStyle="light-content" />
-      <SafeAreaView style={styles.container}>    
+    
+      </LinearGradient>
+      </View>
+  
+       
+      <ScrollView style={{backgroundColor: 'transparent'}}>
       
-           <View style={styles.styTarjeta}>
-              <CardIndicadores data={data} />
 
-                   
-          </View>
-          <LinearGradient colors={['#3F93A4', '#016a7c']} style={{flex: 1, width: '100%'}}>
-      
-          <View style={styles.styTop}>
-          <TextTypeHome text={'Home'}/>
-          </View>
-          </LinearGradient>
           <View style={styles.styDown}>
 
+                <HomeTitulo />
+                <HomeCarouselComponents />
+                <CardIndicadores data={data} />
+                <SalaRanking />
+                <HomeCarousel />
+                <HomeCarousel />
+         </View>
+        </ScrollView>
      
-          <SalaRanking />
-     
-            
-            </View>
-        
-      </SafeAreaView>
-      </LinearGradient>
+      </View>
+ 
     )
   }
 }
@@ -58,25 +60,22 @@ const {} = this.props;
 // Styles
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-
+    backgroundColor: constants.COLOR_GRIS_D
   },
 
   styTop: {flex: 1, marginTop:80,  marginLeft: 30, 
 },
-  styDown: {flex: 3, width: '100%',  backgroundColor: constants.COLOR_GRIS_D},
+  styDown: {},
   styTarjeta: {
     position: 'absolute',
-    top: 180,
-    width: '90%',
-    backgroundColor: constants.COLOR_BLANCO,
+    top: 0,
+    width: '100%',
+    height: 250,
     borderRadius: 6,
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: 100,
-    padding: 10,
+    zIndex: 0,
+    
 
   }
   

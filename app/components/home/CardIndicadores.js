@@ -56,7 +56,10 @@ crearIndicadores(item){
    
     return (
       <View style={styles.container}>
-          {this.funIndicadores()}
+           <View style={styles.card}>
+                 {this.funIndicadores()}
+     
+          </View>
      
       </View>
     );
@@ -67,6 +70,15 @@ crearIndicadores(item){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 10,
+  },
+  card: {
+    flex: 1,
+    alignItems: 'center',
+    borderRadius: 5,
+    padding: 10,
+    backgroundColor: constants.COLOR_BLANCO
+
 
   },
 

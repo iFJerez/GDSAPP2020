@@ -29,7 +29,7 @@ export default class SalasListadoInCo extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    width: 75,
+    width: 90,
     backgroundColor: constants.COLOR_BLANCO,
 
     marginHorizontal: 8,
