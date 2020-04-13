@@ -9,6 +9,7 @@ import HelpScreen from '../screens/HelpScreen'
 
 
 
+
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
 
@@ -44,9 +45,12 @@ class Applicacion extends React.Component {
     return (
 
       <View style={{flex: 1}}>
+                
         <AplicacionNavigation />
         <ModalScreen />
         <HelpScreen />
+        
+
   
 
         

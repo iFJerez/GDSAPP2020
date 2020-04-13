@@ -3,6 +3,7 @@ import React from 'react';
 import {StyleSheet, Text, View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import CardUsuario from '../components/usuario/CardUsuario'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
@@ -18,7 +19,8 @@ class UsuarioScreen extends React.Component {
       <View style={styles.container}>
 
 
-        <Text style={{fontSize: 100}}> Usuario en Creacion </Text>
+        
+        <CardUsuario />
 
       </View>
     )

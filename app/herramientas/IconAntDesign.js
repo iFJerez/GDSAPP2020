@@ -15,7 +15,7 @@ export default class IconApp extends React.Component {
  
 
 
-        <View style={{flex: 1}}>
+        <View>
         <Ionicons name={name} size={size} color={color} />
         {numero > 0 && (
           <View

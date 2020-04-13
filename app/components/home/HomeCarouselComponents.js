@@ -5,18 +5,18 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as constants from '../../herramientas/Const'
 import Carousel, { Pagination }  from 'react-native-snap-carousel';
-import SalasRanking from './SalasRanking'
+import CardInfo from './CardInfo'
+
 
 
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
 
 const SLIDER_WIDTH = Dimensions.get('window').width;
-const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.7);
-const ITEM_HEIGHT = Math.round(ITEM_WIDTH * 3 / 4);
+const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.9);
 
 // Screen: Counter
-class Home extends React.Component {
+class HomeCarouselComponents extends React.Component {
 
 
   constructor(props){
@@ -25,12 +25,16 @@ class Home extends React.Component {
       activeIndex:0,
       carouselItems: [
       {
-          title:"Item 1",
-          text: "Text 1",
+          item:"Recuerdatorios",
+          subItem: "Enviar Pendientes de Envio",
       },
       {
-          title:"Item 2",
-          text: "Text 2",
+        item:"12 Tareas Programadas",
+        subItem: "Relizar antes del Miercoles",
+      },
+      {
+        item:"4 Salas Nuevas",
+        subItem: "Medidas Hoy por el equipo gds",
       },
    
     ]
@@ -40,18 +44,7 @@ class Home extends React.Component {
 
 _renderItem({item,index}){
   return (
-    <View style={{
-        backgroundColor:'floralwhite',
-        borderRadius: 5,
-        height: 250,
-        padding: 50,
-        marginLeft: 25,
-        marginRight: 25, }}>
-      <Text style={{fontSize: 30}}>{item.title}</Text>
-      <Text>{item.text}</Text>
-      <SalasRanking />
-    </View>
-
+    <CardInfo data={item} />
   )
 }
 
@@ -62,19 +55,19 @@ get pagination () {
       <Pagination
         dotsLength={carouselItems.length}
         activeDotIndex={activeIndex}
-        containerStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.75)' }}
+        containerStyle={{ }}
         dotStyle={{
-            width: 10,
-            height: 10,
-            borderRadius: 5,
-            marginHorizontal: 8,
-            backgroundColor: 'rgba(255, 255, 255, 0.92)'
+            width: 8,
+            height: 8,
+            borderRadius: 10,
+            marginHorizontal: 2,
+            backgroundColor: constants.COLOR_PRIMARIO
         }}
         inactiveDotStyle={{
             // Define styles for inactive dots here
         }}
-        inactiveDotOpacity={0.4}
-        inactiveDotScale={0.6}
+        inactiveDotOpacity={0.6}
+        inactiveDotScale={0.8}
       />
   );
 }
@@ -140,7 +133,6 @@ const styles = StyleSheet.create({
   },
   itemContainer: {
     width: ITEM_WIDTH,
-    height: ITEM_HEIGHT,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'dodgerblue'
@@ -182,4 +174,4 @@ function mapDispatchToProps(dispatch) {
 }
 
 // Exports
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(HomeCarouselComponents);

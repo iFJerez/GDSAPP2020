@@ -1,79 +1,147 @@
-import React, {Component} from 'react';
-import { StyleSheet, View, Text, TouchableOpacity} from 'react-native';
-import * as constants from '../../herramientas/Const'
-import Icon from '../../herramientas/IconAntDesign'
-import {funMessage} from '../../herramientas/Mensaje'
+import React, {Component} from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  LayoutAnimation,
+} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import PendienteEnvioBody from './PendienteEnvioBody'
+import Texto from '../../herramientas/textos/TextTypePendiente'
+import Enviar from './Enviar'
+
+class App extends Component {
+
+  constructor() {
+    super()
+    this.state = {
+      check: false,
+    }
+  }
+
+
+  funCerrar(){
+    return(
+
+      <TouchableOpacity   style={{flex: 0.2}} onPress={() => this.onPresscheck()}>
+         <LinearGradient colors={['#3F93A4', '#016a7c']} style={styles.buttonCerrar}>
+         <Texto text={'X'}></Texto>
+         </LinearGradient>
+                 
+        </TouchableOpacity>
+
+    
+    )
+
+  }
+  funAbrir(){
+    return(
+
+
+    <TouchableOpacity  style={styles.buttonAbrir} onPress={() => this.onPresscheck()}>
+         <LinearGradient colors={['#3F93A4', '#016a7c']} style={styles.buttonAbrir}>
+         <Texto text={'Pendiente Envio'}></Texto>
+         </LinearGradient>
+                 
+        </TouchableOpacity>
+
+  
+)
+  }
+
+
+  onPresscheck() {
 
 
 
 
-export default class SalasListadoInCo extends Component {
+    var CustomLayoutLinear = {
+      duration: 600,
+      create: {
+        type: LayoutAnimation.Types.easeInEaseOut,
+        property: LayoutAnimation.Properties.opacity,
+      },
+      update: {
+        type: LayoutAnimation.Types.linear,
+        property: LayoutAnimation.Properties.opacity,
+      },
+      delete: {
+        type: LayoutAnimation.Types.linear,
+        property: LayoutAnimation.Properties.opacity,
+      },
+    };
+     LayoutAnimation.configureNext(CustomLayoutLinear);
 
-
-
+    this.setState({ check : !this.state.check});
+  }
 
   render() {
+
+    let middleStyle = this.state.check === false ? styles.styCerrado : styles.styAbierto;
     
-    return  (
+
+    return (
       
+  <View style={[middleStyle]} >
+
+         
+               {this.state.check?this.funCerrar(): this.funAbrir()}
+         
+                 
+        
+
+
+         {this.state.check && (
+            <View style={styles.container} >
+              <PendienteEnvioBody />
+              <Enviar />
+            </View>
+        )}
+    
 
 
  
 
-<View style={styles.container}>
-<LinearGradient colors={['#3F93A4', '#016a7c']} style={styles.linearGradient}>
-
-<TouchableOpacity onPress={() => {funMessage('Pendiente Envio', 'Por construir...')}}>
-<View style={styles.styleRow}>
-<View style={styles.view_icon}>
-   <Icon numero={5} name={'clouduploado'} size={constants.ICON_LARGE} color={constants.COLOR_BLANCO}/>
-
- </View>
- <View style={styles.view_text}>
-   
-    <Text style={styles.buttonText}>
-        Pendientes de Envio
-      </Text>
+         
+    </View>
       
-  
-  </View>
-   
-
-      
-  
-  </View>
-  </TouchableOpacity>
-</LinearGradient>
-</View>
-          
-
-
-      
-   )
-    
+    );
   }
-
 }
 
 const styles = StyleSheet.create({
+  container: {
+   flex: 1,
 
- 
-  container: {position: 'absolute', bottom: 90, width: '100%', },
-  linearGradient: {
-    flex: 1,
-
-
-  
   },
-  styleRow: {flexDirection: 'row', padding: 5, flex: 1},
-  view_icon: { paddingLeft: 50, paddingRight: 20,  alignItems: 'center'},
-  view_text: {  padding: 10,fontFamily:'Raleway', alignItems: 'center'},
-  buttonText: {
-    fontSize: 20,
-    
-    
-    color: constants.COLOR_BLANCO,
-    
+  buttonAbrir: {
+    position: 'absolute',
+    width:"100%",
+    height: 60,
+    backgroundColor: '#567',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1
+
+
   },
+  buttonCerrar: {
+    width: 60,
+    height: 60,
+    backgroundColor: '#567',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 100,
+    margin: 8,
+    right: 10,
+    top: 20,
+    position: 'absolute',
+    zIndex: 100,
+  },
+  styCerrado: {position: 'absolute', width: "100%", bottom: 150},
+  styAbierto: {position: 'absolute', width: "100%",height:"100%"},
+
 });
+
+export default App;

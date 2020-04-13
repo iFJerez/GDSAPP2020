@@ -16,6 +16,7 @@ import HomeCarouselComponents from '../components/home/HomeCarouselComponents'
 import ActionCreators from '../redux/actions';
 
 
+
 // Screen: Counter
 class Home extends React.Component {
 
@@ -41,13 +42,14 @@ const {} = this.props;
       
 
           <View style={styles.styDown}>
-
+       
                 <HomeTitulo />
+
                 <HomeCarouselComponents />
                 <CardIndicadores data={data} />
                 <SalaRanking />
-                <HomeCarousel />
-                <HomeCarousel />
+  
+                
          </View>
         </ScrollView>
      

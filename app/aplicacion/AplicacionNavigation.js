@@ -9,7 +9,7 @@ import * as colores from '../herramientas/Const'
 import HomeScreen from '../screens/HomeScreen'
 import SalasScreen from '../screens/SalasScreen'
 import UsuarioScreen from '../screens/UsuarioScreen'
-import Settingscreen from '../screens/Settingscreen'
+import TareasScreen from '../screens/TareasScreen'
 import SalaResumen from '../screens/SalasResumen'
 import PendienteEnvio from '../components/pendientesEnvio/PendienteEnvio'
 
@@ -77,7 +77,7 @@ class Home extends React.Component {
       {
         Home: HomeScreen,
         Salas: SalasStack,
-        Settings: Settingscreen,
+        Tareas: TareasScreen,
         Usuario: UsuarioScreen
       },
  
@@ -90,8 +90,8 @@ class Home extends React.Component {
             if (routeName === 'Home') {
               iconName = `home`;
               IconComponent = HomeIcon(this.props.counter);
-            } else if (routeName === 'Settings') {
-              iconName = `ios-square`;
+            } else if (routeName === 'Tareas') {
+              iconName = `bars`;
               IconComponent = SalasIcon(this.props.duo_new);
             } else if (routeName === 'Salas') {
               iconName = `shoppingcart`;

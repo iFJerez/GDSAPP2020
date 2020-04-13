@@ -33,7 +33,7 @@ export default class ListadoContraido extends Component {
       try {
         return(
         <Image
-        style={{width: '100%', height: 40, margin: 5, alignItems: "center"}}
+        style={{width: '100%', height: 30, margin: 5, alignItems: "center"}}
         source={{uri: data[cadena].uri}}
           
       />
@@ -94,6 +94,6 @@ const styles = StyleSheet.create({
   padding: 2 },
   st_indicadores: {flex: 1, flexDirection: 'row'},
   st_icono: {flex: 1, paddingHorizontal: 2,      alignItems: "center"},
-  st_sala: {flex: 5, flexDirection: 'row'},
+  st_sala: {flex: 4, flexDirection: 'row'},
   st_indicadores_valor: {flex: 1},
 });
