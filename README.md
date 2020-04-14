@@ -5,7 +5,7 @@
  GdsApp2020
 
 # Documentacion
-> la documentacion la comparten por correo. 
+> Documentacion Compartida por Correo. 
 
 
 
