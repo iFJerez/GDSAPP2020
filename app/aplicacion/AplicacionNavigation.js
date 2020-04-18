@@ -49,6 +49,40 @@ const SalasStack = createStackNavigator(
       headerBackTitle: ' ',
       headerTitleStyle: {
         fontWeight: 'bold',
+        fontSize: colores.SIZE_LETRA_XXXX_LARGE,
+        textAlign:"left", 
+        flex:1,
+      },
+    },
+  }
+);
+
+
+
+const HomeStack = createStackNavigator(
+  {
+    Home: {
+      screen: HomeScreen,
+      navigationOptions: () => ({
+        title: 'Home'
+      })
+    },
+  },
+  {
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: colores.COLOR_PRIMARIO_OSCURO,
+      },
+      headerTintColor: colores.COLOR_BLANCO,
+  
+      headerBackTitle: ' ',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+        fontSize: colores.SIZE_LETRA_XXXX_LARGE,
+        textAlign:"left", 
+        flex:1,
+        
       },
     },
   }
@@ -75,7 +109,7 @@ class Home extends React.Component {
     
     let TabNavigator =  createBottomTabNavigator(
       {
-        Home: HomeScreen,
+        Home: HomeStack,
         Salas: SalasStack,
         Tareas: TareasScreen,
         Usuario: UsuarioScreen

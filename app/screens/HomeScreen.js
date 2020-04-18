@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import { SafeAreaView, StyleSheet,View, StatusBar, ScrollView} from 'react-native';
+import { StyleSheet,View, StatusBar, ScrollView} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import LinearGradient from 'react-native-linear-gradient';
@@ -9,8 +9,7 @@ import CardIndicadores from '../components/home/CardIndicadores'
 import * as constants from '../herramientas/Const'
 
 import SalaRanking from '../components/home/SalasRanking'
-import HomeCarousel from '../components/home/HomeCarousel'
-import HomeTitulo from '../components/home/HomeTitulo'
+
 import HomeCarouselComponents from '../components/home/HomeCarouselComponents'
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
@@ -43,7 +42,7 @@ const {} = this.props;
 
           <View style={styles.styDown}>
        
-                <HomeTitulo />
+                
 
                 <HomeCarouselComponents />
                 <CardIndicadores data={data} />
@@ -67,7 +66,7 @@ const styles = StyleSheet.create({
 
   styTop: {flex: 1, marginTop:80,  marginLeft: 30, 
 },
-  styDown: {},
+  styDown: {flex: 1},
   styTarjeta: {
     position: 'absolute',
     top: 0,

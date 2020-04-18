@@ -1,5 +1,5 @@
 
-
+export const ICON_VERY_X_SMALL= 16
 export const ICON_VERY_SMALL= 20
 export const ICON_SMALL= 30
 export const ICON_MEDIUM= 40
@@ -27,6 +27,10 @@ export const COLOR_GRIS_C="#F7F9F9";
 export const COLOR_GRIS_D="#F4F6F7";
 export const COLOR_GRIS_E="#F0F3F4";
 export const COLOR_GRIS_F="#ECF0F1";
+export const COLOR_GRIS_G="#CFD2D3";
+export const COLOR_GRIS_H="#B1B4B5";
+export const COLOR_GRIS_I="#939697";
+export const COLOR_GRIS_J="#767878";
 
 
 

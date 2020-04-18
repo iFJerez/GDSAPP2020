@@ -32,9 +32,9 @@ class SalasListado extends React.Component {
 
  crearSala(item){
   return( 
-    <View style={styles.container}>
+    
           <Listado item={item}/>
-    </View>
+    
   )
 }
 
@@ -60,7 +60,7 @@ class SalasListado extends React.Component {
 const styles = StyleSheet.create({
   container: {
    flex:1,
-   backgroundColor: constants.COLOR_GRIS_E, 
+   backgroundColor: constants.COLOR_GRIS_D, 
 
 
 

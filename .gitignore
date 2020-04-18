@@ -1,11 +1,16 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+ios
+android
+/ios
+/android
+
+
 
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
-/ios
-/android
+
 
 
 # testing

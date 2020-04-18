@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, FlatList, Image, Text} from 'react-native';
+import { StyleSheet, View, FlatList, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import TouchIndicador from './TouchIndicador'
 import TextTypeC from '../../herramientas/textos/TextTypeC'
 import * as constants from '../../herramientas/Const'
 import data from '../../api/cadenas.json'
-import IconNueva from '../../herramientas/IconNueva'
+import { ScrollView } from 'react-native-gesture-handler';
 
 
 export default class ListadoContraido extends Component {
@@ -14,10 +14,12 @@ export default class ListadoContraido extends Component {
     try {
       return(
           <FlatList  
-          numColumns={4}
+          numColumns={100}
           key={1}
           data={item}
-          renderItem={({item}) => <TouchIndicador data={item} />}
+          renderItem={({item}) =>
+          
+          <TouchIndicador data={item} />}
           keyExtractor={(item, index) => '' + index}
   />   
       )
@@ -32,15 +34,60 @@ export default class ListadoContraido extends Component {
 
       try {
         return(
-        <Image
-        style={{width: '100%', height: 40, margin: 5, alignItems: "center"}}
-        source={{uri: data[cadena].uri}}
-          
-      />
+      <View style={styles.sty_image}>
+              <Image
+              style={styles.st_icono}
+              source={{uri: data[cadena].uri}}
+                
+            />
+      </View>
         )
       } catch (error) {
         return(
-          <Icon name={'store'} color={constants.COLOR_GRIS_F} size={40} style={styles.st_icono} />
+          <View style={styles.sty_image}>
+              <Icon name={'store'} color={constants.COLOR_GRIS_G} size={50} style={styles.st_icono} />
+          </View>
+        )
+        
+      }
+
+
+     }
+
+     cargaEstado(estado){
+
+
+
+      try {
+        if(estado=='nueva') {
+
+        return(
+      <View style={styles.linea_nueva}>
+                 
+      </View>
+        )
+        }
+        else if(estado=='objetada') {
+
+          return(
+            <View style={styles.linea_objetada}>
+                 
+            </View>
+          )
+          }
+          else {
+
+            return(
+              <View style={styles.linea_normal}>
+                 
+              </View>
+            )
+            }
+      } catch (error) {
+        return(
+          <View style={styles.linea_normal}>
+                 
+          </View>
         )
         
       }
@@ -56,18 +103,19 @@ export default class ListadoContraido extends Component {
     return (
       <View style={styles.container}>
           <View style={styles.st_arriba}>
-              <View style={styles.st_icono}>
+                   {this.cargaEstado(item.estado)}
                     {this.cargaImagen(cadena)}
-                    <IconNueva text={'nueva'}/>  
-              </View>  
-              <View style={styles.st_sala}>
-              
-                  <TextTypeC text={item.desc_sala} />
+                    <View style={styles.st_nombreSala}>
+                        <TextTypeC text={item.desc_sala} />
+                    </View>
+
+                    
                   
-              </View>
           </View>
           <View style={styles.st_abajo}>    
+          <ScrollView horizontal={true}>
               {this.crearIndicadores(item.indicadores)}
+           </ScrollView>
               
           </View>
        </View>
@@ -78,22 +126,33 @@ export default class ListadoContraido extends Component {
 
 const styles = StyleSheet.create({
   container: {
-   flex:1,
-   margin: 5,},
-  st_abajo: {flex: 1,
-     backgroundColor: constants.COLOR_GRIS_C, 
-     padding: 5,
-     borderBottomLeftRadius: 15,
-     borderBottomRightRadius: 15,
+    backgroundColor: constants.COLOR_BLANCO,
+},
+  st_abajo: {
+     padding: 2,
      alignItems: "center"
     },
   st_arriba: {flexDirection: 'row',
-   backgroundColor: constants.COLOR_BLANCO, 
-   borderTopEndRadius: 15,
-    borderTopStartRadius: 15,
-  padding: 2 },
-  st_indicadores: {flex: 1},
-  st_icono: {flex: 1, paddingHorizontal: 2,      alignItems: "center"},
-  st_sala: {flex: 5},
-  st_indicadores_valor: {flex: 1},
+   borderTopWidth: 1,
+   borderTopColor: constants.COLOR_GRIS_A, alignContent: 'center',
+   textAlignVertical: "center",
+   textAlign: "center", },
+   st_nombreSala: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+   alignItems: 'center',
+   textAlignVertical: "center",
+   textAlign: "center", 
+   paddingLeft: 20,
+   
+   width: '100%',
+  padding: 5 },
+  st_icono: {width: '100%', height: '100%', resizeMode: 'center', alignItems: "center"},
+  sty_image: {width: 50, height: 50},
+
+
+  linea_nueva: {backgroundColor: constants.COLOR_PRIMARIO_CLARO, padding: 3, marginRight: 10},
+  linea_normal: {backgroundColor: constants.COLOR_GRIS, padding: 3,marginRight: 10},
+  linea_objetada: {backgroundColor: constants.COLOR_SECUNDARIO_CLARO, padding: 3, marginRight: 10},
+
 });
