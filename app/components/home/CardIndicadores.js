@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, Text, FlatList} from 'react-native';
+import { StyleSheet, View, ScrollView, FlatList} from 'react-native';
 import * as constants from '../../herramientas/Const'
 import Indicadores from './Indicadores'
 import {funMessage} from '../../herramientas/Mensaje'
@@ -57,8 +57,9 @@ crearIndicadores(item){
     return (
       <View style={styles.container}>
            <View style={styles.card}>
+           <ScrollView horizontal={true}>
                  {this.funIndicadores()}
-     
+          </ScrollView>
           </View>
      
       </View>
@@ -69,7 +70,7 @@ crearIndicadores(item){
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    
     padding: 10,
   },
   card: {

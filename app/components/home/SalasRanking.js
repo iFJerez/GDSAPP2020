@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import { FlatList, StyleSheet, View, Text } from 'react-native';
+import { FlatList, StyleSheet, View, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Listado from './SalaRankingListado'
@@ -31,7 +31,10 @@ class SalasListado extends React.Component {
 
     return (
       <View style={styles.container}>
-        <View style={styles.card}>            
+        <View style={styles.card}>   
+
+            <ScrollView horizontal={true} style={{ backgroundColor: '#567'}}>
+                
         <FlatList  
             numColumns={1}
             key={1}
@@ -39,6 +42,9 @@ class SalasListado extends React.Component {
             renderItem={({item}) => this.crearSala(item)}
             keyExtractor={(item, index) => '' + index}
          /> 
+
+
+          </ScrollView>  
     </View>
  </View>
     );

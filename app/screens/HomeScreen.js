@@ -45,8 +45,12 @@ const {} = this.props;
                 
 
                 <HomeCarouselComponents />
-                <CardIndicadores data={data} />
-                <SalaRanking />
+
+                
+                  <CardIndicadores data={data} />
+                    <SalaRanking />
+                
+               
   
                 
          </View>
