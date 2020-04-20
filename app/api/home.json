@@ -30,19 +30,29 @@
             "numero": 35,
             "estado": 0,
             "indicadores": [
-              {"indicador": "osa", "valor": "85", "diferencia": "20" }
+              {"indicador": "osa", "valor": "85", "diferencia": "-35" }
             ]
         },
         {
           "id_sala": 3,
-          "cadena": "jumbo",
+          "cadena": "sisa",
           "desc_sala": "Otro Jumbo",
           "numero": 35,
           "estado": 0,
           "indicadores": [
             {"indicador": "osa", "valor": "89", "diferencia": "-20" }
           ]
-      }
+      },
+      {
+        "id_sala": 3,
+        "cadena": "jumbo",
+        "desc_sala": "Otro Jumbo",
+        "numero": 35,
+        "estado": 0,
+        "indicadores": [
+          {"indicador": "osa", "valor": "89", "diferencia": "35" }
+        ]
+    }
 
 
        ]

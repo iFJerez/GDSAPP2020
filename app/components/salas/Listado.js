@@ -151,8 +151,8 @@ const styles = StyleSheet.create({
   sty_image: {width: 50, height: 50},
 
 
-  linea_nueva: {backgroundColor: constants.COLOR_PRIMARIO_CLARO, padding: 3, marginRight: 10},
-  linea_normal: {backgroundColor: constants.COLOR_GRIS, padding: 3,marginRight: 10},
-  linea_objetada: {backgroundColor: constants.COLOR_SECUNDARIO_CLARO, padding: 3, marginRight: 10},
+  linea_nueva: {backgroundColor: constants.COLOR_PRIMARIO, padding: 3, marginHorizontal: 10},
+  linea_normal: {backgroundColor: constants.COLOR_GRIS, padding: 3, marginHorizontal: 10},
+  linea_objetada: {backgroundColor: constants.COLOR_SECUNDARIO, padding: 3, marginHorizontal: 10},
 
 });

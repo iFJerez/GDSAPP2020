@@ -30,11 +30,7 @@ const {} = this.props;
       <View style={styles.container}>   
          <StatusBar barStyle="light-content" />
  
-       <View style={styles.styTarjeta}>
-      <LinearGradient colors={['#3F93A4', '#016a7c']} style={{flex: 1, width: '100%'}}>
-    
-      </LinearGradient>
-      </View>
+
   
        
       <ScrollView style={{backgroundColor: 'transparent'}}>

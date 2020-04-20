@@ -1,51 +1,66 @@
-import React from 'react';
-import { Text, View } from 'react-native';
-
-import * as colores from '../../herramientas/Const'
-
-
-const color_primario = colores.COLOR_PRIMARIO_CLARO
-const color_secundario = colores.COLOR_SECUNDARIO_CLARO
-const tamaño_letra = colores.SIZE_LETRA_LARGE
-
-export default class IconApp extends React.Component {
+import React, {Component} from 'react';
+import { StyleSheet, View, Text} from 'react-native';
+import * as constants from '../../herramientas/Const'
+import Icon from '../../herramientas/IconAntDesign'
 
 
-  
-
-  diferencia(numero){
-
-    if(numero>0){
-      return (
-        <Text style={{ color: color_primario, fontSize: tamaño_letra, fontWeight: 'bold' }}>
-          {numero}
-        </Text>
-      
-      )
-    }
-    else if (numero<0){
-      return (
-        <Text style={{ color: color_secundario, fontSize: tamaño_letra, fontWeight: 'bold' }}>
-          {numero}
-        </Text>
-      )
-    }
-
-  }
-
-
+export default class SalasListadoInCo extends Component {
   render() {
-    const {numero} = this.props;
-    return (
-      <>
-      {this.diferencia(numero)}
-      </>
-      
-    );
+    const {numero} = this.props
+
+    if (numero>0) {
+      return (
+        <View style={styles.container}>
+        <View style={styles.sty_view_positivo}>
+        <Icon name="up" size={constants.ICON_VERY_X_SMALL} color={constants.COLOR_PRIMARIO} /> 
+        <Text style={styles.sty_positivo}> {numero}</Text>    
+        </View>
+        </View>
+      );
+    }
+    else {
+      return(
+        <View style={styles.container}>
+        <View style={styles.sty_view_positivo}>
+        <Icon name="down" size={constants.ICON_VERY_X_SMALL} color={constants.COLOR_SECUNDARIO} /> 
+        <Text style={styles.sty_negativo}> {numero}</Text>
+        </View>
+    </View>
+      )
+    }
+
   }
+
 }
 
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    
+  },
+  sty_view_positivo: {
+      fontSize: constants.SIZE_LETRA_MEDIUM,
+      color: constants.COLOR_PRIMARIO,
+      alignItems: 'center',
+      flexDirection: 'row'
+      
+    },
+    sty_positivo: {
 
+      fontSize: constants.SIZE_LETRA_MEDIUM,
+      color: constants.COLOR_PRIMARIO,
+      padding: 2,
+      textAlign: "center",
+      flexDirection: 'row',
+      alignItems: 'center'
+    },
+    sty_negativo: {
 
-
-
+      fontSize: constants.SIZE_LETRA_MEDIUM,
+      color: constants.COLOR_SECUNDARIO_CLARO,
+      padding: 2,
+      textAlign: "center",
+      
+    },
+  
+});

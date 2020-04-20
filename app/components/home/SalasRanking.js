@@ -1,11 +1,14 @@
 // Imports: Dependencies
 import React from 'react';
-import { FlatList, StyleSheet, View, ScrollView } from 'react-native';
+import { StyleSheet, View, Image, Text } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Listado from './SalaRankingListado'
 import * as constants from '../../herramientas/Const'
 import data from '../../api/home.json'
+import  RankingCard from './RankingCard'
+import TextHomeSubTitulos from '../../herramientas/textos/TextHomeSubTitulos'
+
+
 
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
@@ -19,32 +22,40 @@ class SalasListado extends React.Component {
     }
   }
 
- crearSala(item){
-  return( 
-    <View style={styles.container}>
-          <Listado item={item}/>
-    </View>
-  )
+  crearItem(){
+
+
+
+  
+
+    return  this.state.dataSala.map((item, i) => {
+      return (
+      <View style={styles.container}>
+        <View style={styles.container}>
+      
+      <RankingCard data={item}/>
+        </View>
+ 
+
+        
+      </View>
+      )
+
+    })
+
+  
 }
+
+
 
   render() {
 
     return (
       <View style={styles.container}>
+       
         <View style={styles.card}>   
-
-            <ScrollView horizontal={true} style={{ backgroundColor: '#567'}}>
-                
-        <FlatList  
-            numColumns={1}
-            key={1}
-            data={this.state.dataSala}
-            renderItem={({item}) => this.crearSala(item)}
-            keyExtractor={(item, index) => '' + index}
-         /> 
-
-
-          </ScrollView>  
+        <TextHomeSubTitulos text={'Ranking'} />
+       {this.crearItem()} 
     </View>
  </View>
     );
@@ -55,11 +66,10 @@ class SalasListado extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 10,
+    padding: 2,
   },
   card: {
     flex: 1,
-    borderRadius: 5,
     padding: 2,
     backgroundColor: constants.COLOR_BLANCO
 
@@ -76,7 +86,8 @@ const styles = StyleSheet.create({
     flex: 1,
     
 
-  }
+  },
+  styCrearItem: {flexDirection: 'row', flex: 1},
 
 
 });

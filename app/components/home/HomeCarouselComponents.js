@@ -57,8 +57,8 @@ get pagination () {
         activeDotIndex={activeIndex}
         containerStyle={{ }}
         dotStyle={{
-            width: 8,
-            height: 8,
+            width: 5,
+            height: 5,
             borderRadius: 10,
             marginHorizontal: 2,
             backgroundColor: constants.COLOR_PRIMARIO
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
 },
   
   carouselContainer: {
-    marginTop: 50
+    marginTop: 10
   },
   itemContainer: {
     width: ITEM_WIDTH,
@@ -141,12 +141,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 24
   },
-  counter: {
-    marginTop: 25,
-    fontSize: 30,
-    fontWeight: 'bold',
-    textAlign: 'center'
-  }
+
   
 });
 

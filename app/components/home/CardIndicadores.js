@@ -35,7 +35,7 @@ crearIndicadores(item){
   try {
     return(
         <FlatList  
-        numColumns={3}
+        horizontal={true}
         key={1}
         data={item}
         renderItem={({item}) => <Indicadores data={item} />}
