@@ -96,6 +96,7 @@ export default class ListadoContraido extends Component {
      }
 
 
+
   render() {
     const {item} = this.props
     const cadena = item.cadena

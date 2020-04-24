@@ -27,7 +27,7 @@ const {text} = this.props;
       adjustsFontSizeToFit
       numberOfLines={1}
       style={{
-        fontSize: constants.SIZE_LETRA_XXXX_LARGE,
+        fontSize: constants.SIZE_LETRA_XXX_LARGE,
         textAlignVertical: "center",
         textAlign: "center",
         color: constants.COLOR_BLANCO,

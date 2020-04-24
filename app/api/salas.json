@@ -31,7 +31,7 @@
           {"agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "promocion": "A3", "exhibicion": "caja", "porcentaje": "80%"},
           {"agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
           
-        ] },
+        ]},
         {"indicador": "precios", "valor": "86", "diferencia": "-15", 
           "detalles": [
             {"agrupador": "agrupador", "titulo": "Producto 1", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},

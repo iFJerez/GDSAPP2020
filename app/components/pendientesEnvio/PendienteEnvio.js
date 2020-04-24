@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import {
   StyleSheet,
-  Text,
   View,
   TouchableOpacity,
   LayoutAnimation,
@@ -10,6 +9,8 @@ import LinearGradient from 'react-native-linear-gradient';
 import PendienteEnvioBody from './PendienteEnvioBody'
 import Texto from '../../herramientas/textos/TextTypePendiente'
 import Enviar from './Enviar'
+import * as constants  from '../../herramientas/Const'
+import Icon from '../../herramientas/IconAntDesign'
 
 class App extends Component {
 
@@ -25,7 +26,7 @@ class App extends Component {
     return(
 
       <TouchableOpacity   style={{flex: 0.2}} onPress={() => this.onPresscheck()}>
-         <LinearGradient colors={['#3F93A4', '#016a7c']} style={styles.buttonCerrar}>
+         <LinearGradient colors={[constants.COLOR_SECUNDARIO, constants.COLOR_SECUNDARIO_CLARO]} style={styles.buttonCerrar}>
          <Texto text={'X'}></Texto>
          </LinearGradient>
                  
@@ -40,8 +41,22 @@ class App extends Component {
 
 
     <TouchableOpacity  style={styles.buttonAbrir} onPress={() => this.onPresscheck()}>
-         <LinearGradient colors={['#3F93A4', '#016a7c']} style={styles.buttonAbrir}>
-         <Texto text={'Pendiente Envio'}></Texto>
+         <LinearGradient colors={[constants.COLOR_SECUNDARIO, constants.COLOR_SECUNDARIO_CLARO]} style={styles.buttonAbrir}>
+           <View style={{flexDirection: 'row', alignItems: 'center'}}>
+
+           <View style={{paddingRight: 20}}>
+          <Icon name='rocket1' size={constants.ICON_SMALL} color={constants.COLOR_BLANCO}/>
+          </View>
+
+
+           <View style={{paddingRight: 10}}>
+          <Texto text={'Tienes 4 pendientes de envio'}></Texto>
+          </View>
+
+  
+         
+         
+         </View>
          </LinearGradient>
                  
         </TouchableOpacity>
@@ -117,12 +132,13 @@ const styles = StyleSheet.create({
   },
   buttonAbrir: {
     position: 'absolute',
-    width:"100%",
+    width:"97%",
     height: 60,
-    backgroundColor: '#567',
     alignItems: 'center',
     justifyContent: 'center',
-    flex: 1
+    flex: 1,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
 
 
   },
@@ -139,7 +155,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     zIndex: 100,
   },
-  styCerrado: {position: 'absolute', width: "100%", bottom: 150},
+  styCerrado: {position: 'absolute', width: "100%", bottom: 154, alignItems: 'center'},
   styAbierto: {position: 'absolute', width: "100%",height:"100%"},
 
 });

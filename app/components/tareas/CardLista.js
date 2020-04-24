@@ -11,14 +11,14 @@ export default class CardUsuario extends Component {
     return (
       <View style={styles.container}>
            <View style={styles.sty_texto}>
-               <View style={styles.st_indicadores_valor}>   
+                   <View style={styles.st_indicadores_valor}>   
                       <IconAntDesign name={'setting'} size={constants.ICON_MEDIUM} color={constants.COLOR_PRIMARIO}/>
                     </View>  
                     <View style={styles.st_indicadores_valor}>   
                         <TextType1  text={"Inteligentes"}/>
                     </View>  
                     <View style={styles.st_indicadores_texto}>
-                        <TextType2  text={"2 / 7"}/>
+                        <TextType2  text={"2 / 8"}/>
                     </View>
           
             </View>
@@ -41,9 +41,9 @@ const styles = StyleSheet.create({
     padding: 5,
     flexDirection: 'row'
   },
-  sty_texto: {flex: 3, alignItems: 'center', paddingHorizontal: 10},
+  sty_texto: {flex: 1, alignItems: 'center', paddingHorizontal: 10,    flexDirection: 'row'},
   sty_icon: {flex: 1,paddingVertical: 15, alignItems: 'center', alignContent: 'center'},
   st_indicadores_progres: { marginHorizontal: 10},
   st_indicadores_texto: {},
-  st_indicadores_valor: {},
+  st_indicadores_valor: {flex: 1},
 });

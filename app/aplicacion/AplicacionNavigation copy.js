@@ -89,35 +89,6 @@ const HomeStack = createStackNavigator(
   }
 );
 
-const TareasStack = createStackNavigator(
-  {
-    Tareas: {
-      screen: TareasScreen,
-      navigationOptions: () => ({
-        title: 'Tareas'
-      })
-    },
-  },
-  {
-    initialRouteName: 'Tareas',
-    defaultNavigationOptions: {
-      headerStyle: {
-        backgroundColor: colores.COLOR_PRIMARIO_OSCURO,
-      },
-      headerTintColor: colores.COLOR_BLANCO,
-  
-      headerBackTitle: ' ',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-        fontSize: colores.SIZE_LETRA_X_LARGE,
-        textAlign:"left", 
-        flex:1,
-        
-      },
-    },
-  }
-);
-
 
 
 const HomeIcon = (valor) => props => {
@@ -141,7 +112,7 @@ class Home extends React.Component {
       {
         Home: HomeStack,
         Salas: SalasStack,
-        Tareas: TareasStack,
+        Tareas: TareasScreen,
         Usuario: UsuarioScreen,
          
       },
@@ -179,14 +150,7 @@ class Home extends React.Component {
           activeTintColor: colores.COLOR_PRIMARIO,
           inactiveTintColor: colores.COLOR_GRIS,
           
-          style: {
-            height: 60,
-            
-            
-  
         },
-        },
-
       }
     )
 
