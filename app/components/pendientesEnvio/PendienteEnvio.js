@@ -44,7 +44,7 @@ class App extends Component {
          <LinearGradient colors={[constants.COLOR_SECUNDARIO, constants.COLOR_SECUNDARIO_CLARO]} style={styles.buttonAbrir}>
            <View style={{flexDirection: 'row', alignItems: 'center'}}>
 
-           <View style={{paddingRight: 20}}>
+                     <View style={{paddingRight: 20}}>
           <Icon name='rocket1' size={constants.ICON_SMALL} color={constants.COLOR_BLANCO}/>
           </View>
 
@@ -139,8 +139,6 @@ const styles = StyleSheet.create({
     flex: 1,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
-
-
   },
   buttonCerrar: {
     width: 60,

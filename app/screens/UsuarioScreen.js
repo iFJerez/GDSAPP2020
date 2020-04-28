@@ -4,6 +4,7 @@ import {StyleSheet, Text, View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import CardUsuario from '../components/usuario/CardUsuario'
+import CerrarSession from '../components/usuario/CerrarSession'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
@@ -21,6 +22,7 @@ class UsuarioScreen extends React.Component {
 
         
         <CardUsuario />
+        <CerrarSession />
 
       </View>
     )
