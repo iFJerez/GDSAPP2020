@@ -1,9 +1,9 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 ios
 android
 /ios
 /android
-
+/node_modules
+/ios/build
 
 
 # dependencies
