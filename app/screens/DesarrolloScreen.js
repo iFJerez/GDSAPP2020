@@ -8,6 +8,7 @@ import ActionCreators from '../redux/actions';
 //Ciomponents
 import PrimerComponets from '../components/desarrollo/PrimerComponents'
 import SegundoComponents from '../components/desarrollo/SegundoComponents'
+import CardPrincipal from '../components/desarrollo/CardPrincipal'
 
 
 // Screen: Counter 14932
@@ -23,6 +24,7 @@ class DesarrolloScreen extends React.Component {
         <Text>Hola Desarrollo</Text>
         <PrimerComponets numero={numero} funIncrementar={funIncrementar} funDecrementar={funDecrementar}/>
         <SegundoComponents />
+        <CardPrincipal />
         
         
     </View>

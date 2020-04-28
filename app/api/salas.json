@@ -68,7 +68,7 @@
      ]
  },
  {
-  "id_sala": 2,
+  "id_sala": 3,
   "cadena": "jumbo",
   "desc_sala": "Jumbo Bajo del Puente sin Filtros...",
   "numero": 99,
@@ -109,7 +109,7 @@
   ]
 },
 {
-  "id_sala": 2,
+  "id_sala": 4,
   "cadena": "lider",
   "desc_sala": "Lider Bajo del Puente sin Filtros...",
   "numero": 99,

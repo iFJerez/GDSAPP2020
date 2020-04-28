@@ -24,16 +24,21 @@ export default class PrimerComponents extends Component {
       <View style={styles.container}>
             <Text> Numero es: {numero} </Text>
 
+            <View style={styles.contBotones}>
+              
 
-        <TouchableOpacity style={styles.styleBoton} onPress={()=>funIncrementar(2)}>
-            <Text style={styles.styleText}> Incrementar </Text>
-        </TouchableOpacity>
 
-        <TouchableOpacity style={styles.styleBoton} onPress={()=>funDecrementar(2)}>
-            <Text style={styles.styleText}> Decrementar </Text>
-        </TouchableOpacity>
+                <TouchableOpacity style={styles.styleBoton} onPress={()=>funIncrementar(2)}>
+                    <Text style={styles.styleText}> Incrementar </Text>
+                </TouchableOpacity>
 
-            {this.funIndicadores()}
+                <TouchableOpacity style={styles.styleBoton} onPress={()=>funDecrementar(2)}>
+                    <Text style={styles.styleText}> Decrementar </Text>
+                </TouchableOpacity>
+
+                    {this.funIndicadores()}
+
+            </View>
 
      </View>
     );
@@ -43,17 +48,20 @@ export default class PrimerComponents extends Component {
 
 const styles = StyleSheet.create({
   container: {
-  flex: 1,
-  backgroundColor: '#098'
+    backgroundColor: '#098',
   
+    },
+  contBotones: {
+  backgroundColor: '#098',
+  flexDirection: 'row'
 
   },
   styleBoton: {
     backgroundColor: '#056',
     borderRadius: 50,
-    margin: 50,
-    padding: 20,
-    alignItems: 'center'
+    margin: 5,
+    padding: 10,
+    alignItems: 'center',
   },
 
   styleText: {

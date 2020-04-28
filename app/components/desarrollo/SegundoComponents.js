@@ -29,7 +29,7 @@ export default class PrimerComponents extends Component {
 
 const styles = StyleSheet.create({
   container: {
-  flex: 0.5,
+  flex: 0.1,
   backgroundColor: '#567',
   flexDirection: 'row'
   },
