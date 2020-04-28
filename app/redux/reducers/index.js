@@ -7,6 +7,7 @@ import counterReducer from './counterReducer'
 import userReducer from  './userReducer'
 import detalleReducer from './detalleReducer'
 import flashReducer from './flashReducer'
+import desarrolloReducer from './desarrolloReducer'
 
 // Redux: Root Reducer
 const rootReducer = combineReducers({
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
   userReducer: userReducer,
   detalleReducer: detalleReducer,
   flashReducer: flashReducer,
+  desarrolloReducer: desarrolloReducer,
 });
 
 // Exports

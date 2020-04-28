@@ -4,6 +4,8 @@ android
 /android
 /node_modules
 /ios/build
+ios/build
+
 
 
 # dependencies

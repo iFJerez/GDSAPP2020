@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import Ionicons from 'react-native-vector-icons/AntDesign';
+import Icon from 'react-native-vector-icons/AntDesign';
 import * as colores from '../herramientas/Const'
 
 
@@ -9,7 +9,7 @@ export default class IconApp extends React.Component {
     const { name, numero, color, size } = this.props;
     return (
       <View style={{ width: 24, height: 24, margin: 5 }}>
-        <Ionicons name={name} size={size} color={color} />
+        <Icon name={name} size={size} color={color} />
         {numero > 0 && (
           <View
             style={{

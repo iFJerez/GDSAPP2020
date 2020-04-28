@@ -19,7 +19,7 @@ export default class Accordian extends Component{
     return (
        <View style={styles.container}>
             <TouchableOpacity onPress={()=>this.toggleExpand()}>
-                <DetalleIndicadoresFila data={this.props.data} i={this.props.i} />
+                <DetalleIndicadoresFila toggleExpand={this.toggleExpand()} data={this.props.data} i={this.props.i} />
             </TouchableOpacity>
             <View style={styles.parentHr}/>
             {
