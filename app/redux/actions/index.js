@@ -7,14 +7,12 @@ import * as desarrolloActions from './desarrolloActions'
 
 
 const ActionCreators = Object.assign({},
-    authActions,
+   authActions,
    counterActions,
    userActions, 
    detalleActions,
    flashActions,
    desarrolloActions,
-
-
 );
 
 export default ActionCreators;

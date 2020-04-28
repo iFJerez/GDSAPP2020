@@ -18,6 +18,15 @@ const desarrolloReducer = (state = initialState, action) => {
         numero: state.numero + action.numero,
       }
     }
+    case types.DESARROLLO_DECREMENT: {
+      console.log('DESARROLLO_DECREMENT')
+      return {
+        // State
+        ...state,
+        // Redux Store
+        numero: state.numero - action.numero,
+      }
+    }
 
     // Default
     default: {

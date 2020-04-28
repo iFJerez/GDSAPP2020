@@ -17,11 +17,11 @@ class DesarrolloScreen extends React.Component {
   
   render() {
 
-    const {numero, funDesIncrementar } = this.props;
+    const {numero, funIncrementar, funDecrementar } = this.props;
     return (
       <View style={styles.container}>
         <Text>Hola Desarrollo</Text>
-        <PrimerComponets numero={numero} funDesIncrementar={funDesIncrementar}/>
+        <PrimerComponets numero={numero} funIncrementar={funIncrementar} funDecrementar={funDecrementar}/>
         <SegundoComponents />
         
         

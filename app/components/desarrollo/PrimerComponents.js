@@ -17,7 +17,7 @@ export default class PrimerComponents extends Component {
 
   render() {
 
-const {numero, funDesIncrementar } = this.props;
+    const {numero, funIncrementar, funDecrementar } = this.props;
 
 
     return (
@@ -25,10 +25,13 @@ const {numero, funDesIncrementar } = this.props;
             <Text> Numero es: {numero} </Text>
 
 
-        <TouchableOpacity style={styles.styleBoton} onPress={()=>funDesIncrementar(2)}>
-            <Text style={styles.styleText}> boton Cambiar </Text>
+        <TouchableOpacity style={styles.styleBoton} onPress={()=>funIncrementar(2)}>
+            <Text style={styles.styleText}> Incrementar </Text>
         </TouchableOpacity>
 
+        <TouchableOpacity style={styles.styleBoton} onPress={()=>funDecrementar(2)}>
+            <Text style={styles.styleText}> Decrementar </Text>
+        </TouchableOpacity>
 
             {this.funIndicadores()}
 
