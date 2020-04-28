@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {Text, View} from 'react-native';
-import * as constants from '../../herramientas/Const'
+import * as constants from '../Const'
 
 
 
@@ -19,13 +19,13 @@ const {text} = this.props;
       adjustsFontSizeToFit
       numberOfLines={1}
       style={{
-        fontSize: constants.SIZE_LETRA_LARGE,
+        fontSize: constants.SIZE_LETRA_X_LARGE,
         textAlignVertical: "center",
         textAlign: "center",
         fontWeight: 'bold',
-        color: constants.COLOR_GRIS_I,
+        color: constants.COLOR_PRIMARIO_CLARO,
       }}>{text}</Text>
-    
+
     )
   }
 }

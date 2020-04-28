@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-import { StyleSheet, View} from 'react-native';
+import { StyleSheet, View, Text} from 'react-native';
 
 import IPresencia from './IPresencia'
 import IPrecio from './IPrecio'
 import IPorcentaje from './IPorcentaje'
 import IPromocion from './IPromocion'
+import IMore from './IMore'
 
 import Titulo from './Titulo'
 import Subtitulo from './Subtitulo'
@@ -27,7 +28,7 @@ try {
         <View style={styles.view_fila} key={i} >
 
                  <View style={styles.view_indicadores}>
-                    <IPromocion valor={data.promocion} />
+                      <IPromocion valor={data.promocion} />
                       <IPresencia valor={data.presencia}/>
                       <IPrecio valor={data.precio}/>
                       <IPorcentaje valor={data.porcentaje} />
@@ -37,6 +38,9 @@ try {
                 <View style={styles.view_textos}>
                       <Titulo text={data.titulo}></Titulo>
                       <Subtitulo text={data.subtitulo}></Subtitulo>
+                  </View>
+                  <View style={styles.view_points}>
+                     <IMore />
                   </View>
                   
 
@@ -73,19 +77,20 @@ const styles = StyleSheet.create({
   flex: 1,
   backgroundColor: constants.COLOR_GRIS_A,
   marginBottom: 1,
-  padding: 5
+  padding: 5,
+  margin: 2,
   },
   view_fila: {
     flex: 1,
     flexDirection: 'row',
   },
   view_textos: {
-    flex: 1,
+
     flexDirection: 'column',
     alignItems: 'flex-start'
   },
   view_indicadores: {
-    width: 'auto',
+    paddingHorizontal: 20,
     flexDirection: 'row',
     alignItems: 'center',
   },
@@ -94,6 +99,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30
     
 
+  },
+
+  view_points: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+    alignContent: 'flex-end',
+    alignSelf: 'flex-end',
+    padding: 5,
   },
   
 });

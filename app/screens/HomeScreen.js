@@ -7,6 +7,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import data from '../api/home.json'
 import CardIndicadores from '../components/home/CardIndicadores'
 import * as constants from '../herramientas/Const'
+import TareaHome from '../components/tareas/TareaHome'
 
 import SalaRanking from '../components/home/SalasRanking'
 
@@ -41,10 +42,10 @@ const {} = this.props;
                 
 
                 <HomeCarouselComponents />
-
-                
+                <TareaHome />
                   <CardIndicadores data={data} />
                     <SalaRanking />
+               
                 
                
   

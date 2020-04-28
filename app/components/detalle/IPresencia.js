@@ -11,8 +11,8 @@ funLlenar(){
   const {valor} = this.props
   if(valor != null) {
     return(
-          <View style={styles.container}>
-              <Text>{valor?<Icon name={'ios-arrow-dropup-circle'} size={constants.ICON_SMALL} color={constants.COLOR_PRIMARIO}/>:<Icon name={'ios-arrow-dropdown-circle'} size={constants.ICON_SMALL} color={constants.COLOR_SECUNDARIO}/>}</Text>  
+          <View>
+              {valor?<Icon name={'ios-checkmark'} size={constants.ICON_SMALL} color={constants.COLOR_PRIMARIO}/>:<Icon name={'ios-close'} size={constants.ICON_SMALL} color={constants.COLOR_SECUNDARIO}/>  }
           </View>
         )
   }
@@ -20,10 +20,9 @@ funLlenar(){
 }
 
   render() {
-    
     return  (
       <View>
-          {this.funLlenar()}
+        {this.funLlenar()}
       </View>
    )
     
@@ -34,14 +33,6 @@ funLlenar(){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: constants.COLOR_BLANCO,
-    
-    marginHorizontal: 8,
-    marginVertical: 3,
-    borderRadius: 20
   },
-  
-  st_indicadores_progres: {flex: 1, marginHorizontal: 10},
-  st_indicadores_texto: {flex: 1},
-  st_indicadores_valor: {flex: 1},
+
 });

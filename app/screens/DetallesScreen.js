@@ -34,12 +34,6 @@ class ModalScreen extends React.Component {
   };
 
 
-funPress(){
-  const {funDataAPISalas} = this.props;
-  funDataAPISalas()
-  console.log('funPress Help')
-}
-
 
 funRecorrer(data){
 
@@ -86,7 +80,6 @@ funMostrarDastos(){
       swipeDirection={['down']}
       scrollTo={this.handleScrollTo}
       scrollOffset={this.state.scrollOffset}
-     // scrollOffsetMax={300000} // content height - ScrollView height
       onSwipeComplete={()=>funVerDetalle(!ver_detalle)}
       onBackdropPress={()=>funVerDetalle(!ver_detalle)}
       style={styles.modal}>
@@ -104,7 +97,6 @@ funMostrarDastos(){
           onScroll={this.handleOnScroll}
           scrollEventThrottle={10}>
           <View style={styles.scrollableModalContent1}>
-         
             {this.funMostrarDastos()}
           </View>
         </ScrollView>
