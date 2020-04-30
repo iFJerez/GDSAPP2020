@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, View} from 'react-native';
 import * as constants from '../../herramientas/Const'
-import CardItem from './CardItem'
+import EnvioDetalleCard from './EnvioDetalleCard'
 
 export default class PendienteEnvioBody extends Component {
   render() {
@@ -12,10 +12,10 @@ export default class PendienteEnvioBody extends Component {
      "subItem": "987654321"}
     return (
       <View style={styles.container}>
-            <CardItem data={data} />
-            <CardItem data={data} />
-            <CardItem data={data} />
-            <CardItem data={data} />
+            <EnvioDetalleCard data={data} />
+            <EnvioDetalleCard data={data} />
+            <EnvioDetalleCard data={data} />
+            <EnvioDetalleCard data={data} />
       
       </View>
     );

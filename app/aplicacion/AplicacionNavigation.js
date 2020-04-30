@@ -14,7 +14,7 @@ import TareasScreen from '../screens/TareasScreen'
 import SalaResumen from '../screens/SalasResumen'
 import DesarrolloScreen from '../screens/DesarrolloScreen'
 
-import PendienteEnvio from '../components/pendientesEnvio/PendienteEnvio'
+import Envio from '../components/pendientesEnvio/Envio'
 import {funFecha} from '../herramientas/Fechas'
 import {View} from 'react-native'
 import React from 'react';
@@ -236,8 +236,9 @@ class Home extends React.Component {
 
     return (
   <View style={{flex: 1}}>
+      
       <Navigation />
-      <PendienteEnvio />
+      <Envio />
    </View>
     )
   }

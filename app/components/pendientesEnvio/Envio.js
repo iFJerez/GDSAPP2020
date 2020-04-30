@@ -4,11 +4,12 @@ import {
   View,
   TouchableOpacity,
   LayoutAnimation,
+
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import PendienteEnvioBody from './PendienteEnvioBody'
+import EnvioDetalle from './EnvioDetalle'
 import Texto from '../../herramientas/textos/TextTypePendiente'
-import Enviar from './Enviar'
+import EnvioBotonEnviar from './EnvioBotonEnviar'
 import * as constants  from '../../herramientas/Const'
 import Icon from '../../herramientas/IconAntDesign'
 
@@ -109,8 +110,8 @@ class App extends Component {
 
          {this.state.check && (
             <View style={styles.container} >
-              <PendienteEnvioBody />
-              <Enviar />
+              <EnvioDetalle />
+              <EnvioBotonEnviar />
             </View>
         )}
     
