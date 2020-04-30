@@ -9,7 +9,7 @@ export default class PendienteEnvioBody extends Component {
     "descSala": "Jumbo el Llano",
      "indicador": "Promocion",
      "item": "Producto 1000cc",
-     "subItem": "987654321"}
+     "accion": "Quiebre"}
     return (
       <View style={styles.container}>
             <EnvioDetalleCard data={data} />
