@@ -1,20 +1,12 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, Text} from 'react-native';
-import * as constants from '../../herramientas/Const'
-import IconAntDesign from '../../herramientas/IconAntDesign'
+import * as constants from '../../herramientas/Const';
+import IconAntDesign from '../../herramientas/IconAntDesign';
+import TextoBase from './EnvioTextBase';
 
 export default class CardItems extends Component {
 
   render() {
-    // Esta funcion la puse aca para no tocar el resto del codigo pero habria que ponerla en algun lugar general
-    const TextoBase = (props) => (
-    <Text
-      adjustsFontSizeToFit
-      numberOfLines={ props.numberOfLines || 1 }
-      style={props.style}>
-        {props.children}
-    </Text>)
-
     const {data} = this.props
     return (
       <View style={styles.container}>  
