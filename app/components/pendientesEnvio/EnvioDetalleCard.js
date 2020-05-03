@@ -1,50 +1,32 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, Text} from 'react-native';
+import { StyleSheet, View} from 'react-native';
+import TextType1 from '../../herramientas/textos/TextType1'
+import TextType2 from '../../herramientas/textos/TextType2'
 import * as constants from '../../herramientas/Const'
 import IconAntDesign from '../../herramientas/IconAntDesign'
 
 export default class CardItems extends Component {
-
   render() {
-    // Esta funcion la puse aca para no tocar el resto del codigo pero habria que ponerla en algun lugar general
-    const TextoBase = (props) => (
-    <Text
-      adjustsFontSizeToFit
-      numberOfLines={ props.numberOfLines || 1 }
-      style={props.style}>
-        {props.children}
-    </Text>)
-
     const {data} = this.props
     return (
       <View style={styles.container}>  
-        <View style={styles.variable}>
-          <TextoBase style={styles.sty_text_ordinal}>{`${data.numero}. `}</TextoBase>
-          <TextoBase style={styles.sty_text_variable}>{data.indicador}</TextoBase>
-        </View>
-        <View style={styles.detailLine}>
-          <View style={styles.productDetail}>
-            <View style={styles.productDesc}>
-              <TextoBase style={styles.sty_text_base}>
-                  {data.item}
-              </TextoBase>
-            </View>
-            <View style={styles.productEAN}>
-              <TextoBase style={styles.sty_text_ean}>
-                  {data.ean}
-              </TextoBase>
-            </View>
+        <View style={styles.sty_texto}>
+          <View style={styles.st_indicadores_texto}>
+              <TextType2  text={data.indicador}/>
           </View>
-          <View style={styles.action}>
-            <TextoBase style={styles.sty_text_action}>
-                    {data.accion}
-            </TextoBase>
+          <View style={styles.st_indicadores_texto}>
+              <TextType2  text={data.item}/>
           </View>
-          <View style={styles.sty_icon}>
-                <IconAntDesign name={'delete'} size={constants.ICON_SMALL} color={constants.COLOR_GRIS_G}/>
+
+          <View style={styles.st_indicadores_texto}>
+              <TextType2  text={data.accion}/>
+          </View>
+        </View>
+            <View style={styles.sty_icon}>
+                <IconAntDesign name={'delete'} size={constants.ICON_MEDIUM} color={constants.COLOR_PRIMARIO}/>
             </View>
         </View>
-        </View>
+      
     );
   }
 
@@ -55,78 +37,15 @@ const styles = StyleSheet.create({
     backgroundColor: constants.COLOR_BLANCO,
     borderColor: constants.COLOR_GRIS_F,
     borderWidth: 1,
-    marginHorizontal: 3,
-    marginVertical: 0,
-    alignItems: 'flex-start',
-    padding: 10,
-    height: 100,
-    flexDirection: 'column'
+    marginHorizontal: 8,
+    marginVertical: 3,
+    borderRadius: 20,
+    padding: 5,
+    flexDirection: 'row'
   },
-  detailLine: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    flex: 3
-  },
-  productDetail: {
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-    padding: 6,
-    flex: 6
-  },
-  action: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-    flex: 4
-  },
-  sty_icon: {
-    paddingVertical: 15,
-    alignItems: 'flex-end',
-    alignContent: 'center'
-  },
-    productEAN: {
-      paddingVertical: 2
-    },
-  productDesc: {
-    paddingVertical: 2  
-  },
-  variable: {
-    flexDirection: 'row',
-    padding: 0,
-    margin: 0,
-    flex: 1
-  },
-  sty_text_base: {
-    fontSize: constants.SIZE_LETRA_X_LARGE,
-    textAlignVertical: "center",
-    textAlign: "center",
-    color: constants.COLOR_QUINTENARIO_CLARO
-  },
-  sty_text_ean: {
-    fontSize: constants.SIZE_LETRA_LARGE,
-    textAlignVertical: "center",
-    textAlign: "center",
-    color: constants.COLOR_GRIS_H
-  },
-  sty_text_action: {
-    fontSize: constants.SIZE_LETRA_X_LARGE,
-    textAlignVertical: "center",
-    textAlign: "center",
-    flexWrap: 'wrap',
-    color: constants.COLOR_QUINTENARIO_CLARO
-  },
-  sty_text_variable: {
-    fontSize: constants.SIZE_LETRA_XXX_LARGE,
-    textAlignVertical: "center",
-    textAlign: "center",
-    fontWeight: 'bold',
-    color: constants.COLOR_QUINTENARIO_CLARO,
-  },
-  sty_text_ordinal: {
-    fontSize: constants.SIZE_LETRA_XXX_LARGE,
-    textAlignVertical: "center",
-    textAlign: "center",
-    fontWeight: 'bold',
-    color: constants.COLOR_GRIS_H,
-  }
+  sty_texto: {flex: 3, flexDirection: 'row', alignItems: 'flex-start', paddingHorizontal: 10},
+  sty_icon: {flex: 1,paddingVertical: 15, alignItems: 'center', alignContent: 'center'},
+  st_indicadores_progres: { marginHorizontal: 10},
+  st_indicadores_texto: {},
+  st_indicadores_valor: {},
 });
