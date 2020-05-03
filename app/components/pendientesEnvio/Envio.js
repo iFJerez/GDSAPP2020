@@ -12,6 +12,7 @@ import Texto from '../../herramientas/textos/TextTypePendiente'
 import EnvioBotonEnviar from './EnvioBotonEnviar'
 import * as constants  from '../../herramientas/Const'
 import Icon from '../../herramientas/IconAntDesign'
+import data from '../../api/envio.json'
 
 class App extends Component {
 
@@ -110,7 +111,7 @@ class App extends Component {
 
          {this.state.check && (
             <View style={styles.container} >
-              <EnvioDetalle />
+              <EnvioDetalle data={data} />
               <EnvioBotonEnviar />
             </View>
         )}
