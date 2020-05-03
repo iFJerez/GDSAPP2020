@@ -7,8 +7,10 @@ export default class PendienteEnvioBody extends Component {
   render() {
     const data = {
     "descSala": "Jumbo el Llano",
+     "numero": 1,
      "indicador": "Promocion",
-     "item": "Producto 1000cc",
+     "item": "Producto Ejecutado 1000cc",
+     "ean": "7878787839232",
      "accion": "Quiebre"}
     return (
       <View style={styles.container}>

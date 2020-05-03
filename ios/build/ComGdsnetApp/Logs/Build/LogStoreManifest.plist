@@ -5,6 +5,41 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>10482B8E-3031-4DEF-9BAB-6BAF6A47CA83</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>10482B8E-3031-4DEF-9BAB-6BAF6A47CA83.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ComGdsnetApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ComGdsnetApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>610206796.65070903</real>
+			<key>timeStoppedRecording</key>
+			<real>610206800.04986095</real>
+			<key>title</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>10482B8E-3031-4DEF-9BAB-6BAF6A47CA83</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
