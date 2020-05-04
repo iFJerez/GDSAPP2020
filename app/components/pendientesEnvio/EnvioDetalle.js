@@ -80,10 +80,8 @@ export default class PendienteEnvioBody extends Component {
     return (
       <View style={styles.container}>
         {this.funLlenadoSalas()}
-
-
-
       </View>
+      
     );
   }
 
