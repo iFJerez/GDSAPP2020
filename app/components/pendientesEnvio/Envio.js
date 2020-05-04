@@ -4,6 +4,7 @@ import {
   View,
   TouchableOpacity,
   LayoutAnimation,
+  ScrollView,
 
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
@@ -111,7 +112,9 @@ class App extends Component {
 
          {this.state.check && (
             <View style={styles.container} >
+              <ScrollView >
               <EnvioDetalle data={data} />
+              </ScrollView>
               <EnvioBotonEnviar />
             </View>
         )}
@@ -130,6 +133,8 @@ class App extends Component {
 const styles = StyleSheet.create({
   container: {
    flex: 1,
+   marginBottom: 50,
+   
 
   },
   buttonAbrir: {
@@ -156,7 +161,7 @@ const styles = StyleSheet.create({
     zIndex: 100,
   },
   styCerrado: {position: 'absolute', width: "100%", bottom: 154, alignItems: 'center'},
-  styAbierto: {position: 'absolute', width: "100%",height:"100%"},
+  styAbierto: {position: 'absolute', width: "100%",height:"100%", backgroundColor: '#098'},
 
 });
 
