@@ -1,14 +1,17 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, Text, ScrollView} from 'react-native';
+import { StyleSheet, View, Text, ScrollView, SectionList} from 'react-native';
 import CardFilas from './CardFilas'
 import data from '../../api/salas.json'
 import Icon from 'react-native-vector-icons/FontAwesome';
-
-
+import fetchData from '../../api/envio.json';
+import EnvioDetalle from '../../components/pendientesEnvio/EnvioDetalleCard'
+import EnvioSucursalHeader from '../../components/pendientesEnvio/EnvioSucursalHeader'
 
 
 export default class CardPrincipal extends Component {
 
+  
+  
   funRecorrer(){
 
 
@@ -24,9 +27,8 @@ export default class CardPrincipal extends Component {
 
 
   render() {
-
-    
-
+    const dataSection = fetchData.map (({acciones, ...rest})=>({...rest, data: acciones }))
+    console.log(dataSection);
 
     return (
       <View style={styles.container}>
@@ -37,7 +39,11 @@ export default class CardPrincipal extends Component {
             {this.funRecorrer()}
             </View>
             </ScrollView>
-
+            <SectionList
+              sections={dataSection}
+              renderItem={({ item,index }) => (<EnvioDetalle data={{...item, numero: index+1}} />)}
+              renderSectionHeader={({section}) => (<EnvioSucursalHeader data={section}/>)}
+              />
      </View>
     );
   }
