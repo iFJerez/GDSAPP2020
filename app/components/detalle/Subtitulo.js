@@ -21,6 +21,7 @@ const {text} = this.props;
           justifyContent:"center",
           alignItems:'center',
           margin:2,
+          fontFamily:"Futura",
           
       }]}>
       <Text

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { StyleSheet, View, Text} from 'react-native';
 import * as constants from '../../herramientas/Const'
 import Icon from '../../herramientas/IconSimple'
-
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
 export default class IPrecio extends Component {
@@ -12,7 +12,12 @@ funLlenar(){
   if(valor != null) {
     return(
           <View style={styles.container}>
-              <Text>{valor} </Text>  
+              <View>
+                <Ionicons name="ios-cash" style={styles.IconStyle}/>
+              </View>
+              <View>
+                <Text style={styles.TextStyle}>{valor} </Text>  
+              </View>    
           </View>
         )
   }
@@ -35,13 +40,23 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: constants.COLOR_BLANCO,
     borderColor: constants.COLOR_GRIS_F,
-    borderWidth: 1,
-    marginHorizontal: 8,
-    marginVertical: 3,
-    borderRadius: 20
-  },
+    borderWidth: -2,
+    borderRadius: 5
   
-  st_indicadores_progres: {flex: 1, marginHorizontal: 10},
-  st_indicadores_texto: {flex: 1},
-  st_indicadores_valor: {flex: 1},
-});
+  },
+  IconStyle: {
+    flex: 1,
+    color:constants.COLOR_PRIMARIO,
+    fontSize:20,
+    paddingLeft:7,
+    paddingTop:3,
+  },
+  TextStyle: {
+    flex: 1,
+    fontSize:15,
+    padding:3,
+    fontFamily:"Futura",
+    color: constants.COLOR_GRIS
+  }
+
+})

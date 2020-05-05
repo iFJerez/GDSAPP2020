@@ -9,7 +9,7 @@ import ReactNativePickerModule from 'react-native-picker-module'
 export default class SalasListadoInCo extends Component {
 
   state = {
-    selectedValue: null,
+    selectedValue: "Seleccione Objecion",
     data: [
       "Sin Objeción",
       "Producto Bloqueado",
@@ -29,28 +29,27 @@ export default class SalasListadoInCo extends Component {
   render() {
     
     return  (
-      <View>
+<TouchableOpacity style={styles.styleTouch} onPress={() => {this.pickerRef.show()}}>
+  <View style={styles.container}> 
 
-<TouchableOpacity onPress={() => {this.pickerRef.show()}}>
-<Text>{this.state.selectedValue}</Text>
-<Text>Seleccione Objecion</Text>
-<Text>{<Icon name={'logo-game-controller-a'} size={constants.ICON_LARGE} color={constants.COLOR_PRIMARIO}/>}</Text>  
+      <Text style={styles.TextStyle}>{this.state.selectedValue}</Text>
+      <Text>{<Icon name={'ios-alert'} size={constants.ICON_LARGE} color={constants.COLOR_NARANJO}/>}</Text>  
+
+          
+          
+        <ReactNativePickerModule
+          pickerRef={e => this.pickerRef = e}
+          value={this.state.selectedValue}
+          title={"Seleccione Objeción"}
+          items={this.state.data}
+          onValueChange={(index) => {
+            this.setState({
+              selectedValue: index
+            })
+        }}/>
+        <Text></Text>
+  </View>
 </TouchableOpacity>
-          
-          
-<ReactNativePickerModule
-  pickerRef={e => this.pickerRef = e}
-  value={this.state.selectedValue}
-  title={"Seleccione Objeción"}
-  items={this.state.data}
-  onValueChange={(index) => {
-    this.setState({
-       selectedValue: index
-    })
-}}/>
-
-
-      </View>
    )
     
   }
@@ -59,15 +58,19 @@ export default class SalasListadoInCo extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    
-    backgroundColor: constants.COLOR_BLANCO,
-    borderWidth: 1,
-    marginHorizontal: 8,
-    marginVertical: 3,
-    borderRadius: 20
+    backgroundColor: constants.COLOR_GRIS_B,
+    borderRadius: 10,
+    alignItems:"center"
   },
-  
-  st_indicadores_progres: {flex: 1, marginHorizontal: 10},
-  st_indicadores_texto: {flex: 1},
-  st_indicadores_valor: {flex: 1},
+  styleTouch:{
+    flex:1,
+    padding:1
+  },
+  TextStyle: {
+    fontSize:15,
+    fontFamily:"Futura",
+    color: constants.COLOR_PRIMARIO,
+    alignItems:"center",
+    paddingTop:5
+  }
 });

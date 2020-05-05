@@ -43,14 +43,13 @@ const styles = StyleSheet.create({
     backgroundColor: constants.COLOR_BLANCO,
     borderColor: constants.COLOR_GRIS_F,
     borderWidth: -2,
-    marginHorizontal: 10,
-    marginVertical: 5,
-    borderRadius: 5
+    borderRadius: 5,
+    margin:2
   
   },
   IconStyle: {
     flex: 1,
-    color:constants.COLOR_PRIMARIO,
+    color:constants.COLOR_QUINTENARIO,
     fontSize:20,
     paddingLeft:7,
     paddingTop:3,

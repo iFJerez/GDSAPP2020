@@ -14,16 +14,18 @@ export default class SalasListadoInCo extends Component {
   render() {
     
     return  (
-      <View>
+      <TouchableOpacity style={styles.styleTouch} onPress={() => {funMessage('Mensaje', 'Por construir...')}}>
 
-<TouchableOpacity onPress={() => {funMessage('Mensaje', 'Por construir...')}}>
-<Text>fotografia</Text>
-<Text>{<Icon name={'ios-reverse-camera'} size={constants.ICON_LARGE} color={constants.COLOR_PRIMARIO}/>}</Text>  
-</TouchableOpacity>
-          
+<View style={styles.container}>
 
+   
+    <Text style={styles.TextStyle}>Fotografia</Text>
+    <Text>{<Icon name={'ios-reverse-camera'} size={constants.ICON_LARGE} color={constants.COLOR_NARANJO}/>}</Text>  
+    <Text style={styles.TextStyle}></Text>
+ </View>
 
-      </View>
+ </TouchableOpacity>
+
    )
     
   }
@@ -32,15 +34,20 @@ export default class SalasListadoInCo extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    
-    backgroundColor: constants.COLOR_BLANCO,
-    borderWidth: 1,
-    marginHorizontal: 8,
-    marginVertical: 3,
-    borderRadius: 20
+
+    backgroundColor: constants.COLOR_GRIS_A,
+    borderRadius: 10,
+    alignItems:"center",
   },
-  
-  st_indicadores_progres: {flex: 1, marginHorizontal: 10},
-  st_indicadores_texto: {flex: 1},
-  st_indicadores_valor: {flex: 1},
+  styleTouch:{
+    flex:1,
+    padding:5
+  },
+  TextStyle: {
+    fontSize:15,
+    fontFamily:"Futura",
+    color: constants.COLOR_PRIMARIO,
+    alignItems:"center",
+    paddingTop:5
+  }
 });

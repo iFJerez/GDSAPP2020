@@ -12,7 +12,7 @@ funLlenar(){
   if(valor != null) {
     return(
           <View style={styles.container}>
-              <Text>{valor?<Icon name={'ios-arrow-dropup-circle'} size={constants.ICON_SMALL} color={constants.COLOR_PRIMARIO}/>:<Icon name={'ios-arrow-dropdown-circle'} size={constants.ICON_SMALL} color={constants.COLOR_SECUNDARIO}/>}</Text>  
+              <Text>{valor?<Icon name={'md-checkmark-circle'} size={constants.ICON_SMALL} color={constants.COLOR_PRIMARIO}/>:<Icon name={'md-close-circle'} size={constants.ICON_SMALL} color={constants.COLOR_SECUNDARIO}/>}</Text>  
           </View>
         )
   }
@@ -35,13 +35,24 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: constants.COLOR_BLANCO,
-    
-    marginHorizontal: 8,
-    marginVertical: 3,
-    borderRadius: 20
+    borderColor: constants.COLOR_GRIS_F,
+    borderWidth: -2,
+    borderRadius: 5,
+    margin:2
   },
-  
-  st_indicadores_progres: {flex: 1, marginHorizontal: 10},
-  st_indicadores_texto: {flex: 1},
-  st_indicadores_valor: {flex: 1},
-});
+  IconStyle: {
+    flex: 1,
+    color:constants.COLOR_QUINTENARIO,
+    fontSize:20,
+    paddingLeft:7,
+    paddingTop:3,
+  },
+  TextStyle: {
+    flex: 1,
+    fontSize:15,
+    padding:3,
+    fontFamily:"Futura",
+    color: constants.COLOR_GRIS
+  }
+
+})

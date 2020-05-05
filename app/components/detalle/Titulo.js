@@ -21,7 +21,7 @@ const {text} = this.props;
           justifyContent:"center",
           alignItems:'center',
           margin:2,
-          
+
       }]}>
       <Text
       adjustsFontSizeToFit
@@ -30,7 +30,7 @@ const {text} = this.props;
         fontSize: constants.SIZE_LETRA_X_LARGE,
         textAlignVertical: "center",
         textAlign: "center",
-        fontWeight: 'bold',
+        fontFamily:"Futura",
         color: constants.COLOR_QUINTENARIO_CLARO,
       }}>{text}</Text>
     </View>

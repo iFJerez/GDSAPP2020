@@ -32,9 +32,9 @@ try {
          
             <ScrollView horizontal={true}  style={styles.view_scroll}>
                  <View style={styles.view_indicadores}>
-                 <IPromocion valor={data.promocion} />
-                  <IPresencia valor={data.presencia}/>
+                  <IPromocion valor={data.promocion} />
                   <IPrecio valor={data.precio}/>
+                  <IPresencia valor={data.presencia}/>
                   <IPorcentaje valor={data.porcentaje} />
 
                   </View>
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   view_textos: {
-    flex: 2,
+    flex: 1.8,
     flexDirection: 'column',
     alignItems: 'flex-start'
   },
