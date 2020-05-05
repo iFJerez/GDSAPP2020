@@ -1,10 +1,9 @@
 // Imports: Dependencies
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import SalasListado from '../components/salas/SalasListado'
-import {funMessage} from '../herramientas/Mensaje'
 import Activity from './ActivityScreen'
 import DetallesScreen from './DetallesScreen'
 import FiltroSalasScreen from '../components/salas/FiltroSalasScreen'
@@ -23,12 +22,10 @@ class Home extends React.Component {
     if(dataSala){
       return(
         <SafeAreaView style={styles.container}>
-          
-              <SalasListado />
-              <DetallesScreen />
-              <FiltroSalasScreen />
-              </SafeAreaView>
-              
+               <SalasListado />
+                <DetallesScreen />
+                <FiltroSalasScreen />
+              </SafeAreaView>      
         )
     }
     else {

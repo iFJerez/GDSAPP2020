@@ -1,7 +1,7 @@
 
 import React from 'react';
-import {Text, View} from 'react-native';
-import * as constants from '../Const'
+import {Text} from 'react-native';
+import * as constants from '../../herramientas/Const'
 
 
 

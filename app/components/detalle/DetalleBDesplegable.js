@@ -15,11 +15,12 @@ export default class Accordian extends Component{
     }
   
   render() {
+    const {data, i} = this.props;
 
     return (
-       <View style={styles.container}>
-            <TouchableOpacity onPress={()=>this.toggleExpand()}>
-                <DetalleIndicadoresFila toggleExpand={this.toggleExpand()} data={this.props.data} i={this.props.i} />
+       <View style={styles.container} key={i}>
+            <TouchableOpacity key={i} onPress={()=>this.toggleExpand()}>
+                <DetalleIndicadoresFila data={data} i={i} />
             </TouchableOpacity>
             <View style={styles.parentHr}/>
             {

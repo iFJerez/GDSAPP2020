@@ -1,12 +1,12 @@
 // Imports: Dependencies
 import React from 'react';
-import { StyleSheet, View, Image, Text } from 'react-native';
+import { StyleSheet, View} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as constants from '../../herramientas/Const'
 import data from '../../api/home.json'
 import  RankingCard from './RankingCard'
-import TextHomeSubTitulos from '../../herramientas/textos/TextHomeSubTitulos'
+import TextHomeSubTitulos from './TextHomeSubTitulos'
 
 
 

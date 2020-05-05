@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, View} from 'react-native';
+import { StyleSheet, View, ScrollView} from 'react-native';
 import Indicador from '../salas/Indicadores'
 import {funMessage} from '../../herramientas/Mensaje'
 import DetalleBDesplegable from './DetalleBDesplegable'

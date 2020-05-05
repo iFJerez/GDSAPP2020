@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import * as constants from '../../herramientas/Const'
 import EnvioDetalleCard from './EnvioDetalleCard'
 import data_cadena from '../../api/cadenas.json'

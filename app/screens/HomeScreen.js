@@ -3,15 +3,13 @@ import React from 'react';
 import { StyleSheet,View, StatusBar, ScrollView} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import LinearGradient from 'react-native-linear-gradient';
+
 import data from '../api/home.json'
 import CardIndicadores from '../components/home/CardIndicadores'
 import * as constants from '../herramientas/Const'
-import TareaHome from '../components/tareas/TareaHome'
+import TareaHome from '../components/home/TareaHome'
 
 import SalaRanking from '../components/home/SalasRanking'
-
-import HomeCarouselComponents from '../components/home/HomeCarouselComponents'
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
 
@@ -41,10 +39,11 @@ const {} = this.props;
        
                 
 
-                <HomeCarouselComponents />
-                <TareaHome />
+
+
                   <CardIndicadores data={data} />
                     <SalaRanking />
+                    <TareaHome />
                
                 
                

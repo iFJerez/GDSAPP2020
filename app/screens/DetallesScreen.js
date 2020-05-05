@@ -82,6 +82,7 @@ funMostrarDastos(){
       scrollOffset={this.state.scrollOffset}
       onSwipeComplete={()=>funVerDetalle(!ver_detalle)}
       onBackdropPress={()=>funVerDetalle(!ver_detalle)}
+      scrollOffsetMax={400 - 300} 
       style={styles.modal}>
       <View style={styles.scrollableModal}>
       <View style={styles.view_close}>

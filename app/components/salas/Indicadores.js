@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { StyleSheet, View} from 'react-native';
-import ProgressBar from '../../herramientas/ProgressBar'
 import TextTypeA from '../../herramientas/textos/TextTypeA'
 import TextTypeB from '../../herramientas/textos/TextTypeB'
 import * as constants from '../../herramientas/Const'

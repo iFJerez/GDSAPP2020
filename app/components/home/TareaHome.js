@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import { View, Text, LayoutAnimation, StyleSheet } from 'react-native';
+import { View, LayoutAnimation, StyleSheet } from 'react-native';
 import TareaCardButton from './TareaCardButton'
 import * as constants from '../../herramientas/Const'
-import TareaDetalle from './TareaDetalles'
+import TextHomeSubTitulos from './TextHomeSubTitulos'
 
 
 
@@ -29,7 +29,9 @@ export default class TareaBody extends Component {
   render() {
       return (
         <View style={styles.container}>
+                  <TextHomeSubTitulos text={'Tareas'} />
           <View style={styles.botones}>
+  
           <TareaCardButton 
                 activa={this.state.selectedButton}
                 selectionOnPress={this.selectionOnPress} 
