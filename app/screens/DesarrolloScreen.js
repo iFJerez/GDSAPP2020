@@ -9,6 +9,7 @@ import ActionCreators from '../redux/actions';
 import PrimerComponets from '../components/desarrollo/PrimerComponents'
 import SegundoComponents from '../components/desarrollo/SegundoComponents'
 import CardPrincipal from '../components/desarrollo/CardPrincipal'
+import salasTest from '../api/salasTest.json'
 
 
 // Screen: Counter 14932
@@ -22,6 +23,9 @@ class DesarrolloScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text>Hola Desarrollo</Text>
+        <Text>{JSON.stringify(salasTest.objeciones)}</Text>
+        <Text>{JSON.stringify(salasTest.salas)}</Text>
+        <Text>{JSON.stringify(salasTest.sala10)}</Text>
         <PrimerComponets numero={numero} funIncrementar={funIncrementar} funDecrementar={funDecrementar}/>
         <SegundoComponents />
         <CardPrincipal />
