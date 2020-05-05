@@ -67,6 +67,19 @@ class App extends Component {
   
 )
   }
+  funCerrar2(){
+    return(
+
+
+    <View  style={styles.buttonCerrar2} onPress={() => this.onPresscheck()}>
+
+                 
+        </View>
+
+  
+)
+  }
+
 
 
   onPresscheck() {
@@ -102,17 +115,11 @@ class App extends Component {
     return (
       
   <View style={[middleStyle]} >
-
-         
-               {this.state.check?this.funCerrar(): this.funAbrir()}
-         
-                 
-        
-
-
+        {this.state.check?this.funCerrar2():this.funAbrir()}
          {this.state.check && (
             <View style={styles.container} >
               <ScrollView >
+              {this.funCerrar()}
               <EnvioDetalle data={data} />
               </ScrollView>
               <EnvioBotonEnviar />
@@ -147,6 +154,14 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
   },
+  buttonCerrar2: {
+    width:"97%",
+    height: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    
+  },
+  
   buttonCerrar: {
     width: 60,
     height: 60,
@@ -154,14 +169,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 100,
-    margin: 8,
+    marginTop: 8,
     right: 10,
     top: 20,
-    position: 'absolute',
-    zIndex: 100,
+
   },
   styCerrado: {position: 'absolute', width: "100%", bottom: 154, alignItems: 'center'},
-  styAbierto: {position: 'absolute', width: "100%",height:"100%", backgroundColor: '#098'},
+  styAbierto: {position: 'absolute', width: "100%",height:"100%", backgroundColor: '#fff'},
 
 });
 
