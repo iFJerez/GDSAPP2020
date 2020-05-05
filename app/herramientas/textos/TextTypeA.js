@@ -14,15 +14,7 @@ const {text} = this.props;
 
 
     return (
-      <View 
-      style={[{
-        flex:1,
-          padding:2,
-          justifyContent:"center",
-          alignItems:'center',
-          margin:2,
-          
-      }]}>
+
       <Text
       adjustsFontSizeToFit
       numberOfLines={1}
@@ -31,9 +23,10 @@ const {text} = this.props;
         textAlignVertical: "center",
         textAlign: "center",
         fontWeight: 'bold',
-        color: constants.COLOR_QUINTENARIO_CLARO,
+        color: constants.COLOR_QUINTENARIO,
+        padding: 2,
       }}>{text}</Text>
-    </View>
+
     )
   }
 }

@@ -4,14 +4,19 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import IconApp from '../herramientas/Icon'
-import * as colores from '../herramientas/Const'
+import IconApp from '../herramientas/IconTabNav'
+import * as constants from '../herramientas/Const'
+// SCREEN
 import HomeScreen from '../screens/HomeScreen'
 import SalasScreen from '../screens/SalasScreen'
-import Settingscreen from '../screens/Settingscreen'
+import UsuarioScreen from '../screens/UsuarioScreen'
+import TareasScreen from '../screens/TareasScreen'
 import SalaResumen from '../screens/SalasResumen'
-import ModalScreen from '../screens/ModalScreen'
+import DesarrolloScreen from '../screens/DesarrolloScreen'
 
+import Envio from '../components/pendientesEnvio/Envio'
+import {funFecha} from '../herramientas/Fechas'
+import {View} from 'react-native'
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -19,6 +24,37 @@ import { bindActionCreators } from 'redux';
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
+
+
+const DesarrolloStack = createStackNavigator(
+
+  {
+     Desarrollo: {
+       screen: DesarrolloScreen,
+       navigationOptions: () => ({
+         title: 'Desarrollo'
+       })
+     },
+   },
+   {
+     initialRouteName: 'Desarrollo',
+     defaultNavigationOptions: {
+       headerStyle: {
+         backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
+       },
+       headerTintColor: constants.COLOR_BLANCO,
+   
+       headerBackTitle: ' ',
+       headerTitleStyle: {
+         fontWeight: 'bold',
+         fontSize: constants.SIZE_LETRA_XXX_LARGE,
+         textAlign:"left", 
+         flex:1,
+         
+       },
+     },
+   }
+ );
 
 
 const SalasStack = createStackNavigator(
@@ -40,13 +76,80 @@ const SalasStack = createStackNavigator(
     initialRouteName: 'Salas',
     defaultNavigationOptions: {
       headerStyle: {
-        backgroundColor: '#f4511e',
+        backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
       },
-      headerTintColor: '#fff',
+      headerTintColor: constants.COLOR_BLANCO,
   
       headerBackTitle: ' ',
       headerTitleStyle: {
         fontWeight: 'bold',
+        fontSize: constants.SIZE_LETRA_XXXX_LARGE,
+        textAlign:"left", 
+        flex:1,
+      },
+    },
+  }
+);
+
+
+const HomeStack = createStackNavigator(
+
+ {
+    Home: {
+      screen: HomeScreen,
+      navigationOptions: () => ({
+        title: funFecha()
+      })
+    },
+  },
+  {
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
+      },
+      headerTintColor: constants.COLOR_BLANCO,
+  
+      headerBackTitle: ' ',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+        fontSize: constants.SIZE_LETRA_MEDIUM,
+        textAlign:"left", 
+        flex:1,
+        
+      },
+    },
+  }
+);
+
+
+
+
+
+const TareasStack = createStackNavigator(
+  {
+    Tareas: {
+      screen: TareasScreen,
+      navigationOptions: () => ({
+        title: 'Tareas'
+      })
+    },
+  },
+  {
+    initialRouteName: 'Tareas',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
+      },
+      headerTintColor: constants.COLOR_BLANCO,
+  
+      headerBackTitle: ' ',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+        fontSize: constants.SIZE_LETRA_X_LARGE,
+        textAlign:"left", 
+        flex:1,
+        
       },
     },
   }
@@ -69,13 +172,19 @@ class Home extends React.Component {
 
 
   render() {
-
+    
+    
     let TabNavigator =  createBottomTabNavigator(
       {
-        Home: HomeScreen,
+        Home: HomeStack,
         Salas: SalasStack,
-        Settings: Settingscreen
+        Tareas: TareasStack,
+        Usuario: UsuarioScreen,
+        Desarrollo: DesarrolloStack,
+         
       },
+    
+ 
       {
         defaultNavigationOptions: ({ navigation }) => ({
           tabBarIcon: ({ tintColor }) => {
@@ -83,23 +192,42 @@ class Home extends React.Component {
             let IconComponent = IconApp;
             let iconName;
             if (routeName === 'Home') {
-              iconName = `ios-home`;
+              iconName = `home`;
               IconComponent = HomeIcon(this.props.counter);
-            } else if (routeName === 'Settings') {
-              iconName = `ios-square`;
+            } else if (routeName === 'Tareas') {
+              iconName = `bars`;
+              IconComponent = SalasIcon(this.props.duo_new);
+            } else if (routeName === 'Desarrollo') {
+              iconName = `clockcircleo`;
               IconComponent = SalasIcon(this.props.duo_new);
             } else if (routeName === 'Salas') {
-              iconName = `ios-cart`;
+              iconName = `shoppingcart`;
+              IconComponent = UltimaIcon(this.props.salas_new);
+            }else if (routeName === 'Usuario') {
+              iconName = `user`;
               IconComponent = UltimaIcon(this.props.salas_new);
             }
     
-            return <IconComponent name={iconName} size={25} color={tintColor} />;
+            return (
+            
+                  <IconComponent name={iconName} size={25} color={tintColor} />
+              
+            
+            )
           },
         }),
         tabBarOptions: {
-          activeTintColor: colores.COLOR_PRIMARIO,
-          inactiveTintColor: 'gray',
+          activeTintColor: constants.COLOR_PRIMARIO,
+          inactiveTintColor: constants.COLOR_GRIS,
+          
+          style: {
+            height: 60,
+            
+            
+  
         },
+        },
+
       }
     )
 
@@ -107,7 +235,11 @@ class Home extends React.Component {
 
 
     return (
-   <Navigation />
+  <View style={{flex: 1}}>
+      
+      <Navigation />
+      <Envio />
+   </View>
     )
   }
 }

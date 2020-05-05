@@ -1,0 +1,35 @@
+
+import React from 'react';
+import {Text} from 'react-native';
+import * as constants from '../../herramientas/Const'
+
+
+
+
+export default class TextTypeA extends React.Component {
+
+render() {
+
+const {text} = this.props;
+
+
+    return (
+
+      <Text
+      adjustsFontSizeToFit
+      numberOfLines={1}
+      style={{
+        fontSize: constants.SIZE_LETRA_XXX_LARGE,
+        padding: 10,
+ 
+        fontWeight: 'bold',
+        color: constants.COLOR_PRIMARIO,
+      }}>{text}</Text>
+
+    )
+  }
+}
+
+
+
+

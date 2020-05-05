@@ -1,0 +1,66 @@
+[
+   {
+       "id_usuario": 1,
+       "desc_usuario": "Kenny Bell",
+       "estado": 0,
+       "indicadores": [
+         {"indicador": "osa", "valor": "85", "diferencia": "20" },
+         {"indicador": "precios", "valor": "86", "diferencia": "-15" },
+         {"indicador": "promocion", "valor": "67", "diferencia": "15" },
+         {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
+         {"indicador": "precios", "valor": "86", "diferencia": "-33" },
+         {"indicador": "tareas", "valor": "56", "diferencia": "5" }
+         
+       ],
+       "ranking": [
+            {
+              "id_sala": 1,
+              "cadena": "lider",
+              "desc_sala": "Lider Punta del Cerro",
+              "numero": 35,
+              "estado": 0,
+              "indicadores": [
+                {"indicador": "osa", "valor": "85", "diferencia": "20" }
+              ]
+          },
+          {
+            "id_sala": 2,
+            "cadena": "jumbo",
+            "desc_sala": "nuevo del puerto",
+            "numero": 35,
+            "estado": 0,
+            "indicadores": [
+              {"indicador": "osa", "valor": "85", "diferencia": "-35" }
+            ]
+        },
+        {
+          "id_sala": 3,
+          "cadena": "sisa",
+          "desc_sala": "Otro Jumbo",
+          "numero": 35,
+          "estado": 0,
+          "indicadores": [
+            {"indicador": "osa", "valor": "89", "diferencia": "-20" }
+          ]
+      },
+      {
+        "id_sala": 3,
+        "cadena": "jumbo",
+        "desc_sala": "Otro Jumbo",
+        "numero": 35,
+        "estado": 0,
+        "indicadores": [
+          {"indicador": "osa", "valor": "89", "diferencia": "35" }
+        ]
+    }
+
+
+       ]
+   }
+ ]
+
+
+
+
+
+  

@@ -8,20 +8,12 @@ import {
 
 // Screen: Counter 14932
 class ModalScreen extends React.Component {
-
-
-
   render() {
     return (
-   
       <View style={styles.scrollableModal}>
 
       <View style={styles.scrollableModalContent1}>
-
-      
       <SkypeIndicator count={2} size={200} animationDuration={1800} color={constants.COLOR_PRIMARIO_CLARO} />
-
-      
         </View>
       </View>
 

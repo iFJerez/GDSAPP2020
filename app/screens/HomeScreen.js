@@ -1,15 +1,19 @@
 // Imports: Dependencies
-import React, { Component } from 'react';
-import { Button, Dimensions, SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Alert } from 'react-native';
+import React from 'react';
+import { StyleSheet,View, StatusBar, ScrollView} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {funMessage} from '../herramientas/Mensaje'
 
+import data from '../api/home.json'
+import CardIndicadores from '../components/home/CardIndicadores'
+import * as constants from '../herramientas/Const'
+import TareaHome from '../components/home/TareaHome'
+
+import SalaRanking from '../components/home/SalasRanking'
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
 
-// Screen Dimensions
-const { height, width } = Dimensions.get('window');
+
 
 // Screen: Counter
 class Home extends React.Component {
@@ -19,59 +23,37 @@ class Home extends React.Component {
 
   render() {
 
-const {funUserModal, loggedIn, ms_help, home_modal, funUserHelp} = this.props;
+const {} = this.props;
 
     return (
-      <SafeAreaView style={styles.container}>
+      <View style={styles.container}>   
+         <StatusBar barStyle="light-content" />
+ 
 
-        <View style={styles.loggedInContainer}>
+  
+       
+      <ScrollView style={{backgroundColor: 'transparent'}}>
       
-          <Text style={styles.loggedInText}>Logged In: </Text>
-          <Text style={styles.loggedInText}>{`${loggedIn}`}</Text>
 
-          <Button
-            title="Nose"
-            onPress={()=>{funMessage('Mensaje', 'Nueva Descripcion')}}
-            style={styles.loginButton}
-          />
-
-
-          <Button
-            title="Abrir Modal"
-            onPress={()=>funUserModal(!home_modal)}
-            style={styles.loginButton}
-          />
-           <Button
-            title="Abrir Help"
-            onPress={()=>funUserHelp(!ms_help)}
-            style={styles.loginButton}
-          />
-
-
-          <Button
-            title="Login"
-            onPress={this.props.loggedIn === false ? () => this.props.login(true) : () => this.props.login(false)}
-            style={styles.loginButton}
-          />
-        </View>
-
-        <Text style={styles.counterTitle}>Counter</Text>
-
-        <View style={styles.counterContainer}>
-          <TouchableOpacity onPress={() => this.props.increaseCounter()}>
-            <Text style={styles.buttonText}>+</Text>
-          </TouchableOpacity>
-
-          <Text style={styles.counterText}>{this.props.counter}</Text>
-
-          <TouchableOpacity onPress={() => this.props.decreaseCounter()}>
-            <Text style={styles.buttonText}>-</Text>
-          </TouchableOpacity>
-        </View>
+          <View style={styles.styDown}>
+       
+                
 
 
 
-      </SafeAreaView>
+                  <CardIndicadores data={data} />
+                    <SalaRanking />
+                    <TareaHome />
+               
+                
+               
+  
+                
+         </View>
+        </ScrollView>
+     
+      </View>
+ 
     )
   }
 }
@@ -79,53 +61,25 @@ const {funUserModal, loggedIn, ms_help, home_modal, funUserHelp} = this.props;
 // Styles
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    backgroundColor: constants.COLOR_GRIS_D
+  },
+
+  styTop: {flex: 1, marginTop:80,  marginLeft: 30, 
+},
+  styDown: {flex: 1},
+  styTarjeta: {
+    position: 'absolute',
+    top: 0,
+    width: '100%',
+    height: 250,
+    borderRadius: 6,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  loggedInContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 40,
-  },
-  loginButton: {
-    marginTop: 20,
-    paddingTop: 20,
-  },
-  counterContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  loggedInText: {
-    fontFamily: 'System',
-    fontSize: 17,
-    fontWeight: '400',
-    color: '#000',
-  },
-  counterTitle: {
-    fontFamily: 'System',
-    fontSize: 32,
-    fontWeight: '700',
-    color: '#000',
-  },
-  counterText: {
-    fontFamily: 'System',
-    fontSize: 36,
-    fontWeight: '400',
-    color: '#000',
-  },
-  buttonText: {
-    fontFamily: 'System',
-    fontSize: 50,
-    fontWeight: '300',
-    color: '#007AFF',
-    marginLeft: 40,
-    marginRight: 40,
-  },
+    zIndex: 0,
+    
+
+  }
+  
 });
 
 // Map State To Props (Redux Store Passes State To Component)

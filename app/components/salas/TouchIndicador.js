@@ -1,10 +1,9 @@
 // Imports: Dependencies
-import React, { Component } from 'react';
-import { Dimensions, TouchableOpacity, StyleSheet, Text } from 'react-native';
+import React from 'react';
+import {TouchableOpacity} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Indicadores from './Indicadores'
-import {funMessage} from '../../herramientas/Mensaje'
 
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
@@ -23,7 +22,7 @@ class TouchIndicador extends React.Component {
   const {data} = this.props;
  
     return (
-      <TouchableOpacity style={styles.container} onPress={()=>this.funExec()} >
+      <TouchableOpacity  onPress={()=>this.funExec()} >
          <Indicadores data={data} />
       </TouchableOpacity>
     );
@@ -31,19 +30,6 @@ class TouchIndicador extends React.Component {
 }
 
 
-const styles = StyleSheet.create({
-  container: {
-   
-  },
-  st_indicadores: {
-    flexDirection: 'row',
-    flex: 1,
-    
-
-  }
-
-
-});
 
 // Map State To Props (Redux Store Passes State To Component)
 const mapStateToProps = (state) => {

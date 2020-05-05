@@ -15,6 +15,13 @@ export function funVerActivity(ver_activity) {
   }
 }
 
+export function funVerSalaFiltro(ver_sala_filtro) {
+  return {
+    type: types.VER_SALA_FILTRO,
+    ver_sala_filtro: ver_sala_filtro
+  }
+}
+
 
 
 

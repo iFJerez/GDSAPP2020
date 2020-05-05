@@ -8,8 +8,6 @@ import { Provider } from 'react-redux';
 import Aplicacion from './app/aplicacion/Aplicacion'
 import FlashMessage from "react-native-flash-message"
 
-
-
 // Imports: Redux Persist Persister
 import { store, persistor } from './app/redux/store/store';
 

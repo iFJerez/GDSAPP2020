@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, Text} from 'react-native';
+import { StyleSheet, View, ScrollView} from 'react-native';
 import Indicador from '../salas/Indicadores'
 import {funMessage} from '../../herramientas/Mensaje'
 import DetalleBDesplegable from './DetalleBDesplegable'
+import VerFotografia from './VerFotografia'
 
 
 
@@ -14,10 +15,7 @@ export default class DetalleIndicadores extends Component {
     try {
       return data.detalles.map((v, i)=>{
         return(
-          
                <DetalleBDesplegable data={v} i={i} />
-          
-       
         )
       })
       
@@ -37,6 +35,7 @@ export default class DetalleIndicadores extends Component {
       <View style={styles.container}>
          <View style={styles.view_indicador}>
             <Indicador data={data}  />
+            <VerFotografia />
          </View>
          <View style={styles.view_detalle}>
             {this.funIndicadores()}

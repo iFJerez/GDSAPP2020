@@ -4,35 +4,58 @@
        "cadena": "lider",
        "desc_sala": "Lider Punta del Cerro",
        "numero": 35,
-       "estado": 0,
+       "estado": "nueva",
        "indicadores": [
          {"indicador": "osa", "valor": "85", "diferencia": "20" },
          {"indicador": "precios", "valor": "86", "diferencia": "-15" },
          {"indicador": "promocion", "valor": "67", "diferencia": "15" },
          {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
-         {"indicador": "precios", "valor": "86", "diferencia": "-33" }
+         {"indicador": "precios", "valor": "86", "diferencia": "-32" }
          
        ]
    },
    {
      "id_sala": 2,
-     "cadena": "jumbo",
-     "desc_sala": "Jumbo Bajo del Puente sin Filtros...",
+     "cadena": "sisa",
+     "desc_sala": "Santa Isabel Buena Aventura",
      "numero": 99,
-     "estado": 1,
+     "estado": "objetada",
      "indicadores": [
        {"indicador": "osa", "valor": "85", "diferencia": "20", 
         "detalles": [
-          {"agrupador": "agrupador", "titulo": "Producto 1", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "A1", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "promocion": "A2", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "promocion": "A3", "exhibicion": "caja", "porcentaje": "80%"},
-          {"agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true}
           
-        ] },
-       {"indicador": "precios", "valor": "86", "diferencia": "-15" },
+        ]},
+        {"indicador": "precios", "valor": "86", "diferencia": "-15", 
+          "detalles": [
+            {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+            {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+            {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+            {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+            {"agrupador": "agrupador", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+            {"agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+            {"agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+            
+          ] },
+      
        {"indicador": "promocion", "valor": "67", "diferencia": "15" },
        {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
        {"indicador": "precios", "valor": "86", "diferencia": "-33" },
@@ -45,25 +68,87 @@
      ]
  },
  {
-   "id_sala": 3,
-   "cadena": "sin Cadena",
-   "desc_sala": "sala 3",
-   "estado": 2,
-   "indicadores": [
-     {"indicador": "osa", "valor": 22 },
-     {"indicador": "precios", "valor": 33 }
-   ]
- },
- {
-   "id_sala": 4,
-   "cadena": "lider",
-   "desc_sala": "Lider daks jdaskdj aksjdh a",
-   "estado": 0,
-   "indicadores": [
-     {"indicador": "osa", "valor": 90 },
-     {"indicador": "precios", "valor": 88 }
-   ]
- }
+  "id_sala": 3,
+  "cadena": "jumbo",
+  "desc_sala": "Jumbo Bajo del Puente sin Filtros...",
+  "numero": 99,
+  "estado": "objetada",
+  "indicadores": [
+    {"indicador": "osa", "valor": "85", "diferencia": "20", 
+     "detalles": [
+       {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2 bakl a aksdkasjhd ","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "A1", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "promocion": "A2", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "promocion": "A3", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+       
+     ] },
+     {"indicador": "precios", "valor": "86", "diferencia": "-15", 
+       "detalles": [
+         {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+         
+       ] },
+   
+    {"indicador": "promocion", "valor": "67", "diferencia": "15" },
+    {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
+    {"indicador": "precios", "valor": "86", "diferencia": "-33" },
+    {"indicador": "osa", "valor": "85", "diferencia": "20" },
+    {"indicador": "precios", "valor": "86", "diferencia": "-15" },
+    {"indicador": "promocion", "valor": "67", "diferencia": "15" },
+    {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
+    {"indicador": "precios", "valor": "86", "diferencia": "-33" }
+    
+  ]
+},
+{
+  "id_sala": 4,
+  "cadena": "lider",
+  "desc_sala": "Lider Bajo del Puente sin Filtros...",
+  "numero": 99,
+  "estado": "objetada",
+  "indicadores": [
+    {"indicador": "osa", "valor": "85", "diferencia": "20", 
+     "detalles": [
+       {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2 bakl a aksdkasjhd ","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "A1", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "promocion": "A2", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "promocion": "A3", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+       
+     ] },
+     {"indicador": "precios", "valor": "86", "diferencia": "-15", 
+       "detalles": [
+         {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+         
+       ] },
+   
+    {"indicador": "promocion", "valor": "67", "diferencia": "15" },
+    {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
+    {"indicador": "precios", "valor": "86", "diferencia": "-33" },
+    {"indicador": "osa", "valor": "85", "diferencia": "20" },
+    {"indicador": "precios", "valor": "86", "diferencia": "-15" },
+    {"indicador": "promocion", "valor": "67", "diferencia": "15" },
+    {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
+    {"indicador": "precios", "valor": "86", "diferencia": "-33" }
+    
+  ]
+}
  ]
 
 

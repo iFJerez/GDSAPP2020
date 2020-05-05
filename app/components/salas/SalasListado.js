@@ -1,26 +1,22 @@
 // Imports: Dependencies
-import React, { Component } from 'react';
-import { Dimensions, FlatList, StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { FlatList, StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Listado from './Listado'
-import Buscador from '../../herramientas/Buscador'
+import SalaMenu from './SalasMenu'
 import * as constants from '../../herramientas/Const'
 
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
 
-
 // Screen: Counter
 class SalasListado extends React.Component {
-
   constructor(props){
     super(props)
     this.state = {  
       dataSala: props.dataSala
     }
-
-    
   }
 
   filterSearch=(text) => {
@@ -31,40 +27,30 @@ class SalasListado extends React.Component {
     return itemData.indexOf(textData) > -1
   
     })
-    
-    
-    //alert(JSON.stringify(newData))
     this.setState({dataSala: newData })
-    
     }
 
  crearSala(item){
   return( 
-    <View style={styles.container}>
+    
           <Listado item={item}/>
-    </View>
+    
   )
 }
-
-
-
-
 
   render() {
 
     return (
       <View style={styles.container}>
-        <Buscador  filterSearch={this.filterSearch}/> 
         
-
+            <SalaMenu  filterSearch={this.filterSearch} />
             <FlatList  
                 numColumns={1}
                 key={1}
                 data={this.state.dataSala}
                 renderItem={({item}) => this.crearSala(item)}
                 keyExtractor={(item, index) => '' + index}
-        />   
-
+        /> 
  </View>
     );
   }
@@ -74,13 +60,19 @@ class SalasListado extends React.Component {
 const styles = StyleSheet.create({
   container: {
    flex:1,
-   backgroundColor: constants.COLOR_GRIS_E, 
+   backgroundColor: constants.COLOR_GRIS_D, 
 
 
 
   },
-  st_indicadores: {
-    flexDirection: 'column',
+  st_menu: {
+    
+    flex: 1,
+    
+
+  },
+  st_salas: {
+    
     flex: 1,
     
 
