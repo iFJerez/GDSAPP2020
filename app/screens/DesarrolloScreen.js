@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, ScrollView} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 // Imports: Redux Actions
@@ -16,21 +16,47 @@ import salasTest from '../api/salasTest.json'
 class DesarrolloScreen extends React.Component {
 
 
+  funSalas(){
+    var salasActivas = []
+
+    salasTest.salas.map((fila, i) => {
+      salasActivas.push(fila.id_sala)
+    })
+    console.log(salasActivas)
+    let valor = 0
+    let nombreSala = 'sala' + valor 
+    
+    salasActivas.map((valor, i)=>{
+      
+      nombreSala = 'sala' + valor 
+      console.log(salasTest[nombreSala])
+    })
+
+}
+funSalas2(){
+
+  salasTest.salas.map((fila, i) => {
+    console.log(fila)
+  })
+  
+
+}
+
   
   render() {
 
     const {numero, funIncrementar, funDecrementar } = this.props;
     return (
       <View style={styles.container}>
+        <ScrollView >
         <Text>Hola Desarrollo</Text>
         <Text>{JSON.stringify(salasTest.objeciones)}</Text>
         <Text>{JSON.stringify(salasTest.salas)}</Text>
-        <Text>{JSON.stringify(salasTest.sala10)}</Text>
         <PrimerComponets numero={numero} funIncrementar={funIncrementar} funDecrementar={funDecrementar}/>
         <SegundoComponents />
         <CardPrincipal />
         
-        
+        </ScrollView>
     </View>
     )
   }

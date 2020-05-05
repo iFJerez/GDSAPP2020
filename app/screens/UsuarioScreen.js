@@ -8,20 +8,24 @@ import CerrarSession from '../components/usuario/CerrarSession'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
+import salasTest from '../api/salasTest.json'
 
 // Screen: Counter
 class UsuarioScreen extends React.Component {
 
+  
+
+
+
  
   render() {
-
-
+ 
     return (
       <View style={styles.container}>
 
 
-        
         <CardUsuario />
+        
         <CerrarSession />
 
       </View>
