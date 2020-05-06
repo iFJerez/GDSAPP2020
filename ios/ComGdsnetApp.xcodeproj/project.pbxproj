@@ -326,7 +326,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = Facebook;
+				ORGANIZATIONNAME = gds;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -345,10 +345,9 @@
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ComGdsnetApp" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
