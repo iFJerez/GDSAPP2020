@@ -57,6 +57,64 @@
       "accion": "Quiebre"
     }
   ]
+},
+{
+  "id_sala": 3,
+  "cadena": "jumbo",
+  "desc_sala": "Jumbo Corrintes",
+  "direccion": "Corrientes 745",
+  "acciones": [
+    { 
+      "indicador": "Promocion",
+      "fechahora":"17 May",
+      "item": "Producto 1000cc",
+      "ean": "9876543210",
+      "accion": "Quiebre"
+    },
+    { 
+      "indicador": "Osa",
+      "fechahora":"17 May",
+      "item": "Producto Mayonesa 1000cc",
+      "ean": "9876543210",
+      "accion": "Quiebre"
+    },
+    { 
+      "indicador": "Exhibicion",
+      "fechahora":"17 May",
+      "item": "Producto Piña Colada en Lata 1000cc",
+      "ean": "9876543210",
+      "accion": "Quiebre"
+    }
+  ]
+},
+{
+"id_sala": 4,
+"cadena": "lider",
+"desc_sala": "Lider Algo y nueces mas mariposas 7899",
+"direccion": "nueces mas mariposas 7899",
+"acciones": [
+  { 
+    "indicador": "Promocion",
+    "fechahora":"17 May",
+    "item": "Producto 2000cc",
+    "ean": "9876543210",
+    "accion": "Quiebre"
+  },
+  { 
+    "indicador": "Osa",
+    "fechahora":"17 May",
+    "item": "Producto Mayonesa 2000cc",
+    "ean": "9876543210",
+    "accion": "Quiebre"
+  },
+  { 
+    "indicador": "Exhibicion",
+    "fechahora":"17 May",
+    "item": "Producto Piña Colada en Lata 2000cc",
+    "ean": "9876543210",
+    "accion": "Quiebre"
+  }
+]
 }
 ]
 
