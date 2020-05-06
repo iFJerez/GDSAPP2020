@@ -9,6 +9,7 @@ import * as constants from '../../herramientas/Const'
 
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
+import _default from 'jest';
 
 // Screen: Counter
 class SalasListado extends React.Component {
@@ -17,6 +18,13 @@ class SalasListado extends React.Component {
     this.state = {  
       dataSala: props.dataSala
     }
+  }
+
+  orderSearch=(text) => {
+    
+    let dsOrdernar= this.props.dataSala;
+    //console.log('vamos a ordenar: ' + JSON.stringify(dsOrdernar))
+  
   }
 
   filterSearch=(text) => {
@@ -28,7 +36,7 @@ class SalasListado extends React.Component {
   
     })
     this.setState({dataSala: newData })
-    }
+  }
 
  crearSala(item){
   return( 
@@ -44,6 +52,7 @@ class SalasListado extends React.Component {
       <View style={styles.container}>
         
             <SalaMenu  filterSearch={this.filterSearch} />
+            {this.orderSearch('nose')}
             <FlatList  
                 numColumns={1}
                 key={1}
