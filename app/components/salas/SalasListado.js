@@ -9,7 +9,6 @@ import * as constants from '../../herramientas/Const'
 
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
-import _default from 'jest';
 
 // Screen: Counter
 class SalasListado extends React.Component {

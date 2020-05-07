@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, ScrollView} from 'react-native';
-import Indicador from '../salas/Indicadores'
+import { StyleSheet, View, ScrollView, Text } from 'react-native';
+// import Indicador from '../salas/Indicadores'
 import {funMessage} from '../../herramientas/Mensaje'
 import DetalleBDesplegable from './DetalleBDesplegable'
-import VerFotografia from './VerFotografia'
+import VerFotografia from './DetalleASalaComponents/VerFotografia';
+import Indicador from './DetalleASalaComponents/DetalleASalaTarjetaIndicador'
+import DetalleSucursalHeader from './DetalleASalaComponents/DetalleASalaSucursalHeader';
 
 
 
@@ -34,7 +36,9 @@ export default class DetalleIndicadores extends Component {
     return (
       <View style={styles.container}>
          <View style={styles.view_indicador}>
-            <Indicador data={data}  />
+         <DetalleSucursalHeader/>
+           <Indicador />
+            {/* <Indicador data={data}  /> */}
             <VerFotografia />
          </View>
          <View style={styles.view_detalle}>

@@ -6,6 +6,7 @@ import {funMessage} from '../../herramientas/Mensaje'
 
 
 
+
 export default class SalasListadoInCo extends Component {
 
 
