@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, Text, ScrollView, SectionList} from 'react-native';
 import CardFilas from './CardFilas'
-import data from '../../api/salas.json'
+import data from '../../api/salas_deprecated.json'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import fetchData from '../../api/envio.json';
 import EnvioDetalle from '../../components/pendientesEnvio/EnvioDetalleCard'

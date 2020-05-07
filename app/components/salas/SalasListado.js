@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import { FlatList, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Listado from './Listado'
@@ -22,9 +22,9 @@ class SalasListado extends React.Component {
 
   orderSearch=(text) => {
     
-    let dsOrdernar= this.props.dataSala;
-    console.log('vamos a ordenar: ' + JSON.stringify(Object.keys(dsOrdernar[0])))
-    console.log(dsOrdernar.sort(((a, b) => a.id_sala - b.id_sala)));
+   // let dsOrdernar= this.props.dataSala;
+   // console.log('vamos a ordenar: ' + JSON.stringify(Object.keys(dsOrdernar[0])))
+    //onsole.log(dsOrdernar.sort(((a, b) => a.id_sala - b.id_sala)));
   
   }
 
@@ -40,9 +40,19 @@ class SalasListado extends React.Component {
   }
 
  crearSala(item){
-  return( 
-    
-          <Listado item={item}/>
+  const {dataSala} = this.props;
+  let sala = 'sala' + item.id_sala
+  let newData = dataSala[sala]
+  obj = {...item, ...newData};
+  return(
+
+    //Buscamos su Informacion y luego se la compartimos.
+
+
+          <View>
+             <Listado item={obj}/>
+             
+          </View>
     
   )
 }
@@ -54,13 +64,9 @@ class SalasListado extends React.Component {
         
             <SalaMenu  filterSearch={this.filterSearch} />
             {this.orderSearch('nose')}
-            <FlatList  
-                numColumns={1}
-                key={1}
-                data={this.state.dataSala}
-                renderItem={({item}) => this.crearSala(item)}
-                keyExtractor={(item, index) => '' + index}
-        /> 
+            {this.state.dataSala.salas.map((valores, i) => {
+             return this.crearSala(valores)
+            })}
  </View>
     );
   }
