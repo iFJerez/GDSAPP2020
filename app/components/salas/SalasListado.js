@@ -9,7 +9,7 @@ import * as constants from '../../herramientas/Const'
 
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
-import _default from 'jest';
+
 
 // Screen: Counter
 class SalasListado extends React.Component {
@@ -23,7 +23,8 @@ class SalasListado extends React.Component {
   orderSearch=(text) => {
     
     let dsOrdernar= this.props.dataSala;
-    //console.log('vamos a ordenar: ' + JSON.stringify(dsOrdernar))
+    console.log('vamos a ordenar: ' + JSON.stringify(Object.keys(dsOrdernar[0])))
+    console.log(dsOrdernar.sort(((a, b) => a.id_sala - b.id_sala)));
   
   }
 
