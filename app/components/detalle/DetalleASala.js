@@ -11,7 +11,7 @@ import DetalleSucursalHeader from './DetalleASalaComponents/DetalleASalaSucursal
 
 export default class DetalleIndicadores extends Component {
 
-  funIndicadores(){
+  funDetalles(){
     const {data} = this.props
 
     try {
@@ -31,6 +31,7 @@ export default class DetalleIndicadores extends Component {
 
   render() {
     const {data} = this.props
+    console.log(JSON.stringify(data))
 
 
     return (
@@ -42,7 +43,7 @@ export default class DetalleIndicadores extends Component {
             <VerFotografia />
          </View>
          <View style={styles.view_detalle}>
-            {this.funIndicadores()}
+            {this.funDetalles()}
          </View>
      </View>
     );

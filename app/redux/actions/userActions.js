@@ -1,7 +1,7 @@
 // Login
 
 import * as types from '../redux_constants'; 
-import json_salas from '../../api/salas.json'
+import json_salas from '../../api/salasTest.json'
 
 
 

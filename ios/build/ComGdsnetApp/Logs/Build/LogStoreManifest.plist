@@ -74,6 +74,40 @@
 			<key>uniqueIdentifier</key>
 			<string>EF6F239A-0675-4FA0-A098-A4BD95BA8697</string>
 		</dict>
+		<key>BCF6C699-994F-4194-BA98-FCAF4AB91676</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BCF6C699-994F-4194-BA98-FCAF4AB91676.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ComGdsnetApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ComGdsnetApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>610551152.98796201</real>
+			<key>timeStoppedRecording</key>
+			<real>610551155.50680399</real>
+			<key>title</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>BCF6C699-994F-4194-BA98-FCAF4AB91676</string>
+		</dict>
 	</dict>
 </dict>
 </plist>

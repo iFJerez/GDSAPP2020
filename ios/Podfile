@@ -37,6 +37,8 @@ target 'ComGdsnetApp' do
   #agregado mstone
 
 
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+
   target 'ComGdsnetAppTests' do
     inherit! :search_paths
     # Pods for testing
