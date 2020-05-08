@@ -1,7 +1,9 @@
 ios
 android
+
 /ios
 /android
+
 /node_modules
 /ios/build
 ios/build

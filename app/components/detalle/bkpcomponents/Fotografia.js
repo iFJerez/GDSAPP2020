@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 import * as constants from '../../herramientas/Const'
-import Icon from 'react-native-vector-icons/AntDesign';
+import Icon from '../../herramientas/IconSimple'
 import {funMessage} from '../../herramientas/Mensaje'
 
 
@@ -17,7 +17,11 @@ export default class SalasListadoInCo extends Component {
       <TouchableOpacity style={styles.styleTouch} onPress={() => {funMessage('Mensaje', 'Por construir...')}}>
 
 <View style={styles.container}>
-    <Icon name={'camera'} size={constants.ICON_SMALL} color={constants.COLOR_SECUNDARIO}/>
+
+   
+    <Text style={styles.TextStyle}>Fotografia</Text>
+    <Text>{<Icon name={'ios-reverse-camera'} size={constants.ICON_LARGE} color={constants.COLOR_NARANJO}/>}</Text>  
+    <Text style={styles.TextStyle}></Text>
  </View>
 
  </TouchableOpacity>
@@ -30,9 +34,10 @@ export default class SalasListadoInCo extends Component {
 
 const styles = StyleSheet.create({
   container: {
+
+    backgroundColor: constants.COLOR_GRIS_A,
     borderRadius: 10,
     alignItems:"center",
-    margin: 0
   },
   styleTouch:{
     flex:1,

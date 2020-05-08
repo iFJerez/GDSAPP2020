@@ -31,7 +31,7 @@ export const COLOR_GRIS_G="#CFD2D3";
 export const COLOR_GRIS_H="#B1B4B5";
 export const COLOR_GRIS_I="#939697";
 export const COLOR_GRIS_J="#767878";
-
+export const COLOR_GRIS_K="#444";
 
 
 export const COLOR_AZUL_OSCURO="#567";
