@@ -7,7 +7,7 @@ import IndicadoresDiferencia from './IndicadoresDiferencia'
 
 export default class SalasListadoInCo extends Component {
   render() {
-    const {data} = this.props
+    const {data} = this.props;
     return (
       <View style={styles.container}>
           <View style={styles.margen}>

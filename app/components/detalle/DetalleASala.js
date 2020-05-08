@@ -31,13 +31,14 @@ export default class DetalleIndicadores extends Component {
 
   render() {
     const {data} = this.props
-    console.log(JSON.stringify(data))
+    console.log('DetalleASALA', JSON.stringify(data))
 
 
     return (
       <View style={styles.container}>
          <View style={styles.view_indicador}>
          <DetalleSucursalHeader/>
+         <Text> hola {data.desc_sala}</Text>
            <Indicador />
             {/* <Indicador data={data}  /> */}
             <VerFotografia />

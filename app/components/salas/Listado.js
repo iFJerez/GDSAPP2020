@@ -10,7 +10,9 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 export default class ListadoContraido extends Component {
 
-  crearIndicadores(item){
+  crearIndicadores(item, dataAll){
+
+
     try {
       return(
           <FlatList  
@@ -19,7 +21,7 @@ export default class ListadoContraido extends Component {
           data={item}
           renderItem={({item}) =>
           
-          <TouchIndicador data={item} />}
+          <TouchIndicador data={item} dataAll={dataAll} />}
           keyExtractor={(item, index) => '' + index}
   />   
       )
@@ -100,6 +102,10 @@ export default class ListadoContraido extends Component {
   render() {
     const {item} = this.props
     const cadena = item.cadena
+
+    console.log("envioSala", item.desc_sala)
+
+
     //alert(JSON.stringify(data[0]["jumbo"].uri))
     return (
       <View style={styles.container}>
@@ -115,7 +121,7 @@ export default class ListadoContraido extends Component {
           </View>
           <View style={styles.st_abajo}>    
           <ScrollView horizontal={true}>
-              {this.crearIndicadores(item.indicadores)}
+              {this.crearIndicadores(item.indicadores, item)}
            </ScrollView>
               
           </View>

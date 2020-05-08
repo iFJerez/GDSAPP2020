@@ -42,7 +42,8 @@ class SalasListado extends React.Component {
   const {dataSala} = this.props;
   let sala = 'sala' + item.id_sala
   let newData = dataSala[sala]
-  obj = {...item, ...newData};
+  let obj = {...item, ...newData};
+  console.log('SalaListado', JSON.stringify(obj))
   return(
 
     //Buscamos su Informacion y luego se la compartimos.

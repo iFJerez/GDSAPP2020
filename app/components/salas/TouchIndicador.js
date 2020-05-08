@@ -12,10 +12,12 @@ import ActionCreators from '../../redux/actions';
 class TouchIndicador extends React.Component {
 
   funExec(){
-  const {data, ver_detalle,  funVerDetalle, funGuardaDetalle} = this.props;
- funGuardaDetalle(data) 
+  const {data, dataAll, ver_detalle,  funVerDetalle, funGuardaDetalle} = this.props;
+  obj = {...data, ...dataAll}
+
+ funGuardaDetalle(obj) 
  funVerDetalle(!ver_detalle)
-// funMessage('hola', 'mensaje')
+//console.log('TouchIndicador', JSON.stringify(dataAll))
 }
 
   render() {
