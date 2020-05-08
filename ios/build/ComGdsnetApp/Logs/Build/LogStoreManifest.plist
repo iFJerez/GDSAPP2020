@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>03D46200-5FCE-47EF-834B-EAE8994E2B2A</key>
+		<key>806D3EDD-6105-47E7-92E2-3BCDA6571108</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>03D46200-5FCE-47EF-834B-EAE8994E2B2A.xcactivitylog</string>
+			<string>806D3EDD-6105-47E7-92E2-3BCDA6571108.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>610418702.33441103</real>
+			<real>610641751.51125002</real>
 			<key>timeStoppedRecording</key>
-			<real>610418704.56760502</real>
+			<real>610641761.66741502</real>
 			<key>title</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>03D46200-5FCE-47EF-834B-EAE8994E2B2A</string>
+			<string>806D3EDD-6105-47E7-92E2-3BCDA6571108</string>
 		</dict>
-		<key>BCF6C699-994F-4194-BA98-FCAF4AB91676</key>
+		<key>D5D6E641-A002-4896-AFA8-F015099B243B</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>BCF6C699-994F-4194-BA98-FCAF4AB91676.xcactivitylog</string>
+			<string>D5D6E641-A002-4896-AFA8-F015099B243B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,13 +66,13 @@
 			<key>signature</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>610551152.98796201</real>
+			<real>610644849.31048203</real>
 			<key>timeStoppedRecording</key>
-			<real>610551155.50680399</real>
+			<real>610644857.318784</real>
 			<key>title</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>BCF6C699-994F-4194-BA98-FCAF4AB91676</string>
+			<string>D5D6E641-A002-4896-AFA8-F015099B243B</string>
 		</dict>
 	</dict>
 </dict>

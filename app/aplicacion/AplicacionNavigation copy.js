@@ -5,15 +5,18 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import IconApp from '../herramientas/IconTabNav'
-import * as colores from '../herramientas/Const'
+import * as constants from '../herramientas/Const'
+// SCREEN
 import HomeScreen from '../screens/HomeScreen'
 import SalasScreen from '../screens/SalasScreen'
 import UsuarioScreen from '../screens/UsuarioScreen'
 import TareasScreen from '../screens/TareasScreen'
 import SalaResumen from '../screens/SalasResumen'
-import PendienteEnvio from '../components/pendientesEnvio/PendienteEnvio'
+import DesarrolloScreen from '../screens/DesarrolloScreen'
+
+import Envio from '../components/pendientesEnvio/Envio'
 import {funFecha} from '../herramientas/Fechas'
-import {View} from 'react-native'
+import {View, Text} from 'react-native'
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -21,6 +24,37 @@ import { bindActionCreators } from 'redux';
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
+
+
+const DesarrolloStack = createStackNavigator(
+
+  {
+     Desarrollo: {
+       screen: DesarrolloScreen,
+       navigationOptions: () => ({
+         title: 'Desarrollo'
+       })
+     },
+   },
+   {
+     initialRouteName: 'Desarrollo',
+     defaultNavigationOptions: {
+       headerStyle: {
+         backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
+       },
+       headerTintColor: constants.COLOR_BLANCO,
+   
+       headerBackTitle: ' ',
+       headerTitleStyle: {
+         fontWeight: 'bold',
+         fontSize: constants.SIZE_LETRA_XXX_LARGE,
+         textAlign:"left", 
+         flex:1,
+         
+       },
+     },
+   }
+ );
 
 
 const SalasStack = createStackNavigator(
@@ -42,14 +76,14 @@ const SalasStack = createStackNavigator(
     initialRouteName: 'Salas',
     defaultNavigationOptions: {
       headerStyle: {
-        backgroundColor: colores.COLOR_PRIMARIO_OSCURO,
+        backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
       },
-      headerTintColor: colores.COLOR_BLANCO,
+      headerTintColor: constants.COLOR_BLANCO,
   
       headerBackTitle: ' ',
       headerTitleStyle: {
         fontWeight: 'bold',
-        fontSize: colores.SIZE_LETRA_XXXX_LARGE,
+        fontSize: constants.SIZE_LETRA_XXXX_LARGE,
         textAlign:"left", 
         flex:1,
       },
@@ -60,8 +94,7 @@ const SalasStack = createStackNavigator(
 
 const HomeStack = createStackNavigator(
 
-  
-  {
+ {
     Home: {
       screen: HomeScreen,
       navigationOptions: () => ({
@@ -73,14 +106,47 @@ const HomeStack = createStackNavigator(
     initialRouteName: 'Home',
     defaultNavigationOptions: {
       headerStyle: {
-        backgroundColor: colores.COLOR_PRIMARIO_OSCURO,
+        backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
       },
-      headerTintColor: colores.COLOR_BLANCO,
+      headerTintColor: constants.COLOR_BLANCO,
   
       headerBackTitle: ' ',
       headerTitleStyle: {
         fontWeight: 'bold',
-        fontSize: colores.SIZE_LETRA_MEDIUM,
+        fontSize: constants.SIZE_LETRA_MEDIUM,
+        textAlign:"left", 
+        flex:1,
+        
+      },
+    },
+  }
+);
+
+
+
+
+
+const TareasStack = createStackNavigator(
+  {
+    Tareas: {
+      screen: TareasScreen,
+      navigationOptions: () => ({
+        title: 'Tareas'
+      })
+    },
+  },
+  {
+    initialRouteName: 'Tareas',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
+      },
+      headerTintColor: constants.COLOR_BLANCO,
+  
+      headerBackTitle: ' ',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+        fontSize: constants.SIZE_LETRA_X_LARGE,
         textAlign:"left", 
         flex:1,
         
@@ -112,13 +178,16 @@ class Home extends React.Component {
       {
         Home: HomeStack,
         Salas: SalasStack,
-        Tareas: TareasScreen,
+        Tareas: TareasStack,
         Usuario: UsuarioScreen,
+        Desarrollo: DesarrolloStack,
          
       },
-    
+ 
  
       {
+
+
         defaultNavigationOptions: ({ navigation }) => ({
           tabBarIcon: ({ tintColor }) => {
             const { routeName } = navigation.state;
@@ -130,6 +199,9 @@ class Home extends React.Component {
             } else if (routeName === 'Tareas') {
               iconName = `bars`;
               IconComponent = SalasIcon(this.props.duo_new);
+            } else if (routeName === 'Desarrollo') {
+              iconName = `clockcircleo`;
+              IconComponent = SalasIcon(this.props.duo_new);
             } else if (routeName === 'Salas') {
               iconName = `shoppingcart`;
               IconComponent = UltimaIcon(this.props.salas_new);
@@ -139,18 +211,26 @@ class Home extends React.Component {
             }
     
             return (
-            
+            <View>
+              <Text>hola</Text>
                   <IconComponent name={iconName} size={25} color={tintColor} />
-              
+              </View>
             
             )
           },
         }),
         tabBarOptions: {
-          activeTintColor: colores.COLOR_PRIMARIO,
-          inactiveTintColor: colores.COLOR_GRIS,
+          activeTintColor: constants.COLOR_PRIMARIO,
+          inactiveTintColor: constants.COLOR_GRIS,
           
+          style: {
+            height: 60,
+            
+            
+  
         },
+        },
+
       }
     )
 
@@ -159,8 +239,9 @@ class Home extends React.Component {
 
     return (
   <View style={{flex: 1}}>
+      
       <Navigation />
-      <PendienteEnvio />
+      <Envio />
    </View>
     )
   }
