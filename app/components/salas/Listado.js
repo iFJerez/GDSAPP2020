@@ -103,7 +103,7 @@ export default class ListadoContraido extends Component {
     const {item} = this.props
     const cadena = item.cadena
 
-    console.log("envioSala", item.desc_sala)
+    //console.log("envioSala", item.desc_sala)
 
 
     //alert(JSON.stringify(data[0]["jumbo"].uri))

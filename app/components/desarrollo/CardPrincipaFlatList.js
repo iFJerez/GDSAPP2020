@@ -48,7 +48,7 @@ export default class CardPrincipal extends Component {
   render() {
 
     const Item = ({titulo}) => {
-        console.log(titulo);
+        //console.log(titulo);
         return (<View>
           <Text style={{
             padding: 20

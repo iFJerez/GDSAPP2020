@@ -31,7 +31,7 @@ export default class DetalleIndicadores extends Component {
 
   render() {
     const {data} = this.props
-    console.log('DetalleASALA', JSON.stringify(data))
+    //console.log('DetalleASALA', JSON.stringify(data))
 
 
     return (
