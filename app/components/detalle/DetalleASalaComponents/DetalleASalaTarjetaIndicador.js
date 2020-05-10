@@ -6,31 +6,33 @@ import * as constants from '../../../herramientas/Const';
 import TextoBaseSinSizeAjust from '../../../herramientas/textos/TextoBaseSinSizeAjust'
 
 const detalleASalaTarjetaIndicador = (props) => {
+    const difPositiva = props.diferencia >= 0
+
     return (
         <View style={styles.container}>
             <View style={styles.etiquetaOrigenDatos}>
-                <TextoBase style={styles.sty_txt_origen}>{'Transaccional'}</TextoBase>
+                <TextoBase style={styles.sty_txt_origen}>{props.fuente}</TextoBase>
             </View>
             <View style={styles.indicadorContainer}>
                 <View style={styles.indicadorValor}>
-                    <TextoBase style={styles.sty_txt_valor}>{'90%'}</TextoBase>
+                    <TextoBase style={styles.sty_txt_valor}>{`${props.valor}%`}</TextoBase>
                 </View>
                 <View style={styles.indicadorDesc}>
                     <TextoBase style={styles.sty_txt_indicador_ref}>{'Indicador'}</TextoBase>
-                    <TextoBase style={styles.sty_txt_indicador_nombre}>{'Exhibicion'}</TextoBase>
+                    <TextoBase style={styles.sty_txt_indicador_nombre}>{props.indicador}</TextoBase>
                 </View>
             </View>
             <View style={styles.separador}></View>
             <View style={styles.indicadorDiferenciaContainer}>
                 <View style={styles.indicadorDiferenciaValor}>
-                    <Icon name="up" size={constants.ICON_VERY_SMALL} color={constants.COLOR_PRIMARIO} /> 
-                    <TextoBase style={styles.sty_txt_dif_valor} >{'20%'}</TextoBase>
+                    <Icon name={difPositiva ? 'up' : 'down'} size={constants.ICON_VERY_SMALL} color={ difPositiva ? constants.COLOR_PRIMARIO: constants.COLOR_SECUNDARIO } /> 
+                    <TextoBase style={ difPositiva? styles.sty_txt_dif_valor : styles.sty_txt_dif_valor_neg } >{`${props.diferencia}%`}</TextoBase>
                 </View>
                 <View style={styles.indicadorDiferenciaDesc}>
                     <TextoBaseSinSizeAjust 
                         style={styles.sty_txt_dif_ref}
                         numberOfLines={2}>
-                            {'Diferencia semana anterior'}
+                            {'Diferencia periodo anterior'}
                     </TextoBaseSinSizeAjust>
                 </View>
             </View>
@@ -123,6 +125,12 @@ const styles = StyleSheet.create({
     },
     sty_txt_dif_valor: {
         color: constants.COLOR_PRIMARIO,
+        fontSize: 40,
+        fontWeight: '900',
+        paddingLeft: 10
+    },
+    sty_txt_dif_valor_neg: {
+        color: constants.COLOR_SECUNDARIO,
         fontSize: 40,
         fontWeight: '900',
         paddingLeft: 10

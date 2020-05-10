@@ -6,7 +6,11 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+<<<<<<< HEAD
 		<key>839BF522-67BB-4EEA-8BF0-72C10B7136BD</key>
+=======
+		<key>F54015F7-8484-49D8-9BF2-60A01478BAB4</key>
+>>>>>>> ebb8286f0a32c3c0317db6806d853cf0e56e88aa
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +19,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
+<<<<<<< HEAD
 			<string>839BF522-67BB-4EEA-8BF0-72C10B7136BD.xcactivitylog</string>
+=======
+			<string>F54015F7-8484-49D8-9BF2-60A01478BAB4.xcactivitylog</string>
+>>>>>>> ebb8286f0a32c3c0317db6806d853cf0e56e88aa
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,6 +40,7 @@
 			<key>signature</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
+<<<<<<< HEAD
 			<real>610742515.67546403</real>
 			<key>timeStoppedRecording</key>
 			<real>610742522.17842698</real>
@@ -73,6 +82,15 @@
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
 			<string>CE0FDAD1-4B86-49FF-8FA3-56ADAAF3ECC1</string>
+=======
+			<real>610813080.97820902</real>
+			<key>timeStoppedRecording</key>
+			<real>610813086.14427197</real>
+			<key>title</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>F54015F7-8484-49D8-9BF2-60A01478BAB4</string>
+>>>>>>> ebb8286f0a32c3c0317db6806d853cf0e56e88aa
 		</dict>
 	</dict>
 </dict>

@@ -16,7 +16,7 @@ export default class DetalleSucursalHearer extends Component {
         <View style={styles.sty_image}>
           <Image
             style={styles.st_icono}
-            source={{ uri: data_cadena['jumbo'].uri }}
+            source={{ uri: data_cadena[this.props.cadena].uri }}
 
           />
         </View>
@@ -40,14 +40,14 @@ export default class DetalleSucursalHearer extends Component {
         <View style={styles.container}>
             <View style={styles.sucursalHeader}>
             <View style={styles.logo}>
-                {this.cargaImagen('jumbo')}
+                {this.cargaImagen(this.props.cadena)}
             </View>
             <View style={styles.detalleSuc}>
                 <TextoBase style={styles.sty_text_desc_sucursal}>
-                {'JUMBO PRUEBA'}
+                {this.props.desc_sala}
                 </TextoBase>
                 <TextoBase style={styles.sty_text_direccion}>
-                {'AV DE LOS COLONOS INSPIRADOS 2342'} 
+                {this.props.direccion} 
                 </TextoBase>
             </View>
             </View>

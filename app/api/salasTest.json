@@ -2,22 +2,26 @@
   "salas": [
     {"id_sala": 10,
       "cadena": "jumbo",
-      "desc_sala": "Jumbo  Buena Aventura",
+      "desc_sala": "Jumbo Buena Aventura",
+      "direccion": "Av de los colonos inspirados 2342",
       "numero": 99,
       "estado": "premier"},
     { "id_sala": 11,
       "cadena": "sisa",
       "desc_sala": "Santa Isabel Buena Aventura",
+      "direccion": "Calandrias ruidosas 2342",
       "numero": 99,
       "estado": "objetada"},
       { "id_sala": 12,
         "cadena": "lider",
         "desc_sala": "Lider Incienso de Aguas",
+        "direccion": "Abedules 2342 y Las Rosas",
         "numero": 99,
         "estado": "objetada"},
         { "id_sala": 13,
           "cadena": "jumbo",
           "desc_sala": "Jumbo Tierra de Selknam",
+          "direccion": "Asgard 8769 y Wakanda ",
           "numero": 99,
           "estado": "objetada"},
     {"id_sala": 14,
@@ -32,14 +36,14 @@
         "estado": "premier"}
     ],
   "objeciones": [
-      {"obcion": "10", "indicador": "osa", "id_sku": 98765, "objecion": "sin stock"},
+      {"id_sala": "11", "indicador": "osa", "id_sku": 98765, "objecion": "sin stock"},
       {"id_sala": "10", "indicador": "osa", "id_sku": 98762, "objecion": "sin stock"}
       ],
   "sala10" : 
       {
         "id_sala": 10,
         "indicadores": [
-          {"indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada",
+          {"indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
            "detalles": [
              {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
              {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
@@ -58,7 +62,7 @@
              {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false}
              
            ]},
-           {"indicador": "precios", "valor": "86", "diferencia": "-15", 
+           {"indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
              "detalles": [
                {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
                {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -70,14 +74,14 @@
                
              ] },
          
-          {"indicador": "promocion", "valor": "67", "diferencia": "15" },
-          {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
-          {"indicador": "precios", "valor": "86", "diferencia": "-33" },
-          {"indicador": "osa", "valor": "85", "diferencia": "20" },
-          {"indicador": "precios", "valor": "86", "diferencia": "-15" },
-          {"indicador": "promocion", "valor": "67", "diferencia": "15" },
-          {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
-          {"indicador": "precios", "valor": "86", "diferencia": "-33" }
+          {"indicador": "promocion", "valor": "67", "diferencia": "15", "fuente": "transaccional" },
+          {"indicador": "catalogo", "valor": "56", "diferencia": "15", "fuente": "transaccional" },
+          {"indicador": "precios", "valor": "86", "diferencia": "-33", "fuente": "transaccional" },
+          {"indicador": "osa", "valor": "85", "diferencia": "20", "fuente": "transaccional" },
+          {"indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional" },
+          {"indicador": "promocion", "valor": "67", "diferencia": "15", "fuente": "transaccional" },
+          {"indicador": "catalogo", "valor": "56", "diferencia": "15", "fuente": "transaccional" },
+          {"indicador": "precios", "valor": "86", "diferencia": "-33", "fuente": "transaccional" }
           
         ]
     },
@@ -85,7 +89,7 @@
     {
       "id_sala": 11,
       "indicadores": [
-        {"indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada",
+        {"indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
          "detalles": [
            {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
            {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
@@ -94,7 +98,7 @@
            
            
          ]},
-         {"indicador": "precios", "valor": "86", "diferencia": "-15", 
+         {"indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional", 
            "detalles": [
              {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -106,14 +110,14 @@
              
            ] },
        
-        {"indicador": "promocion", "valor": "67", "diferencia": "15" },
-        {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
-        {"indicador": "precios", "valor": "86", "diferencia": "-33" },
-        {"indicador": "osa", "valor": "85", "diferencia": "20" },
-        {"indicador": "precios", "valor": "86", "diferencia": "-15" },
-        {"indicador": "promocion", "valor": "67", "diferencia": "15" },
-        {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
-        {"indicador": "precios", "valor": "86", "diferencia": "-33" }
+        {"indicador": "promocion", "valor": "67", "diferencia": "15", "fuente": "transaccional" },
+        {"indicador": "catalogo", "valor": "56", "diferencia": "15", "fuente": "transaccional" },
+        {"indicador": "precios", "valor": "86", "diferencia": "-33", "fuente": "transaccional" },
+        {"indicador": "osa", "valor": "85", "diferencia": "20", "fuente": "transaccional" },
+        {"indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional" },
+        {"indicador": "promocion", "valor": "67", "diferencia": "15", "fuente": "transaccional" },
+        {"indicador": "catalogo", "valor": "56", "diferencia": "15" , "fuente": "transaccional"},
+        {"indicador": "precios", "valor": "86", "diferencia": "-33", "fuente": "transaccional" }
         
       ]
   },
@@ -121,7 +125,7 @@
     {
       "id_sala": 12,
       "indicadores": [
-        {"indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada",
+        {"indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
          "detalles": [
            {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
            {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
@@ -130,7 +134,7 @@
            
            
          ]},
-         {"indicador": "precios", "valor": "86", "diferencia": "-15", 
+         {"indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional", 
            "detalles": [
              {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -142,14 +146,14 @@
              
            ] },
        
-        {"indicador": "promocion", "valor": "67", "diferencia": "15" },
-        {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
-        {"indicador": "precios", "valor": "86", "diferencia": "-33" },
-        {"indicador": "osa", "valor": "85", "diferencia": "20" },
-        {"indicador": "precios", "valor": "86", "diferencia": "-15" },
-        {"indicador": "promocion", "valor": "67", "diferencia": "15" },
-        {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
-        {"indicador": "precios", "valor": "86", "diferencia": "-33" }
+        {"indicador": "promocion", "valor": "67", "diferencia": "15", "fuente": "transaccional" },
+        {"indicador": "catalogo", "valor": "56", "diferencia": "15", "fuente": "transaccional" },
+        {"indicador": "precios", "valor": "86", "diferencia": "-33", "fuente": "transaccional" },
+        {"indicador": "osa", "valor": "85", "diferencia": "20", "fuente": "transaccional" },
+        {"indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional" },
+        {"indicador": "promocion", "valor": "67", "diferencia": "15", "fuente": "transaccional" },
+        {"indicador": "catalogo", "valor": "56", "diferencia": "15", "fuente": "transaccional" },
+        {"indicador": "precios", "valor": "86", "diferencia": "-33", "fuente": "transaccional" }
         
       ]
   },
@@ -157,7 +161,7 @@
     {
       "id_sala": 13,
       "indicadores": [
-        {"indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada",
+        {"indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
          "detalles": [
            {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
            {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
@@ -166,7 +170,7 @@
            
            
          ]},
-         {"indicador": "precios", "valor": "86", "diferencia": "-15", 
+         {"indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional", 
            "detalles": [
              {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -178,14 +182,14 @@
              
            ] },
        
-        {"indicador": "promocion", "valor": "67", "diferencia": "15" },
-        {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
-        {"indicador": "precios", "valor": "86", "diferencia": "-33" },
-        {"indicador": "osa", "valor": "85", "diferencia": "20" },
-        {"indicador": "precios", "valor": "86", "diferencia": "-15" },
-        {"indicador": "promocion", "valor": "67", "diferencia": "15" },
-        {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
-        {"indicador": "precios", "valor": "86", "diferencia": "-33" }
+        {"indicador": "promocion", "valor": "67", "diferencia": "15", "fuente": "transaccional" },
+        {"indicador": "catalogo", "valor": "56", "diferencia": "15", "fuente": "transaccional" },
+        {"indicador": "precios", "valor": "86", "diferencia": "-33", "fuente": "transaccional" },
+        {"indicador": "osa", "valor": "85", "diferencia": "20", "fuente": "transaccional" },
+        {"indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional" },
+        {"indicador": "promocion", "valor": "67", "diferencia": "15", "fuente": "transaccional" },
+        {"indicador": "catalogo", "valor": "56", "diferencia": "15", "fuente": "transaccional" },
+        {"indicador": "precios", "valor": "86", "diferencia": "-33", "fuente": "transaccional" }
         
       ]
   },

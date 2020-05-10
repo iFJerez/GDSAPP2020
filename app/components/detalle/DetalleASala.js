@@ -31,15 +31,15 @@ export default class DetalleIndicadores extends Component {
 
   render() {
     const {data} = this.props
-    //console.log('DetalleASALA', JSON.stringify(data))
-
+    console.log('DetalleASALA', JSON.stringify(data))
+    const {cadena, desc_sala, direccion, indicador, valor, diferencia, fuente} = data
 
     return (
       <View style={styles.container}>
          <View style={styles.view_indicador}>
-         <DetalleSucursalHeader/>
-         <Text> hola {data.desc_sala}</Text>
-           <Indicador />
+        
+         <DetalleSucursalHeader {...{ cadena, desc_sala, direccion }}/>
+           <Indicador {...{ indicador, valor, diferencia, fuente }}/>
             {/* <Indicador data={data}  /> */}
             <VerFotografia />
          </View>

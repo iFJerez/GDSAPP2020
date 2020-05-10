@@ -24,7 +24,7 @@ class TouchIndicador extends React.Component {
   const {data} = this.props;
  
     return (
-      <TouchableOpacity  onPress={()=>this.funExec()} >
+      <TouchableOpacity onPress={()=>this.funExec()} >
          <Indicadores data={data} />
       </TouchableOpacity>
     );
