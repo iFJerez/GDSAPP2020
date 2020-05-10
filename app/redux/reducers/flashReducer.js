@@ -4,6 +4,7 @@ const initialState = {
   ver_detalle: false,
   ver_activity: false,
   ver_sala_filtro: false,
+  ver_envio: false,
 
 };
 
@@ -17,6 +18,13 @@ const flashReducer = (state = initialState, action) => {
       return {
         ...state,
         ver_detalle: action.ver_detalle,
+      }
+    }
+    case types.ENVIO_VIEW: {
+      console.log('VER ENVIO');
+      return {
+        ...state,
+        ver_envio: action.ver_envio,
       }
     }
     case types.VER_ACTIVITY: {

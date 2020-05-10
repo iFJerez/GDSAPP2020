@@ -5,6 +5,7 @@ import {View} from 'react-native'
 import AplicacionNavigation from './AplicacionNavigation'
 import ModalScreen from '../screens/ModalScreen'
 import HelpScreen from '../screens/HelpScreen'
+import EnvioScreen from '../screens/EnvioScreen'
 
 
 
@@ -49,7 +50,7 @@ class Applicacion extends React.Component {
         <AplicacionNavigation />
         <ModalScreen />
         <HelpScreen />
-        
+        <EnvioScreen />
 
   
 

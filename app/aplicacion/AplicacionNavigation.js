@@ -221,7 +221,7 @@ class Home extends React.Component {
           inactiveTintColor: constants.COLOR_GRIS,
           
           style: {
-            height: 60,
+            backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
             
             
   
@@ -234,13 +234,9 @@ class Home extends React.Component {
     let Navigation = createAppContainer(TabNavigator);
 
 
-    return (
-  <View style={{flex: 1}}>
-      
-      <Navigation />
-      <Envio />
-   </View>
-    )
+    return   <Navigation />
+
+
   }
 }
 

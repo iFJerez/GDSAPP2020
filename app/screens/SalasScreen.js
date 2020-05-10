@@ -7,6 +7,7 @@ import SalasListado from '../components/salas/SalasListado'
 import Activity from './ActivityScreen'
 import DetallesScreen from './DetallesScreen'
 import FiltroSalasScreen from '../components/salas/FiltroSalasScreen'
+import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
 
 
 
@@ -26,6 +27,7 @@ class Home extends React.Component {
             <SalasListado />
             <DetallesScreen />
             <FiltroSalasScreen />
+            <EnvioBoton />
             </SafeAreaView>      
         )
     }

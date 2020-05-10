@@ -12,6 +12,8 @@ import TareaHome from '../components/home/TareaHome'
 import SalaRanking from '../components/home/SalasRanking'
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
+import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
+
 
 
 
@@ -51,6 +53,7 @@ const {} = this.props;
                 
          </View>
         </ScrollView>
+        <EnvioBoton />
      
       </View>
  
@@ -61,7 +64,8 @@ const {} = this.props;
 // Styles
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: constants.COLOR_GRIS_D
+    backgroundColor: constants.COLOR_GRIS_D,
+    flex: 1,
   },
 
   styTop: {flex: 1, marginTop:80,  marginLeft: 30, 

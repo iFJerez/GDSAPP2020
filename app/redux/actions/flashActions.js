@@ -22,6 +22,12 @@ export function funVerSalaFiltro(ver_sala_filtro) {
   }
 }
 
+export function funVerEnvio(ver_envio) {
+  return {
+    type: types.ENVIO_VIEW,
+    ver_envio: ver_envio
+  }
+}
 
 
 

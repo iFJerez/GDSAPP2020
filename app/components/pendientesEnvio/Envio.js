@@ -140,12 +140,12 @@ class App extends Component {
 const styles = StyleSheet.create({
   container: {
    flex: 1,
-   marginBottom: 50,
+   marginBottom: 0,
    
 
   },
   buttonAbrir: {
-    position: 'absolute',
+    
     width:"97%",
     height: 60,
     alignItems: 'center',
@@ -174,8 +174,8 @@ const styles = StyleSheet.create({
     top: 20,
 
   },
-  styCerrado: {position: 'absolute', width: "100%", bottom: 154, alignItems: 'center'},
-  styAbierto: {position: 'absolute', width: "100%",height:"100%", backgroundColor: '#fff'},
+  styCerrado: {height: 50, width: "100%", bottom: 0, alignItems: 'center'},
+  styAbierto: {position:'absolute', bottom:0 , width: "100%",height:"100%", backgroundColor: '#fff'},
 
 });
 
