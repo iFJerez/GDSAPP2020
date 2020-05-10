@@ -21,15 +21,15 @@ class SalasListado extends React.Component {
 
   orderSearch=(text) => {
     
-   // let dsOrdernar= this.props.dataSala;
+   let dsOrdernar= this.props.dataSala;
    // console.log('vamos a ordenar: ' + JSON.stringify(Object.keys(dsOrdernar[0])))
     //onsole.log(dsOrdernar.sort(((a, b) => a.id_sala - b.id_sala)));
   
   }
 
-  filterSearch=(text) => {
+filterSearch=(text) => {
     let dsBuscar= this.props.dataSala;
-    const newData = dsBuscar.filter(function(item){
+    const newData = dsBuscar.salas.filter(function(item){
     const itemData = item.desc_sala.toUpperCase()
     const textData = text.toUpperCase()
     return itemData.indexOf(textData) > -1
@@ -37,6 +37,23 @@ class SalasListado extends React.Component {
     })
     this.setState({dataSala: newData })
   }
+
+filterSearch2=(text) => {
+  let dsSalaAll= this.props.dataSala
+  let dsBuscar= this.props.dataSala.salas;
+    const newData = dsBuscar.filter((item)=>{
+    const itemData = item.desc_sala.toUpperCase()
+    const textData = text.toUpperCase()
+    return itemData.indexOf(textData) > -1
+  
+    })
+
+    obj = {"salas": newData}
+    
+
+  console.log(obj)
+  
+}
 
  crearSala(item){
   const {dataSala} = this.props;
@@ -63,7 +80,7 @@ class SalasListado extends React.Component {
       <View style={styles.container}>
         
             <SalaMenu  filterSearch={this.filterSearch} />
-            {this.orderSearch('nose')}
+            {this.filterSearch2('santa')}
             {this.state.dataSala.salas.map((valores, i) => {
              return this.crearSala(valores)
             })}
