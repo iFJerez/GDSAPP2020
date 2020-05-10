@@ -46,7 +46,6 @@ export const COLOR_CUATERNARIO_CLARO="#f2f2f2";
 export const COLOR_QUINTENARIO_CLARO="#7f7f7f";
 export const COLOR_SEXTENARIO_CLARO="#ffffff";
 
-
 export const COLOR_PRIMARIO="#248397";
 export const COLOR_SECUNDARIO="#EF4123";
 export const COLOR_TERNARIO="#636366";
