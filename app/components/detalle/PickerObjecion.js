@@ -31,6 +31,7 @@ export default class SalasListadoInCo extends Component {
     
     return  (
   <View style={styles.container}> 
+      <View style={styles.arrowDown}></View>
       <View style={styles.estadoObjecion}>
         <TextoBase style={styles.sty_txt_title}>Estado Objeción</TextoBase>
         <TextoBase style={styles.sty_txt_selected}>{this.state.selectedValue}</TextoBase>
@@ -64,6 +65,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: constants.COLOR_GRIS_E,
     padding: 10,
+    paddingTop: 13,
     margin: 0,
     flexDirection: 'row',
     flex: 8
@@ -93,9 +95,22 @@ const styles = StyleSheet.create({
     fontSize: constants.SIZE_LETRA_X_LARGE
   },
   TextStyle: {
-    fontSize:15,
+    fontSize: 15,
     color: constants.COLOR_GRIS_I,
-    alignItems:"flex-start",
-    paddingTop:5
+    alignItems: "flex-start",
+    paddingTop: 5
+  },
+  arrowDown: {
+    position: 'absolute',
+    top: -4,
+    left: 20,
+    width: 0, 
+    height: 0, 
+    borderLeftWidth: 25,
+    borderLeftColor: 'rgba(158, 150, 150, 0)',
+    borderRightWidth: 25,
+    borderRightColor: 'rgba(158, 150, 150, 0)',
+    borderTopColor: constants.COLOR_GRIS_A,
+    borderTopWidth: 12
   }
 });

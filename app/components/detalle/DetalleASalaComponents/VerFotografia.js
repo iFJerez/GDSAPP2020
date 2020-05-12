@@ -23,6 +23,7 @@ const verFotografia = (props) => {
 const styles = StyleSheet.create({
     container: {
       width: '94%',
+      flex: 1,
       backgroundColor: constants.COLOR_PRIMARIO,
       opacity: 0.6,
       margin: 5,
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
     },
     sty_txt_foto: {
         color: '#fff',
-        flex: 0.2,
+        flex: 1,
         fontSize: constants.SIZE_LETRA_X_LARGE,
         fontWeight: 'bold'
     }

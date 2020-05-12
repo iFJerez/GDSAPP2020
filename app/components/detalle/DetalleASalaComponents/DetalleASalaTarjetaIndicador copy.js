@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         paddingTop: 20,
         paddingBottom: 10,
-        paddingHorizontal: 20,
+        paddingHorizontal: 10,
         backgroundColor: '#fff'
     },
     etiquetaOrigenDatos: {
@@ -81,36 +81,40 @@ const styles = StyleSheet.create({
     },
     indicadorDiferenciaContainer: {
         flexDirection: 'column',
+        justifyContent: 'center',
         alignItems: 'center',
-        flex: 1
+        flex: 1,
+        backgroundColor: 'salmon'
     },
     indicadorContainer: {
         flexDirection: 'column',
         justifyContent: 'flex-start',
         flex: 1,
-        paddingLeft: 10
+        paddingLeft: 10,
+        paddingBottom: 10,
+        backgroundColor: 'salmon'
     },
     indicadorDiferenciaValor: {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'flex-start',
         paddingRight: 10,
-        flex: 2
+        backgroundColor: 'red'
     },
     indicadorValor: {
         justifyContent: 'flex-start',
-        alignItems: 'flex-start',
-        flex: 2
+        backgroundColor: 'red',
+        height: '80%'
     },
     indicadorDesc: {
-        flex: 1,
+        height: '30%',
         justifyContent: 'center',
-        marginBottom: 5
+        backgroundColor: 'yellow'
     },
     indicadorDiferenciaDesc: {
-        flex: 1,
+        height: '30%',
         justifyContent: 'center',
-        marginBottom: 5
+        backgroundColor: 'yellow'
     },
     sty_txt_origen: {
         color: '#fff',
