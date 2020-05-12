@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
     sty_txt_agrupador: {
       fontSize: constants.SIZE_LETRA_XX_LARGE,
       textTransform: 'capitalize',
-      color: constants.COLOR_GRIS_J
+      fontWeight: 'bold',
+      color: '#555'
     }
 });
 
