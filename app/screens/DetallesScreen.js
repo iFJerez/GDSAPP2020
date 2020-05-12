@@ -85,22 +85,18 @@ funMostrarDastos(){
       scrollOffsetMax={400 - 300} 
       style={styles.modal}>
       <View style={styles.scrollableModal}>
-      <View style={styles.view_close}>
-      <TouchableOpacity style={styles.view_close} onPress={()=>funVerDetalle(!ver_detalle)} >
-             <Icon
-              name={'ios-arrow-down'}
-              size={30}
-              color={'#bbb'}
-              ></Icon>      
-        </TouchableOpacity>
-      </View>
-        <ScrollView
-          onScroll={this.handleOnScroll}
-          scrollEventThrottle={10}>
-          <View style={styles.scrollableModalContent1}>
-            {this.funMostrarDastos()}
-          </View>
-        </ScrollView>
+        <View style={styles.view_close}>
+          <TouchableOpacity style={styles.view_close} onPress={()=>funVerDetalle(!ver_detalle)} >
+                <Icon
+                  name={'ios-arrow-down'}
+                  size={30}
+                  color={'#bbb'}
+                  ></Icon>      
+            </TouchableOpacity>
+        </View>
+        <View style={styles.scrollableModalContent1}>
+          {this.funMostrarDastos()}
+        </View>
       </View>
     </Modal>
     )

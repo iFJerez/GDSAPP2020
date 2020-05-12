@@ -14,11 +14,18 @@ export const detalleBDesplegableHeader = ({agrupador}) => (
 
 const styles = StyleSheet.create({
     container: {
-      backgroundColor: constants.COLOR_GRIS_A,
-      padding: 20
+      backgroundColor: constants.COLOR_GRIS_D,
+      paddingTop: 15,
+      paddingLeft: 15,
+      paddingBottom: 10,
+      borderBottomColor: constants.COLOR_GRIS_G,
+      borderBottomWidth: 1,
+      marginHorizontal: 5,
+      marginBottom: 6,
+      justifyContent: 'flex-end'
     },
     sty_txt_agrupador: {
-      fontSize: constants.SIZE_LETRA_XXX_LARGE,
+      fontSize: constants.SIZE_LETRA_XX_LARGE,
       textTransform: 'capitalize',
       color: constants.COLOR_GRIS_J
     }

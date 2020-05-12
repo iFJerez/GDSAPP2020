@@ -13,6 +13,7 @@
     "@react-native-community/async-storage": "^1.6.3",
     "expo-font": "^7.0.0",
     "react": "16.9.0",
+    "react-devtools": "^4.6.0",
     "react-native": "0.61.5",
     "react-native-flash-message": "^0.1.15",
     "react-native-gesture-handler": "^1.5.3",
