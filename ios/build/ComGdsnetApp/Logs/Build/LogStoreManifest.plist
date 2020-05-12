@@ -6,11 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-<<<<<<< HEAD
-		<key>839BF522-67BB-4EEA-8BF0-72C10B7136BD</key>
-=======
-		<key>F54015F7-8484-49D8-9BF2-60A01478BAB4</key>
->>>>>>> ebb8286f0a32c3c0317db6806d853cf0e56e88aa
+		<key>34CC0BF3-956D-4F4A-97C3-C3B2389E8D5A</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -19,11 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
-			<string>839BF522-67BB-4EEA-8BF0-72C10B7136BD.xcactivitylog</string>
-=======
-			<string>F54015F7-8484-49D8-9BF2-60A01478BAB4.xcactivitylog</string>
->>>>>>> ebb8286f0a32c3c0317db6806d853cf0e56e88aa
+			<string>34CC0BF3-956D-4F4A-97C3-C3B2389E8D5A.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,16 +32,15 @@
 			<key>signature</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
-			<real>610742515.67546403</real>
+			<real>610841700.766909</real>
 			<key>timeStoppedRecording</key>
-			<real>610742522.17842698</real>
+			<real>610841703.13909805</real>
 			<key>title</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>839BF522-67BB-4EEA-8BF0-72C10B7136BD</string>
+			<string>34CC0BF3-956D-4F4A-97C3-C3B2389E8D5A</string>
 		</dict>
-		<key>CE0FDAD1-4B86-49FF-8FA3-56ADAAF3ECC1</key>
+		<key>6E587273-6A84-425A-BE73-486F644D0D7A</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -58,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>CE0FDAD1-4B86-49FF-8FA3-56ADAAF3ECC1.xcactivitylog</string>
+			<string>6E587273-6A84-425A-BE73-486F644D0D7A.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -75,22 +66,13 @@
 			<key>signature</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>610743023.03748703</real>
+			<real>610842700.59046102</real>
 			<key>timeStoppedRecording</key>
-			<real>610743025.23095405</real>
+			<real>610842703.030424</real>
 			<key>title</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>CE0FDAD1-4B86-49FF-8FA3-56ADAAF3ECC1</string>
-=======
-			<real>610813080.97820902</real>
-			<key>timeStoppedRecording</key>
-			<real>610813086.14427197</real>
-			<key>title</key>
-			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>F54015F7-8484-49D8-9BF2-60A01478BAB4</string>
->>>>>>> ebb8286f0a32c3c0317db6806d853cf0e56e88aa
+			<string>6E587273-6A84-425A-BE73-486F644D0D7A</string>
 		</dict>
 	</dict>
 </dict>

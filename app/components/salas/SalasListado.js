@@ -15,19 +15,29 @@ class SalasListado extends React.Component {
   constructor(props){
     super(props)
     this.state = {  
-      dataSala: props.dataSala
+      NewdataSala: props.dataSala
     }
   }
 
-  orderSearch=(text) => {
+  filterSearch=(text) => {
     
-   let dsOrdernar= this.props.dataSala;
-   // console.log('vamos a ordenar: ' + JSON.stringify(Object.keys(dsOrdernar[0])))
+    
+    
+    text = 'fechaHora'
+    let dsOrdernar= this.props.dataSala;
+    const newData = dsOrdernar.salas.sort(((a, b) => a[text] > b[text]))
+    obj = Object.assign({...dsOrdernar})
+    obj.salas = newData
+  
+  this.setState({NewdataSala: obj})
+
+  //this.setState({NewdataSala: obj})
+   //console.log('vamos a ordenar: ' + JSON.stringify(Object.keys(dsOrdernar[0])))
     //onsole.log(dsOrdernar.sort(((a, b) => a.id_sala - b.id_sala)));
   
   }
 
-filterSearch=(text) => {
+filterSearchOld=(text) => {
     let dsBuscar= this.props.dataSala;
     const newData = dsBuscar.salas.filter(function(item){
     const itemData = item.desc_sala.toUpperCase()
@@ -35,30 +45,77 @@ filterSearch=(text) => {
     return itemData.indexOf(textData) > -1
   
     })
-    this.setState({dataSala: newData })
+    this.setState({NewdataSala: newData })
   }
 
-filterSearch2=(text) => {
-  let dsSalaAll= this.props.dataSala
-  let dsBuscar= this.props.dataSala.salas;
-    const newData = dsBuscar.filter((item)=>{
+
+
+  filterSearchFunciona=(text) => {
+    let dsBuscar= this.props.dataSala
+    const newData = dsBuscar.salas.filter((item) => {
     const itemData = item.desc_sala.toUpperCase()
     const textData = text.toUpperCase()
     return itemData.indexOf(textData) > -1
   
     })
-
-    obj = {"salas": newData}
+  
+    function renameKeys(obj, newKeys) {
+      const keyValues = Object.keys(obj).map(key => {
+  
+        if(key === 'salas') {
+          console.log('ENCONTRAMOS Salas');
+          return { [key]: newKeys[key] };
+        }
+        else {
+          return { [key]: obj[key] };
+        }
     
+      });
+      return Object.assign({}, ...keyValues);
+    }
+  const newobjsala = {"salas": newData}
+  const obj = dsBuscar
+  const newKeys = newobjsala
+  const renamedObj = renameKeys(obj, newKeys);
+  console.log(renamedObj);
+  console.log(dsBuscar);
+  console.log(newobjsala);
+  
+  this.setState({NewdataSala: renamedObj})
+  
+  //console.log(filtered);
+  
+    
+  }
+  
 
-  console.log(obj)
+
+  filterSearchVerdadero=(text) => {
+  let dsBuscar= this.props.dataSala;
+  const newData = dsBuscar.salas.filter((item) => {
+  const itemData = item.desc_sala.toUpperCase()
+  const textData = text.toUpperCase()
+  return itemData.indexOf(textData) > -1
+
+  })
+  obj = Object.assign({...dsBuscar})
+  obj.salas = newData
+
+this.setState({NewdataSala: obj})
+
+//console.log(obj);
+
   
 }
 
+
+
+
+
  crearSala(item){
-  const {dataSala} = this.props;
+  const {NewdataSala} = this.state;
   let sala = 'sala' + item.id_sala
-  let newData = dataSala[sala]
+  let newData = NewdataSala[sala]
   let obj = {...item, ...newData};
   //console.log('SalaListado', JSON.stringify(obj))
   return(
@@ -80,8 +137,8 @@ filterSearch2=(text) => {
       <View style={styles.container}>
         
             <SalaMenu  filterSearch={this.filterSearch} />
-            {this.filterSearch2('santa')}
-            {this.state.dataSala.salas.map((valores, i) => {
+            
+            {this.state.NewdataSala.salas.map((valores, i) => {
              return this.crearSala(valores)
             })}
  </View>
