@@ -1,12 +1,12 @@
 // Imports: Dependencies
 import React from 'react';
-import { SafeAreaView, StyleSheet, View, Text } from 'react-native';
+import { SafeAreaView, StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import SalasListado from '../components/salas/SalasListado'
 import Activity from './ActivityScreen'
 import DetallesScreen from './DetallesScreen'
-import FiltroSalasScreen from '../components/salas/FiltroSalasScreen'
+import OrdenSalasScreen from '../components/salas/OrdenSalasScreen'
 import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
 
 
@@ -14,8 +14,9 @@ import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
 
+
 // Screen: Counter
-class Home extends React.Component {
+class SalasScreen extends React.Component {
 
   funRevisarData(){
     const {dataSala} = this.props;
@@ -23,10 +24,11 @@ class Home extends React.Component {
     if(dataSala){
       return(
         <SafeAreaView style={styles.container}>
+
             
             <SalasListado />
             <DetallesScreen />
-            <FiltroSalasScreen />
+            <OrdenSalasScreen />
             <EnvioBoton />
             </SafeAreaView>      
         )
@@ -47,6 +49,7 @@ class Home extends React.Component {
 
 
         {this.funRevisarData()}
+        
 
       </View>
     )
@@ -83,4 +86,4 @@ function mapDispatchToProps(dispatch) {
 }
 
 // Exports
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(SalasScreen);

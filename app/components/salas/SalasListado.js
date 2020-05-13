@@ -19,17 +19,18 @@ class SalasListado extends React.Component {
     }
   }
 
-  filterSearch=(text) => {
+  OrderSearch=(text) => {
     
+    console.log("Ordenando: " +text)
     
-    
-    text = 'fechaHora'
     let dsOrdernar= this.props.dataSala;
     const newData = dsOrdernar.salas.sort(((a, b) => a[text] > b[text]))
     obj = Object.assign({...dsOrdernar})
     obj.salas = newData
   
   this.setState({NewdataSala: obj})
+
+  
 
   //this.setState({NewdataSala: obj})
    //console.log('vamos a ordenar: ' + JSON.stringify(Object.keys(dsOrdernar[0])))
@@ -90,7 +91,7 @@ filterSearchOld=(text) => {
   
 
 
-  filterSearchVerdadero=(text) => {
+  filterSearch=(text) => {
   let dsBuscar= this.props.dataSala;
   const newData = dsBuscar.salas.filter((item) => {
   const itemData = item.desc_sala.toUpperCase()
@@ -131,8 +132,21 @@ this.setState({NewdataSala: obj})
   )
 }
 
-  render() {
 
+
+componentDidUpdate(prevProps) {
+  if (prevProps.sala_orden_key !== this.props.sala_orden_key) {
+
+    this.OrderSearch(this.props.sala_orden_key)
+    
+  }
+
+  
+
+}
+
+  render() {
+//    this.props.sala_orden_key
     return (
       <View style={styles.container}>
         
@@ -177,6 +191,7 @@ const mapStateToProps = (state) => {
   return {
     
     dataSala: state.userReducer.dataSala,
+    sala_orden_key: state.userReducer.sala_orden_key,
   };
 };
 
