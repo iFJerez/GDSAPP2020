@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     margin: 0,
   },
   scrollableModal: {
-    height: '80%',
+    height: '90%',
     backgroundColor: colores.COLOR_GRIS_D,
   },
   scrollableModalContent1: {

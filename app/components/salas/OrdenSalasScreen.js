@@ -8,9 +8,10 @@ import Icon from '../../herramientas/Icon'
 import * as colores from '../../herramientas/Const'
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions'
+import BotonKeys from './OrdenSalasScreenBotonKeys'
 
 // Screen: Counter 14932
-class FiltroSalasScreen extends React.Component {
+class OrdenSalas extends React.Component {
   
   constructor(props) {
     super(props);
@@ -30,11 +31,29 @@ class FiltroSalasScreen extends React.Component {
     }
   };
 
+  funBotones(){
+    const {funVerSalaFiltro, ver_sala_filtro, data_detalle,funSalasOrdenKeys,funSalasOrdenAscendencia,  sala_orden_asc, sala_orden_key, status } = this.props;
+    const data = [{"key": "desc_sala", "desc": "Salas"},
+                  {"key": "fechaHora", "desc": "Fecha y Hora"},
+                  {"key": "cadena", "desc": "Cadenas"}] 
+    
+   return data.map((item, i) => {
+
+      return(
+        <BotonKeys funExec={()=>funSalasOrdenKeys(item.key)} text={item.desc}/>
+      )
+
+    })
+
+  }
 
 
   render() {
 
-    const {funVerSalaFiltro, ver_sala_filtro, data_detalle, dataSala} = this.props;
+    const {funVerSalaFiltro, ver_sala_filtro, data_detalle,funSalasOrdenKeys,funSalasOrdenAscendencia,  sala_orden_asc, sala_orden_key, status } = this.props;
+    const data = [{"key": "id_sala", "desc": "Salas"},
+                  {"key": "fechaHora", "desc": "Fecha y Hora"}] 
+    
     return (
       <Modal
       testID={'modal'}
@@ -63,11 +82,12 @@ class FiltroSalasScreen extends React.Component {
           onScroll={this.handleOnScroll}
           scrollEventThrottle={10}>
           <View style={styles.scrollableModalContent1}>
-         
-            <Text>Crear Filtros para revisar la Info</Text>
-            <Text>{JSON.stringify(dataSala)}</Text>
 
-            
+            <Text>{JSON.stringify(sala_orden_asc)}</Text>
+            <Text>{JSON.stringify(sala_orden_key)}</Text>
+            <Text>{JSON.stringify(status)}</Text>
+    
+              {this.funBotones()}
 
           </View>
         </ScrollView>
@@ -120,7 +140,9 @@ const mapStateToProps = (state) => {
   return {
     
     ver_sala_filtro: state.flashReducer.ver_sala_filtro,
-    dataSala: state.userReducer.dataSala
+    sala_orden_asc: state.userReducer.sala_orden_asc,
+    sala_orden_key: state.userReducer.sala_orden_key,
+    status: state.userReducer.status,
     
   };
 };
@@ -138,7 +160,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 // Exports
-export default connect(mapStateToProps, mapDispatchToProps)(FiltroSalasScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(OrdenSalas);
 
 
 

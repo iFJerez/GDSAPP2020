@@ -11,7 +11,6 @@ import HomeScreen from '../screens/HomeScreen'
 import SalasScreen from '../screens/SalasScreen'
 import UsuarioScreen from '../screens/UsuarioScreen'
 import TareasScreen from '../screens/TareasScreen'
-import SalaResumen from '../screens/SalasResumen'
 import DesarrolloScreen from '../screens/DesarrolloScreen'
 
 import Envio from '../components/pendientesEnvio/Envio'
@@ -65,13 +64,11 @@ const SalasStack = createStackNavigator(
         title: 'Salas'
       })
     },
-    SalaResumen: {
-      screen: SalaResumen,
-      navigationOptions: () => ({
-        title: 'Sala Resumen'
-      })
-    },
   },
+
+
+
+  
   {
     initialRouteName: 'Salas',
     defaultNavigationOptions: {

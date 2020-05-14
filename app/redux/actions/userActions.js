@@ -3,7 +3,17 @@
 import * as types from '../redux_constants'; 
 import json_salas from '../../api/salasTest.json'
 
+export const funSalasOrdenKeys = (sala_orden_key) => (
+  {
+  type: types.USER_SALAS_ORDEN_KEYS,
+  sala_orden_key: sala_orden_key,
+});
 
+export const funSalasOrdenAscendencia = (sala_orden_asc) => (
+  {
+  type: types.USER_SALAS_ORDEN_ASC,
+  sala_orden_asc: sala_orden_asc,
+});
 
 export const funUserHelp = (ms_help) => (
   {
