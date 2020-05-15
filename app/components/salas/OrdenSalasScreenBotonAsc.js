@@ -7,16 +7,19 @@ import TextoBase from './OrdenSalasScreenTextBase';
 
 export default class CardItems extends Component {
   render() {
-    const {funExec, desc, itemkey, sala_orden_key} = this.props
-    const newStyle = itemkey===sala_orden_key?styles.buttonOn:styles.buttonOff
-    const newStyleText = itemkey===sala_orden_key?styles.sty_text_on:styles.sty_text_off
+
+    
+    const {funExec, sala_orden_asc} = this.props
+    const newStyle = sala_orden_asc?styles.buttonOn:styles.buttonOff
+    const newStyleText = sala_orden_asc?styles.sty_text_on:styles.sty_text_off
+    const texto = sala_orden_asc?"Ascendente":"Descendente"
 
     return (
-      <TouchableOpacity onPress={()=>funExec(itemkey)}>
+      <TouchableOpacity onPress={()=>funExec(!sala_orden_asc)}>
       <View style={styles.container}>
 
         <View style={newStyle}>
-          <TextoBase style={newStyleText}>{desc}</TextoBase>
+          <TextoBase style={newStyleText}>{texto}</TextoBase>
         </View>
           
         </View>
@@ -32,11 +35,10 @@ const styles = StyleSheet.create({
     marginBottom: 0,
     marginTop: 10,
     borderRadius: 100,
-    
+    paddingVertical: 5,
     flexDirection: 'row',
     justifyContent: 'center',
-    width: '100%',
-    
+    width: '100%'
     
     // justifyContent: 'center',
     // alignItems: 'center'

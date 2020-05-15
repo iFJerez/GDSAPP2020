@@ -1,14 +1,16 @@
 // Imports: Dependencies
 import React from 'react'
-import {TouchableOpacity, StyleSheet, Text, View, ScrollView} from 'react-native'
+import {TouchableOpacity, StyleSheet, View, ScrollView} from 'react-native'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import Modal from "react-native-modal"
 import Icon from '../../herramientas/Icon'
-import * as colores from '../../herramientas/Const'
+import * as constants from '../../herramientas/Const'
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions'
 import BotonKeys from './OrdenSalasScreenBotonKeys'
+import BotonAsc from './OrdenSalasScreenBotonAsc'
+import Titulos from './OrderSalasTitulos'
 
 // Screen: Counter 14932
 class OrdenSalas extends React.Component {
@@ -31,19 +33,31 @@ class OrdenSalas extends React.Component {
     }
   };
 
-  funBotones(){
-    const {funVerSalaFiltro, ver_sala_filtro, data_detalle,funSalasOrdenKeys,funSalasOrdenAscendencia,  sala_orden_asc, sala_orden_key, status } = this.props;
-    const data = [{"key": "desc_sala", "desc": "Salas"},
-                  {"key": "fechaHora", "desc": "Fecha y Hora"},
-                  {"key": "cadena", "desc": "Cadenas"}] 
+  funBotonesKeys(){
+    const {funSalasOrdenKeys, sala_orden_key } = this.props;
+    const data = [ {"key": "fechaHora", "desc": "Fecha y Hora"},
+    {"key": "desc_sala", "desc": "Salas"},
+    {"key": "cadena", "desc": "Cadenas"},
+    {"key": "estado", "desc": "Estado"},
+                ] 
     
    return data.map((item, i) => {
 
       return(
-        <BotonKeys funExec={()=>funSalasOrdenKeys(item.key)} text={item.desc}/>
+        <BotonKeys funExec={funSalasOrdenKeys} itemkey={item.key} desc={item.desc} sala_orden_key={sala_orden_key}/>
       )
 
     })
+
+  }
+
+
+  funBotonesAsc(){
+    const {funSalasOrdenAscendencia, sala_orden_asc } = this.props;
+
+    return(
+      <BotonAsc funExec={funSalasOrdenAscendencia} sala_orden_asc={sala_orden_asc}/>
+    )
 
   }
 
@@ -57,7 +71,7 @@ class OrdenSalas extends React.Component {
     return (
       <Modal
       testID={'modal'}
-      backdropColor={colores.COLOR_GRIS}
+      backdropColor={constants.COLOR_GRIS}
       backdropOpacity={0.5}
       isVisible={ver_sala_filtro}
       onSwipeComplete={()=>funVerSalaFiltro(!data_detalle)}
@@ -74,7 +88,7 @@ class OrdenSalas extends React.Component {
              <Icon
               name={'ios-arrow-down'}
               size={30}
-              color={'#bbb'}
+              color={constants.COLOR_PRIMARIO}
               ></Icon>      
         </TouchableOpacity>
       </View>
@@ -83,12 +97,16 @@ class OrdenSalas extends React.Component {
           scrollEventThrottle={10}>
           <View style={styles.scrollableModalContent1}>
 
-            <Text>{JSON.stringify(sala_orden_asc)}</Text>
-            <Text>{JSON.stringify(sala_orden_key)}</Text>
-            <Text>{JSON.stringify(status)}</Text>
-    
-              {this.funBotones()}
-
+          
+          <View style={styles.ordenContainer}>
+          <Titulos text={"Ordenar"}/>
+              {this.funBotonesKeys()}
+          </View>
+          <View style={styles.ordenContainer}>
+          <Titulos text={"Segun"}/>
+             {this.funBotonesAsc()}
+          </View>
+        
           </View>
         </ScrollView>
       </View>
@@ -106,11 +124,14 @@ const styles = StyleSheet.create({
   },
   scrollableModal: {
     height: '80%',
-    backgroundColor: colores.COLOR_GRIS_D,
+    backgroundColor: constants.COLOR_GRIS_D,
   },
   scrollableModalContent1: {
-    flex: 1,
+    flexDirection: 'column',
     paddingVertical: 30,
+    alignItems: 'center',
+    
+    
     
   },
   scrollableModalText1: {
@@ -131,6 +152,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%'
+  },
+  ordenContainer: {
+    borderTopWidth: 1,
+    borderTopColor: constants.COLOR_GRIS_G,
+    width: '90%',
+    marginTop: 5,
+    marginBottom: 20,
+    
   }
 });
 

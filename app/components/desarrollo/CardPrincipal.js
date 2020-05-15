@@ -7,19 +7,13 @@ import fetchData from '../../api/envio.json';
 import EnvioDetalle from '../../components/pendientesEnvio/EnvioDetalleCard'
 import EnvioSucursalHeader from '../../components/pendientesEnvio/EnvioSucursalHeader'
 
-
 export default class CardPrincipal extends Component {
-
   
-  
-  funRecorrer(){
-
+funRecorrer(){
 
   return  data.map((fila, i) => {
       return(
-  
-             <CardFilas fila={fila} i={i} />
-
+      <CardFilas fila={fila} i={i} />
       )
     })
 

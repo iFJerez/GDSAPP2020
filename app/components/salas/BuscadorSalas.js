@@ -49,6 +49,12 @@ class Buscador extends Component {
   handleBur() {
     this.handleSearchOpen();
   }
+
+  hideClean(){
+    this.props.filterSearch('')
+    this.handleSearchOpen();
+  }
+
   hideFilter() {
     const timing = Animated.timing;
     Animated.parallel([
@@ -80,6 +86,34 @@ class Buscador extends Component {
     ]).start();
   }
 
+  funBotonOnOff(){
+    if(!this.state.show){
+      return(
+        <TouchableHighlight
+        style={styles.searchIconButton}
+        onPress={()=>this.handleSearchOpen()}
+        underlayColor="transparent"
+        hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
+      >
+        <Icon size={constants.ICON_VERY_SMALL} name="ios-search" color={constants.COLOR_PRIMARIO_CLARO} />
+      </TouchableHighlight>
+      )
+    }
+    else{
+return (
+  <TouchableHighlight
+  style={styles.searchIconButton}
+  onPress={()=>this.hideClean()}
+  underlayColor="transparent"
+  hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
+>
+  <Icon size={constants.ICON_VERY_SMALL} name="iconFake" color={constants.COLOR_PRIMARIO_CLARO} />
+</TouchableHighlight>
+)
+    }
+ 
+    
+  }
 
   render() {
 
@@ -111,14 +145,7 @@ class Buscador extends Component {
                 underlineColorAndroid="transparent"
               />
             </Animated.View>
-            <TouchableHighlight
-              style={styles.searchIconButton}
-              onPress={()=>this.handleSearchOpen()}
-              underlayColor="transparent"
-              hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
-            >
-              <Icon size={constants.ICON_VERY_SMALL} name="ios-search" color={constants.COLOR_PRIMARIO_CLARO} />
-            </TouchableHighlight>
+              {this.funBotonOnOff()}
           </View>
         </Animated.View>
         <Animated.View
@@ -137,17 +164,21 @@ class Buscador extends Component {
             { left: this.state.filter.position, opacity: this.state.filter.opacity },
           ]}
         >
-          <Icon size={constants.ICON_VERY_SMALL} name="ios-options" color={constants.COLOR_PRIMARIO_CLARO} />
+          
+        
+          <View style={styles.viewBoton}>
+      
+        <TouchableOpacity style={styles.BotonOrden} onPress={()=>funVerSalaFiltro(!ver_sala_filtro)} >
               <Text style={styles.orderByText}>
                 Ordenar por:
               </Text>
-          <View style={styles.headerDropDownContainer}>
+             <Icon
+              name={'ios-arrow-down'}
+              size={20}
+              color={constants.COLOR_PRIMARIO}
+              ></Icon>      
+        </TouchableOpacity>
      
-                   <TouchableOpacity onPress={()=>{funVerSalaFiltro(!ver_sala_filtro)}}>
-                   <Text style={styles.orderByText}>
-                   mayor
-                   </Text>
-                   </TouchableOpacity>
 
           </View>
         </Animated.View>
@@ -211,10 +242,20 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       
     },
-    headerDropDownContainer: {
-      backgroundColor: constants.COLOR_SECUNDARIO,
-      paddingHorizontal: 10,
-      justifyContent: 'space-around',
+    viewBoton: {
+      flex: 0.5,
+      alignItems: 'center'
+
+     },
+    BotonOrden: {
+      paddingHorizontal: 2,
+      flexDirection: 'row',
+      borderBottomColor: constants.COLOR_PRIMARIO,
+      borderBottomWidth: 1,
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      alignSelf: 'center',
+      alignContent: 'center',
     },
   
     searchIconContainer: {
@@ -262,6 +303,7 @@ const styles = StyleSheet.create({
     },
     orderByText: {
       marginRight: 5,
+      color: constants.COLOR_PRIMARIO
     },
 
   
