@@ -19,9 +19,9 @@ class SalasListado extends React.Component {
     }
   }
 
-  OrderSearch=(text) => {
+  OrderSearchAsc=(text) => {
     
-    console.log("Ordenando: " +text)
+    console.log("Ordenando Ascendente: " +text)
     
     let dsOrdernar= this.props.dataSala;
     const newData = dsOrdernar.salas.sort(((a, b) => a[text] > b[text]))
@@ -29,13 +29,18 @@ class SalasListado extends React.Component {
     obj.salas = newData
   
   this.setState({NewdataSala: obj})
+  }
 
+  OrderSearchDes=(text) => {
+    
+    console.log("Ordenando Descendente: " +text)
+    
+    let dsOrdernar= this.props.dataSala;
+    const newData = dsOrdernar.salas.reverse(((a, b) => a[text] > b[text]))
+    obj = Object.assign({...dsOrdernar})
+    obj.salas = newData
   
-
-  //this.setState({NewdataSala: obj})
-   //console.log('vamos a ordenar: ' + JSON.stringify(Object.keys(dsOrdernar[0])))
-    //onsole.log(dsOrdernar.sort(((a, b) => a.id_sala - b.id_sala)));
-  
+  this.setState({NewdataSala: obj})
   }
 
 filterSearchOld=(text) => {
@@ -136,12 +141,22 @@ this.setState({NewdataSala: obj})
 
 componentDidUpdate(prevProps) {
   if (prevProps.sala_orden_key !== this.props.sala_orden_key) {
-
-    this.OrderSearch(this.props.sala_orden_key)
-    
+    if (this.props.sala_orden_asc) {
+      this.OrderSearchAsc(this.props.sala_orden_key)
+    }
+    else {
+      this.OrderSearchDes(this.props.sala_orden_key)
+    }
   }
 
-  
+  if (prevProps.sala_orden_asc !== this.props.sala_orden_asc) {
+    if (this.props.sala_orden_asc) {
+      this.OrderSearchAsc(this.props.sala_orden_key)
+    }
+    else {
+      this.OrderSearchDes(this.props.sala_orden_key)
+    }
+  }
 
 }
 
@@ -151,6 +166,7 @@ componentDidUpdate(prevProps) {
       <View style={styles.container}>
         
             <SalaMenu  filterSearch={this.filterSearch} />
+            
             
             {this.state.NewdataSala.salas.map((valores, i) => {
              return this.crearSala(valores)
@@ -192,6 +208,7 @@ const mapStateToProps = (state) => {
     
     dataSala: state.userReducer.dataSala,
     sala_orden_key: state.userReducer.sala_orden_key,
+    sala_orden_asc: state.userReducer.sala_orden_asc,
   };
 };
 
