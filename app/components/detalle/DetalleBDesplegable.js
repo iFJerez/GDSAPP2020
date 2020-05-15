@@ -16,7 +16,10 @@ export default class Accordian extends Component{
   
   render() {
     const {data, i} = this.props;
-
+    const {
+      data: dataSection,
+      indicadores,
+      ...dataGeneral } = this.props.section;
     return (
        <View style={styles.container} key={i}>
             <TouchableOpacity key={i} onPress={()=>this.toggleExpand()}>
@@ -26,7 +29,7 @@ export default class Accordian extends Component{
             {
                 this.state.expanded &&
                 <View style={styles.child}>
-                     <Objecion />
+                     <Objecion data={{...dataGeneral, ...data}}/>
                 </View>
             }
        </View>

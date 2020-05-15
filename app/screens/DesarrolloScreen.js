@@ -44,7 +44,6 @@ funSalas2(){
 
   
   render() {
-
     const {numero, funIncrementar, funDecrementar } = this.props;
     return (
       <View style={styles.container}>
