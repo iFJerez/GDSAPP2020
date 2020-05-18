@@ -41,7 +41,7 @@ export default class DetalleIndicadores extends Component {
          return (<SectionList
             sections={sectionListData}
             keyExtractor= {(item, index) => (index)}
-            renderItem={({ item,index }) => (<DetalleBDesplegable data={item} i={index}/>)}
+            renderItem={({ item,index,section }) => (<DetalleBDesplegable data={item} section={section} i={index}/>)}
             renderSectionHeader={({section}) => (<DetalleBDesplegableHeader agrupador={section.agrupador}/>)}
           />)
 

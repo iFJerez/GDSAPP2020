@@ -1,34 +1,61 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import ReactNativePickerModule from 'react-native-picker-module';
 import * as constants from '../../herramientas/Const';
-import Icon from '../../herramientas/IconSimple';
 import TextoBase from '../../herramientas/textos/TextoBase';
+import ActionCreators from '../../redux/actions';
 
 
 
-export default class SalasListadoInCo extends Component {
+class SalasListadoInCo extends Component {
+  
+  constructor(props) {
+    super(props);
 
-  state = {
-    selectedValue: 'Sin Objeción',
-    data: [
-      "Sin Objeción",
-      "Producto Bloqueado",
-      "Producto no planogramado",
-      "Producto Quiebre Compañía",
-      "Producto No habilitado",
-      "Producto en transito",
-      "Falso Stock ajustado",
-      "Falso Stock sin ajustar",
-      "No hay entrega"
-    ]
-};
+    const selectedValue = 
+      this.props.objeciones.find((v) => 
+          ( props.data.id_sku === v.id_sku &&
+            props.data.indicador === v.indicador &&
+            props.data.id_sala === v.id_sala &&
+            props.data.fechaHora === v.fechaHora)
+      )
 
+    this.state = {
+      selectedValue: selectedValue ? selectedValue.objecion : 'Sin Objeción',
+      data: [
+        "Sin Objeción",
+        "Producto Bloqueado",
+        "Producto no planogramado",
+        "Producto Quiebre Compañía",
+        "Producto No habilitado",
+        "Producto en transito",
+        "Falso Stock ajustado",
+        "Falso Stock sin ajustar",
+        "No hay entrega"
+      ]
+    };
+  }
+
+
+  handleTouch (index) {
+    this.pickerRef.show()
+    const dataObjecion = {
+      id_sku: this.props.data.id_sku,
+      indicador: this.props.data.indicador,
+      id_sala: this.props.data.id_sala,
+      fechaHora: this.props.data.fechaHora,
+      objecion: index
+    } 
+    this.state.selectedValue = index;
+
+    this.props.funGuardarObjecion(dataObjecion);
+  }
 
 
 
   render() {
-    
     return  (
   <View style={styles.container}> 
       <View style={styles.arrowDown}></View>
@@ -42,7 +69,7 @@ export default class SalasListadoInCo extends Component {
           <View style={styles.objetar}>
             <TextoBase style={styles.sty_txt_objetar}>Objetar ></TextoBase>
           </View>
-          </TouchableOpacity>
+        </TouchableOpacity>
           
         <ReactNativePickerModule
           pickerRef={e => this.pickerRef = e}
@@ -50,9 +77,10 @@ export default class SalasListadoInCo extends Component {
           title={"Seleccione Objeción"}
           items={this.state.data}
           onValueChange={(index) => {
-            this.setState({
-              selectedValue: index
-            })
+            // this.setState({
+            //   selectedValue: index
+            // })
+            this.handleTouch(index)
         }}/>
   </View>
    )
@@ -114,3 +142,30 @@ const styles = StyleSheet.create({
     borderTopWidth: 12
   }
 });
+
+
+const mapStateToProps = (state) => {
+  // Redux Store --> Component
+  return {
+    objeciones: state.objecionesReducer,
+  };
+};
+
+
+
+// Map Dispatch To Props (Dispatch Actions To Reducers. Reducers Then Modify The Data And Assign It To Your Props)
+function mapDispatchToProps(dispatch) {
+ 
+  const combiner = Object.assign({},
+    ActionCreators,
+    { dispatch },
+  );
+  console.log(JSON.stringify(ActionCreators))
+  return bindActionCreators(
+    combiner,
+    dispatch,
+  );
+}
+
+// Exports
+export default connect(mapStateToProps, mapDispatchToProps)(SalasListadoInCo);

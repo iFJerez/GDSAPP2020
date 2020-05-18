@@ -24,10 +24,6 @@ export const USER_MODAL= 'USER_MODAL';
 export const USER_HELP= 'USER_HELP';
 
 
-
-
-
-
 export const DETALLES_VIEW= 'DETALLES_VIEW';
 export const DETALLES_GUARDA_DATA= 'DETALLES_GUARDA_DATA';
 
@@ -40,3 +36,4 @@ export const DESARROLLO_DECREMENT = 'DESARROLLO_DECREMENT';
 export const ENVIO_VIEW= 'ENVIO_VIEW';
 
 
+export const OBJECION_SAVE = 'OBJECION_SAVE';
