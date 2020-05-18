@@ -23,6 +23,7 @@ class Buscador extends Component {
     super(props);
     this.state = {
       show: false,
+      textSearch: '',
       filter: {
         position: new Animated.Value(30),
         opacity: new Animated.Value(1),
@@ -52,7 +53,18 @@ class Buscador extends Component {
 
   hideClean(){
     this.props.filterSearch('')
-    this.handleSearchOpen();
+    this.setState({ textSearch: '' })
+    if(!this.state.textSearch){
+      this.handleSearchOpen();
+    }
+   
+  }
+
+  searchGo(textSearch){
+    
+    this.setState({ textSearch: textSearch })
+    this.props.filterSearch(textSearch)
+    
   }
 
   hideFilter() {
@@ -95,7 +107,7 @@ class Buscador extends Component {
         underlayColor="transparent"
         hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
       >
-        <Icon size={constants.ICON_VERY_SMALL} name="ios-search" color={constants.COLOR_PRIMARIO_CLARO} />
+        <Icon size={constants.ICON_VERY_SMALL} name="ios-search" color={constants.COLOR_PRIMARIO} />
       </TouchableHighlight>
       )
     }
@@ -107,7 +119,8 @@ return (
   underlayColor="transparent"
   hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
 >
-  <Icon size={constants.ICON_VERY_SMALL} name="iconFake" color={constants.COLOR_PRIMARIO_CLARO} />
+  <Icon size={constants.ICON_VERY_SMALL} name="ios-close-circle" color={constants.COLOR_PRIMARIO} />
+  
 </TouchableHighlight>
 )
     }
@@ -137,12 +150,15 @@ return (
               ]}
             >
               <TextInput
-                onChangeText={(text) => this.props.filterSearch(text)}
+                onChangeText={(text) => this.searchGo(text)}
                 onBlur={()=>this.handleSearchOpen()}
                 style={styles.textInput}
-                autofocus
+                autoCorrect={false} 
+                autofocus={true}
+                value={this.state.textSearch}
                 returnKeyType="done"
                 underlineColorAndroid="transparent"
+                
               />
             </Animated.View>
               {this.funBotonOnOff()}
