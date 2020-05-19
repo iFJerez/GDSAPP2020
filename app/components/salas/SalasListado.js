@@ -9,6 +9,7 @@ import * as constants from '../../herramientas/Const'
 
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
+import { ScrollView } from 'react-native-gesture-handler';
 
 // Screen: Counter
 class SalasListado extends React.Component {
@@ -166,11 +167,12 @@ componentDidUpdate(prevProps) {
       <View style={styles.container}>
         
             <SalaMenu  filterSearch={this.filterSearch} />
-            
+            <ScrollView>
             
             {this.state.NewdataSala.salas.map((valores, i) => {
              return this.crearSala(valores)
             })}
+            </ScrollView>
  </View>
     );
   }

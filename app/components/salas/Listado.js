@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, FlatList, Image} from 'react-native';
+import { StyleSheet, View, Image, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import TouchIndicador from './TouchIndicador'
 import TextTypeC from '../../herramientas/textos/TextTypeC'
@@ -15,15 +15,16 @@ export default class ListadoContraido extends Component {
 
     try {
       return(
-          <FlatList  
-          numColumns={100}
-          key={1}
-          data={item}
-          renderItem={({item}) =>
+
+        item.map((valores, i)=>{
+          return  (
           
-          <TouchIndicador data={item} dataAll={dataAll} />}
-          keyExtractor={(item, index) => '' + index}
-  />   
+            <TouchIndicador data={valores} dataAll={dataAll} />
+   
+          )
+
+        } )
+
       )
     
     } catch (error) {
@@ -48,6 +49,7 @@ export default class ListadoContraido extends Component {
         return(
           <View style={styles.sty_image}>
               <Icon name={'store'} color={constants.COLOR_GRIS_G} size={50} style={styles.st_icono} />
+              
           </View>
         )
         
@@ -56,7 +58,7 @@ export default class ListadoContraido extends Component {
 
      }
 
-     cargaEstado(estado){
+     cargaEstado(estado, cadena){
 
 
 
@@ -64,25 +66,41 @@ export default class ListadoContraido extends Component {
         if(estado=='nueva') {
 
         return(
-      <View style={styles.linea_nueva}>
-                 
+      <View style={styles.conenedorEstado}>
+          <View style={styles.linea_nueva}>           
+          </View>
+          <View style={styles.conenedorEstadoImagen}>  
+              {this.cargaImagen(cadena)}
+              <Text style={styles.text_nueva}>  Nuevo </Text>
+          </View>     
       </View>
+      
         )
         }
         else if(estado=='objetada') {
 
           return(
-            <View style={styles.linea_objetada}>
-                 
+        <View style={styles.conenedorEstado}>
+            <View style={styles.linea_objetada}>           
             </View>
+            <View style={styles.conenedorEstadoImagen}>  
+                {this.cargaImagen(cadena)}
+                <Text style={styles.text_objetada}>  Objetada </Text>
+            </View>     
+        </View>
           )
           }
           else {
 
             return(
-              <View style={styles.linea_normal}>
-                 
+              <View style={styles.conenedorEstado}>
+              <View style={styles.linea_normal}>           
               </View>
+              <View style={styles.conenedorEstadoImagen}>  
+                  {this.cargaImagen(cadena)}
+                  <Text style={styles.text_normal}>  Revisada </Text>
+              </View>     
+          </View>
             )
             }
       } catch (error) {
@@ -110,8 +128,8 @@ export default class ListadoContraido extends Component {
     return (
       <View style={styles.container}>
           <View style={styles.st_arriba}>
-                   {this.cargaEstado(item.estado)}
-                    {this.cargaImagen(cadena)}
+                   {this.cargaEstado(item.estado, cadena)}
+                    
                     <View style={styles.st_nombreSala}>
                         <TextTypeC text={item.desc_sala} />
                     </View>
@@ -120,9 +138,14 @@ export default class ListadoContraido extends Component {
                   
           </View>
           <View style={styles.st_abajo}>    
-          <ScrollView horizontal={true}>
+          <ScrollView >              
+          <View style={styles.containerLista}>
+    
               {this.crearIndicadores(item.indicadores, item)}
-           </ScrollView>
+              
+          </View>
+          </ScrollView>
+           
               
           </View>
        </View>
@@ -134,6 +157,17 @@ export default class ListadoContraido extends Component {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: constants.COLOR_BLANCO,
+},
+containerLista: {
+  flexDirection: 'row',
+  flex: 1
+},
+conenedorEstado: {
+  flexDirection: 'row',
+
+},
+conenedorEstadoImagen: {
+  flexDirection: 'column',
 },
   st_abajo: {
      padding: 2,
@@ -162,4 +196,7 @@ const styles = StyleSheet.create({
   linea_normal: {backgroundColor: constants.COLOR_GRIS, padding: 3, marginHorizontal: 10},
   linea_objetada: {backgroundColor: constants.COLOR_SECUNDARIO, padding: 3, marginHorizontal: 10},
 
+  text_nueva: {color: constants.COLOR_PRIMARIO, fontSize: constants.SIZE_LETRA_MEDIUM},
+  text_normal: {color: constants.COLOR_GRIS, fontSize: constants.SIZE_LETRA_MEDIUM},
+  text_objetada: {color: constants.COLOR_SECUNDARIO, fontSize: constants.SIZE_LETRA_MEDIUM},
 });

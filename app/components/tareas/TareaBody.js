@@ -4,6 +4,7 @@ import TareaCardButton from './TareaCardButton'
 import * as constants from '../../herramientas/Const'
 import TareaDetalle from './TareaDetalles'
 import TareaDetalles1 from './TareaDetalles1'
+import dataTareas from '../../api/tareas.json'
 
 
 
@@ -31,10 +32,10 @@ export default class TareaBody extends Component {
         return (   
           <>
 
-            <TareaDetalle />
+             <TareaDetalle />
              <TareaDetalles1 />
              <Text style={styles.switchButtonsTitle}>
-          Seleccionaron EJECUCION
+          
       </Text>
 
       </>
@@ -49,9 +50,7 @@ export default class TareaBody extends Component {
           Seleccionaron PROGRAMADAS
       </Text>
              <TareaDetalle />
-             <TareaDetalle />
-             <TareaDetalle />
-             <TareaDetalle />
+    
              </>
              
       )
@@ -60,10 +59,7 @@ export default class TareaBody extends Component {
         return (   
          <>
          <TareaDetalle />
-         <TareaDetalle />
-         <TareaDetalle />
-         <TareaDetalle />
-         <TareaDetalle />
+
          </>
          
             )
@@ -101,6 +97,7 @@ export default class TareaBody extends Component {
           <View style={styles.body}>
 
             {this.funMuestra()}
+            <Text>{JSON.stringify(dataTareas)}</Text>
 
 
           </View>
