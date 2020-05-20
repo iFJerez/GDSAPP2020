@@ -5,7 +5,7 @@ import IPresencia from './IPresencia'
 import IPrecio from './IPrecio'
 import IPorcentaje from './IPorcentaje'
 import IPromocion from './IPromocion'
-import IMore from './IMore'
+import IStatus from './IStatus'
 
 import Titulo from './Titulo'
 import Subtitulo from './Subtitulo'
@@ -21,31 +21,29 @@ export default class DetalleIndicadoresFila extends Component {
 
   funIndicadores(){
     const {data, i} = this.props
+    let status = ''
+    if (data.objecion && data.objecion.objecion && data.objecion.objecion !== 'Sin Objeción') {
+      status = 'objetado'
+    }
 
-try {
-
-        return(      
+  try {
+        return(    
         <View style={styles.view_fila} key={i} >
+          <View style={styles.view_indicadores}>
+              <IPromocion valor={data.promocion} />
+              <IPresencia valor={data.presencia}/>
+              <IPrecio valor={data.precio}/>
+              <IPorcentaje valor={data.porcentaje} />
+              
+          </View>
 
-                 <View style={styles.view_indicadores}>
-                      <IPromocion valor={data.promocion} />
-                      <IPresencia valor={data.presencia}/>
-                      <IPrecio valor={data.precio}/>
-                      <IPorcentaje valor={data.porcentaje} />
-                      
-                  </View>
-
-                <View style={styles.view_textos}>
-                      <Titulo text={data.titulo}></Titulo>
-                      <Subtitulo text={data.subtitulo}></Subtitulo>
-                  </View>
-                  <View style={styles.view_points}>
-                     <IMore />
-                  </View>
-                  
-
-
-           
+          <View style={styles.view_textos}>
+            <Titulo text={data.titulo}></Titulo>
+            <Subtitulo text={data.subtitulo}></Subtitulo>
+          </View>
+          <View style={styles.view_status}>
+            <IStatus status={status}/>
+          </View>
         </View>
         )
       
@@ -62,7 +60,6 @@ try {
 
 
   render() {
-    
     return (
       <View style={styles.container}>
          {this.funIndicadores()}
@@ -100,13 +97,12 @@ const styles = StyleSheet.create({
 
   },
 
-  view_points: {
-    flex: 1,
-    flexDirection: 'column',
-    alignItems: 'flex-end',
-    alignContent: 'flex-end',
-    alignSelf: 'flex-end',
-    padding: 5,
+  view_status: {
+    alignItems: 'center',
+    alignContent: 'center',
+    justifyContent: 'center',
+    marginLeft: 'auto',
+    paddingHorizontal: 5,
   },
   
 });
