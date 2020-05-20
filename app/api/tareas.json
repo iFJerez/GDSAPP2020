@@ -1,0 +1,71 @@
+{
+  "salas": [
+    {"id_sala": 10,
+      "fechaHora": "2012-01-01T06:25:24Z",
+      "cadena": "jumbo",
+      "desc_sala": "Jumbo Nueva Tareas Aventura",
+      "direccion": "Av de los colonos inspirados 2342",
+      "numero": 99,
+      "estado": "nueva"},
+    { "id_sala": 11,
+      "fechaHora": "2011-01-01T06:25:24Z",
+      "cadena": "sisa",
+      "desc_sala": "Santa Isabel Buena Aventura 856",
+      "direccion": "Calandrias ruidosas 2342",
+      "numero": 99,
+      "estado": "objetada"}
+    ],
+  "objeciones": [
+      {"id_sala": "11", "indicador": "osa", "id_sku": 98765, "objecion": "sin stock"}
+      ],
+  "sala10" : 
+      {
+        "id_sala": 10,
+        "indicadores": [
+          {"indicador": "inteligente", "total": 7, "realizadas": 0,  "estado": "objetada", "fuente": "transaccional",
+           "detalles": [
+             {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "Stock insuficente de la promocion en sala", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+             {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "Sin stock para la promocion en sala", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+             {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "/Producto de la promocion no habilitado", "subtitulo": "98765432", "presencia": false}
+             
+             
+           ]},
+           {"indicador": "ejecucion", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
+             "detalles": [
+               {"id_sku": 98765, "agrupador": "Activacion de acuerdos comerciales", "titulo": "Esta activa la cabecera en pasillo principasl", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+               
+             ] },
+             {"indicador": "programada", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
+              "detalles": [
+                {"id_sku": 98765, "agrupador": "Precios de sku lanzamientos", "titulo": "Tiene precio publicado la coca cola de 2l ret", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+                
+              ] }
+        ]
+    },
+    "sala11" : 
+    {
+      "id_sala": 10,
+      "indicadores": [
+        {"indicador": "inteligente", "total": 7, "realizadas": 0,  "estado": "objetada", "fuente": "transaccional",
+         "detalles": [
+           {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "Stock insuficente de la promocion en sala", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+           {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "Sin stock para la promocion en sala", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+           {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "/Producto de la promocion no habilitado", "subtitulo": "98765432", "presencia": false}
+           
+           
+         ]},
+         {"indicador": "ejecucion", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
+           "detalles": [
+             {"id_sku": 98765, "agrupador": "Activacion de acuerdos comerciales", "titulo": "Esta activa la cabecera en pasillo principasl", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+             
+           ] },
+           {"indicador": "programada", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
+            "detalles": [
+              {"id_sku": 98765, "agrupador": "Precios de sku lanzamientos", "titulo": "Tiene precio publicado la coca cola de 2l ret", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+              
+            ] }
+      ]
+  }
+   
+   
+}

@@ -19,11 +19,8 @@ class TareasScreen extends React.Component {
 
     return (
       <View style={styles.container}>
-        <TareaBody />
-        <EnvioBoton />
-
-        
-        
+          <TareaBody />
+          <EnvioBoton />
       </View>
     )
   }
