@@ -30,6 +30,9 @@ class PickerObjecion extends Component {
   }
 
   render() {
+    
+    const { disabled } = this.props
+
     const selectedValue = this.props.objecion || "Sin objecion";
     return (
       <View style={styles.container}>
@@ -41,13 +44,14 @@ class PickerObjecion extends Component {
           </TextoBase>
         </View>
         <TouchableOpacity
+          disabled={disabled}
           style={styles.styleTouch}
           onPress={() => {
             this.pickerRef.show();
           }}
         >
           <View style={styles.objetar}>
-            <TextoBase style={styles.sty_txt_objetar}>Objetar ></TextoBase>
+            <TextoBase style={disabled ? styles.sty_txt_objetar_disabled : styles.sty_txt_objetar}>Objetar ></TextoBase>
           </View>
         </TouchableOpacity>
 
@@ -92,6 +96,9 @@ const styles = StyleSheet.create({
   },
   sty_txt_objetar: {
     color: constants.COLOR_SECUNDARIO,
+  },
+  sty_txt_objetar_disabled: {
+    color: constants.COLOR_GRIS_J,
   },
   sty_txt_title: {
     color: constants.COLOR_GRIS_J,

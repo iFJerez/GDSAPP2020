@@ -16,7 +16,7 @@ export default class IMore extends Component {
       case 'objetado':
         icon = <IconAntDesign name={'exclamationcircle'} size={constants.ICON_VERY_SMALL} color={'tomato'}/>
         break;
-      case 'objetadoEnviado':
+      case 'enviado':
           icon = <Icon name={'ios-lock'} size={constants.ICON_SMALL} color={constants.COLOR_GRIS_H}/>
           break;
       default:

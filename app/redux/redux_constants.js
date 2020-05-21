@@ -37,3 +37,5 @@ export const ENVIO_VIEW= 'ENVIO_VIEW';
 
 
 export const OBJECION_SAVE = 'OBJECION_SAVE';
+export const OBJECION_DELETE = 'OBJECION_DELETE';
+export const OBJECION_SEND = 'OBJECION_SEND';

@@ -22,8 +22,8 @@ export default class DetalleIndicadoresFila extends Component {
   funIndicadores(){
     const {data, i} = this.props
     let status = ''
-    if (data.objecion && data.objecion.objecion && data.objecion.objecion !== 'Sin Objeción') {
-      status = 'objetado'
+    if (data.objecion && data.objecion.status) {
+      status = data.objecion.status
     }
 
   try {

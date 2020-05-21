@@ -24,10 +24,22 @@ class Accordian extends Component{
         indicador: this.props.section.indicador,
         id_sala: this.props.section.id_sala,
         fechaHora: this.props.section.fechaHora,
+        direccion: this.props.section.direccion,
+        desc_sala: this.props.section.desc_sala,
+        cadena: this.props.section.cadena,
+        desc_sku: this.props.data.titulo,
+        ean: this.props.data.subtitulo,
+        status: 'objetado',
+        fechaHoraObjecion: (new Date()).toISOString(),
         objecion
       } 
-  
-      this.props.funGuardarObjecion(dataObjecion);
+
+      if (objecion === "Sin Objeción") {
+        this.props.funEliminarObjecion(dataObjecion);
+      } else {
+        this.props.funGuardarObjecion(dataObjecion);
+      }
+      
     }
   
     
@@ -41,6 +53,7 @@ class Accordian extends Component{
     )
 
     const objecionDetalle = objecion ? objecion.objecion : null
+    const objecionDisabled = objecion && objecion.status === 'enviado' 
 
     const {data, i} = this.props;
     const {
@@ -56,7 +69,7 @@ class Accordian extends Component{
             {
                 this.state.expanded &&
                 <View style={styles.child}>
-                     <Objecion objecion={objecionDetalle} touchHandlder={(objecion) => this.handleObjecion(objecion)} />
+                     <Objecion objecion={objecionDetalle} disabled={objecionDisabled} touchHandlder={(objecion) => this.handleObjecion(objecion)} />
                 </View>
             }
        </View>

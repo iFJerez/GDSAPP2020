@@ -20,29 +20,33 @@ class EnvioBoton extends React.Component {
   
   render() {
 
-    const {ver_envio, funVerEnvio} = this.props;
-    return (
-
+    const {ver_envio, funVerEnvio, objeciones} = this.props;
+    const cantObjeciones = objeciones.filter(v => v.status !== 'enviado').length
+   
+    const button = (cantObjeciones === 0 )? null : (
       <TouchableOpacity style={styles.linearStyle} onPress={()=>{funVerEnvio(!ver_envio)}}>
-        <LinearGradient colors={[constants.COLOR_SECUNDARIO, constants.COLOR_SECUNDARIO_CLARO]} style={styles.buttonAbrir}>
-           <View style={{flexDirection: 'row', alignItems: 'center'}}>
+      <LinearGradient colors={[constants.COLOR_SECUNDARIO, constants.COLOR_SECUNDARIO_CLARO]} style={styles.buttonAbrir}>
+         <View style={{flexDirection: 'row', alignItems: 'center'}}>
 
-                     <View style={{paddingRight: 20}}>
-          <Icon name='rocket1' size={constants.ICON_SMALL} color={constants.COLOR_BLANCO}/>
-          </View>
+                   <View style={{paddingRight: 20}}>
+        <Icon name='rocket1' size={constants.ICON_SMALL} color={constants.COLOR_BLANCO}/>
+        </View>
 
 
-           <View style={{paddingRight: 10}}>
-          <Texto text={'Tienes 4 pendientes de envio'}></Texto>
-          </View>
+         <View style={{paddingRight: 10}}>
+        <Texto text={`Tienes ${cantObjeciones} pendiente${cantObjeciones > 1 ? 's' : ''} de envio`}></Texto>
+        </View>
 
-  
-         
-         
-         </View>
-         </LinearGradient>
-    </TouchableOpacity>
 
+       
+       
+       </View>
+       </LinearGradient>
+  </TouchableOpacity>
+    )
+   
+    return (
+     button
     )
   }
 }
@@ -79,7 +83,7 @@ buttonAbrir: {
 const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
-
+    objeciones: state.objecionesReducer,
     ver_envio: state.flashReducer.ver_envio,
   };
 };
