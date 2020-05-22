@@ -26,7 +26,7 @@ class UsuarioScreen extends React.Component {
 
         <CardUsuario />
         
-        <CerrarSession />
+        {/* <CerrarSession /> */}
 
       </View>
     )
@@ -36,8 +36,7 @@ class UsuarioScreen extends React.Component {
 // Styles
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-
+    flex: 1
   },
   
 });

@@ -3,6 +3,7 @@ import { StyleSheet, View, Text} from 'react-native';
 import * as constants from '../../herramientas/Const';
 import IconAntDesign from '../../herramientas/IconAntDesign';
 import TextoBase from './EnvioTextBase';
+import TextoBase2 from '../../herramientas/textos/TextoBaseSinSizeAjust';
 
 export default class CardItems extends Component {
 
@@ -12,7 +13,7 @@ export default class CardItems extends Component {
       <View style={styles.container}>  
         <View style={styles.variable}>
           <TextoBase style={styles.sty_text_ordinal}>{`${data.numero}. `}</TextoBase>
-          <TextoBase style={styles.sty_text_variable}>{data.indicador}</TextoBase>
+          <TextoBase style={styles.sty_text_variable}>{data.indicador.toUpperCase()}</TextoBase>
         </View>
         <View style={styles.detailLine}>
           <View style={styles.productDetail}>
@@ -28,9 +29,9 @@ export default class CardItems extends Component {
             </View>
           </View>
           <View style={styles.action}>
-            <TextoBase style={styles.sty_text_action}>
+            <TextoBase2 style={styles.sty_text_action} numberOfLines={3}>
                     {data.accion}
-            </TextoBase>
+            </TextoBase2>
           </View>
           <View style={styles.sty_icon}>
                 <IconAntDesign name={'delete'} size={constants.ICON_SMALL} color={constants.COLOR_GRIS_G}/>
@@ -69,7 +70,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
-    flex: 4
+    flex: 2,
+    paddingHorizontal: 1,
+    paddingVertical: 2,
+    backgroundColor: constants.COLOR_GRIS_C,
+    borderRadius: 10,
+    margin: 2
   },
   sty_icon: {
     paddingVertical: 15,
@@ -101,11 +107,11 @@ const styles = StyleSheet.create({
     color: constants.COLOR_GRIS_H
   },
   sty_text_action: {
-    fontSize: constants.SIZE_LETRA_X_LARGE,
+    fontSize: constants.SIZE_LETRA_LARGE,
     textAlignVertical: "center",
     textAlign: "center",
-    flexWrap: 'wrap',
-    color: constants.COLOR_QUINTENARIO_CLARO
+    flexShrink: 1,
+    color: constants.COLOR_SECUNDARIO_CLARO
   },
   sty_text_variable: {
     fontSize: constants.SIZE_LETRA_XXX_LARGE,
