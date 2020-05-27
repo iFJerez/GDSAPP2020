@@ -1,15 +1,27 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, Text} from 'react-native';
+import { StyleSheet, View} from 'react-native';
+import { bindActionCreators} from 'redux';
+import { connect } from 'react-redux'
 import * as constants from '../../herramientas/Const';
-import IconAntDesign from '../../herramientas/IconAntDesign';
+// import IconAntDesign from '../../herramientas/IconAntDesign';
 import TextoBase from './EnvioTextBase';
 import TextoBase2 from '../../herramientas/textos/TextoBaseSinSizeAjust';
+import SwipeToDelete from '../../herramientas/ui/SwipeToDelete';
+import { ThemeColors } from 'react-navigation';
+import ActionCreators from '../../redux/actions'
 
-export default class CardItems extends Component {
+
+class CardItems extends Component {
+
+  handleDelete() {
+    this.props.funEliminarObjecion(this.props.data)
+  }
 
   render() {
     const {data} = this.props
     return (
+      
+      <SwipeToDelete onClose={this.handleDelete.bind(this)}>
       <View style={styles.container}>  
         <View style={styles.variable}>
           <TextoBase style={styles.sty_text_ordinal}>{`${data.numero}. `}</TextoBase>
@@ -33,11 +45,9 @@ export default class CardItems extends Component {
                     {data.accion}
             </TextoBase2>
           </View>
-          <View style={styles.sty_icon}>
-                <IconAntDesign name={'delete'} size={constants.ICON_SMALL} color={constants.COLOR_GRIS_G}/>
-            </View>
         </View>
         </View>
+        </SwipeToDelete>
     );
   }
 
@@ -48,7 +58,7 @@ const styles = StyleSheet.create({
     backgroundColor: constants.COLOR_BLANCO,
     borderColor: constants.COLOR_GRIS_F,
     borderWidth: 1,
-    marginHorizontal: 3,
+    marginLeft: 3,
     marginVertical: 0,
     alignItems: 'flex-start',
     padding: 10,
@@ -128,3 +138,19 @@ const styles = StyleSheet.create({
     color: constants.COLOR_GRIS_H,
   }
 });
+
+
+// Map Dispatch To Props (Dispatch Actions To Reducers. Reducers Then Modify The Data And Assign It To Your Props)
+function mapDispatchToProps(dispatch) {
+  const combiner = Object.assign({},
+    ActionCreators,
+    { dispatch },
+  );
+  return bindActionCreators(
+    combiner,
+    dispatch,
+  );
+}
+
+// Exports
+export default connect(null, mapDispatchToProps)(CardItems);

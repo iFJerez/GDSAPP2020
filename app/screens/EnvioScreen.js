@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react'
-import {TouchableOpacity, StyleSheet, View} from 'react-native'
+import {TouchableOpacity, StyleSheet, View, LayoutAnimation} from 'react-native'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import Modal from "react-native-modal"
@@ -25,11 +25,14 @@ class ModalScreen extends React.Component {
     
   }
 
-  // Esto me parecio bueno agregarlo para evitar que se re-renderice cuando el componente no esta visible
-  shouldComponentUpdate(nextProps, nextState) {
-    return nextProps.ver_envio !== this.props.ver_envio
-  }
-
+  // componentDidUpdate() {
+  //   LayoutAnimation.configureNext({
+  //     duration: 400,
+  //     type: LayoutAnimation.Types.Linear,
+  //     property: LayoutAnimation.Properties.opacity
+    
+  //   })
+  // }
 
   // id_sku: this.props.data.id_sku,
   // indicador: this.props.section.indicador,
@@ -65,27 +68,29 @@ class ModalScreen extends React.Component {
         if(obj[key]) {
           obj[key].acciones.push({
             indicador: val.indicador,
-            fechahora:val.fechaHora,
+            fechaHora:val.fechaHora,
             item: val.desc_sku,
             ean: val.ean,
+            id_sku: val.id_sku,
             accion: val.objecion,
-            fechahora: val.fechaHoraObjecion
+            fechaHoraObjecion: val.fechaHoraObjecion
           }) 
         } else {
           obj[key] = {}
           obj[key].id_sala = val.id_sala;
           obj[key].cadena = val.cadena;
           obj[key].desc_sala = val.desc_sala;
-          obj[key].fechahora = val.fechahora;
+          obj[key].fechaHora = val.fechaHora;
           obj[key].id_sala = val.id_sala;
           obj[key].acciones = [
             {
               indicador: val.indicador,
-              fechahora:val.fechaHora,
+              fechaHora:val.fechaHora,
               item: val.desc_sku,
               ean: val.ean,
+              id_sku: val.id_sku,
               accion: val.objecion,
-              fechahora: val.fechaHoraObjecion
+              fechaHoraObjecion: val.fechaHoraObjecion
             }
           ]
         }
