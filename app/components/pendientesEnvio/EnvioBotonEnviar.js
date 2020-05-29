@@ -10,7 +10,7 @@ import TextoBase from './EnvioTextBase';
 export default class CardItems extends Component {
   render() {
     return (
-      <TouchableOpacity onPress={()=>funMessage('Mensaje', 'Preparando envio')}>
+      <TouchableOpacity onPress={this.props.touchHandler}>
       <View style={styles.container}>
 
         <View style={styles.button}>

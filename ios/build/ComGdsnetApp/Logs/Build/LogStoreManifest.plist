@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>9F46598C-F890-4F60-8720-76E526857615</key>
+		<key>1674D127-5C8D-4A99-A9C2-EC588E0D254D</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>9F46598C-F890-4F60-8720-76E526857615.xcactivitylog</string>
+			<string>1674D127-5C8D-4A99-A9C2-EC588E0D254D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>611091873.14256799</real>
+			<real>612195267.256091</real>
 			<key>timeStoppedRecording</key>
-			<real>611091875.57497394</real>
+			<real>612195270.14315605</real>
 			<key>title</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>9F46598C-F890-4F60-8720-76E526857615</string>
+			<string>1674D127-5C8D-4A99-A9C2-EC588E0D254D</string>
 		</dict>
-		<key>C4FFC666-B02F-49F4-A580-FC4B27D10ADE</key>
+		<key>D02C06BC-2B93-4F47-9D28-620989ACA31D</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>C4FFC666-B02F-49F4-A580-FC4B27D10ADE.xcactivitylog</string>
+			<string>D02C06BC-2B93-4F47-9D28-620989ACA31D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,13 +66,13 @@
 			<key>signature</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>611513980.15409005</real>
+			<real>611764207.37441099</real>
 			<key>timeStoppedRecording</key>
-			<real>611513985.93061602</real>
+			<real>611764210.31606102</real>
 			<key>title</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>C4FFC666-B02F-49F4-A580-FC4B27D10ADE</string>
+			<string>D02C06BC-2B93-4F47-9D28-620989ACA31D</string>
 		</dict>
 	</dict>
 </dict>

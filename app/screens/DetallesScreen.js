@@ -22,6 +22,10 @@ class ModalScreen extends React.Component {
     
   }
 
+  shouldComponentUpdate(nextProps,nextState) {
+    return nextProps.ver_detalle !== this.props.ver_detalle
+  }
+
   handleOnScroll = event => {
     this.setState({
       scrollOffset: event.nativeEvent.contentOffset.y,

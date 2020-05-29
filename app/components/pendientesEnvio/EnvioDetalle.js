@@ -54,7 +54,7 @@ export default class PendienteEnvioBody extends Component {
             </View>
           </View>
           <View style={styles.detalleAcciones}>
-            {this.funLlenadoAcciones(sucursal.acciones)}
+            {this.funLlenadoAcciones(sucursal)}
           </View>
         </View>
       )
@@ -64,9 +64,11 @@ export default class PendienteEnvioBody extends Component {
 
   funLlenadoAcciones(data) {
 
-    return data.map((accion, i) => {
+    const { acciones, ...dataPunto } = data;
+
+    return acciones.map((accion, i) => {
       return (
-        <EnvioDetalleCard data={{ ...accion, numero: i + 1 }} />
+        <EnvioDetalleCard data={{ ...accion, ...dataPunto, numero: i + 1 }} />
       )
     })
 
@@ -78,10 +80,9 @@ export default class PendienteEnvioBody extends Component {
 
     const { data } = this.props;
     return (
-      <View style={styles.container}>
-        {this.funLlenadoSalas()}
-      </View>
-      
+        <View style={styles.container}>
+          {this.funLlenadoSalas()}
+        </View>
     );
   }
 

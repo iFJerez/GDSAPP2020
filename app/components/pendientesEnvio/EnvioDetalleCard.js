@@ -1,18 +1,31 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, Text} from 'react-native';
+import { StyleSheet, View} from 'react-native';
+import { bindActionCreators} from 'redux';
+import { connect } from 'react-redux'
 import * as constants from '../../herramientas/Const';
-import IconAntDesign from '../../herramientas/IconAntDesign';
+// import IconAntDesign from '../../herramientas/IconAntDesign';
 import TextoBase from './EnvioTextBase';
+import TextoBase2 from '../../herramientas/textos/TextoBaseSinSizeAjust';
+import SwipeToDelete from '../../herramientas/ui/SwipeToDelete';
+import { ThemeColors } from 'react-navigation';
+import ActionCreators from '../../redux/actions'
 
-export default class CardItems extends Component {
+
+class CardItems extends Component {
+
+  handleDelete() {
+    this.props.funEliminarObjecion(this.props.data)
+  }
 
   render() {
     const {data} = this.props
     return (
+      
+      <SwipeToDelete onClose={this.handleDelete.bind(this)}>
       <View style={styles.container}>  
         <View style={styles.variable}>
           <TextoBase style={styles.sty_text_ordinal}>{`${data.numero}. `}</TextoBase>
-          <TextoBase style={styles.sty_text_variable}>{data.indicador}</TextoBase>
+          <TextoBase style={styles.sty_text_variable}>{data.indicador.toUpperCase()}</TextoBase>
         </View>
         <View style={styles.detailLine}>
           <View style={styles.productDetail}>
@@ -28,15 +41,13 @@ export default class CardItems extends Component {
             </View>
           </View>
           <View style={styles.action}>
-            <TextoBase style={styles.sty_text_action}>
+            <TextoBase2 style={styles.sty_text_action} numberOfLines={3}>
                     {data.accion}
-            </TextoBase>
+            </TextoBase2>
           </View>
-          <View style={styles.sty_icon}>
-                <IconAntDesign name={'delete'} size={constants.ICON_SMALL} color={constants.COLOR_GRIS_G}/>
-            </View>
         </View>
         </View>
+        </SwipeToDelete>
     );
   }
 
@@ -47,7 +58,7 @@ const styles = StyleSheet.create({
     backgroundColor: constants.COLOR_BLANCO,
     borderColor: constants.COLOR_GRIS_F,
     borderWidth: 1,
-    marginHorizontal: 3,
+    marginLeft: 3,
     marginVertical: 0,
     alignItems: 'flex-start',
     padding: 10,
@@ -69,7 +80,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
-    flex: 4
+    flex: 2,
+    paddingHorizontal: 1,
+    paddingVertical: 2,
+    backgroundColor: constants.COLOR_GRIS_C,
+    borderRadius: 10,
+    margin: 2
   },
   sty_icon: {
     paddingVertical: 15,
@@ -101,11 +117,11 @@ const styles = StyleSheet.create({
     color: constants.COLOR_GRIS_H
   },
   sty_text_action: {
-    fontSize: constants.SIZE_LETRA_X_LARGE,
+    fontSize: constants.SIZE_LETRA_LARGE,
     textAlignVertical: "center",
     textAlign: "center",
-    flexWrap: 'wrap',
-    color: constants.COLOR_QUINTENARIO_CLARO
+    flexShrink: 1,
+    color: constants.COLOR_SECUNDARIO_CLARO
   },
   sty_text_variable: {
     fontSize: constants.SIZE_LETRA_XXX_LARGE,
@@ -122,3 +138,19 @@ const styles = StyleSheet.create({
     color: constants.COLOR_GRIS_H,
   }
 });
+
+
+// Map Dispatch To Props (Dispatch Actions To Reducers. Reducers Then Modify The Data And Assign It To Your Props)
+function mapDispatchToProps(dispatch) {
+  const combiner = Object.assign({},
+    ActionCreators,
+    { dispatch },
+  );
+  return bindActionCreators(
+    combiner,
+    dispatch,
+  );
+}
+
+// Exports
+export default connect(null, mapDispatchToProps)(CardItems);

@@ -6,21 +6,17 @@ import Fotografia from './Fotografia'
 
 
 
-export default class SalasListadoInCo extends Component {
+export default class Objecion extends Component {
 
   render() {
-
-    const { data } = this.props;
-    console.log('Objeciones:', data)
-    
     return  (
       <View style={styles.container}>
-            
-                 <PickerObjecion data={data}/>
+
+                 <PickerObjecion {...this.props}/>
                  <Fotografia />
       </View>
    )
-    
+
   }
 
 }
