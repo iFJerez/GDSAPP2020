@@ -4,7 +4,7 @@ import TareaCardButton from './TareaCardButton'
 import * as constants from '../../herramientas/Const'
 import TareaDetalle from './TareaDetalles'
 import TareaDetalles1 from './TareaDetalles1'
-import dataTareas from '../../api/tareas.json'
+
 
 
 
@@ -67,6 +67,8 @@ export default class TareaBody extends Component {
   }
   
   render() {
+const {data} = this.props 
+
       return (
         <View style={styles.container}>
           <View style={styles.botones}>
@@ -97,7 +99,7 @@ export default class TareaBody extends Component {
           <View style={styles.body}>
 
             {this.funMuestra()}
-            <Text>{JSON.stringify(dataTareas)}</Text>
+            <Text>{JSON.stringify(data)}</Text>
 
 
           </View>

@@ -9,6 +9,7 @@ import * as constants from '../herramientas/Const';
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
 import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
+import dataTareas from '../api/tareas.json'
 
 // Screen: Counter
 class TareasScreen extends React.Component {
@@ -19,7 +20,7 @@ class TareasScreen extends React.Component {
 
     return (
       <View style={styles.container}>
-          <TareaBody />
+          <TareaBody data={dataTareas}/>
           <EnvioBoton />
       </View>
     )
