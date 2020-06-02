@@ -46,3 +46,7 @@ ios/build/ComGdsnetApp/info.plist
 ios/build/ComGdsnetApp/Build/Intermediates.noindex/XCBuildData/build.db
 ios/build/ComGdsnetApp/Logs/Build/LogStoreManifest.plist
 ios/build/ComGdsnetApp/ModuleCache.noindex/Session.modulevalidation
+ios/build/ComGdsnetApp/info.plist
+ios/build/ComGdsnetApp/Logs/Build/LogStoreManifest.plist
+*.modulevalidation
+ios/build/ComGdsnetApp/ModuleCache.noindex/Session.modulevalidation
