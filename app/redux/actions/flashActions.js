@@ -1,10 +1,17 @@
 import * as types from '../redux_constants'; 
 
 // Increase Counter
-export function funVerDetalle(ver_detalle) {
+export function funSalaVerDetalle(ver_sala_detalle) {
   return {
-    type: types.DETALLES_VIEW,
-    ver_detalle: ver_detalle
+    type: types.SALA_DETALLES_VIEW,
+    ver_sala_detalle: ver_sala_detalle
+  }
+}
+
+export function funTareaVerDetalle(ver_tarea_detalle) {
+  return {
+    type: types.TAREA_DETALLES_VIEW,
+    ver_tarea_detalle: ver_tarea_detalle
   }
 }
 

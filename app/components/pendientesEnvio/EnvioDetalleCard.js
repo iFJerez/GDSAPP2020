@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, View} from 'react-native';
+import { StyleSheet, View, LayoutAnimation} from 'react-native';
 import { bindActionCreators} from 'redux';
 import { connect } from 'react-redux'
 import * as constants from '../../herramientas/Const';
@@ -14,7 +14,9 @@ import ActionCreators from '../../redux/actions'
 class CardItems extends Component {
 
   handleDelete() {
+ 
     this.props.funEliminarObjecion(this.props.data)
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);  
   }
 
   render() {

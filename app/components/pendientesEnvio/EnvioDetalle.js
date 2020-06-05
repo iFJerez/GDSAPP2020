@@ -65,9 +65,11 @@ export default class PendienteEnvioBody extends Component {
   funLlenadoAcciones(data) {
 
     const { acciones, ...dataPunto } = data;
+    
 
     return acciones.map((accion, i) => {
       return (
+        
         <EnvioDetalleCard data={{ ...accion, ...dataPunto, numero: i + 1 }} />
       )
     })

@@ -70,9 +70,9 @@ class Home extends React.Component {
   async componentDidMount(){
     console.log('Home: Aplicacion')
     
-    const {funGetSalas} = this.props;
+    const {funGetData} = this.props;
       return new Promise((resolve, reject) => {
-        let token = funGetSalas()
+        let token = funGetData()
           resolve(token)
           
       })

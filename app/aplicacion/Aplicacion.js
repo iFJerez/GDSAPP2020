@@ -22,8 +22,6 @@ class Applicacion extends React.Component {
     this.state = {  
       dato: 'algo'
     }
-
-    
   }
 
     
@@ -32,9 +30,9 @@ class Applicacion extends React.Component {
    async componentDidMount(){
     console.log('Home: Aplicacion')
     
-    const {funGetSalas} = this.props;
+    const {funGetData} = this.props;
       return new Promise((resolve, reject) => {
-          resolve(funGetSalas())
+          resolve(funGetData())
           
       }).then(res=>{
         console.log('Aplicacion:Inicio')

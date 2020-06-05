@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import {StyleSheet, View } from 'react-native';
+import {StyleSheet, View, SafeAreaView } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import TareaBody from '../components/tareas/TareaBody'
@@ -9,10 +9,35 @@ import * as constants from '../herramientas/Const';
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
 import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
-import dataTareas from '../api/tareas.json'
+import Activity from './ActivityScreen'
+import TareaDetallesScreen from './TareaDetallesScreen'
 
-// Screen: Counter
+// Screen: Tarea
+import TareaIndex from '../components/tarea/TareaIndex'
+
+
 class TareasScreen extends React.Component {
+
+  funRevisarData(){
+    const {dataTarea} = this.props;
+
+    if(dataTarea){
+      return(
+        <SafeAreaView style={styles.container}>
+
+               <TareaIndex />
+               <TareaDetallesScreen />
+              <EnvioBoton />
+
+         </SafeAreaView>      
+        )
+    }
+    else {
+      return(
+      <Activity />
+      )
+    }
+  }
 
 
   render() {
@@ -20,8 +45,9 @@ class TareasScreen extends React.Component {
 
     return (
       <View style={styles.container}>
-          <TareaBody data={dataTareas}/>
-          <EnvioBoton />
+                {this.funRevisarData()}
+        
+
       </View>
     )
   }
@@ -46,7 +72,7 @@ const styles = StyleSheet.create({
 const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
-    
+    dataTarea: state.userReducer.dataTarea,
     
   };
 };

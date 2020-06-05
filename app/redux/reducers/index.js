@@ -5,7 +5,8 @@ import { combineReducers } from 'redux';
 import authReducer from './authReducer'
 import counterReducer from './counterReducer'
 import userReducer from  './userReducer'
-import detalleReducer from './detalleReducer'
+import tareaReducer from  './tareaReducer'
+import salasReducer from  './salasReducer'
 import flashReducer from './flashReducer'
 import desarrolloReducer from './desarrolloReducer'
 import objecionesReducer from './objecionesReducer'
@@ -15,7 +16,8 @@ const rootReducer = combineReducers({
   authReducer: authReducer,
   counterReducer: counterReducer,
   userReducer: userReducer,
-  detalleReducer: detalleReducer,
+  salasReducer: salasReducer,
+  tareaReducer: tareaReducer,
   flashReducer: flashReducer,
   desarrolloReducer: desarrolloReducer,
   objecionesReducer: objecionesReducer,

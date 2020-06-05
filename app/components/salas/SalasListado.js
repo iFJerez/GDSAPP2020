@@ -209,8 +209,8 @@ const mapStateToProps = (state) => {
   return {
     
     dataSala: state.userReducer.dataSala,
-    sala_orden_key: state.userReducer.sala_orden_key,
-    sala_orden_asc: state.userReducer.sala_orden_asc,
+    sala_orden_key: state.salasReducer.sala_orden_key,
+    sala_orden_asc: state.salasReducer.sala_orden_asc,
   };
 };
 

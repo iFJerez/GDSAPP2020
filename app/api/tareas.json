@@ -3,69 +3,112 @@
     {"id_sala": 10,
       "fechaHora": "2012-01-01T06:25:24Z",
       "cadena": "jumbo",
-      "desc_sala": "Jumbo Nueva Tareas Aventura",
+      "desc_sala": "Jumbo TAREA Buena Aventura",
       "direccion": "Av de los colonos inspirados 2342",
       "numero": 99,
       "estado": "nueva"},
     { "id_sala": 11,
       "fechaHora": "2011-01-01T06:25:24Z",
       "cadena": "sisa",
-      "desc_sala": "Santa Isabel Buena Aventura 856",
-      "direccion": "Calandrias ruidosas 2342",
+      "desc_sala": "Santa Isabel TAREA Buena Aventura 856",
+      "direccion": "Calandrias ruidinteligentes 2342",
       "numero": 99,
-      "estado": "objetada"}
+      "estado": "objetada"},
+      { "id_sala": 12,
+        "fechaHora": "2014-01-01T06:25:24Z",
+        "cadena": "lider",
+        "desc_sala": "Lider TAREA Incienso de Aguas",
+        "direccion": "Abedules 2342 y Las Rinteligentes",
+        "numero": 99,
+        "estado": "objetada"},
+        { "id_sala": 13,
+          "fechaHora": "2018-01-01T06:25:24Z",
+          "cadena": "jumbo",
+          "desc_sala": "Jumbo TAREA Tierra de Selknam",
+          "direccion": "Asgard 8769 y Wakanda ",
+          "numero": 99,
+          "estado": "objetada"},
+    {"id_sala": 14,
+      "fechaHora": "2013-01-01T06:25:24Z",
+      "cadena": "jumbo",
+      "desc_sala": "Jumbo TAREA Buena Aventura",
+      "numero": 99,
+      "estado": "premier"},
+      {"id_sala": 15,
+        "fechaHora": "2013-01-01T06:25:24Z",
+        "cadena": "lider",
+        "desc_sala": "Lider TAREA Siempre Tranquilo",
+        "numero": 99,
+        "estado": "premier"}
     ],
   "objeciones": [
-      {"id_sala": "11", "indicador": "osa", "id_sku": 98765, "objecion": "sin stock"}
+      {"id_sala": "11", "indicador": "inteligente", "id_sku": 98765, "objecion": "sin stock"}
       ],
   "sala10" : 
       {
         "id_sala": 10,
         "indicadores": [
-          {"indicador": "inteligente", "total": 7, "realizadas": 0,  "estado": "objetada", "fuente": "transaccional",
+          {"indicador": "INTELIGENTE", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "rocket1",
            "detalles": [
-             {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "Stock insuficente de la promocion en sala", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-             {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "Sin stock para la promocion en sala", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-             {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "/Producto de la promocion no habilitado", "subtitulo": "98765432", "presencia": false}
+             {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+             {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false}
              
              
            ]},
-           {"indicador": "ejecucion", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
+           {"indicador": "EJECUCION", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "team",
+            "detalles": [
+              {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+              {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
+              {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false}
+              
+              
+            ]},
+           {"indicador": "PROGRAMADAS", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "ejecucion", "name_icon": "setting",
              "detalles": [
-               {"id_sku": 98765, "agrupador": "Activacion de acuerdos comerciales", "titulo": "Esta activa la cabecera en pasillo principasl", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+               {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 908989,"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 78878,"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 23232,"agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 1232, "agrupador": "agrupador2", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 1233, "agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 1234, "agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"}
                
-             ] },
-             {"indicador": "programada", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
-              "detalles": [
-                {"id_sku": 98765, "agrupador": "Precios de sku lanzamientos", "titulo": "Tiene precio publicado la coca cola de 2l ret", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
-                
-              ] }
-        ]
+             ] }
+         ]
     },
     "sala11" : 
     {
       "id_sala": 10,
       "indicadores": [
-        {"indicador": "inteligente", "total": 7, "realizadas": 0,  "estado": "objetada", "fuente": "transaccional",
+        {"indicador": "INTELIGENTE", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "rocket1",
          "detalles": [
-           {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "Stock insuficente de la promocion en sala", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-           {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "Sin stock para la promocion en sala", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-           {"id_sku": 98765, "agrupador": "Setup de tarea promocion", "titulo": "/Producto de la promocion no habilitado", "subtitulo": "98765432", "presencia": false}
+           {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+           {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
+           {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false}
            
            
          ]},
-         {"indicador": "ejecucion", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
+         {"indicador": "EJECUCION", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "team",
+          "detalles": [
+            {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+            {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
+            {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false}
+            
+            
+          ]},
+         {"indicador": "PROGRAMADAS", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "ejecucion", "name_icon": "setting",
            "detalles": [
-             {"id_sku": 98765, "agrupador": "Activacion de acuerdos comerciales", "titulo": "Esta activa la cabecera en pasillo principasl", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+             {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 908989,"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 78878,"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 23232,"agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 1232, "agrupador": "agrupador2", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 1233, "agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 1234, "agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"}
              
-           ] },
-           {"indicador": "programada", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
-            "detalles": [
-              {"id_sku": 98765, "agrupador": "Precios de sku lanzamientos", "titulo": "Tiene precio publicado la coca cola de 2l ret", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
-              
-            ] }
-      ]
+           ] }
+       ]
   }
-   
    
 }

@@ -1,15 +1,13 @@
 // Imports: Dependencies
 import React from 'react';
-import { SafeAreaView, StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { SafeAreaView, StyleSheet, View} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import SalasListado from '../components/salas/SalasListado'
 import Activity from './ActivityScreen'
-import DetallesScreen from './DetallesScreen'
+import SalaDetallesScreen from './SalaDetallesScreen'
 import OrdenSalasScreen from '../components/salas/OrdenSalasScreen'
 import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
-
-
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
@@ -27,7 +25,7 @@ class SalasScreen extends React.Component {
 
             
             <SalasListado />
-            <DetallesScreen />
+            <SalaDetallesScreen />
             <OrdenSalasScreen />
             <EnvioBoton />
             </SafeAreaView>      

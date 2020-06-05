@@ -151,7 +151,7 @@ class ModalScreen extends React.Component {
           onScroll={this.handleOnScroll}
           scrollEventThrottle={10}>
           <View style={styles.scrollableModalContent1}>
-            <EnvioDetalle data={data} />
+          <EnvioDetalle data={data} />
           </View>
         </ScrollView>
         <EnvioBotonEnviar touchHandler={this.handleEnviar.bind(this)}/>

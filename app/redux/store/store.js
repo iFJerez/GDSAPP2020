@@ -20,10 +20,11 @@ const persistConfig = {
     'authReducer',
     'counterReducer',
     'userReducer',
-    'detalleReducer',
     'desarrolloReducer',
     'objecionesReducer',
-
+    'tareaReducer',
+    'salasReducer',
+  
   ],
   // Blacklist (Don't Save Specific Reducers)
   blacklist: [

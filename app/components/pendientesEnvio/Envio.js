@@ -123,6 +123,7 @@ class App extends Component {
               <EnvioDetalle data={data} />
               </ScrollView>
               <EnvioBotonEnviar />
+              
             </View>
         )}
     

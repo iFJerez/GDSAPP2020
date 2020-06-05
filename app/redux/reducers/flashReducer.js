@@ -1,7 +1,8 @@
 import * as types from '../redux_constants'; 
 // Initial State
 const initialState = {
-  ver_detalle: false,
+  ver_sala_detalle: false,
+  ver_tarea_detalle: false,
   ver_activity: false,
   ver_sala_filtro: false,
   ver_envio: false,
@@ -13,11 +14,18 @@ const flashReducer = (state = initialState, action) => {
   switch (action.type) {
 
         // Guarda Detalle de Sala
-    case types.DETALLES_VIEW: {
-      console.log('VER DETALLE');
+    case types.SALA_DETALLES_VIEW: {
+      console.log('VER SALA DETALLE');
       return {
         ...state,
-        ver_detalle: action.ver_detalle,
+        ver_sala_detalle: action.ver_sala_detalle,
+      }
+    }
+    case types.TAREA_DETALLES_VIEW: {
+      console.log('VER TAREA DETALLE');
+      return {
+        ...state,
+        ver_tarea_detalle: action.ver_tarea_detalle,
       }
     }
     case types.ENVIO_VIEW: {

@@ -9,9 +9,8 @@ const initialState = {
   salas_new: 1,
   isSuccess: false,
   dataSala: [],
+  dataTarea: [],
   isRefresh: false,
-  sala_orden_asc: true,
-  sala_orden_key: 'fechaHora',
   
 };
 
@@ -19,23 +18,6 @@ const initialState = {
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
    
-    case types.USER_SALAS_ORDEN_KEYS: {
-      console.log(state.status, 'USER_SALAS_ORDEN_KEYS');
-      return {
-        ...state,
-        sala_orden_key: action.sala_orden_key,
-        status: 'Ordenando Keys',
-      }
-    }
-    case types.USER_SALAS_ORDEN_ASC: {
-      console.log(state.status, 'USER_SALAS_ORDEN_ASC');
-      return {
-        ...state,
-        sala_orden_asc: action.sala_orden_asc,
-        status: 'Ordenando Asc',
-      }
-    }
-
     case types.USER_HELP: {
       console.log(state.status, 'USER_HELP');
       return {
@@ -82,6 +64,7 @@ const authReducer = (state = initialState, action) => {
         ...state,
         isRefresh: action.isRefresh,
         dataSala: null,
+        dataTarea: null,
         status: 'Data Request',
       }
     }
@@ -90,6 +73,7 @@ const authReducer = (state = initialState, action) => {
         ...state,
         isRefresh: action.isRefresh,
         dataSala: null,
+        dataTarea: null,
         status: 'Data Error',
       }
     }
@@ -98,6 +82,7 @@ const authReducer = (state = initialState, action) => {
         ...state,
         isRefresh: action.isRefresh,
         dataSala: action.dataSala,
+        dataTarea: action.dataTarea,
         status: 'Data OK',
       }
     }
