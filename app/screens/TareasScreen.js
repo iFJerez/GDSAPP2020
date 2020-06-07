@@ -3,7 +3,6 @@ import React from 'react';
 import {StyleSheet, View, SafeAreaView } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import TareaBody from '../components/tareas/TareaBody'
 import * as constants from '../herramientas/Const';
 
 // Imports: Redux Actions
