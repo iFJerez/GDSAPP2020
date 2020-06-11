@@ -38,9 +38,17 @@ funSalas2(){
   salasTest.salas.map((fila, i) => {
     console.log(fila)
   })
-  
-
 }
+
+ fun_sum(...numbers) {
+   function findMaxValueIn ( ...numbers ) {
+    return Math.max.apply( Math, numbers );
+};
+
+const values = [ 20, 8, 10, 30, 55 ];
+var algo = [values[3], ...remaining] 
+console.info( algo); //40
+};
 
   
   render() {
@@ -49,11 +57,9 @@ funSalas2(){
       <View style={styles.container}>
         <ScrollView >
         <Text>Hola Desarrollo</Text>
-        <Text>{JSON.stringify(salasTest.objeciones)}</Text>
-        <Text>{JSON.stringify(salasTest.salas)}</Text>
-        <PrimerComponets numero={numero} funIncrementar={funIncrementar} funDecrementar={funDecrementar}/>
-        <SegundoComponents />
-        <CardPrincipal />
+        <Text>{this.fun_sum(1,4)}</Text>
+
+
         
         </ScrollView>
     </View>

@@ -2,8 +2,6 @@ import * as types from '../redux_constants';
 
 // Initial State
 const initialState = []
-
-
 const objecionesReducer = (state = initialState, action) => {
     switch (action.type) {
         case types.OBJECION_SAVE: {

@@ -88,9 +88,6 @@ filterSearchOld=(text) => {
   
   this.setState({NewdataTarea: renamedObj})
   
-  //console.log(filtered);
-  
-    
   }
   
 
@@ -110,12 +107,7 @@ this.setState({NewdataTarea: obj})
 
 //console.log(obj);
 
-  
 }
-
-
-
-
 
  crearSala(item){
   const {NewdataTarea} = this.state;
@@ -125,12 +117,8 @@ this.setState({NewdataTarea: obj})
   //console.log('SalaListado', JSON.stringify(obj))
   return(
 
-    //Buscamos su Informacion y luego se la compartimos.
-
-
           <View>
              <TareaListado item={obj}/>
-             
           </View>
     
   )

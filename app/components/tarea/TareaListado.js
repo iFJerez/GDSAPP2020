@@ -11,16 +11,18 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 export default class ListadoContraido extends Component {
 
-  crearIndicadores(item, dataAll){
+  crearIndicadores(item){
 
 
     try {
       return(
 
-        item.map((valores, i)=>{
+        item.indicadores.map((valores, i)=>{
+          const obj = {...valores, ...item}
+
           return  (
           <View>
-             <TareaTouch data={valores} dataAll={dataAll} />
+             <TareaTouch data={obj}/>
           </View>
    
           )
@@ -143,7 +145,7 @@ export default class ListadoContraido extends Component {
           <ScrollView >              
           <View style={styles.containerLista}>
     
-              {this.crearIndicadores(item.indicadores, item)}
+              {this.crearIndicadores(item)}
               
           </View>
           </ScrollView>

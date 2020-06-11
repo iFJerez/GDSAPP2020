@@ -24,3 +24,24 @@ export function funTareaGuardaDetalle(data_detalle) {
   }
 }
 
+export function funGuardarTarea(objecion) {
+  return {
+    
+    type: types.TAREA_SAVE,
+    objecion: objecion
+  }
+}
+
+export function funEliminarTarea(objecion) {
+  return {
+    type: types.TAREA_DELETE,
+    objecion: objecion
+  }
+}
+
+export function funEnviarTarea() {
+  console.log('envio la tarea')
+  return {
+    type: types.TAREA_SEND
+  }
+}

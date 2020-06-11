@@ -9,7 +9,9 @@ import * as colores from '../herramientas/Const'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions'
-import DetalleASala from '../components/detalle/DetalleASala'
+import DetalleASala from '../components/tarea/detalle/DetalleA'
+
+import { ScrollView } from 'react-native-gesture-handler';
 
 // Screen: Counter 14932
 class ModalScreen extends React.Component {
@@ -79,16 +81,12 @@ funMostrarDastos(){
       backdropColor={colores.COLOR_GRIS}
       backdropOpacity={0.5}
       isVisible={ver_tarea_detalle}
-      onSwipeComplete={()=>funTareaVerDetalle(!data_detalle)}
-      swipeDirection={['down']}
       scrollTo={this.handleScrollTo}
-      scrollOffset={this.state.scrollOffset}
-      onSwipeComplete={()=>funTareaVerDetalle(!ver_tarea_detalle)}
       onBackdropPress={()=>funTareaVerDetalle(!ver_tarea_detalle)}
-      scrollOffsetMax={400 - 300} 
       style={styles.modal}>
       <View style={styles.scrollableModal}>
         <View style={styles.view_close}>
+   
           <TouchableOpacity style={styles.view_close} onPress={()=>funTareaVerDetalle(!ver_tarea_detalle)} >
                 <Icon
                   name={'ios-arrow-down'}
@@ -96,10 +94,14 @@ funMostrarDastos(){
                   color={'#bbb'}
                   ></Icon>      
             </TouchableOpacity>
-            
+  
         </View>
         <View style={styles.scrollableModalContent1}>
+        
+              
+                
           {this.funMostrarDastos()}
+          
         </View>
       </View>
     </Modal>

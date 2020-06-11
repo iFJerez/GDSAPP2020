@@ -13,37 +13,17 @@
       "desc_sala": "Santa Isabel TAREA Buena Aventura 856",
       "direccion": "Calandrias ruidinteligentes 2342",
       "numero": 99,
-      "estado": "objetada"},
-      { "id_sala": 12,
-        "fechaHora": "2014-01-01T06:25:24Z",
-        "cadena": "lider",
-        "desc_sala": "Lider TAREA Incienso de Aguas",
-        "direccion": "Abedules 2342 y Las Rinteligentes",
-        "numero": 99,
-        "estado": "objetada"},
-        { "id_sala": 13,
-          "fechaHora": "2018-01-01T06:25:24Z",
-          "cadena": "jumbo",
-          "desc_sala": "Jumbo TAREA Tierra de Selknam",
-          "direccion": "Asgard 8769 y Wakanda ",
-          "numero": 99,
-          "estado": "objetada"},
-    {"id_sala": 14,
-      "fechaHora": "2013-01-01T06:25:24Z",
-      "cadena": "jumbo",
-      "desc_sala": "Jumbo TAREA Buena Aventura",
-      "numero": 99,
-      "estado": "premier"},
-      {"id_sala": 15,
-        "fechaHora": "2013-01-01T06:25:24Z",
-        "cadena": "lider",
-        "desc_sala": "Lider TAREA Siempre Tranquilo",
-        "numero": 99,
-        "estado": "premier"}
+      "estado": "objetada"}
     ],
-  "objeciones": [
-      {"id_sala": "11", "indicador": "inteligente", "id_sku": 98765, "objecion": "sin stock"}
-      ],
+  "tareasPicker": [
+      {"indicador": "INTELIGENTE", "picker": [ "Sin Objeción",
+        "Producto INTELIGENTE", "SI","NO","NOSE"
+]
+      },
+      {"indicador": "EJECUCION", "picker": [ "Sin Ejecucion",
+        "Producto EJECUTADO", "SI","NO"
+     ]
+      }],
   "sala10" : 
       {
         "id_sala": 10,
@@ -52,6 +32,7 @@
            "detalles": [
              {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
              {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
              {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false}
              
              
@@ -79,7 +60,7 @@
     },
     "sala11" : 
     {
-      "id_sala": 10,
+      "id_sala": 11,
       "indicadores": [
         {"indicador": "INTELIGENTE", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "rocket1",
          "detalles": [

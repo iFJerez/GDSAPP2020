@@ -6,32 +6,48 @@ import ActionCreators from '../../redux/actions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+
 class CardUsuario extends Component {
 
   funExec(){
-    const {data, dataAll, ver_tarea_detalle,  funTareaVerDetalle, funTareaGuardaDetalle} = this.props;
-    obj = {...data, ...dataAll}
+    const {data, ver_tarea_detalle,  funTareaVerDetalle, funTareaGuardaDetalle} = this.props;
   
-  funTareaGuardaDetalle(obj) 
+   funTareaGuardaDetalle(data) 
    funTareaVerDetalle(!ver_tarea_detalle)
 
-  console.log('TouchIndicador', JSON.stringify(dataAll))
+  //console.log('TouchIndicador', data)
+  }
+
+  funTareasRealizadas () {
+    const { data_tareas, data } = this.props
+    const objecionesReduced = data_tareas
+        .filter( v =>    data.indicador === v.indicador &&
+          data.id_sala === v.id_sala)
+        .reduce( (counter, item) => {
+          counter[item] = counter.hasOwnProperty(item) ? counter[item] + 1 : 1;
+          return counter ;
+        },{})
+    let dato =  Object.keys(objecionesReduced).map(v => objecionesReduced[v])
+    return dato>0?dato:0
+
   }
 
 
   render() {
     const {data, activa, nombre} = this.props
-    let style_activa = activa === nombre ? styles.sty_botonOn: styles.sty_botonOff
-    let style_texto = activa === nombre ? styles.textoOn: styles.textoOff
-    let style_icon = activa === nombre ? constants.COLOR_PRIMARIO: constants.COLOR_GRIS_I
+    const ok = this.funTareasRealizadas() == data.detalles.length
+    let style_activa = ok ? styles.sty_botonOn : styles.sty_botonOff
+    let style_texto = ok ? styles.textoOn: styles.textoOff
+    let style_icon = ok ? constants.COLOR_PRIMARIO: constants.COLOR_GRIS_I
     return (
       
       <TouchableOpacity onPress={()=>this.funExec()}>
         <View style={[style_activa, styles.container ]}>
+        
           <Icon name={data.name_icon} color={style_icon} size={constants.ICON_SMALL} />
           <Text style={style_texto}>{data.indicador}</Text>
-          <Text style={style_texto}>{data.cantidad} / {data.base}</Text>
-      
+          <Text style={style_texto}> {this.funTareasRealizadas()} / {data.detalles.length}</Text>
+
       </View>
     </TouchableOpacity>
 
@@ -48,6 +64,7 @@ const mapStateToProps = (state) => {
   return {
     
     ver_tarea_detalle: state.flashReducer.ver_tarea_detalle,
+    data_tareas: state.tareaReducer.data_tareas,
     
   };
 };
@@ -81,7 +98,7 @@ const styles = StyleSheet.create({
   },
 
   sty_botonOff: {
-    borderColor: constants.COLOR_GRIS_A,
+    borderColor: constants.COLOR_GRIS_G,
     borderWidth: 1,
     padding: 10
   },

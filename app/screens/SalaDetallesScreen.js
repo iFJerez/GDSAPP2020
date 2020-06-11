@@ -9,7 +9,6 @@ import * as colores from '../herramientas/Const'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions'
-import { ScrollView } from 'react-native-gesture-handler'
 import DetalleASala from '../components/detalle/DetalleASala'
 
 // Screen: Counter 14932
@@ -80,13 +79,7 @@ funMostrarDastos(){
       backdropColor={colores.COLOR_GRIS}
       backdropOpacity={0.5}
       isVisible={ver_sala_detalle}
-      onSwipeComplete={()=>funSalaVerDetalle(!data_detalle)}
-      swipeDirection={['down']}
-      scrollTo={this.handleScrollTo}
-      scrollOffset={this.state.scrollOffset}
-      onSwipeComplete={()=>funSalaVerDetalle(!ver_sala_detalle)}
       onBackdropPress={()=>funSalaVerDetalle(!ver_sala_detalle)}
-      scrollOffsetMax={400 - 300} 
       style={styles.modal}>
       <View style={styles.scrollableModal}>
         <View style={styles.view_close}>
@@ -151,6 +144,7 @@ const mapStateToProps = (state) => {
     
     ver_sala_detalle: state.flashReducer.ver_sala_detalle,
     data_detalle: state.salasReducer.data_detalle,
+    
   };
 };
 
