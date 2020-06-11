@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Image } from 'react-native';
+import { StyleSheet, View, Image, Text, SafeAreaView } from 'react-native';
 import * as constants from '../../herramientas/Const'
 import EnvioDetalleCard from './EnvioDetalleCard'
 import data_cadena from '../../api/cadenas.json'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import IconAnt from 'react-native-vector-icons/AntDesign';
 import TextoBase from './EnvioTextBase';
 
 export default class PendienteEnvioBody extends Component {
@@ -81,9 +82,22 @@ export default class PendienteEnvioBody extends Component {
   render() {
 
     const { data } = this.props;
+    let detalle = null;
+    if (data && data.length > 0) {
+      detalle = this.funLlenadoSalas()
+    } else {
+      detalle =
+        <SafeAreaView>
+        <View style={styles.sin_datos_container}>
+          <IconAnt style={styles.sty_icon_sin_datos} name='checkcircleo' size={100} color={constants.COLOR_GRIS_G}/>
+          <Text style={styles.sty_text_sin_datos}>No quedan datos por enviar</Text>
+        </View>
+        </SafeAreaView>
+    } 
     return (
         <View style={styles.container}>
-          {this.funLlenadoSalas()}
+          {detalle}
+          {/* {this.funLlenadoSalas()} */}
         </View>
     );
   }
@@ -96,7 +110,12 @@ const styles = StyleSheet.create({
     backgroundColor: constants.COLOR_GRIS_D,
     borderRadius: 5
   },
-  st_icono: { width: '100%', height: '100%', resizeMode: 'center', alignItems: "center" },
+  st_icono: { 
+    width: '100%',
+    height: '100%',
+    resizeMode: 'center',
+    alignItems: "center"
+  },
   sty_image: { width: 90, height: 90 },
   sucursalHeader: {
     flexDirection: 'row',
@@ -124,6 +143,30 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     justifyContent: 'flex-start'
   },
+  sty_text_sin_datos: {
+    fontSize: constants.SIZE_LETRA_XXXX_LARGE,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    color: constants.COLOR_GRIS_G,
+    shadowColor: constants.COLOR_GRIS_K,
+    shadowOpacity: 0.1,
+    shadowRadius: 0,
+    shadowOffset: {width: 1, height: 1},
+  },
+  sty_icon_sin_datos: {
+    textAlign: 'center',
+    fontWeight: 'bold',
+    color: constants.COLOR_GRIS_G,
+    shadowColor: constants.COLOR_GRIS_K,
+    shadowOpacity: 0.1,
+    shadowRadius: 0,
+    shadowOffset: {width: 1, height: 1},
+  },
+  sin_datos_container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 400
+  }
 
 
 });

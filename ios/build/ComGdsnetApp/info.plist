@@ -3,8 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>LastAccessedDate</key>
+<<<<<<< HEAD
 	<date>2020-06-10T18:13:05Z</date>
+=======
+	<date>2020-06-08T12:49:11Z</date>
+>>>>>>> 3e028c0e7a0cf3c1bfcfb7afd26408fa9c7fa5ba
 	<key>WorkspacePath</key>
-	<string>/Users/martinstone/Documents/GitHub/GDSAPP2020/ios/ComGdsnetApp.xcworkspace</string>
+	<string>/Users/sebastianantagli/Documents/GitHub/GDSAPP2020/ios/ComGdsnetApp.xcworkspace</string>
 </dict>
 </plist>
