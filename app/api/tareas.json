@@ -16,11 +16,11 @@
       "estado": "objetada"}
     ],
   "tareasPicker": [
-      {"indicador": "INTELIGENTE", "picker": [ "Sin Objeción",
+      {"indicador": "INTELIGENTE", "picker": [ "Sin Selección",
         "Producto INTELIGENTE", "SI","NO","NOSE"
 ]
       },
-      {"indicador": "EJECUCION", "picker": [ "Sin Ejecucion",
+      {"indicador": "EJECUCION", "picker": [ "Sin Selección",
         "Producto EJECUTADO", "SI","NO"
      ]
       }],

@@ -22,7 +22,7 @@ const {text} = this.props;
         textAlignVertical: "center",
         textAlign: "center",
         fontFamily:"Futura",
-        color: constants.COLOR_QUINTENARIO_CLARO,
+        color: constants.COLOR_QUINTENARIO,
       }}>{text}</Text>
 
     )

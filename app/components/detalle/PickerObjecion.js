@@ -57,7 +57,7 @@ class PickerObjecion extends Component {
 
         <ReactNativePickerModule
           pickerRef={(e) => (this.pickerRef = e)}
-          value={this.state.selectedValue}
+          value={this.state.data.indexOf(this.props.objecion)}
           title={"Seleccione Objeción"}
           items={this.state.data}
           onValueChange={(index) => {

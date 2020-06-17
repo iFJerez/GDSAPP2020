@@ -3,6 +3,8 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 import ReactNativePickerModule from "react-native-picker-module";
 import * as constants from "../../../herramientas/Const";
 import TextoBase from "../../../herramientas/textos/TextoBase";
+import Icon from 'react-native-vector-icons/Ionicons';
+
 
 class PickerTarea extends Component {
   constructor(props) {
@@ -10,30 +12,36 @@ class PickerTarea extends Component {
 
     this.state = {
       data: [
-        "Sin Objeción",
+        "Sin Selección",
       ],
     };
   }
 
-  handleTouch(index) {
-    console.log(index)
+  handleTouch(valueText, index) {
+    console.log("value: ", valueText)
+          console.log("index: ", index)
     this.pickerRef.show();
-    this.props.touchHandlder(index);
+    this.props.touchHandlder(valueText);
+        this.setState({
+             selectedValue: index
+            })
   }
 
   render() {
     
     const { disabled, picker } = this.props
 
-    const selectedValue = this.props.objecion || "Sin objecion";
+    
+    const posicion = picker.indexOf(this.props.objecion );
+
+    const selectedValue = this.props.objecion || "Sin Selección";
+    const colorBoton = selectedValue!=="Sin Selección"?constants.COLOR_PRIMARIO : constants.COLOR_SECUNDARIO
     return (
       <View style={styles.container}>
         
         <View style={styles.estadoObjecion}>
-          <TextoBase style={styles.sty_txt_title}>Estado Tarea</TextoBase>
-          <TextoBase style={styles.sty_txt_selected}>
-            {selectedValue}
-          </TextoBase>
+          <TextoBase style={styles.sty_txt_title}>estado:   {selectedValue}</TextoBase>
+
         </View>
         <TouchableOpacity
           disabled={disabled}
@@ -43,20 +51,23 @@ class PickerTarea extends Component {
           }}
         >
           <View style={styles.objetar}>
-            <TextoBase style={disabled ? styles.sty_txt_objetar_disabled : styles.sty_txt_objetar}>Objetar ></TextoBase>
+          
+            <Icon name={"ios-list-box"} size={constants.ICON_SMALL} color={colorBoton}/>
+            
           </View>
         </TouchableOpacity>
 
         <ReactNativePickerModule
           pickerRef={(e) => (this.pickerRef = e)}
-          value={this.state.selectedValue}
+          value={ picker.indexOf(this.props.objecion )}
+          
           title={"Seleccione Objeción"}
           items={picker}
-          onValueChange={(index) => {
+          onValueChange={(valueText, index) => {
             // this.setState({
             //   selectedValue: index
             // })
-            this.handleTouch(index);
+            this.handleTouch(valueText, index);
           }}
         />
       </View>
@@ -66,18 +77,16 @@ class PickerTarea extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
-    paddingTop: 13,
-    margin: 0,
     flexDirection: "row",
-    flex: 8,
+    flex: 6,
   },
   estadoObjecion: {
-    flex: 5,
+    flex: 1,
+    justifyContent: "center",
+    paddingLeft:10
   },
   objetar: {
     borderRadius: 3,
-    backgroundColor: "#ededed",
     paddingVertical: 10,
     paddingHorizontal: 20,
   },
@@ -91,9 +100,15 @@ const styles = StyleSheet.create({
   sty_txt_objetar_disabled: {
     color: constants.COLOR_GRIS_J,
   },
+  boton_color_on: {
+    color: constants.COLOR_PRIMARIO,
+  },
+  boton_color_off: {
+    color: constants.COLOR_SECUNDARIO,
+  },
   sty_txt_title: {
     color: constants.COLOR_GRIS_J,
-    fontSize: constants.SIZE_LETRA_LARGE,
+    fontSize: constants.SIZE_LETRA_MEDIUM,
   },
   sty_txt_selected: {
     color: constants.COLOR_GRIS_K,

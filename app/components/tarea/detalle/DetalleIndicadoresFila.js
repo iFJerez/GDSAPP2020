@@ -29,13 +29,7 @@ export default class DetalleIndicadoresFila extends Component {
   try {
         return(    
         <View style={styles.view_fila} key={i} >
-          <View style={styles.view_indicadores}>
-              <IPromocion valor={data.promocion} />
-              <IPresencia valor={data.presencia}/>
-              <IPrecio valor={data.precio}/>
-              <IPorcentaje valor={data.porcentaje} />
-              
-          </View>
+  
 
           <View style={styles.view_textos}>
             <Titulo text={data.titulo}></Titulo>
@@ -77,12 +71,15 @@ const styles = StyleSheet.create({
   
   },
   view_fila: {
-    flex: 1,
+    
     flexDirection: 'row',
+
   },
   view_textos: {
     flexDirection: 'column',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    justifyContent: "flex-end",
+    paddingLeft: 10,
   },
   view_indicadores: {
     paddingHorizontal: 20,

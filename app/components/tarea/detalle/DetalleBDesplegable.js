@@ -36,7 +36,7 @@ class DetalleB extends Component{
 
       console.log('[Data Objecion]',dataObjecion)
 
-      if (objecion === "Sin Objeción") {
+      if (objecion === "Sin Selección") {
         this.props.funEliminarTarea(dataObjecion);
       } else {
         this.props.funGuardarTarea(dataObjecion);
@@ -70,8 +70,7 @@ class DetalleB extends Component{
     return (
        <View style={styles.container} key={i}>
             <DetalleIndicadoresFila data={{...data, objecion}} i={i} />
-            {this.funBuscaPicker()}
-             <Tarea picker={picker}  objecion={objecionDetalle} disabled={objecionDisabled} touchHandlder={(objecion) => this.handleObjecion(objecion)} />
+            <Tarea picker={picker}  objecion={objecionDetalle} disabled={objecionDisabled} touchHandlder={(objecion) => this.handleObjecion(objecion)} />
        </View>
     )
   }
