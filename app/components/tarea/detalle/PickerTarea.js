@@ -40,7 +40,7 @@ class PickerTarea extends Component {
       <View style={styles.container}>
         
         <View style={styles.estadoObjecion}>
-          <TextoBase style={styles.sty_txt_title}>estado:   {selectedValue}</TextoBase>
+          <TextoBase style={styles.sty_txt_title}>{selectedValue}</TextoBase>
 
         </View>
         <TouchableOpacity

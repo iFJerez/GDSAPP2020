@@ -30,6 +30,17 @@ function   DataOK(isRefresh, api_salas, api_tareas) {
   }
 }
 
+export const funOrdenKeys = (orden_key) => (
+  {
+  type: types.USER_ORDEN_KEYS,
+  orden_key: orden_key,
+});
+
+export const funOrdenAscendencia = (orden_asc) => (
+  {
+  type: types.USER_ORDEN_ASC,
+  orden_asc: orden_asc,
+});
 
 
 export function funGetData() {

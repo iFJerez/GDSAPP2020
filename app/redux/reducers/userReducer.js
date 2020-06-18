@@ -11,6 +11,8 @@ const initialState = {
   dataSala: [],
   dataTarea: [],
   isRefresh: false,
+  orden_asc: true,
+  orden_key: 'fechaHora',
   
 };
 
@@ -84,6 +86,23 @@ const authReducer = (state = initialState, action) => {
         dataSala: action.dataSala,
         dataTarea: action.dataTarea,
         status: 'Data OK',
+      }
+    }
+       
+    case types.USER_ORDEN_KEYS: {
+      console.log(state.status, 'USER_ORDEN_KEYS');
+      return {
+        ...state,
+        orden_key: action.orden_key,
+        status: 'Ordenando Keys',
+      }
+    }
+    case types.USER_ORDEN_ASC: {
+      console.log(state.status, 'USER_ORDEN_ASC');
+      return {
+        ...state,
+        orden_asc: action.orden_asc,
+        status: 'Ordenando Asc',
       }
     }
     // Default

@@ -21,6 +21,7 @@ const rootReducer = combineReducers({
   flashReducer: flashReducer,
   desarrolloReducer: desarrolloReducer,
   objecionesReducer: objecionesReducer,
+  
 });
 
 // Exports

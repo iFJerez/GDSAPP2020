@@ -127,28 +127,28 @@ this.setState({NewdataTarea: obj})
 
 
 componentDidUpdate(prevProps) {
-  if (prevProps.sala_orden_key !== this.props.sala_orden_key) {
-    if (this.props.sala_orden_asc) {
-      this.OrderSearchAsc(this.props.sala_orden_key)
+  if (prevProps.orden_key !== this.props.orden_key) {
+    if (this.props.orden_asc) {
+      this.OrderSearchAsc(this.props.orden_key)
     }
     else {
-      this.OrderSearchDes(this.props.sala_orden_key)
+      this.OrderSearchDes(this.props.orden_key)
     }
   }
 
-  if (prevProps.sala_orden_asc !== this.props.sala_orden_asc) {
-    if (this.props.sala_orden_asc) {
-      this.OrderSearchAsc(this.props.sala_orden_key)
+  if (prevProps.orden_asc !== this.props.orden_asc) {
+    if (this.props.orden_asc) {
+      this.OrderSearchAsc(this.props.orden_key)
     }
     else {
-      this.OrderSearchDes(this.props.sala_orden_key)
+      this.OrderSearchDes(this.props.orden_key)
     }
   }
 
 }
 
   render() {
-//    this.props.sala_orden_key
+//    this.props.orden_key
     return (
       <View style={styles.container}>
         
@@ -195,8 +195,8 @@ const mapStateToProps = (state) => {
   return {
     
     dataTarea: state.userReducer.dataTarea,
-    sala_orden_key: state.userReducer.sala_orden_key,
-    sala_orden_asc: state.userReducer.sala_orden_asc,
+    orden_key: state.userReducer.orden_key,
+    orden_asc: state.userReducer.orden_asc,
   };
 };
 
