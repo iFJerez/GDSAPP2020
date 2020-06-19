@@ -8,9 +8,9 @@ import Icon from '../../herramientas/Icon'
 import * as constants from '../../herramientas/Const'
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions'
-import BotonKeys from './OrdenScreenBotonKeys'
-import BotonAsc from './OrdenScreenBotonAsc'
-import Titulos from './OrdenScreenTitulos'
+import BotonKeys from './OrdenSalasScreenBotonKeys'
+import BotonAsc from './OrdenSalasScreenBotonAsc'
+import Titulos from './OrderSalasTitulos'
 
 // Screen: Counter 14932
 class OrdenSalas extends React.Component {
@@ -34,7 +34,7 @@ class OrdenSalas extends React.Component {
   };
 
   funBotonesKeys(){
-    const {funOrdenKeys, orden_key } = this.props;
+    const {funSalasOrdenKeys, sala_orden_key } = this.props;
     const data = [ {"key": "fechaHora", "desc": "Fecha y Hora"},
     {"key": "desc_sala", "desc": "Salas"},
     {"key": "cadena", "desc": "Cadenas"},
@@ -44,7 +44,7 @@ class OrdenSalas extends React.Component {
    return data.map((item, i) => {
 
       return(
-        <BotonKeys funExec={funOrdenKeys} itemkey={item.key} desc={item.desc} orden_key={orden_key}/>
+        <BotonKeys funExec={funSalasOrdenKeys} itemkey={item.key} desc={item.desc} sala_orden_key={sala_orden_key}/>
       )
 
     })
@@ -53,10 +53,10 @@ class OrdenSalas extends React.Component {
 
 
   funBotonesAsc(){
-    const {funOrdenAscendencia, orden_asc } = this.props;
+    const {funSalasOrdenAscendencia, sala_orden_asc } = this.props;
 
     return(
-      <BotonAsc funExec={funOrdenAscendencia} orden_asc={orden_asc}/>
+      <BotonAsc funExec={funSalasOrdenAscendencia} sala_orden_asc={sala_orden_asc}/>
     )
 
   }
@@ -64,7 +64,7 @@ class OrdenSalas extends React.Component {
 
   render() {
 
-    const {funVerSalaFiltro, ver_sala_filtro, data_detalle,funOrdenKeys,funOrdenAscendencia,  orden_asc, orden_key, status } = this.props;
+    const {funVerSalaFiltro, ver_sala_filtro, data_detalle,funSalasOrdenKeys,funSalasOrdenAscendencia,  sala_orden_asc, sala_orden_key, status } = this.props;
     const data = [{"key": "id_sala", "desc": "Salas"},
                   {"key": "fechaHora", "desc": "Fecha y Hora"}] 
     
@@ -169,8 +169,8 @@ const mapStateToProps = (state) => {
   return {
     
     ver_sala_filtro: state.flashReducer.ver_sala_filtro,
-    orden_asc: state.tareaReducer.orden_asc,
-    orden_key: state.tareaReducer.orden_key,
+    sala_orden_asc: state.salasReducer.sala_orden_asc,
+    sala_orden_key: state.salasReducer.sala_orden_key,
     status: state.userReducer.status,
     
   };

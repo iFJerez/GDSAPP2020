@@ -3,13 +3,13 @@ import { StyleSheet, View} from 'react-native';
 import {funMessage} from '../../herramientas/Mensaje'
 import * as constants from '../../herramientas/Const'
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import TextoBase from './OrdenScreenTextBase';
+import TextoBase from './OrdenSalasScreenTextBase';
 
 export default class CardItems extends Component {
   render() {
-    const {funExec, desc, itemkey, orden_key} = this.props
-    const newStyle = itemkey===orden_key?styles.buttonOn:styles.buttonOff
-    const newStyleText = itemkey===orden_key?styles.sty_text_on:styles.sty_text_off
+    const {funExec, desc, itemkey, sala_orden_key} = this.props
+    const newStyle = itemkey===sala_orden_key?styles.buttonOn:styles.buttonOff
+    const newStyleText = itemkey===sala_orden_key?styles.sty_text_on:styles.sty_text_off
 
     return (
       <TouchableOpacity onPress={()=>funExec(itemkey)}>

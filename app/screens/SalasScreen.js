@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import SalasListado from '../components/salas/SalasListado'
 import Activity from './ActivityScreen'
 import SalaDetallesScreen from './SalaDetallesScreen'
-import OrdenScreen from '../components/orden/OrdenScreen'
+import OrdenSalasScreen from '../components/salas/OrdenSalasScreen'
 import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
 
 // Imports: Redux Actions
@@ -26,7 +26,7 @@ class SalasScreen extends React.Component {
             
             <SalasListado />
             <SalaDetallesScreen />
-            <OrdenScreen />
+            <OrdenSalasScreen />
             <EnvioBoton />
             </SafeAreaView>      
         )
