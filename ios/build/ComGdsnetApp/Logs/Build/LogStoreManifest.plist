@@ -40,6 +40,40 @@
 			<key>uniqueIdentifier</key>
 			<string>3103BDBB-6CFE-4010-84C2-F5D77557F971</string>
 		</dict>
+		<key>FEE53C8E-39A9-4360-88F3-906774C5ABD2</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FEE53C8E-39A9-4360-88F3-906774C5ABD2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ComGdsnetApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ComGdsnetApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>614289155.37397802</real>
+			<key>timeStoppedRecording</key>
+			<real>614289157.953017</real>
+			<key>title</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>FEE53C8E-39A9-4360-88F3-906774C5ABD2</string>
+		</dict>
 	</dict>
 </dict>
 </plist>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { bindActionCreators } from 'redux';
-import { View, TouchableOpacity, StyleSheet} from "react-native";
+import { View, StyleSheet} from "react-native";
 import { connect } from 'react-redux';
 import DetalleIndicadoresFila from './DetalleIndicadoresFila';
 import ActionCreators from '../../../redux/actions';
@@ -19,6 +19,7 @@ class DetalleB extends Component{
     }
 
     handleObjecion (objecion) {
+
       const dataObjecion = {
         id_sku: this.props.data.id_sku,
         indicador: this.props.section.indicador,
@@ -69,7 +70,7 @@ class DetalleB extends Component{
       ...dataGeneral } = this.props.section;
     return (
        <View style={styles.container} key={i}>
-            <DetalleIndicadoresFila data={{...data, objecion}} i={i} />
+            
             <Tarea picker={picker}  objecion={objecionDetalle} disabled={objecionDisabled} touchHandlder={(objecion) => this.handleObjecion(objecion)} />
        </View>
     )
