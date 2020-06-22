@@ -22,8 +22,8 @@
       },
       {"indicador": "EJECUCION", "picker": [ "Sin Selección",
         "Producto EJECUTADO", "SI","NO"
-     ]
-      }],
+     ]}
+    ],
   "sala10" : 
       {
         "id_sala": 10,

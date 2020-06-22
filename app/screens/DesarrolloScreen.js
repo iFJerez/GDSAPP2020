@@ -5,51 +5,72 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
-//Ciomponents
-import PrimerComponets from '../components/desarrollo/PrimerComponents'
-import SegundoComponents from '../components/desarrollo/SegundoComponents'
-import CardPrincipal from '../components/desarrollo/CardPrincipal'
-import salasTest from '../api/salasTest.json'
 
 
-// Screen: Counter 14932
+const personnel = [
+  {
+    id: 5,
+    name: "Luke Skywalker",
+    pilotingScore: 98,
+    shootingScore: 56,
+    isForceUser: true,
+  },
+  {
+    id: 82,
+    name: "Sabine Wren",
+    pilotingScore: 73,
+    shootingScore: 99,
+    isForceUser: false,
+  },
+  {
+    id: 22,
+    name: "Zeb Orellios",
+    pilotingScore: 20,
+    shootingScore: 59,
+    isForceUser: false,
+  },
+  {
+    id: 15,
+    name: "Ezra Bridger",
+    pilotingScore: 43,
+    shootingScore: 67,
+    isForceUser: true,
+  },
+  {
+    id: 11,
+    name: "Caleb Dume",
+    pilotingScore: 71,
+    shootingScore: 85,
+    isForceUser: true,
+  },
+];
+
+
 class DesarrolloScreen extends React.Component {
 
 
-  funSalas(){
-    var salasActivas = []
 
-    salasTest.salas.map((fila, i) => {
-      salasActivas.push(fila.id_sala)
-    })
-    console.log(salasActivas)
-    let valor = 0
-    let nombreSala = 'sala' + valor 
-    
-    salasActivas.map((valor, i)=>{
-      
-      nombreSala = 'sala' + valor 
-      console.log(salasTest[nombreSala])
-    })
+  funDesarrollo(){
 
-}
-funSalas2(){
+    const totalJediScore = personnel
+  .filter(person => person.isForceUser)
+  .map(jedi => jedi.pilotingScore + jedi.shootingScore)
+  .reduce((acc, score) => acc + score, 0);
+    console.log(totalJediScore)
 
-  salasTest.salas.map((fila, i) => {
-    console.log(fila)
-  })
-}
 
- fun_sum(...numbers) {
-   function findMaxValueIn ( ...numbers ) {
-    return Math.max.apply( Math, numbers );
-};
 
-const values = [ 20, 8, 10, 30, 55 ];
-var algo = [values[3], ...remaining] 
-console.info( algo); //40
-};
+    const objecionesReduced = personnel
+    .filter(person => person.isForceUser)
+    .map(jedi => jedi.pilotingScore + jedi.shootingScore)
+    .reduce((acc, score) => acc + score, 0);
 
+console.log(objecionesReduced)
+
+  }
+
+
+  
   
   render() {
     const {numero, funIncrementar, funDecrementar } = this.props;
@@ -57,7 +78,7 @@ console.info( algo); //40
       <View style={styles.container}>
         <ScrollView >
         <Text>Hola Desarrollo</Text>
-        <Text>{this.fun_sum(1,4)}</Text>
+        {this.funDesarrollo()}
 
 
         
@@ -76,7 +97,7 @@ const styles = StyleSheet.create({
  
 });
 
-// Map State To Props (Redux Store Passes State To Component)
+
 const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {

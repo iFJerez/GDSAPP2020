@@ -72,18 +72,18 @@ import ActionCreators from '../../../redux/actions';
 
 
   funTareasRealizadas () {
-    const { data_tareas, data } = this.props
-    const objecionesReduced = data_tareas
-        .filter( v =>    data.indicador === v.indicador &&
-          data.id_sala === v.id_sala)
-        .reduce( (counter, item) => {
-          counter[item] = counter.hasOwnProperty(item) ? counter[item] + 1 : 1;
-          return counter ;
-        },{})
-    let dato =  Object.keys(objecionesReduced).map(v => objecionesReduced[v])
-    return dato>0?dato:0
+    
+const { data_tareas, data } = this.props
 
-  }
+const dato = data_tareas
+.filter( v => data.indicador === v.indicador &&
+  data.id_sala === v.id_sala)
+console.log(dato.length)
+return dato.length>0?dato.length:0
+
+}
+
+
 
 
 

@@ -70,7 +70,7 @@ class DetalleB extends Component{
       ...dataGeneral } = this.props.section;
     return (
        <View style={styles.container} key={i}>
-            
+            <DetalleIndicadoresFila data={data} />
             <Tarea picker={picker}  objecion={objecionDetalle} disabled={objecionDisabled} touchHandlder={(objecion) => this.handleObjecion(objecion)} />
        </View>
     )

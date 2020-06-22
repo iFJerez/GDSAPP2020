@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View, Text } from "react-native";
 import ReactNativePickerModule from "react-native-picker-module";
 import * as constants from "../../../herramientas/Const";
 import TextoBase from "../../../herramientas/textos/TextoBase";
@@ -28,11 +28,15 @@ class PickerTarea extends Component {
   }
 
   render() {
-    
+
+    try {
+          
     const { disabled, picker } = this.props
 
     
-    const posicion = picker.indexOf(this.props.objecion );
+    let posicion = 0;
+      posicion = posicion + picker.indexOf(this.props.objecion )  
+
 
     const selectedValue = this.props.objecion || "Sin Selección";
     const colorBoton = selectedValue!=="Sin Selección"?constants.COLOR_PRIMARIO : constants.COLOR_SECUNDARIO
@@ -57,9 +61,11 @@ class PickerTarea extends Component {
           </View>
         </TouchableOpacity>
 
+
+
         <ReactNativePickerModule
           pickerRef={(e) => (this.pickerRef = e)}
-          value={ picker.indexOf(this.props.objecion )}
+          value={posicion }
           
           title={"Seleccione Objeción"}
           items={picker}
@@ -72,6 +78,19 @@ class PickerTarea extends Component {
         />
       </View>
     );
+
+
+  } catch (error) {
+     return (
+          <View style={styles.objetar}>
+          
+              <Text style={styles.sty_txt_objetar}>Falan las opciones</Text>
+            
+          </View>
+
+     )
+  }
+  
   }
 }
 
