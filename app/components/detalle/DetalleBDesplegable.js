@@ -20,6 +20,7 @@ class Accordian extends Component{
 
     handleObjecion (objecion) {
       const dataObjecion = {
+        type: 'OBJECION',
         id_sku: this.props.data.id_sku,
         indicador: this.props.section.indicador,
         id_sala: this.props.section.id_sala,
@@ -39,7 +40,7 @@ class Accordian extends Component{
       if (objecion === "Sin Objeción") {
         this.props.funEliminarObjecion(dataObjecion);
       } else {
-        this.props.funGuardarObjecion(dataObjecion);
+        this.props.funGuardarEnvio(dataObjecion);
       }
       
     }
@@ -99,7 +100,7 @@ const styles = StyleSheet.create({
 const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
-    objeciones: state.objecionesReducer,
+    objeciones: state.envioReducer,
   };
 };
 

@@ -27,8 +27,10 @@ class ModalScreen extends React.Component {
     const objecionesReduced = objeciones
       .filter( v => v.status !== 'enviado')
       .reduce( (obj,val) => {
+        console.info(val.indicador)
         const key = 'sala' + val.id_sala + val.fechaHora
         if(obj[key]) {
+          
           obj[key].acciones.push({
             indicador: val.indicador,
             fechaHora:val.fechaHora,
@@ -37,8 +39,10 @@ class ModalScreen extends React.Component {
             id_sku: val.id_sku,
             accion: val.objecion,
             fechaHoraObjecion: val.fechaHoraObjecion
+          
           }) 
         } else {
+          
           obj[key] = {}
           obj[key].id_sala = val.id_sala;
           obj[key].cadena = val.cadena;
@@ -57,7 +61,9 @@ class ModalScreen extends React.Component {
             }
           ]
         }
+        
         return obj;
+        
       },{})
 
     return Object.keys(objecionesReduced)
@@ -77,7 +83,7 @@ class ModalScreen extends React.Component {
   };
 
   handleEnviar = () => {
-    this.props.funEnviarObjecion();
+    this.props.funEnviarEnvios();
     this.props.funVerEnvio(false);
   }
 
@@ -85,6 +91,7 @@ class ModalScreen extends React.Component {
   render() {
     const {funVerEnvio, ver_envio, objeciones} = this.props;
     const data = this.convertirObjeciones(objeciones);
+    console.info('objeto' + JSON.stringify(data))
     return (
       <Modal
       testID={'modal'}
@@ -109,8 +116,14 @@ class ModalScreen extends React.Component {
           onScroll={this.handleOnScroll}
           scrollEventThrottle={10}>
           <View style={styles.scrollableModalContent1}>
-          <Text>{JSON.stringify(this.props.data_tareas)}</Text>
+          <Text>OBJECIONES</Text>
+          <Text></Text>
           <Text>{JSON.stringify(this.props.objeciones)}</Text>
+          <Text>INICIO DATA TAREAS</Text>
+          <Text>{JSON.stringify(this.props.data_tareas)}</Text>
+          <Text>INICIO DATA OBJECIONES</Text>
+          <Text></Text>
+          <Text>{JSON.stringify(data)}</Text>
           <EnvioDetalle data={data} />
           </View>
         </ScrollView>
@@ -163,8 +176,8 @@ const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
     ver_envio: state.flashReducer.ver_envio,
-    objeciones: state.objecionesReducer,
-    data_tareas: state.tareaReducer.data_tareas
+    objeciones: state.envioReducer,
+    data_tareas: state.envioReducer
   };
 };
 

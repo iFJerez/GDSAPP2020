@@ -24,7 +24,7 @@ export function funTareaGuardaDetalle(data_detalle) {
   }
 }
 
-export function funGuardarTarea(objecion) {
+export function funGuardarEnvio(objecion) {
   return {
     
     type: types.TAREA_SAVE,

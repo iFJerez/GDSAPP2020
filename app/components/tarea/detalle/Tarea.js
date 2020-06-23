@@ -10,7 +10,7 @@ export default class Objecion extends Component {
 
   render() {
 
-    console.info('recibiendo', this.props.picker)
+    
 
 
     return  (

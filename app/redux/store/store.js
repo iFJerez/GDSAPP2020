@@ -21,7 +21,7 @@ const persistConfig = {
     'counterReducer',
     'userReducer',
     'desarrolloReducer',
-    'objecionesReducer',
+    'envioReducer',
     'tareaReducer',
     'salasReducer',
   

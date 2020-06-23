@@ -90,7 +90,7 @@ export default class PendienteEnvioBody extends Component {
         <SafeAreaView>
         <View style={styles.sin_datos_container}>
           <IconAnt style={styles.sty_icon_sin_datos} name='checkcircleo' size={100} color={constants.COLOR_GRIS_G}/>
-          <Text style={styles.sty_text_sin_datos}>No quedan datos por enviar</Text>
+          <Text style={styles.sty_text_sin_datos}>Sin datos por enviar</Text>
         </View>
         </SafeAreaView>
     } 

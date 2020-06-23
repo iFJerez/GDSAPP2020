@@ -1,24 +1,24 @@
 import * as types from '../redux_constants'; 
 
 // Guarda la objecion o la actualiza
-export function funGuardarObjecion(objecion) {
+export function funGuardarEnvio(objecion) {
   return {
-    type: types.OBJECION_SAVE,
+    type: types.ENVIO_SAVE,
     objecion: objecion
   }
 }
 
-export function funEliminarObjecion(objecion) {
+export function funEliminarEnvio(objecion) {
   return {
-    type: types.OBJECION_DELETE,
+    type: types.ENVIO_DELETE,
     objecion: objecion
   }
 }
 
-export function funEnviarObjecion() {
-  console.log('envio la objecion')
+export function funEnviarEnvios() {
+  console.log('enviando')
   return {
-    type: types.OBJECION_SEND
+    type: types.ENVIO_SEND
   }
 }
 
