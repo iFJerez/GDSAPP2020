@@ -14,7 +14,7 @@
       "direccion": "Calandrias ruidinteligentes 2342",
       "numero": 99,
       "estado": "objetada"},
-      { "id_sala": 13,
+      { "id_sala": 5656,
         "fechaHora": "2018-01-01T06:25:24Z",
         "cadena": "jumbo",
         "desc_sala": "Jumbo Tierra de Selknam",
@@ -98,9 +98,9 @@
            ] }
        ]
   },
-  "sala13" : 
+  "sala5656" : 
   {
-    "id_sala": 11,
+    "id_sala": 5656,
     "indicadores": [
       {"indicador": "INTELIGENTE", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "rocket1",
        "detalles": [

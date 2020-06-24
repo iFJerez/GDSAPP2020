@@ -6,19 +6,19 @@ const envioReducer = (state = initialState, action) => {
     switch (action.type) {
         case types.ENVIO_SAVE: {
             const newState = state.filter(v => (
-                !(action.objecion.id_sku === v.id_sku &&
-                action.objecion.indicador === v.indicador &&
-                action.objecion.id_sala === v.id_sala &&
-                action.objecion.fechaHora === v.fechaHora)
+                !(action.envio.id_sku === v.id_sku &&
+                action.envio.indicador === v.indicador &&
+                action.envio.id_sala === v.id_sala &&
+                action.envio.fechaHora === v.fechaHora)
             ))
-            return [...newState, action.objecion]
+            return [...newState, action.envio]
         }
         case types.ENVIO_DELETE: {
             const newState = state.filter(v => (
-                !(action.objecion.id_sku === v.id_sku &&
-                action.objecion.indicador === v.indicador &&
-                action.objecion.id_sala === v.id_sala &&
-                action.objecion.fechaHora === v.fechaHora)
+                !(action.envio.id_sku === v.id_sku &&
+                action.envio.indicador === v.indicador &&
+                action.envio.id_sala === v.id_sala &&
+                action.envio.fechaHora === v.fechaHora)
             ))
             return newState
         }

@@ -23,15 +23,16 @@ class ModalScreen extends React.Component {
   }
 
 
-  convertirObjeciones = objeciones => {
+  convertirObjeciones (objeciones) {
     const objecionesReduced = objeciones
       .filter( v => v.status !== 'enviado')
       .reduce( (obj,val) => {
-        console.info(val.indicador)
-        const key = 'sala' + val.id_sala + val.fechaHora
+        //console.info(val.indicador)
+        const key = 'sala' + val.id_sala
         if(obj[key]) {
           
           obj[key].acciones.push({
+            type: val.type,
             indicador: val.indicador,
             fechaHora:val.fechaHora,
             item: val.desc_sku,
@@ -48,9 +49,9 @@ class ModalScreen extends React.Component {
           obj[key].cadena = val.cadena;
           obj[key].desc_sala = val.desc_sala;
           obj[key].fechaHora = val.fechaHora;
-          obj[key].id_sala = val.id_sala;
           obj[key].acciones = [
             {
+              type: val.type,
               indicador: val.indicador,
               fechaHora:val.fechaHora,
               item: val.desc_sku,
@@ -91,7 +92,6 @@ class ModalScreen extends React.Component {
   render() {
     const {funVerEnvio, ver_envio, objeciones} = this.props;
     const data = this.convertirObjeciones(objeciones);
-    console.info('objeto' + JSON.stringify(data))
     return (
       <Modal
       testID={'modal'}
@@ -116,14 +116,6 @@ class ModalScreen extends React.Component {
           onScroll={this.handleOnScroll}
           scrollEventThrottle={10}>
           <View style={styles.scrollableModalContent1}>
-          <Text>OBJECIONES</Text>
-          <Text></Text>
-          <Text>{JSON.stringify(this.props.objeciones)}</Text>
-          <Text>INICIO DATA TAREAS</Text>
-          <Text>{JSON.stringify(this.props.data_tareas)}</Text>
-          <Text>INICIO DATA OBJECIONES</Text>
-          <Text></Text>
-          <Text>{JSON.stringify(data)}</Text>
           <EnvioDetalle data={data} />
           </View>
         </ScrollView>
@@ -143,7 +135,7 @@ const styles = StyleSheet.create({
   },
   scrollableModal: {
     height: '90%',
-    backgroundColor: colores.COLOR_GRIS_D,
+    backgroundColor: colores.COLOR_GRIS_F,
   },
   scrollableModalContent1: {
     flex: 1,

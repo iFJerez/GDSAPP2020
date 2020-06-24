@@ -1,21 +1,76 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Image, Text, SafeAreaView } from 'react-native';
+import { StyleSheet, View, Image, Text, SafeAreaView, SectionList } from 'react-native';
 import * as constants from '../../herramientas/Const'
 import EnvioDetalleCard from './EnvioDetalleCard'
+
 import data_cadena from '../../api/cadenas.json'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconAnt from 'react-native-vector-icons/AntDesign';
 import TextoBase from './EnvioTextBase';
+import GrupoHeader from './GrupoHeader'
+
+
+
+
+
+const Item = ({ title }) => (
+  <View style={styles.item}>
+    <Text style={styles.title}>{title}</Text>
+  </View>
+);
+
 
 export default class PendienteEnvioBody extends Component {
 
 
+  agruparData (data) {
+    const dataReduced = data
+      .reduce( (obj,val) => {
+        const key = val.type
+        if(obj[key]) {
+          obj[key].data.push({
+            indicador: val.indicador,
+            fechaHora:val.fechaHora,
+            item: val.item,
+            ean: val.ean,
+            id_sku: val.id_sku,
+            accion: val.accion,
+            fechaHoraObjecion: val.fechaHoraObjecion
+          
+          }) 
+        } else {
+          obj[key] = {}
+          obj[key].type = val.type;
+          obj[key].id_sala = val.id_sala;
+          obj[key].cadena = val.cadena;
+          obj[key].desc_sala = val.desc_sala;
+          obj[key].fechaHora = val.fechaHora;
+          obj[key].data = [
+            {
+              indicador: val.indicador,
+              fechaHora:val.fechaHora,
+              item: val.item,
+              ean: val.ean,
+              id_sku: val.id_sku,
+              accion: val.accion,
+              fechaHoraObjecion: val.fechaHoraObjecion
+            }
+          ]
+        }
+        
+        return obj;
+        
+      },{})
+
+    return Object.keys(dataReduced)
+      .map(v => dataReduced[v])
+  }
 
   cargaImagen(cadena) {
 
     try {
       return (
-        <View style={styles.sty_image}>
+        <View style={styles.st_icono}>
           <Image
             style={styles.st_icono}
             source={{ uri: data_cadena[cadena].uri }}
@@ -25,7 +80,7 @@ export default class PendienteEnvioBody extends Component {
       )
     } catch (error) {
       return (
-        <View style={styles.sty_image}>
+        <View style={styles.st_icono}>
           <Icon name={'store'} color={constants.COLOR_GRIS_G} size={50} style={styles.st_icono} />
         </View>
       )
@@ -40,7 +95,7 @@ export default class PendienteEnvioBody extends Component {
 
     return data.map((sucursal, i) => {
       return (
-        <View style={styles.container}>
+        <View style={styles.card}>
           <View style={styles.sucursalHeader}>
             <View style={styles.logo}>
               {this.cargaImagen(sucursal.cadena)}
@@ -55,7 +110,26 @@ export default class PendienteEnvioBody extends Component {
             </View>
           </View>
           <View style={styles.detalleAcciones}>
-            {this.funLlenadoAcciones(sucursal)}
+          
+            
+
+
+            <SectionList
+              sections={this.agruparData(sucursal.acciones)}
+              keyExtractor={(item, index) => item + index}
+              renderItem={({ item, index }) => (  
+                
+                <View>
+  
+                {this.funLlenadoAccionesOtra(item, index, sucursal.id_sala)}
+                </View>
+              )}
+              renderSectionHeader={({ section: { type } }) => (
+                
+                <GrupoHeader agrupador={type} />
+              )}
+            />
+
           </View>
         </View>
       )
@@ -63,19 +137,21 @@ export default class PendienteEnvioBody extends Component {
 
   }
 
-  funLlenadoAcciones(data) {
 
-    const { acciones, ...dataPunto } = data;
+  funLlenadoAccionesOtra(data, index, id_sala) {
+const datos = {...data, numero: index + 1, id_sala }    
+
+    return(
     
-
-    return acciones.map((accion, i) => {
-      return (
+        <View>
+          <EnvioDetalleCard data={datos} />
+        </View>
+    )
         
-        <EnvioDetalleCard data={{ ...accion, ...dataPunto, numero: i + 1 }} />
-      )
-    })
 
   }
+
+  
 
 
 
@@ -83,6 +159,7 @@ export default class PendienteEnvioBody extends Component {
 
     const { data } = this.props;
     let detalle = null;
+  
     if (data && data.length > 0) {
       detalle = this.funLlenadoSalas()
     } else {
@@ -97,6 +174,7 @@ export default class PendienteEnvioBody extends Component {
     return (
         <View style={styles.container}>
           {detalle}
+  
           {/* {this.funLlenadoSalas()} */}
         </View>
     );
@@ -107,20 +185,33 @@ export default class PendienteEnvioBody extends Component {
 const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
-    backgroundColor: constants.COLOR_GRIS_D,
-    borderRadius: 5
+    padding: 10,
+    
+  },
+  card: {
+    justifyContent: 'center',
+    borderColor: constants.COLOR_GRIS_F,
+    borderWidth: 1,
+
+    marginBottom: 10,
+    borderRadius: 5,
+    backgroundColor: constants.COLOR_BLANCO,
+    
+    
   },
   st_icono: { 
-    width: '100%',
-    height: '100%',
+    width: 50,
+    height: 50,
     resizeMode: 'center',
     alignItems: "center"
   },
-  sty_image: { width: 90, height: 90 },
   sucursalHeader: {
+    paddingLeft: 10,
+    padding: 3,
     flexDirection: 'row',
     justifyContent: 'flex-start',
-    alignItems: 'center'
+    alignItems: 'center',
+
   
   },
   sty_text_desc_sucursal: {
@@ -128,7 +219,7 @@ const styles = StyleSheet.create({
     textAlignVertical: "center",
     textAlign: "left",
     fontWeight: 'bold',
-    color: constants.COLOR_QUINTENARIO
+    color: constants.COLOR_GRIS_J
   },
   sty_text_direccion: {
     fontSize: constants.SIZE_LETRA_X_LARGE,
@@ -137,11 +228,12 @@ const styles = StyleSheet.create({
     color: constants.COLOR_QUINTENARIO_CLARO
   },
   detalleSuc: {
-    flex: 3,
+  
     flexDirection: 'column',
     alignContent: 'flex-start',
     paddingLeft: 10,
-    justifyContent: 'flex-start'
+    justifyContent: 'flex-start',
+    
   },
   sty_text_sin_datos: {
     fontSize: constants.SIZE_LETRA_XXXX_LARGE,

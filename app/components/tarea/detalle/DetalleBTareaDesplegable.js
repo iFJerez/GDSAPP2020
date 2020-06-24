@@ -19,9 +19,8 @@ class DetalleB extends Component{
     }
 
     handleObjecion (objecion) {
-
       const dataObjecion = {
-        type: 'TAREA',
+        type: 'TAREAS',
         id_sku: this.props.data.id_sku,
         indicador: this.props.section.indicador,
         id_sala: this.props.section.id_sala,
@@ -39,7 +38,7 @@ class DetalleB extends Component{
       console.log('[Data Objecion]',dataObjecion)
 
       if (objecion === "Sin Selección") {
-        this.props.funEliminarTarea(dataObjecion);
+        this.props.funEliminarEnvio(dataObjecion);
       } else {
         this.props.funGuardarEnvio(dataObjecion);
       }
@@ -48,7 +47,7 @@ class DetalleB extends Component{
 
     funBuscaPicker(){
       const {dataTarea} = this.props;
-      console.info('picker', dataTarea.tareasPicker)
+      //console.info('picker', dataTarea.tareasPicker)
     }
   
     
