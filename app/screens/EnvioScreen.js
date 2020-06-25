@@ -48,6 +48,7 @@ class ModalScreen extends React.Component {
           obj[key].id_sala = val.id_sala;
           obj[key].cadena = val.cadena;
           obj[key].desc_sala = val.desc_sala;
+          obj[key].direccion = val.direccion;
           obj[key].fechaHora = val.fechaHora;
           obj[key].acciones = [
             {

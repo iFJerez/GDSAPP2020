@@ -26,6 +26,7 @@ export default class PendienteEnvioBody extends Component {
   agruparData (data) {
     const dataReduced = data
       .reduce( (obj,val) => {
+        
         const key = val.type
         if(obj[key]) {
           obj[key].data.push({
@@ -43,6 +44,7 @@ export default class PendienteEnvioBody extends Component {
           obj[key].type = val.type;
           obj[key].id_sala = val.id_sala;
           obj[key].cadena = val.cadena;
+          obj[key].direccion = val.direccion;
           obj[key].desc_sala = val.desc_sala;
           obj[key].fechaHora = val.fechaHora;
           obj[key].data = [
@@ -92,7 +94,7 @@ export default class PendienteEnvioBody extends Component {
 
   funLlenadoSalas() {
     const { data } = this.props;
-
+console.log(data)
     return data.map((sucursal, i) => {
       return (
         <View style={styles.card}>
@@ -120,8 +122,8 @@ export default class PendienteEnvioBody extends Component {
               renderItem={({ item, index }) => (  
                 
                 <View>
-  
-                {this.funLlenadoAccionesOtra(item, index, sucursal.id_sala)}
+                
+                {this.funLlenadoAccionesOtra(item, index, sucursal.id_sala, sucursal.direccion)}
                 </View>
               )}
               renderSectionHeader={({ section: { type } }) => (
@@ -222,7 +224,7 @@ const styles = StyleSheet.create({
     color: constants.COLOR_GRIS_J
   },
   sty_text_direccion: {
-    fontSize: constants.SIZE_LETRA_X_LARGE,
+    fontSize: constants.SIZE_LETRA_LARGE,
     textAlignVertical: "center",
     textAlign: "left",
     color: constants.COLOR_QUINTENARIO_CLARO

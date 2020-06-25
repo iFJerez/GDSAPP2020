@@ -8,6 +8,7 @@ import IndicadoresDiferencia from './IndicadoresDiferencia'
 export default class HomeIndicadores extends Component {
   render() {
     const {data} = this.props
+    console.log(data)
     return (
       <View style={styles.container}>
               <View style={styles.st_diferencia}>   
@@ -16,7 +17,7 @@ export default class HomeIndicadores extends Component {
             </View>  
             
              <View style={styles.st_indicadores_valor}>   
-             
+             <TextTypeHomeInd  text={data.fuente.toUpperCase().substr(0,2)}/>
              <TextTypeHomeInd  text={data.valor + '%'}/>
             </View>  
             <View style={styles.st_indicadores_texto}>
