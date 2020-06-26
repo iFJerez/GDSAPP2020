@@ -8,6 +8,7 @@ import Activity from './ActivityScreen'
 import SalaDetallesScreen from './SalaDetallesScreen'
 import OrdenSalasScreen from '../components/salas/OrdenSalasScreen'
 import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
+import PruebaScreen from './PruebaScreen'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
@@ -22,10 +23,11 @@ class SalasScreen extends React.Component {
     if(dataSala){
       return(
         <SafeAreaView style={styles.container}>
-
-            
+             {/* <PruebaScreen /> */}
             <SalasListado />
             <SalaDetallesScreen />
+
+        
             <OrdenSalasScreen />
             <EnvioBoton />
             </SafeAreaView>      

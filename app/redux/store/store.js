@@ -29,7 +29,6 @@ const persistConfig = {
   // Blacklist (Don't Save Specific Reducers)
   blacklist: [
 
-
   ],
 };
 

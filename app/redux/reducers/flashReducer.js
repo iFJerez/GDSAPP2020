@@ -6,7 +6,7 @@ const initialState = {
   ver_activity: false,
   ver_sala_filtro: false,
   ver_envio: false,
-
+  ver_sala_detalle_foto: false
 };
 
 // Reducers (Modifies The State And Returns A New State)
@@ -49,7 +49,13 @@ const flashReducer = (state = initialState, action) => {
         ver_sala_filtro: action.ver_sala_filtro,
       }
     }
-  
+    case types.SALA_DETALLES_VIEW_FOTO: {
+      console.log('VER SALA DETALLE FOTO');
+      return {
+        ...state,
+        ver_sala_detalle_foto: action.ver_sala_detalle_foto,
+      }
+    }
     default: {
       return state;
     }
