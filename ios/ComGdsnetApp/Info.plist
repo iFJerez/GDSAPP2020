@@ -69,5 +69,15 @@
 		<string>EvilIcons.ttf</string>
 		<string>Fundation.ttf</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>La aplicacion $(PRODUCT_NAME) requiere acceso a la cámara</string>
+
+	<!-- Required with iOS 11 and higher: include this only if you are planning to use the camera roll -->
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>La aplicacion $(PRODUCT_NAME) requiere acceso al Camera Roll</string>
+
+	<!-- Include this only if you are planning to use the camera roll -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>La aplicacion $(PRODUCT_NAME) requiere acceso al Camera Roll</string>
 </dict>
 </plist>
