@@ -9,7 +9,7 @@ export function funGuardarEnvio(envio) {
 }
 
 export function funEliminarEnvio(envio) {
-  console.log("eliminando:", envio)
+  console.log("eliminandos:", envio)
   return {
     
     type: types.ENVIO_DELETE,
