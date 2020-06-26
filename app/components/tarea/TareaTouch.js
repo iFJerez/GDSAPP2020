@@ -64,7 +64,7 @@ const mapStateToProps = (state) => {
   return {
     
     ver_tarea_detalle: state.flashReducer.ver_tarea_detalle,
-    data_tareas: state.envioReducer,
+    data_tareas: state.tareaReducer.data_tareas,
     
   };
 };

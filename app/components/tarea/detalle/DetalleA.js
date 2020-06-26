@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { StyleSheet, View, SectionList } from 'react-native';
 // import Indicador from '../salas/Indicadores'
 import {funMessage} from '../../../herramientas/Mensaje'
-import DetalleBDesplegable from './DetalleBTareaDesplegable'
+import DetalleBDesplegable from './DetalleBDesplegable'
 import DetalleBDesplegableHeader from './DetalleBDesplegableHeader'
 import VerFotografia from './VerFotografia';
 import Indicador from './DetalleATareaTarjetaIndicador'
@@ -35,7 +35,7 @@ import ActionCreators from '../../../redux/actions';
     try {
 
       const picker = this.funPickers()
-      
+      console.log('dar amor', picker)
       
     const {data} = this.props
     const {detalles, ...rest} = data;
@@ -78,7 +78,7 @@ const { data_tareas, data } = this.props
 const dato = data_tareas
 .filter( v => data.indicador === v.indicador &&
   data.id_sala === v.id_sala)
-
+console.log(dato.length)
 return dato.length>0?dato.length:0
 
 }
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
 const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
-    data_tareas: state.envioReducer,
+    data_tareas: state.tareaReducer.data_tareas,
     dataTareaPicker: state.userReducer.dataTarea.tareasPicker,
   };
 };

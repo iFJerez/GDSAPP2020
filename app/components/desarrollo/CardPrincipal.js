@@ -22,7 +22,7 @@ funRecorrer(){
 
   render() {
     const dataSection = fetchData.map (({acciones, ...rest})=>({...rest, data: acciones }))
-    
+    console.log(dataSection);
 
     return (
       <View style={styles.container}>

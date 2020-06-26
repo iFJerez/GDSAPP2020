@@ -5,7 +5,7 @@ const initialState = {
   tarea_orden_asc: true,
   tarea_orden_key: 'fechaHora',
   data_detalle: [],
-  
+  data_tareas: [],
   
 };
 
@@ -37,8 +37,39 @@ const authReducer = (state = initialState, action) => {
         status: 'Guardando Tareas Detalles',
       }
     }
-    case types.ENVIO_SEND: {
-      console.log('por escribir ENVIO_SEND');
+    case types.TAREA_SAVE: {
+      console.log('TAREA_SAVE');
+      const newState = state.data_tareas.filter(v => (
+          !(action.objecion.id_sku === v.id_sku &&
+          action.objecion.indicador === v.indicador &&
+          action.objecion.id_sala === v.id_sala &&
+          action.objecion.fechaHora === v.fechaHora)
+      ))
+
+      console.log(newState);
+      return {
+        ...state,
+        data_tareas: [...newState, action.objecion],
+        status: 'Guardando Tareas ',
+      }
+  }
+    case types.TAREA_DELETE: {
+      console.log('TAREA_DELETE');
+        const newState = state.data_tareas.filter(v => (
+            !(action.objecion.id_sku === v.id_sku &&
+            action.objecion.indicador === v.indicador &&
+            action.objecion.id_sala === v.id_sala &&
+            action.objecion.fechaHora === v.fechaHora)
+        ))
+        
+        return {
+          ...state,
+          data_tareas: newState,
+          status: 'Eliminando Tareas ',
+        }
+    }
+    case types.OBJECION_SEND: {
+      console.log('por escribir OBJECION_SEND');
       return state
         
     }
