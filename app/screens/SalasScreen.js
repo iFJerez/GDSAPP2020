@@ -69,6 +69,7 @@ const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
     dataSala: state.userReducer.dataSala,
+    
   };
 };
 

@@ -9,7 +9,7 @@ import tareaReducer from  './tareaReducer'
 import salasReducer from  './salasReducer'
 import flashReducer from './flashReducer'
 import desarrolloReducer from './desarrolloReducer'
-import envioReducer from './envioReducer'
+import objecionesReducer from './objecionesReducer'
 
 // Redux: Root Reducer
 const rootReducer = combineReducers({
@@ -20,7 +20,7 @@ const rootReducer = combineReducers({
   tareaReducer: tareaReducer,
   flashReducer: flashReducer,
   desarrolloReducer: desarrolloReducer,
-  envioReducer: envioReducer,
+  objecionesReducer: objecionesReducer,
 });
 
 // Exports

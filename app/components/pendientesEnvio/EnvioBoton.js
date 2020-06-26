@@ -29,12 +29,12 @@ class EnvioBoton extends React.Component {
          <View style={{flexDirection: 'row', alignItems: 'center'}}>
 
                    <View style={{paddingRight: 20}}>
-        <Icon name='rocket1' size={constants.ICON_VERY_SMALL} color={constants.COLOR_BLANCO}/>
+        <Icon name='rocket1' size={constants.ICON_SMALL} color={constants.COLOR_BLANCO}/>
         </View>
 
 
          <View style={{paddingRight: 10}}>
-        <Texto text={`Tienes ${cantObjeciones} item${cantObjeciones > 1 ? 's' : ''} para enviar`}></Texto>
+        <Texto text={`Tienes ${cantObjeciones} pendiente${cantObjeciones > 1 ? 's' : ''} de envio`}></Texto>
         </View>
 
 
@@ -83,7 +83,7 @@ buttonAbrir: {
 const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
-    objeciones: state.envioReducer,
+    objeciones: state.objecionesReducer,
     ver_envio: state.flashReducer.ver_envio,
   };
 };

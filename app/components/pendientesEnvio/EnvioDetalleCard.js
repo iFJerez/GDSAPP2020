@@ -14,8 +14,7 @@ import ActionCreators from '../../redux/actions'
 class CardItems extends Component {
 
   handleDelete() {
-    console.info('eliminadndo......', this.props.data)
-    this.props.funEliminarEnvio(this.props.data)
+    this.props.funEliminarObjecion(this.props.data)
     LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);  
   }
 
@@ -23,14 +22,13 @@ class CardItems extends Component {
     const {data} = this.props
     return (
       
-      <SwipeToDelete onClose={()=>this.handleDelete(this)}>
+      <SwipeToDelete onClose={this.handleDelete.bind(this)}>
       <View style={styles.container}>  
-     
-        <View style={styles.detailLine}>
         <View style={styles.variable}>
           <TextoBase style={styles.sty_text_ordinal}>{`${data.numero}. `}</TextoBase>
           <TextoBase style={styles.sty_text_variable}>{data.indicador.toUpperCase()}</TextoBase>
         </View>
+        <View style={styles.detailLine}>
           <View style={styles.productDetail}>
             <View style={styles.productDesc}>
               <TextoBase style={styles.sty_text_base}>
@@ -43,15 +41,12 @@ class CardItems extends Component {
               </TextoBase>
             </View>
           </View>
-     
-        </View>
-        <View style={styles.action}>
-            <View style={styles.action2}>
-                <TextoBase2 style={styles.sty_text_action} numberOfLines={3}>
-                        {data.accion}
-                </TextoBase2>
-              </View>
+          <View style={styles.action}>
+            <TextoBase2 style={styles.sty_text_action} numberOfLines={3}>
+                    {data.accion}
+            </TextoBase2>
           </View>
+        </View>
         </View>
         </SwipeToDelete>
     );
@@ -67,38 +62,28 @@ const styles = StyleSheet.create({
     marginLeft: 3,
     marginVertical: 0,
     alignItems: 'flex-start',
-    padding: 3,
-    paddingLeft: 20,
-    flexDirection: 'row',
-    flex: 1,
-    
+    padding: 10,
+    height: 100,
+    flexDirection: 'column'
   },
   detailLine: {
-    flexDirection: 'column',
-    alignItems: 'flex-start',
+    flexDirection: 'row',
+    alignItems: 'center',
     flex: 3
   },
   productDetail: {
     flexDirection: 'column',
     alignItems: 'flex-start',
+    padding: 6,
     flex: 6
   },
   action: {
     alignItems: 'center',
-    alignContent: 'center',
+    justifyContent: 'center',
     textAlign: 'center',
-
-    flex: 1,
-    backgroundColor: constants.COLOR_GRIS_C,
-    borderRadius: 10,
-    margin: 2
-  },
-  action2: {
-    alignItems: 'center',
-    alignContent: 'center',
-    textAlign: 'center',
-    flexDirection: 'row',
-    flex: 1,
+    flex: 2,
+    paddingHorizontal: 1,
+    paddingVertical: 2,
     backgroundColor: constants.COLOR_GRIS_C,
     borderRadius: 10,
     margin: 2
@@ -121,13 +106,13 @@ const styles = StyleSheet.create({
     flex: 1
   },
   sty_text_base: {
-    fontSize: constants.SIZE_LETRA_LARGE,
+    fontSize: constants.SIZE_LETRA_X_LARGE,
     textAlignVertical: "center",
     textAlign: "center",
     color: constants.COLOR_QUINTENARIO_CLARO
   },
   sty_text_ean: {
-    fontSize: constants.SIZE_LETRA_MEDIUM,
+    fontSize: constants.SIZE_LETRA_LARGE,
     textAlignVertical: "center",
     textAlign: "center",
     color: constants.COLOR_GRIS_H
@@ -140,14 +125,14 @@ const styles = StyleSheet.create({
     color: constants.COLOR_SECUNDARIO_CLARO
   },
   sty_text_variable: {
-    fontSize: constants.SIZE_LETRA_X_LARGE,
+    fontSize: constants.SIZE_LETRA_XXX_LARGE,
     textAlignVertical: "center",
     textAlign: "center",
     fontWeight: 'bold',
     color: constants.COLOR_QUINTENARIO_CLARO,
   },
   sty_text_ordinal: {
-    fontSize: constants.SIZE_LETRA_X_LARGE,
+    fontSize: constants.SIZE_LETRA_XXX_LARGE,
     textAlignVertical: "center",
     textAlign: "center",
     fontWeight: 'bold',

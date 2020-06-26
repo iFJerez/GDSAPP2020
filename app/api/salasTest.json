@@ -21,7 +21,7 @@
         "direccion": "Abedules 2342 y Las Rosas",
         "numero": 99,
         "estado": "objetada"},
-        { "id_sala": 5656,
+        { "id_sala": 13,
           "fechaHora": "2018-01-01T06:25:24Z",
           "cadena": "jumbo",
           "desc_sala": "Jumbo Tierra de Selknam",
@@ -41,9 +41,6 @@
         "numero": 99,
         "estado": "premier"}
     ],
-  "objeciones": [
-      {"id_sala": "11", "indicador": "osa", "id_sku": 98765, "objecion": "sin stock"}
-      ],
   "sala10" : 
       {
         "id_sala": 10,
@@ -162,9 +159,9 @@
         
       ]
   },
-  "sala5656" : 
+  "sala13" : 
     {
-      "id_sala": 5656,
+      "id_sala": 13,
       "indicadores": [
         {"indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
          "detalles": [

@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
 const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
-    objeciones: state.envioReducer
+    objeciones: state.objecionesReducer
   };
 };
 

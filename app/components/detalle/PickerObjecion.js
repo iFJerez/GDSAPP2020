@@ -24,7 +24,7 @@ class PickerObjecion extends Component {
   }
 
   handleTouch(index) {
-    //console.log(index)
+    console.log(index)
     this.pickerRef.show();
     this.props.touchHandlder(index);
   }
