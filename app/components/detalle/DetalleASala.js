@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, SectionList } from 'react-native';
+import { StyleSheet, View, SectionList, Button } from 'react-native';
 // import Indicador from '../salas/Indicadores'
 import {funMessage} from '../../herramientas/Mensaje'
 import DetalleBDesplegable from './DetalleBDesplegable'
@@ -73,7 +73,12 @@ export default class DetalleIndicadores extends Component {
            <Indicador {...{ indicador, valor, diferencia, fuente }}/>
           </View>
           <View style={styles.verFoto}>
+
+  
+
+      
             <VerFotografia />
+   
          </View>
          <View style={styles.view_detalle}>
             {this.funDetalles()}

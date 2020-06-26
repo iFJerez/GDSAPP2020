@@ -65,7 +65,7 @@ funMostrarDastos(){
   const {ver_sala_detalle, data_detalle} = this.props;
   if(ver_sala_detalle){
     return(
-      <DetalleASala data={data_detalle}/>
+      <DetalleASala data={data_detalle} />
     )
   }
 

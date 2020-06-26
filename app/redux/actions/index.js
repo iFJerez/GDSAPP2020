@@ -5,7 +5,7 @@ import * as userActions from './userActions'
 import * as tareaActions from './tareaActions'
 import * as flashActions from './flashActions'
 import * as desarrolloActions from './desarrolloActions'
-import * as objecionesActions from './objecionesActions'
+import * as envioActions from './envioActions'
 
 
 const ActionCreators = Object.assign({},
@@ -16,7 +16,7 @@ const ActionCreators = Object.assign({},
    userActions,
    flashActions,
    desarrolloActions,
-   objecionesActions,
+   envioActions,
 );
 
 export default ActionCreators;

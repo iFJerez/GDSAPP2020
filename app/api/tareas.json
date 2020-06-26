@@ -13,7 +13,14 @@
       "desc_sala": "Santa Isabel TAREA Buena Aventura 856",
       "direccion": "Calandrias ruidinteligentes 2342",
       "numero": 99,
-      "estado": "objetada"}
+      "estado": "objetada"},
+      { "id_sala": 5656,
+        "fechaHora": "2018-01-01T06:25:24Z",
+        "cadena": "jumbo",
+        "desc_sala": "Jumbo Tierra de Selknam",
+        "direccion": "Asgard 8769 y Wakanda ",
+        "numero": 99,
+        "estado": "objetada"}
     ],
   "tareasPicker": [
       {"indicador": "INTELIGENTE", "picker": [ "Sin Selección",
@@ -90,6 +97,39 @@
              
            ] }
        ]
-  }
+  },
+  "sala5656" : 
+  {
+    "id_sala": 5656,
+    "indicadores": [
+      {"indicador": "INTELIGENTE", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "rocket1",
+       "detalles": [
+         {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+         {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
+         {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false}
+         
+         
+       ]},
+       {"indicador": "EJECUCION", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "team",
+        "detalles": [
+          {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+          {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
+          {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false}
+          
+          
+        ]},
+       {"indicador": "PROGRAMADAS", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "ejecucion", "name_icon": "setting",
+         "detalles": [
+           {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 908989,"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 78878,"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 23232,"agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 1232, "agrupador": "agrupador2", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 1233, "agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 1234, "agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+           
+         ] }
+     ]
+}
    
 }

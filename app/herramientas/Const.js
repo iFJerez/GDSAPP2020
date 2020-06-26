@@ -1,6 +1,6 @@
 
-export const ICON_VERY_X_SMALL= 16
-export const ICON_VERY_SMALL= 20
+export const ICON_VERY_X_SMALL= 20
+export const ICON_VERY_SMALL= 25
 export const ICON_SMALL= 30
 export const ICON_MEDIUM= 40
 export const ICON_LARGE= 50

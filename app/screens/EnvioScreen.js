@@ -23,13 +23,16 @@ class ModalScreen extends React.Component {
   }
 
 
-  convertirObjeciones = objeciones => {
+  convertirObjeciones (objeciones) {
     const objecionesReduced = objeciones
       .filter( v => v.status !== 'enviado')
       .reduce( (obj,val) => {
-        const key = 'sala' + val.id_sala + val.fechaHora
+        //console.info(val.indicador)
+        const key = 'sala' + val.id_sala
         if(obj[key]) {
+          
           obj[key].acciones.push({
+            type: val.type,
             indicador: val.indicador,
             fechaHora:val.fechaHora,
             item: val.desc_sku,
@@ -37,16 +40,19 @@ class ModalScreen extends React.Component {
             id_sku: val.id_sku,
             accion: val.objecion,
             fechaHoraObjecion: val.fechaHoraObjecion
+          
           }) 
         } else {
+          
           obj[key] = {}
           obj[key].id_sala = val.id_sala;
           obj[key].cadena = val.cadena;
           obj[key].desc_sala = val.desc_sala;
+          obj[key].direccion = val.direccion;
           obj[key].fechaHora = val.fechaHora;
-          obj[key].id_sala = val.id_sala;
           obj[key].acciones = [
             {
+              type: val.type,
               indicador: val.indicador,
               fechaHora:val.fechaHora,
               item: val.desc_sku,
@@ -57,7 +63,9 @@ class ModalScreen extends React.Component {
             }
           ]
         }
+        
         return obj;
+        
       },{})
 
     return Object.keys(objecionesReduced)
@@ -77,7 +85,7 @@ class ModalScreen extends React.Component {
   };
 
   handleEnviar = () => {
-    this.props.funEnviarObjecion();
+    this.props.funEnviarEnvios();
     this.props.funVerEnvio(false);
   }
 
@@ -109,8 +117,6 @@ class ModalScreen extends React.Component {
           onScroll={this.handleOnScroll}
           scrollEventThrottle={10}>
           <View style={styles.scrollableModalContent1}>
-          <Text>{JSON.stringify(this.props.data_tareas)}</Text>
-          <Text>{JSON.stringify(this.props.objeciones)}</Text>
           <EnvioDetalle data={data} />
           </View>
         </ScrollView>
@@ -130,7 +136,7 @@ const styles = StyleSheet.create({
   },
   scrollableModal: {
     height: '90%',
-    backgroundColor: colores.COLOR_GRIS_D,
+    backgroundColor: colores.COLOR_GRIS_F,
   },
   scrollableModalContent1: {
     flex: 1,
@@ -163,8 +169,8 @@ const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
     ver_envio: state.flashReducer.ver_envio,
-    objeciones: state.objecionesReducer,
-    data_tareas: state.tareaReducer.data_tareas
+    objeciones: state.envioReducer,
+    data_tareas: state.envioReducer
   };
 };
 

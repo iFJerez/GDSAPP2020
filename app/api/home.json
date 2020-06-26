@@ -4,12 +4,12 @@
        "desc_usuario": "Kenny Bell",
        "estado": 0,
        "indicadores": [
-         {"indicador": "osa", "valor": "85", "diferencia": "20" },
-         {"indicador": "precios", "valor": "86", "diferencia": "-15" },
-         {"indicador": "promocion", "valor": "67", "diferencia": "15" },
-         {"indicador": "catalogo", "valor": "56", "diferencia": "15" },
-         {"indicador": "precios", "valor": "86", "diferencia": "-33" },
-         {"indicador": "tareas", "valor": "56", "diferencia": "5" }
+         {"indicador": "osa", "valor": "85", "diferencia": "20", "fuente": "transaccional" },
+         {"indicador": "precios", "valor": "86", "diferencia": "-15" , "fuente": "transaccional"},
+         {"indicador": "promocion", "valor": "67", "diferencia": "15" , "fuente": "transaccional"},
+         {"indicador": "catalogo", "valor": "56", "diferencia": "15", "fuente": "transaccional" },
+         {"indicador": "precios", "valor": "86", "diferencia": "-33", "fuente": "transaccional" },
+         {"indicador": "tareas", "valor": "56", "diferencia": "5", "fuente": "transaccional" }
          
        ],
        "ranking": [

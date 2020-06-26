@@ -12,6 +12,8 @@ import SalasScreen from '../screens/SalasScreen'
 import UsuarioScreen from '../screens/UsuarioScreen'
 import TareasScreen from '../screens/TareasScreen'
 import DesarrolloScreen from '../screens/DesarrolloScreen'
+import SalasFotosScreen from '../screens/SalasFotosScreen'
+
 
 import Envio from '../components/pendientesEnvio/Envio'
 import {funFecha} from '../herramientas/Fechas'
@@ -56,12 +58,20 @@ const DesarrolloStack = createStackNavigator(
  );
 
 
+ 
+
 const SalasStack = createStackNavigator(
   {
     Salas: {
       screen: SalasScreen,
       navigationOptions: () => ({
         title: 'Salas'
+      })
+    },
+    SalasFotos: {
+      screen: SalasFotosScreen,
+      navigationOptions: () => ({
+        title: 'Salas Fotos'
       })
     },
   },
