@@ -8,6 +8,14 @@ export function funSalaVerDetalle(ver_sala_detalle) {
   }
 }
 
+export function funSalaVerDetalleFoto(ver_sala_detalle_foto) {
+  console.log('Entre por aqui')
+  return {
+    type: types.SALA_DETALLES_VIEW_FOTO,
+    ver_sala_detalle_foto
+  }
+}
+
 export function funTareaVerDetalle(ver_tarea_detalle) {
   return {
     type: types.TAREA_DETALLES_VIEW,

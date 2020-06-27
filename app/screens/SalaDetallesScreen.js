@@ -6,6 +6,7 @@ import { bindActionCreators } from 'redux'
 import Modal from "react-native-modal"
 import Icon from '../herramientas/Icon'
 import * as colores from '../herramientas/Const'
+import PruebasScreen from './PruebaScreen'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions'
@@ -94,6 +95,7 @@ funMostrarDastos(){
         <View style={styles.scrollableModalContent1}>
           {this.funMostrarDastos()}
         </View>
+        <PruebasScreen/>
       </View>
     </Modal>
     )
