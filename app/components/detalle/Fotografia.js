@@ -7,14 +7,47 @@ import Icon from "react-native-vector-icons/AntDesign";
 import { funMessage } from "../../herramientas/Mensaje";
 import ActionCreators from "../../redux/actions";
 
-class SalasListadoInCo extends Component {
+class Fotografia extends Component {
+
+  getFotoStatus() {
+    const { objecion } = this.props
+    console.log('Status Foto:',JSON.stringify(objecion))
+    if (objecion && objecion.foto && objecion?.status !== 'enviado') {
+      return constants.CON_FOTO
+    }
+    if (objecion && !objecion.foto && objecion?.status !== 'enviado') {
+      return constants.SIN_FOTO
+    }
+    return constants.FOTO_DESHABILITADA
+  }
+
+  getColorStatus() {
+    switch(this.getFotoStatus()) {
+      case constants.SIN_FOTO:
+          return constants.COLOR_SECUNDARIO
+      case constants.CON_FOTO:
+          return constants.COLOR_PRIMARIO
+      case constants.FOTO_DESHABILITADA:
+          return constants.COLOR_GRIS_H
+      default:
+          return constants.COLOR_GRIS_K
+    }
+  }
+
+
+
   render() {
+
+    console.log('[Fotografia]', JSON.stringify(this.props))
     const { funSalaVerDetalleFoto } = this.props;
+    const fotoStatus = this.getFotoStatus()
+    
 
     return (
       <TouchableOpacity
         style={styles.styleTouch}
-        onPress={() => funSalaVerDetalleFoto(true)}
+        onPress={() => funSalaVerDetalleFoto(true,this.props.objecion)}
+        disabled={this.getFotoStatus() === constants.FOTO_DESHABILITADA}
       >
         {/* <TouchableOpacity style={styles.styleTouch} onPress={() => {funMessage('Mensaje', 'Por construir...')}}> */}
 
@@ -22,7 +55,7 @@ class SalasListadoInCo extends Component {
           <Icon
             name={"camera"}
             size={constants.ICON_SMALL}
-            color={constants.COLOR_SECUNDARIO}
+            color={this.getColorStatus()}
           />
         </View>
       </TouchableOpacity>
@@ -59,4 +92,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   null,
   mapDispatchToProps
-)(SalasListadoInCo);
+)(Fotografia);

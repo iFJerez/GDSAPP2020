@@ -44,8 +44,7 @@ class Accordian extends Component{
       }
       
     }
-  
-    
+   
   render() {
     const objecion = 
     this.props.objeciones.find((v) => 
@@ -55,8 +54,10 @@ class Accordian extends Component{
           this.props.section.fechaHora === v.fechaHora)
     )
 
+    console.log('Muestro la objecion',JSON.stringify(objecion))
+
     const objecionDetalle = objecion ? objecion.objecion : null
-    const objecionDisabled = objecion && objecion.status === 'enviado' 
+    const objecionDisabled = objecion && objecion.status === 'enviado'  
 
     const {data, i} = this.props;
     const {
@@ -72,7 +73,13 @@ class Accordian extends Component{
             {
                 this.state.expanded &&
                 <View style={styles.child}>
-                     <Objecion objecion={objecionDetalle} disabled={objecionDisabled} touchHandlder={(objecion) => this.handleObjecion(objecion)} />
+                     <Objecion
+                        objecion={objecionDetalle}
+                        objecionObj={objecion}
+                        disabled={objecionDisabled}
+                        touchHandlder={(objecion) => this.handleObjecion(objecion)}
+                        photoHandler={(objecion) => this.handleFotoObjecion(objecion)}
+                      />
                 </View>
             }
        </View>

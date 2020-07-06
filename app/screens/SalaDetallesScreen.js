@@ -6,7 +6,8 @@ import { bindActionCreators } from 'redux'
 import Modal from "react-native-modal"
 import Icon from '../herramientas/Icon'
 import * as colores from '../herramientas/Const'
-import PruebasScreen from './PruebaScreen'
+// import PruebasScreen from './PruebaScreen'
+import PruebasScreen from '../components/detalle/camera/CameraModal'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions'

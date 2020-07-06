@@ -14,7 +14,14 @@ class Camera extends PureComponent {
   closeHandler() {
     this.props.closeHandler()
   }
+
+  takeHandler(data) {
+    this.props.takeHandler(data)
+  }
+
+
   render() {
+    console.log('Camera',this.props)
     return (
       <View style={styles.container}>
         {/* {foto} */}
@@ -74,6 +81,7 @@ class Camera extends PureComponent {
     if (this.camera) {
       const options = { quality: 0.5, base64: true };
       const data = await this.camera.takePictureAsync(options);
+      this.takeHandler({ uri: data.uri, fecha: new Date() }) 
       // this.props.navigation.navigate('Preview', { foto: data.uri, fromCamera: true, fecha: new Date() })
       // this.setState({foto: data.uri})
     }

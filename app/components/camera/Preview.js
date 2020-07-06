@@ -5,31 +5,35 @@ import { StyleSheet, View, Image, Text, TouchableOpacity, SafeAreaView, StatusBa
 export default class Preview extends Component {
 
     closeHandler() {
-        StatusBar.setBarStyle('default')
-        this.props.navigation.goBack()
+        if(this.props.close) {
+            StatusBar.setBarStyle('default')
+            this.props.close()
+        } else {
+            return null
+        }
     }
 
-    confirmHandler(data) {
-        this.props.navigation.navigate('Inicio', data)
+    actionHandler() {
+        if(this.props.action) {
+            this.props.action.method()
+        } else {
+            return null
+        }
     }
 
     render() {
         StatusBar.setBarStyle('light-content')
-        const { params } = this.props?.route
-        const foto = params.foto ?
+        const { foto } = this.props
+        const fotoPreview = foto?.uri ?
             (<Image
-                source={{ uri: params.foto }}
+                source={{ uri: foto.uri }}
                 style={styles.img}
             />) : null;
-        const data = {
-            uri: params.foto,
-            date: params.fecha
-        }
 
         return (
             <SafeAreaView style={{ flex: 1, backgroundColor: 'black' }}>
                 <View style={styles.container}>
-                    {foto}
+                    {fotoPreview}
                     <View style={styles.closeContainer}>
                         <TouchableOpacity onPress={() => this.closeHandler()}>
                             <View>
@@ -39,8 +43,8 @@ export default class Preview extends Component {
                     </View>
                     <View style={styles.buttonContainer}>
                         <View style={styles.ring}>
-                            <TouchableOpacity onPress={() => this.confirmHandler(data)} style={styles.confirm}>
-                                <Text style={styles.confirmText}>Confirmar</Text>
+                            <TouchableOpacity onPress={() => this.actionHandler()} style={styles.action}>
+                                <Text style={styles.actionText}>{this.props.action ? this.props.action.label : 'Confirmar'}</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -90,7 +94,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center' 
     },
-    confirm: {
+    action: {
         flex: 0,
         alignItems: 'center',
         justifyContent: 'center',
@@ -99,7 +103,7 @@ const styles = StyleSheet.create({
         width: 100,
         height: 40
     },
-    confirmText: {
+    actionText: {
         fontSize: 14,
         alignItems: 'center',
         justifyContent: 'center',

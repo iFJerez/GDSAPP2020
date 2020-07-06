@@ -57,3 +57,8 @@ export const COLOR_SEXTENARIO="#eeeeee";
 export const COLOR_PRIMARIO_OSCURO="#016a7c";
 export const COLOR_SECUNDARIO_OSCURO="#de2d10";
 export const COLOR_TERNARIO_OSCURO="#9cafd2";
+
+//Estados Foto
+export const CON_FOTO = 'CON FOTO'
+export const SIN_FOTO = 'SIN FOTO'
+export const FOTO_DESHABILITADA = 'FOTO DESHABILITADA'
