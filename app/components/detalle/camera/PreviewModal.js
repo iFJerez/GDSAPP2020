@@ -2,8 +2,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import Modal from '../../UI/Modal/ModalSlideLeft';
-import Preview from '../../camera/Preview';
+import Modal from "../../../herramientas/ui/ModalSlideLeft";
+import Preview from '../../../herramientas/camera/Preview';
 
 // Imports: Redux Actions
 import ActionCreators from "../../../redux/actions";
@@ -13,30 +13,26 @@ import { ThemeColors } from "react-navigation";
 class PreviewModal extends React.Component {
 
   confirmHandler() {
-    const { funMostrarPreviewCamera , funSalaVerDetalleFoto,funGuardarEnvio,envio_seleccionado_data, preview_detalle_camara } = this.props;
-    funSalaVerDetalleFoto(false)
-    funMostrarPreviewCamera(false,null)
-    funGuardarEnvio({
-      ...envio_seleccionado_data,
-      foto: preview_detalle_camara?.foto
-    })
+    const { funEliminarFotoEnvio,envio_seleccionado_data,funSalaVerDetallePreviewFoto } = this.props;
+    funSalaVerDetallePreviewFoto(false,null)
+    funEliminarFotoEnvio(envio_seleccionado_data)
   }
 
   render() {
-    const { funMostrarPreviewCamera , preview_detalle_camara, envio_seleccionado_data } = this.props;
+    const { funSalaVerDetallePreviewFoto , ver_sala_detalle_preview_foto, envio_seleccionado_data } = this.props;
     // console.log(envio_seleccionado_data)
     return (
     <Modal
-        isVisible={preview_detalle_camara.visible}
-        closeHandler={() => funMostrarPreviewCamera(false, null)}
+        isVisible={ver_sala_detalle_preview_foto}
+        closeHandler={() => funSalaVerDetallePreviewFoto(false, null)}
     >
          <Preview 
-            close={() => funMostrarPreviewCamera(false, null)}
-            foto={preview_detalle_camara.foto}
+            close={() => funSalaVerDetallePreviewFoto(false, null)}
+            foto={envio_seleccionado_data?.foto}
             action={
               {
                 method: () => this.confirmHandler(),
-                label: 'Guardar'
+                label: 'Borrar Foto'
               }
             }
             />
@@ -49,7 +45,7 @@ class PreviewModal extends React.Component {
 const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
-    preview_detalle_camara: state.flashReducer.preview_detalle_camara,
+    ver_sala_detalle_preview_foto: state.flashReducer.ver_sala_detalle_preview_foto,
     envio_seleccionado_data: state.flashReducer.envio_seleccionado_data
     // ,
     // data_detalle: state.salasReducer.data_detalle,

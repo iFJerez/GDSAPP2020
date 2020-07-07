@@ -16,6 +16,14 @@ export function funSalaVerDetalleFoto(ver_sala_detalle_foto, data) {
   }
 }
 
+export function funSalaVerDetallePreviewFoto(ver_sala_detalle_preview_foto, data) {
+  return {
+    type: types.SALA_DETALLES_VIEW_PREVIEW_FOTO,
+    ver_sala_detalle_preview_foto,
+    data
+  }
+}
+
 export function funTareaVerDetalle(ver_tarea_detalle) {
   return {
     type: types.TAREA_DETALLES_VIEW,
@@ -45,7 +53,6 @@ export function funVerEnvio(ver_envio) {
 }
 
 export function funMostrarPreviewCamera(visible, foto) {
-  console.log(foto)
   return {
     type: types.PREVIEW_DETALLE_FOTO_CAMARA,
     visible: visible,

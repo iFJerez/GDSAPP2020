@@ -8,6 +8,7 @@ const initialState = {
   ver_sala_filtro: false,
   ver_envio: false,
   ver_sala_detalle_foto: false,
+  ver_sala_detalle_preview_foto: false,
   envio_seleccionado_data: null,
   preview_detalle_camara: {
     foto: null,
@@ -61,7 +62,16 @@ const flashReducer = (state = initialState, action) => {
       return {
         ...state,
         ver_sala_detalle_foto: action.ver_sala_detalle_foto,
-        envio_seleccionado_data: action.data
+        envio_seleccionado_data: {...action.data}
+      }
+    }
+    case types.SALA_DETALLES_VIEW_PREVIEW_FOTO: {
+      console.log('SALA_DETALLES_VIEW_PREVIEW_FOTO');
+
+      return {
+        ...state,
+        ver_sala_detalle_preview_foto: action.ver_sala_detalle_preview_foto,
+        envio_seleccionado_data: {...action.data}
       }
     }
     case types.PREVIEW_DETALLE_FOTO_CAMARA: {

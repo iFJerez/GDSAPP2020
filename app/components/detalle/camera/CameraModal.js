@@ -2,9 +2,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import Modal from "../../UI/Modal/ModalSlideLeft";
-import Camera from "../../../components/camera/Camera";
-import Preview from "./PreviewModal";
+import Modal from "../../../herramientas/ui/ModalSlideLeft";
+import Camera from "../../../herramientas/camera/Camera";
+import Preview from "./PreviewCameraModal";
 
 // Imports: Redux Actions
 import ActionCreators from "../../../redux/actions";

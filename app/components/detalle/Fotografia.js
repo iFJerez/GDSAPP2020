@@ -34,6 +34,19 @@ class Fotografia extends Component {
     }
   }
 
+  getHandler() {
+    const { funSalaVerDetalleFoto, funSalaVerDetallePreviewFoto } = this.props; 
+    switch(this.getFotoStatus()) {
+      case constants.SIN_FOTO:
+          return (() => funSalaVerDetalleFoto(true,this.props.objecion))
+      case constants.CON_FOTO:
+          return (() => funSalaVerDetallePreviewFoto(true,this.props.objecion))
+      default:
+          return (() => null)
+    }
+  }
+
+
 
 
   render() {
@@ -46,7 +59,7 @@ class Fotografia extends Component {
     return (
       <TouchableOpacity
         style={styles.styleTouch}
-        onPress={() => funSalaVerDetalleFoto(true,this.props.objecion)}
+        onPress={this.getHandler()}
         disabled={this.getFotoStatus() === constants.FOTO_DESHABILITADA}
       >
         {/* <TouchableOpacity style={styles.styleTouch} onPress={() => {funMessage('Mensaje', 'Por construir...')}}> */}

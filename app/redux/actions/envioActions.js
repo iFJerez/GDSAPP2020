@@ -17,6 +17,14 @@ export function funEliminarEnvio(envio) {
   }
 }
 
+export function funEliminarFotoEnvio(envio) {
+  console.log("eliminando foto:", envio)
+  return {
+    type: types.ENVIO_DELETE_FOTO,
+    envio: envio
+  }
+}
+
 export function funEnviarEnvios() {
   console.log('enviando')
   return {
