@@ -40,7 +40,7 @@
 			<key>uniqueIdentifier</key>
 			<string>3E04F47F-3540-4F1F-873A-A6331054062D</string>
 		</dict>
-		<key>7E893CFA-B47D-4471-9441-E81450B17F87</key>
+		<key>B3A5BC44-306D-45C7-81ED-8566E930F648</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>7E893CFA-B47D-4471-9441-E81450B17F87.xcactivitylog</string>
+			<string>B3A5BC44-306D-45C7-81ED-8566E930F648.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,13 +66,13 @@
 			<key>signature</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>615484198.16153097</real>
+			<real>616344113.95483398</real>
 			<key>timeStoppedRecording</key>
-			<real>615484200.81156099</real>
+			<real>616344261.95117104</real>
 			<key>title</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>7E893CFA-B47D-4471-9441-E81450B17F87</string>
+			<string>B3A5BC44-306D-45C7-81ED-8566E930F648</string>
 		</dict>
 	</dict>
 </dict>

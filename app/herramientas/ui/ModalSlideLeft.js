@@ -15,6 +15,9 @@ export default class ModalScreen extends React.Component {
         backdropOpacity={0.5}
         isVisible={isVisible}
         animationIn="slideInLeft"
+        onSwipeComplete={closeHandler}
+        swipeThreshold={20}
+        swipeDirection={['left']}
         animationOut="slideOutLeft"
         onBackdropPress={closeHandler}
         style={styles.modal}
