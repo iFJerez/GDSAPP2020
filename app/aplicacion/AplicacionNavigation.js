@@ -129,6 +129,16 @@ const HomeStack = createStackNavigator(
   }
 );
 
+const UsuarioStack = createStackNavigator(
+
+  {
+     Usuario: {
+       screen: UsuarioScreen,
+     },
+   },
+
+ );
+
 
 
 

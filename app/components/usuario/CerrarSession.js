@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, View} from 'react-native';
+import { StyleSheet, View, TouchableOpacity} from 'react-native';
 import TextType1 from '../../herramientas/textos/TextType1Color'
 import * as constants from '../../herramientas/Const'
 import IconAntDesign from '../../herramientas/IconAntDesign'
@@ -7,7 +7,7 @@ import IconAntDesign from '../../herramientas/IconAntDesign'
 export default class CardItems extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <TouchableOpacity style={styles.container}>
        <View style={styles.linea}>
            <View style={styles.sty_texto}>
                 <TextType1  text={'Cerrar Session'}/>
@@ -15,7 +15,7 @@ export default class CardItems extends Component {
             </View>
         </View>
       
-        </View>
+        </TouchableOpacity>
       
     );
   }
@@ -24,16 +24,14 @@ export default class CardItems extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    position: 'absolute',
-    width:"100%",
-    bottom: 90,
-
-
+    height: 60
   },
   linea: {
+    flex: 1,
     borderColor: constants.COLOR_PRIMARIO_CLARO,
     borderWidth: 1,
-    margin: 100,
+    margin: 10,
+    marginHorizontal: 60,
     borderRadius: 50,
     padding: 10,
 

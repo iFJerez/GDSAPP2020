@@ -20,7 +20,7 @@ class Accordian extends Component{
 
     handleObjecion (objecion) {
       const dataObjecion = {
-        type: 'OBJECION',
+        type: 'OBJECIONES',
         id_sku: this.props.data.id_sku,
         indicador: this.props.section.indicador,
         id_sala: this.props.section.id_sala,
@@ -31,7 +31,7 @@ class Accordian extends Component{
         desc_sku: this.props.data.titulo,
         ean: this.props.data.subtitulo,
         status: 'objetado',
-        fechaHoraObjecion: (new Date()).toISOString(),
+        fechaHoraEnvio: (new Date()).toISOString(),
         objecion
       } 
 

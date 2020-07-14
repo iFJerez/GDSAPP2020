@@ -36,7 +36,7 @@ export default class PendienteEnvioBody extends Component {
             ean: val.ean,
             id_sku: val.id_sku,
             accion: val.accion,
-            fechaHoraObjecion: val.fechaHoraObjecion
+            fechaHoraEnvio: val.fechaHoraEnvio
           
           }) 
         } else {
@@ -55,7 +55,7 @@ export default class PendienteEnvioBody extends Component {
               ean: val.ean,
               id_sku: val.id_sku,
               accion: val.accion,
-              fechaHoraObjecion: val.fechaHoraObjecion
+              fechaHoraEnvio: val.fechaHoraEnvio
             }
           ]
         }

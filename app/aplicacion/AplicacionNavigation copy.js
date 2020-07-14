@@ -11,12 +11,13 @@ import HomeScreen from '../screens/HomeScreen'
 import SalasScreen from '../screens/SalasScreen'
 import UsuarioScreen from '../screens/UsuarioScreen'
 import TareasScreen from '../screens/TareasScreen'
-import SalaResumen from '../screens/SalasResumen'
 import DesarrolloScreen from '../screens/DesarrolloScreen'
+import SalasFotosScreen from '../screens/SalasFotosScreen'
+
 
 import Envio from '../components/pendientesEnvio/Envio'
 import {funFecha} from '../herramientas/Fechas'
-import {View, Text} from 'react-native'
+import {View} from 'react-native'
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -57,6 +58,8 @@ const DesarrolloStack = createStackNavigator(
  );
 
 
+ 
+
 const SalasStack = createStackNavigator(
   {
     Salas: {
@@ -65,13 +68,17 @@ const SalasStack = createStackNavigator(
         title: 'Salas'
       })
     },
-    SalaResumen: {
-      screen: SalaResumen,
+    SalasFotos: {
+      screen: SalasFotosScreen,
       navigationOptions: () => ({
-        title: 'Sala Resumen'
+        title: 'Salas Fotos'
       })
     },
   },
+
+
+
+  
   {
     initialRouteName: 'Salas',
     defaultNavigationOptions: {
@@ -121,6 +128,46 @@ const HomeStack = createStackNavigator(
     },
   }
 );
+
+const UsuarioStack = createStackNavigator(
+
+  {
+     Usuario: {
+       screen: UsuarioScreen,
+       navigationOptions: () => ({
+         title: funFecha()
+       })
+     },
+   },
+   {
+    options: {
+      statusBar: {
+        backgroundColor: 'white',
+        style: 'dark'
+      }
+    },
+     initialRouteName: 'Usuario',
+     defaultNavigationOptions: {
+       headerStyle: {
+         backgroundColor: constants.COLOR_BLANCO,
+       },
+       statusBar: {
+        backgroundColor: 'white',
+        style: 'dark'
+      },
+       headerTintColor: constants.COLOR_BLANCO,
+   
+       headerBackTitle: ' ',
+       headerTitleStyle: {
+         fontWeight: 'bold',
+         fontSize: constants.SIZE_LETRA_MEDIUM,
+         textAlign:"left", 
+         flex:1,
+         
+       },
+     },
+   }
+ );
 
 
 
@@ -179,15 +226,13 @@ class Home extends React.Component {
         Home: HomeStack,
         Salas: SalasStack,
         Tareas: TareasStack,
-        Usuario: UsuarioScreen,
+        Usuario: UsuarioStack,
         Desarrollo: DesarrolloStack,
          
       },
- 
+    
  
       {
-
-
         defaultNavigationOptions: ({ navigation }) => ({
           tabBarIcon: ({ tintColor }) => {
             const { routeName } = navigation.state;
@@ -211,10 +256,9 @@ class Home extends React.Component {
             }
     
             return (
-            <View>
-              <Text>hola</Text>
+            
                   <IconComponent name={iconName} size={25} color={tintColor} />
-              </View>
+              
             
             )
           },
@@ -224,7 +268,7 @@ class Home extends React.Component {
           inactiveTintColor: constants.COLOR_GRIS,
           
           style: {
-            height: 60,
+            backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
             
             
   
@@ -237,13 +281,9 @@ class Home extends React.Component {
     let Navigation = createAppContainer(TabNavigator);
 
 
-    return (
-  <View style={{flex: 1}}>
-      
-      <Navigation />
-      <Envio />
-   </View>
-    )
+    return   <Navigation />
+
+
   }
 }
 
