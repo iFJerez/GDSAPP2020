@@ -14,7 +14,7 @@ import ActionCreators from '../../redux/actions'
 class CardItems extends Component {
 
   handleDelete() {
-    console.info('eliminadndo......', this.props.data)
+    console.info('eliminando......', this.props.data)
     this.props.funEliminarEnvio(this.props.data)
     LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);  
   }

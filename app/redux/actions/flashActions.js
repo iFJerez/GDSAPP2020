@@ -8,11 +8,19 @@ export function funSalaVerDetalle(ver_sala_detalle) {
   }
 }
 
-export function funSalaVerDetalleFoto(ver_sala_detalle_foto) {
-  console.log('Entre por aqui')
+export function funSalaVerDetalleFoto(ver_sala_detalle_foto, data) {
   return {
     type: types.SALA_DETALLES_VIEW_FOTO,
-    ver_sala_detalle_foto
+    ver_sala_detalle_foto,
+    data
+  }
+}
+
+export function funSalaVerDetallePreviewFoto(ver_sala_detalle_preview_foto, data) {
+  return {
+    type: types.SALA_DETALLES_VIEW_PREVIEW_FOTO,
+    ver_sala_detalle_preview_foto,
+    data
   }
 }
 
@@ -44,5 +52,12 @@ export function funVerEnvio(ver_envio) {
   }
 }
 
+export function funMostrarPreviewCamera(visible, foto) {
+  return {
+    type: types.PREVIEW_DETALLE_FOTO_CAMARA,
+    visible: visible,
+    foto: foto
+  }
+}
 
 

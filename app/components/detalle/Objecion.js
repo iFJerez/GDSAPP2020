@@ -13,7 +13,7 @@ export default class Objecion extends Component {
       <View style={styles.container}>
 
                  <PickerObjecion {...this.props}/>
-                 <Fotografia />
+                 <Fotografia objecion={this.props.objecionObj}/>
       </View>
    )
 
