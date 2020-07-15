@@ -32,6 +32,10 @@ export function funAgregrFotoEnvio(envio, foto) {
     const uri = await getBase64(foto.uri)
     const fotoNew = {...foto, uri: uri}
     dispatch(funGuardarEnvio({...envio, foto: fotoNew}))
+
+    //Ver si conviene hacer el unlink con el uri que genera RNCamera
+    //Primero investigar bien cómo hace la autogestión RNCamera de la caché
+    //Ya que también habría que hacer el unlink de cada foto tomada no guardada
   }
 }
 
