@@ -11,7 +11,7 @@ class Fotografia extends Component {
 
   getFotoStatus() {
     const { objecion } = this.props
-    console.log('Status Foto:',JSON.stringify(objecion))
+    // console.log('Status Foto:',JSON.stringify(objecion))
     if (objecion && objecion.foto && objecion?.status !== 'enviado') {
       return constants.CON_FOTO
     }
@@ -51,7 +51,7 @@ class Fotografia extends Component {
 
   render() {
 
-    console.log('[Fotografia]', JSON.stringify(this.props))
+    // console.log('[Fotografia]', JSON.stringify(this.props))
     const { funSalaVerDetalleFoto } = this.props;
     const fotoStatus = this.getFotoStatus()
     

@@ -21,7 +21,6 @@ class Camera extends PureComponent {
 
 
   render() {
-    console.log('Camera',this.props)
     return (
       <View style={styles.container}>
         {/* {foto} */}

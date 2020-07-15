@@ -1,4 +1,6 @@
 import * as types from '../redux_constants'; 
+import getBase64 from '../../herramientas/getBase64';
+import RNFS from 'react-native-fs';
 
 // Guarda la objecion o la actualiza
 export function funGuardarEnvio(envio) {
@@ -22,6 +24,14 @@ export function funEliminarFotoEnvio(envio) {
   return {
     type: types.ENVIO_DELETE_FOTO,
     envio: envio
+  }
+}
+
+export function funAgregrFotoEnvio(envio, foto) {
+  return async (dispatch) => {
+    const uri = await getBase64(foto.uri)
+    const fotoNew = {...foto, uri: uri}
+    dispatch(funGuardarEnvio({...envio, foto: fotoNew}))
   }
 }
 

@@ -8,7 +8,7 @@ import IndicadoresDiferencia from './IndicadoresDiferencia'
 export default class HomeIndicadores extends Component {
   render() {
     const {data} = this.props
-    console.log(data)
+    // console.log(data)
     return (
       <View style={styles.container}>
               <View style={styles.st_diferencia}>   
