@@ -31,7 +31,7 @@ class DetalleB extends Component{
         desc_sku: this.props.data.titulo,
         ean: this.props.data.subtitulo,
         status: 'realizado',
-        fechaHoraObjecion: (new Date()).toISOString(),
+        fechaHoraEnvio: (new Date()).toISOString(),
         objecion
       } 
 

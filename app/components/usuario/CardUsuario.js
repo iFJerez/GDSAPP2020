@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import { StyleSheet, View, SafeAreaView, ScrollView } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 import TextType1 from "../../herramientas/textos/TextType1";
 import TextType2 from "../../herramientas/textos/TextType2";
 import * as constants from "../../herramientas/Const";
 import IconAntDesign from "../../herramientas/IconAntDesign";
-import DetalleObjeciones from "./DetalleObjeciones"
+
 
 export default class CardUsuario extends Component {
   render() {
     const { data } = this.props;
     return (
       <View style={styles.container}>
-        <SafeAreaView style={{flex: 1}}>
+        
           <View style={styles.card}>
             <View style={styles.sty_texto}>
               <View style={styles.st_indicadores_valor}>
@@ -29,8 +29,8 @@ export default class CardUsuario extends Component {
               </View>
             </View>
           </View>
-          <DetalleObjeciones/>
-        </SafeAreaView>
+          
+        
         
       </View>
     );
@@ -39,8 +39,7 @@ export default class CardUsuario extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: constants.COLOR_GRIS_F,
-    flex: 1
+    
   },
   card: {
     backgroundColor: constants.COLOR_BLANCO,

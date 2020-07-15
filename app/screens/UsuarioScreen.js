@@ -1,34 +1,41 @@
 // Imports: Dependencies
 import React from 'react';
-import {StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, SafeAreaView, StatusBar, View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import CardUsuario from '../components/usuario/CardUsuario'
+import DetalleEnvios from "../components/usuario/DetalleEnvios"
 import CerrarSession from '../components/usuario/CerrarSession'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
-import salasTest from '../api/salasTest.json'
+import { withNavigationFocus } from 'react-navigation';
+
+const FocusAwareStatusBar = withNavigationFocus(({ isFocused, ...rest }) =>
+  isFocused ? <StatusBar {...rest} /> : null
+);
 
 // Screen: Counter
 class UsuarioScreen extends React.Component {
-
-  
-
-
-
  
   render() {
  
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
+       <FocusAwareStatusBar barStyle="dark-content"/>
+       <View style={styles.container}>
+            <View style={styles.Usuario}>
+                <CardUsuario />
+                <DetalleEnvios/> 
+            </View>
 
-
-        <CardUsuario />
+            <View style={styles.CerrarSession}>
+            <CerrarSession />
+            </View>
         
-        {/* <CerrarSession /> */}
-
-      </View>
+       </View>
+  
+      </SafeAreaView>
     )
   }
 }
@@ -37,6 +44,13 @@ class UsuarioScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1
+  },
+  Usuario: {
+    flex: 6,
+    margin: 5,
+  },
+  CerrarSession: {
+    flex: 0.5
   },
   
 });

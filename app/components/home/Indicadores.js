@@ -15,9 +15,12 @@ export default class HomeIndicadores extends Component {
              <IndicadoresDiferencia numero={data.diferencia}/>
              
             </View>  
+            <View style={styles.st_indicadores_fuente}>   
+             <TextTypeHomeInd  text={data.fuente.toUpperCase().substr(0,2)}/>
+            </View> 
             
              <View style={styles.st_indicadores_valor}>   
-             <TextTypeHomeInd  text={data.fuente.toUpperCase().substr(0,2)}/>
+             
              <TextTypeHomeInd  text={data.valor + '%'}/>
             </View>  
             <View style={styles.st_indicadores_texto}>
@@ -44,5 +47,13 @@ const styles = StyleSheet.create({
   st_indicadores_progres: {flex: 1, marginHorizontal: 10},
   st_indicadores_texto: {flex: 2,  alignItems: 'center'},
   st_indicadores_valor: {flex: 3, alignItems: 'center'},
-  st_diferencia: {flex: 1, alignItems: 'center'}
+  st_diferencia: {flex: 1, alignItems: 'center'},
+  st_indicadores_fuente: {height: 22, position: 'absolute',
+   top: -5, left: -5,  alignItems: 'center',
+   backgroundColor: constants.COLOR_BLANCO,
+   borderRadius: 5,
+   borderWidth: 2,
+   borderColor: constants.COLOR_GRIS_E,
+
+  },
 });

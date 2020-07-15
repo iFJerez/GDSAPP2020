@@ -39,7 +39,7 @@ class ModalScreen extends React.Component {
             ean: val.ean,
             id_sku: val.id_sku,
             accion: val.objecion,
-            fechaHoraObjecion: val.fechaHoraObjecion
+            fechaHoraEnvio: val.fechaHoraEnvio
           
           }) 
         } else {
@@ -59,7 +59,7 @@ class ModalScreen extends React.Component {
               ean: val.ean,
               id_sku: val.id_sku,
               accion: val.objecion,
-              fechaHoraObjecion: val.fechaHoraObjecion
+              fechaHoraEnvio: val.fechaHoraEnvio
             }
           ]
         }
