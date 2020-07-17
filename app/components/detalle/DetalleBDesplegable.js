@@ -18,7 +18,7 @@ class Accordian extends Component{
         }
     }
 
-    handleObjecion (objecion) {
+    handleObjecion (objItem, objecion) {
       const dataObjecion = {
         type: 'OBJECIONES',
         id_sku: this.props.data.id_sku,
@@ -32,10 +32,11 @@ class Accordian extends Component{
         ean: this.props.data.subtitulo,
         status: 'objetado',
         fechaHoraEnvio: (new Date()).toISOString(),
-        objecion
+        objecion: objItem,
+        foto: objecion?.foto ? objecion.foto : null  
       } 
 
-      //console.log('[Data Objecion]',dataObjecion)
+      console.log('[Data Objecion]',dataObjecion)
 
       if (objecion === "Sin Objeción") {
         this.props.funEliminarEnvio(dataObjecion);
@@ -77,7 +78,7 @@ class Accordian extends Component{
                         objecion={objecionDetalle}
                         objecionObj={objecion}
                         disabled={objecionDisabled}
-                        touchHandlder={(objecion) => this.handleObjecion(objecion)}
+                        touchHandlder={(objItem) => this.handleObjecion(objItem, objecion)}
                         photoHandler={(objecion) => this.handleFotoObjecion(objecion)}
                       />
                 </View>
