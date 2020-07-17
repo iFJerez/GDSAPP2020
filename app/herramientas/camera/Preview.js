@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Image, Text, TouchableOpacity, SafeAreaView, StatusBar } from 'react-native';
+import Icon from '../../herramientas/IconSimple'
 
 
 export default class Preview extends Component {
@@ -37,7 +38,7 @@ export default class Preview extends Component {
                     <View style={styles.closeContainer}>
                         <TouchableOpacity onPress={() => this.closeHandler()}>
                             <View>
-                                <Text style={styles.closeIcon}>X</Text>
+                                <Icon name='md-close' size={30} color='#fff'/>
                             </View>
                         </TouchableOpacity>
                     </View>

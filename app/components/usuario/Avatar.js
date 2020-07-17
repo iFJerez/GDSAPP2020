@@ -11,7 +11,7 @@ export default (props) => {
     avatar = imgAvatar = (
       <Image
         source={{uri: props.image}}
-        style={{ width: 60, height: 60, borderRadius: 30, margin: 5 }}
+        style={{ width: 80, height: 80, borderRadius: 40, margin: 5 }}
       />
     );
   } else {
