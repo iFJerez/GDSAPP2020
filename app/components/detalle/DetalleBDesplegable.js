@@ -38,7 +38,7 @@ class Accordian extends Component{
 
       console.log('[Data Objecion]',dataObjecion)
 
-      if (objecion === "Sin Objeción") {
+      if (objItem === "Sin Objeción") {
         this.props.funEliminarEnvio(dataObjecion);
       } else {
         this.props.funGuardarEnvio(dataObjecion);
