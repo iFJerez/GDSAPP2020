@@ -7,14 +7,19 @@ export default class ImagePickerTest extends Component {
     state = {
         avatarSource: null
     }
+    
   // More info on all the options is below in the API Reference... just some common use cases shown here
   options = {
-    title: "Select Avatar",
-    noData: true,
+    title: "Ingrese su foto de perfil",
+    cameraType: 'front',
+    mediaType: 'photo',
+    quality: 0.1,
+    noData: false,
     // customButtons: [{ name: 'fb', title: 'Choose Photo from Facebook' }],
     storageOptions: {
       skipBackup: true,
-      path: "images"
+      path: "images",
+      waitUntilSaved: true
     },
   };
 
@@ -45,7 +50,7 @@ export default class ImagePickerTest extends Component {
     let imgAvatar = null
     console.log('TEST:',this.state.avatarSource)
     if (this.state.avatarSource) {
-        imgAvatar = <Image source={this.state.avatarSource} style={{width: 300, height:300}}/> 
+        imgAvatar = <Image source={this.state.avatarSource} style={{width: 150, height:150, borderRadius: 150, margin: 30}}/> 
     }
 
     return (

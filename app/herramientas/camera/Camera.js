@@ -29,6 +29,7 @@ class Camera extends PureComponent {
             this.camera = ref;
           }}
           style={styles.preview}
+          captureAudio={false}
           type={RNCamera.Constants.Type.back}
           flashMode={this.state.flash ? RNCamera.Constants.FlashMode.on : RNCamera.Constants.FlashMode.off}
           // flashMode={RNCamera.Constants.FlashMode.on}
