@@ -57,7 +57,8 @@ class DetalleB extends Component{
         ( this.props.data.id_sku === v.id_sku &&
           this.props.section.indicador === v.indicador &&
           this.props.section.id_sala === v.id_sala &&
-          this.props.section.fechaHora === v.fechaHora)
+          this.props.section.fechaHora === v.fechaHora &&
+          'TAREAS' === v.type)
     )
 
     const objecionDetalle = objecion ? objecion.objecion : null
@@ -71,7 +72,7 @@ class DetalleB extends Component{
     return (
        <View style={styles.container} key={i}>
             <DetalleIndicadoresFila data={data} />
-            <Tarea picker={picker}  objecion={objecionDetalle} disabled={objecionDisabled} touchHandlder={(objecion) => this.handleObjecion(objecion)} />
+            <Tarea picker={picker}  objecion={objecionDetalle} objecionObj={objecion} disabled={objecionDisabled} touchHandlder={(objecion) => this.handleObjecion(objecion)} />
        </View>
     )
   }

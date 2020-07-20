@@ -7,8 +7,8 @@ import Modal from "react-native-modal"
 import Icon from '../herramientas/Icon'
 import * as colores from '../herramientas/Const'
 // import PruebasScreen from './PruebaScreen'
-import Camera from '../components/detalle/camera/CameraModal'
-import Preview from '../components/detalle/camera/PreviewModal'
+import Camera from '../components/envios/cameraModalEnvios/CameraModal'
+import Preview from '../components/envios/cameraModalEnvios/PreviewModal'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions'

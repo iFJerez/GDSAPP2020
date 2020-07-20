@@ -80,7 +80,6 @@ class Accordian extends Component{
                         objecionObj={objecion}
                         disabled={objecionDisabled}
                         touchHandlder={(objItem) => this.handleObjecion(objItem, objecion)}
-                        photoHandler={(objecion) => this.handleFotoObjecion(objecion)}
                       />
                 </View>
             }
