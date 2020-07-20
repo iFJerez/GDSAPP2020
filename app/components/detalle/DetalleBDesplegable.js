@@ -36,7 +36,7 @@ class Accordian extends Component{
         foto: objecion?.foto ? objecion.foto : null  
       } 
 
-      console.log('[Data Objecion]',dataObjecion)
+      // console.log('[Data Objecion]',dataObjecion)
 
       if (objItem === "Sin Objeción") {
         this.props.funEliminarEnvio(dataObjecion);
@@ -52,10 +52,11 @@ class Accordian extends Component{
         ( this.props.data.id_sku === v.id_sku &&
           this.props.section.indicador === v.indicador &&
           this.props.section.id_sala === v.id_sala &&
-          this.props.section.fechaHora === v.fechaHora)
+          this.props.section.fechaHora === v.fechaHora &&
+          'OBJECIONES' === v.type)
     )
 
-    console.log('Muestro la objecion',JSON.stringify(objecion))
+    // console.log('Muestro la objecion',JSON.stringify(objecion))
 
     const objecionDetalle = objecion ? objecion.objecion : null
     const objecionDisabled = objecion && objecion.status === 'enviado'  
