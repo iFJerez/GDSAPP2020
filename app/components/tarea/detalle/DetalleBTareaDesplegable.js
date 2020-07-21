@@ -36,7 +36,7 @@ class DetalleB extends Component {
 
     console.log("[Data Objecion]", dataObjecion);
 
-    if (objecion === "Sin Selección") {
+    if (objItem === "Sin Selección") {
       this.props.funEliminarEnvio(dataObjecion);
     } else {
       this.props.funGuardarEnvio(dataObjecion);
