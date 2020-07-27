@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, LayoutAnimation, StyleSheet } from "react-native";
+import { View, LayoutAnimation, StyleSheet, ActivityIndicator, ActivityIndicatorComponent } from "react-native";
 import { connect } from "react-redux";
 import TareaCardButton from "./TareaCardButton";
 import * as constants from "../../herramientas/Const";
@@ -93,7 +93,10 @@ class TareaBody extends Component {
 
   generarTarjetas() {
     const count = this.obtenerContadorTareasVsRealizadas()
-    return Object.keys(count)
+    
+    let tarjetas = null
+    if (Object.keys(count).length > 0) {
+    tarjetas = Object.keys(count)
       .map(v => {
         const icon = this.getIcon(v);
         return (<TareaCardButton
@@ -106,6 +109,8 @@ class TareaBody extends Component {
           key={v}
         />)
       })
+    }
+    return tarjetas;
   }
 
   render() {
@@ -114,7 +119,7 @@ class TareaBody extends Component {
       <View style={styles.container}>
         <TextHomeSubTitulos text={"Tareas"} />
         <View style={styles.botones}>
-         {tarjetas}
+         {tarjetas ? tarjetas : <ActivityIndicator/>}
           {/* <TareaCardButton
             activa={this.state.selectedButton}
             selectionOnPress={this.selectionOnPress}
