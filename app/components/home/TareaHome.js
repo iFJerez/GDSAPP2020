@@ -14,15 +14,14 @@ class TareaBody extends Component {
 
   selectionOnPress(userType) {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-
     this.setState({ selectedButton: userType });
+    this.props.touchHandler()
   }
 
   shouldComponentUpdate(prevProps) {
     return (
       (prevProps.envioTareas !== this.props.envioTareas ||
-        prevProps.dataTarea !== this.props.dataTarea) &&
-      this.props.dataTarea !== null
+        prevProps.dataTarea !== this.props.dataTarea)
     );
   }
 
