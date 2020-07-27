@@ -22,6 +22,7 @@ function DataError(isRefresh) {
 
 function   DataOK(isRefresh, api_salas, api_tareas) {
   console.log('DataOK');
+  console.log(api_tareas)
   return {
     type: types.USER_GET_SALA_OK,
     dataSala: api_salas,
