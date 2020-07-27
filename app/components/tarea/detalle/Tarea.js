@@ -1,45 +1,33 @@
-import React, {Component} from 'react';
-import { StyleSheet, View, } from 'react-native';
-import * as constants from '../../../herramientas/Const'
-import PickerTarea from './PickerTarea'
-import Fotografia from './Fotografia'
-
-
+import React, { Component } from "react";
+import { StyleSheet, View } from "react-native";
+import * as constants from "../../../herramientas/Const";
+import PickerTarea from "./PickerTarea";
+import Fotografia from "../../envios/Fotografia/Fotografia";
 
 export default class Objecion extends Component {
-
   render() {
-
-    
-
-
-    return  (
+    return (
       <View style={styles.container}>
-
-                 <PickerTarea  {...this.props}/>
-                 <Fotografia />
+        <PickerTarea {...this.props} />
+        <Fotografia objecion={this.props.objecionObj}/>
       </View>
-   )
-
+    );
   }
-
 }
-
 
 const styles = StyleSheet.create({
   container: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      flex:1,
-
+    flexDirection: "row",
+    alignItems: "center",
+    flex: 1,
   },
-  st_ind: {flex: 1},
+  st_ind: { flex: 1 },
 
   StyleAction: {
     flex: 1,
     marginHorizontal: 8,
     marginVertical: 3,
     borderRadius: 10,
-    alignItems:"center"
+    alignItems: "center",
   },
 });

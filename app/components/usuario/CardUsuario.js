@@ -1,37 +1,45 @@
 import React, { Component } from "react";
-import { StyleSheet, View, ScrollView } from "react-native";
+import { StyleSheet, View, ScrollView, TouchableOpacity } from "react-native";
 import TextType1 from "../../herramientas/textos/TextType1";
 import TextType2 from "../../herramientas/textos/TextType2";
 import * as constants from "../../herramientas/Const";
-import IconAntDesign from "../../herramientas/IconAntDesign";
-
+import Avatar from "./Avatar";
+import imagePicker from "../../herramientas/imagepicker/imagePicker";
 
 export default class CardUsuario extends Component {
+  state = {
+    avatar: null,
+  };
+
+  changeAvatar = async () => {
+    try {
+      const uri = await imagePicker();
+      this.setState({ avatar: uri });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   render() {
     const { data } = this.props;
     return (
       <View style={styles.container}>
-        
-          <View style={styles.card}>
-            <View style={styles.sty_texto}>
-              <View style={styles.st_indicadores_valor}>
-                <IconAntDesign
-                  name={"user"}
-                  size={constants.ICON_MEDIUM}
-                  color={constants.COLOR_PRIMARIO}
-                />
-              </View>
-              <View style={styles.st_indicadores_valor}>
-                <TextType1 text={"Kenny Bell"} />
-              </View>
-              <View style={styles.st_indicadores_texto}>
-                <TextType2 text={"Informacion"} />
-              </View>
+        <View style={styles.card}>
+          <View style={styles.sty_texto}>
+            <View style={styles.st_indicadores_valor}>
+              <Avatar
+                image={this.state.avatar}
+                handleTouch={() => this.changeAvatar()}
+              />
+            </View>
+            <View style={styles.st_indicadores_valor}>
+              <TextType1 text={"Kenny Bell"} />
+            </View>
+            <View style={styles.st_indicadores_texto}>
+              <TextType2 text={"Informacion"} />
             </View>
           </View>
-          
-        
-        
+        </View>
       </View>
     );
   }

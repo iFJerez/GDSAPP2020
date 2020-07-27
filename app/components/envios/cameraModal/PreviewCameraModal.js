@@ -13,13 +13,14 @@ import { ThemeColors } from "react-navigation";
 class PreviewCameraModal extends React.Component {
 
   confirmHandler() {
-    const { funMostrarPreviewCamera , funSalaVerDetalleFoto,funGuardarEnvio,envio_seleccionado_data, preview_detalle_camara } = this.props;
+    const { funMostrarPreviewCamera , funSalaVerDetalleFoto,funAgregrFotoEnvio/*funGuardarEnvio*/,envio_seleccionado_data, preview_detalle_camara } = this.props;
     funSalaVerDetalleFoto(false)
     funMostrarPreviewCamera(false,null)
-    funGuardarEnvio({
-      ...envio_seleccionado_data,
-      foto: preview_detalle_camara?.foto
-    })
+    funAgregrFotoEnvio(envio_seleccionado_data, preview_detalle_camara?.foto)
+    // funGuardarEnvio({
+    //   ...envio_seleccionado_data,
+    //   foto: preview_detalle_camara?.foto
+    // })
   }
 
   render() {

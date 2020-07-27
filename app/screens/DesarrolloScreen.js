@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
+import RNFS from 'react-native-fs';
+import Picker from '../components/desarrollo/PickerTest'
 
 
 const personnel = [
@@ -69,16 +71,45 @@ console.log(objecionesReduced)
 
   }
 
+  // componentDidMount() {
+  //   // get a list of files and directories in the main bundle
+  //   // RNFS.mkdir(`${RNFS.DocumentDirectoryPath}/photos`)
+  //   //   .then(() => {
+  //   //     RNFS.readDir(RNFS.DocumentDirectoryPath) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
+  //   //       .then((result) => {
+  //   //         console.log('GOT RESULT', result);
+  //   //       })
+  //   //   }) 
+  //   RNFS.exists(`${RNFS.DocumentDirectoryPath}/photos`)
+  //   .then((result) => {
+  //     if(!result) {
+  //       return RNFS.mkdir(`${RNFS.DocumentDirectoryPath}/photos`)
+  //     }
+  //   }) 
+  //   .then(() => RNFS.readDir(RNFS.DocumentDirectoryPath))
+  //   .then((result) => console.log(result))
+  // }
+
+  // componentDidUpdate() {
+  //   // get a list of files and directories in the main bundle
+  //   RNFS.exists(`${RNFS.DocumentDirectoryPath}/photos`)
+  //     .then((result) => {
+  //       console.log(result)
+  //     }) 
+  // }
+
 
   
   
   render() {
+
     const {numero, funIncrementar, funDecrementar } = this.props;
     return (
       <View style={styles.container}>
         <ScrollView >
         <Text>Hola Desarrollo</Text>
-        {this.funDesarrollo()}
+        <Picker/>
+        {/* {this.funDesarrollo()} */}
 
 
         

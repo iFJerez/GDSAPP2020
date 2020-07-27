@@ -18,7 +18,7 @@ class Accordian extends Component{
         }
     }
 
-    handleObjecion (objecion) {
+    handleObjecion (objItem, objecion) {
       const dataObjecion = {
         type: 'OBJECIONES',
         id_sku: this.props.data.id_sku,
@@ -32,12 +32,13 @@ class Accordian extends Component{
         ean: this.props.data.subtitulo,
         status: 'objetado',
         fechaHoraEnvio: (new Date()).toISOString(),
-        objecion
+        objecion: objItem,
+        foto: objecion?.foto ? objecion.foto : null  
       } 
 
-      //console.log('[Data Objecion]',dataObjecion)
+      // console.log('[Data Objecion]',dataObjecion)
 
-      if (objecion === "Sin Objeción") {
+      if (objItem === "Sin Objeción") {
         this.props.funEliminarEnvio(dataObjecion);
       } else {
         this.props.funGuardarEnvio(dataObjecion);
@@ -51,10 +52,11 @@ class Accordian extends Component{
         ( this.props.data.id_sku === v.id_sku &&
           this.props.section.indicador === v.indicador &&
           this.props.section.id_sala === v.id_sala &&
-          this.props.section.fechaHora === v.fechaHora)
+          this.props.section.fechaHora === v.fechaHora &&
+          'OBJECIONES' === v.type)
     )
 
-    console.log('Muestro la objecion',JSON.stringify(objecion))
+    // console.log('Muestro la objecion',JSON.stringify(objecion))
 
     const objecionDetalle = objecion ? objecion.objecion : null
     const objecionDisabled = objecion && objecion.status === 'enviado'  
@@ -77,8 +79,7 @@ class Accordian extends Component{
                         objecion={objecionDetalle}
                         objecionObj={objecion}
                         disabled={objecionDisabled}
-                        touchHandlder={(objecion) => this.handleObjecion(objecion)}
-                        photoHandler={(objecion) => this.handleFotoObjecion(objecion)}
+                        touchHandlder={(objItem) => this.handleObjecion(objItem, objecion)}
                       />
                 </View>
             }

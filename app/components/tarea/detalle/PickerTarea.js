@@ -28,7 +28,6 @@ class PickerTarea extends Component {
   }
 
   render() {
-
     try {
           
     const { disabled, picker } = this.props
@@ -84,7 +83,7 @@ class PickerTarea extends Component {
      return (
           <View style={styles.objetar}>
           
-              <Text style={styles.sty_txt_objetar}>Falan las opciones</Text>
+              <Text style={styles.sty_txt_objetar}>Faltan las opciones</Text>
             
           </View>
 

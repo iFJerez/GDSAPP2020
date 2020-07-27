@@ -10,7 +10,8 @@ const envioReducer = (state = initialState, action) => {
                 !(action.envio.id_sku === v.id_sku &&
                 action.envio.indicador === v.indicador &&
                 action.envio.id_sala === v.id_sala &&
-                action.envio.fechaHora === v.fechaHora)
+                action.envio.fechaHora === v.fechaHora &&
+                action.envio.type === v.type)
             ))
             return [...newState, action.envio]
         }
@@ -19,21 +20,19 @@ const envioReducer = (state = initialState, action) => {
                 !(action.envio.id_sku === v.id_sku &&
                 action.envio.indicador === v.indicador &&
                 action.envio.id_sala === v.id_sala &&
-                action.envio.fechaHora === v.fechaHora)
+                action.envio.fechaHora === v.fechaHora &&
+                action.envio.type === v.type)
             ))
             return newState
         }
         case types.ENVIO_DELETE_FOTO: {
-            console.log('@@@@ ENVIO DELETE @@@@', JSON.stringify(action))
             const newState = state.map(v => {
                 if (action.envio.id_sku === v.id_sku &&
                 action.envio.indicador === v.indicador &&
                 action.envio.id_sala === v.id_sala &&
-                action.envio.fechaHora === v.fechaHora) {
+                action.envio.fechaHora === v.fechaHora &&
+                action.envio.type === v.type) {
                     const {foto, ...envio} = v;
-                    console.log('Estoy en el seleccionado - v:',JSON.stringify(v))
-                    console.log('Estoy en el seleccionado - foto:',JSON.stringify(foto))
-                    console.log(('Estoy en el seleccionado - envio:',JSON.stringify(envio)))
                     return envio
                 } else {
                     return v
