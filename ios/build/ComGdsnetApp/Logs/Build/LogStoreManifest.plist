@@ -6,10 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-<<<<<<< HEAD
-		<key>99FB5956-D9C2-49DB-9B2E-121F105F6564</key>
-=======
-		<key>21867EC0-8206-4A00-A579-D56AA9E924CE</key>
+		<key>87BEF331-7486-4A22-8CAE-9864C7022F70</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -18,13 +15,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>21867EC0-8206-4A00-A579-D56AA9E924CE.xcactivitylog</string>
+			<string>87BEF331-7486-4A22-8CAE-9864C7022F70.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>E</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>ComGdsnetApp project</string>
@@ -35,48 +32,13 @@
 			<key>signature</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>617052435.91910005</real>
+			<real>618179415.01210594</real>
 			<key>timeStoppedRecording</key>
-			<real>617052439.62534499</real>
+			<real>618179425.68893898</real>
 			<key>title</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>21867EC0-8206-4A00-A579-D56AA9E924CE</string>
-		</dict>
-		<key>70FBEC0C-663C-4261-8BAE-BE4DA9EC71FF</key>
->>>>>>> be383b0d0289fb886355a215cbccc52c91e15f0e
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>70FBEC0C-663C-4261-8BAE-BE4DA9EC71FF.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>ComGdsnetApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>ComGdsnetApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>617050160.22953796</real>
-			<key>timeStoppedRecording</key>
-			<real>617050168.48155904</real>
-			<key>title</key>
-			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>70FBEC0C-663C-4261-8BAE-BE4DA9EC71FF</string>
+			<string>87BEF331-7486-4A22-8CAE-9864C7022F70</string>
 		</dict>
 	</dict>
 </dict>

@@ -79,3 +79,5 @@ ios/build/ComGdsnetApp/Logs/Build/LogStoreManifest.plist
 ios/build/ComGdsnetApp/info.plist
 *.db
 *.db
+ios/build/ComGdsnetApp/info.plist
+ios/build/ComGdsnetApp/Logs/Build/LogStoreManifest.plist
