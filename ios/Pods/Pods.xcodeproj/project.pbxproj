@@ -92,7 +92,6 @@
 		0BBEE39FAAFB6212065F91892C38BE1C /* Uploader.h in Headers */ = {isa = PBXBuildFile; fileRef = 626A81A83C936B242301309FA1C7E8F1 /* Uploader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0BC2F5F57AE8AF6AD3321DA8EAE17E27 /* UIView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F64AA9B2B156D07F0679B559370804C /* UIView+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0C20E6E3114EA581E07EEA59D98ED2FA /* RCTBaseTextInputShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB0A75339872AE5836B375D80780EB /* RCTBaseTextInputShadowView.m */; };
-		0C341246D6F79FD29FDC3E681C8FCABF /* ImagePickerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B53A20D53D6BD691C0313A8C7DD747C8 /* ImagePickerManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0C417A506245A7F8729ACD3BEB073A5A /* Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2263BE5B50E1D780338597019379F878 /* Downloader.m */; };
 		0C5E97A60746348642EDE6C86867C7AB /* CompactValue.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB78F13C9ECC9F32C8187F10CE3B5B5 /* CompactValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0D58E16C6814991908886D21A86477D3 /* READebugNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F9791BD01805D8B1E02DB10CDC8A68E /* READebugNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -147,6 +146,7 @@
 		1D0BD904C92BECF55B0EC8D9072E6127 /* RCTEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 167377C1062D93007832906B21ABD646 /* RCTEventEmitter.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		1DC50507E6711B2D61CF2A24A2DF5F4B /* RCTPackagerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A5DB6E3BD9B8E9671F9E8BD403CEC2 /* RCTPackagerClient.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		1DCF97AD38ACA37384564655170DBF22 /* YGMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = B8B78F7A8B91B3AA28E4DE06EA10B1B2 /* YGMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1DE7271A88F083D05967CA1D46776FAB /* ImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D842447BF43DD7884ACC0BA2DD8F670F /* ImagePickerManager.m */; };
 		1DF16A410CF349117F27A48911AB92B0 /* RCTConvert+REATransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DB9DD4B2C06F18AFAA41DA1BFD54B0 /* RCTConvert+REATransition.m */; };
 		1E6EEFD9935BC32BE4F7496BC11A8DF1 /* RCTSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9333B661A2986FC17121420A52196 /* RCTSpringAnimation.m */; };
 		1EBA8E7E84F88B22EC33234791A01EBD /* raw_logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A40607789051E60688AE5BBE2B96914 /* raw_logging.cc */; settings = {COMPILER_FLAGS = "-Wno-shorten-64-to-32"; }; };
@@ -224,6 +224,7 @@
 		3366FB6C34AAAF134FB9DF15F13B3634 /* RCTSurfaceStage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2082123547EC220DEE9983170E2B7BCF /* RCTSurfaceStage.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		33971B7071DF491606F681F6C3693F50 /* RCTGIFImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D9C1AED25DF732C708A68E9BD966B8 /* RCTGIFImageDecoder.m */; };
 		33FB329A9F28F8E1FF6E82B5AE336DCF /* RCTInputAccessoryShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 55BC7327D1E3EE42698FDCAE24BFEFF4 /* RCTInputAccessoryShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		342B403309D2B83D2FFF8A9AB08DDA42 /* react-native-image-picker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2BB29C1E547D3551823D6260276553 /* react-native-image-picker-dummy.m */; };
 		349FE8EC1021A0CA7FBF98434977CA2E /* RCTSurfaceRootView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B36A885D28632EB2E9F199BD474042F /* RCTSurfaceRootView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		355D9D6C0009F0197A86839CE41CD318 /* WhatsAppShare.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CF0AF66AA12144D3CEC37B2354E873 /* WhatsAppShare.m */; };
 		35759A0961045B3439D36D15B37DD8C4 /* RCTTextShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 208CAE7FA73E68F0AE7C10E68D4C0D97 /* RCTTextShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -404,7 +405,6 @@
 		6A4698B124FC625716F84CFAA93B2F93 /* RCTImageViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FA2D653382F5FD319CC0BFC6BF37918E /* RCTImageViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6B257CAC5E2C34DDAF304C790E898733 /* REATransitionAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD1F177ADDF9A6C4BD00DF991BB3664 /* REATransitionAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6B3E3B29D8BC5AC64D8D67857F92543A /* RCTVirtualTextShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BCBCFC41FBDCA9381F428C09EB6CBF /* RCTVirtualTextShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6BB4FBC97D09BB3CAEDFFA54D8285167 /* ImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D842447BF43DD7884ACC0BA2DD8F670F /* ImagePickerManager.m */; };
 		6C26DE0B3B89E9E60B82F8836DDEADFC /* RCTWebSocketExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 122CEBA7F25405CDD5363E2AEF77973F /* RCTWebSocketExecutor.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		6CA5C19C6CA26FEE1868BDDD33EA26BC /* experiments-inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 69F066B97F34378A8F51D15E587E4448 /* experiments-inl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6CAB2C65CC7A07B6898EA7A037786CAB /* RCTTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 65406265300D6D4536934F657C280492 /* RCTTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -413,6 +413,7 @@
 		6D35AB896CC748B13AC4B3C3972EE181 /* REAAllTransitions.h in Headers */ = {isa = PBXBuildFile; fileRef = EFACF748F24C7E80BB5DF1F4A215615B /* REAAllTransitions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6D8104F1766905FA5D32740A209F2A31 /* READebugNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 437D0E8E8444081B4A64BDAD2C7C0FEF /* READebugNode.m */; };
 		6E2B63047EEBFE7D91CB5FDC691A0393 /* RCTDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 47531ADC19590448791DFF90D169AD2C /* RCTDeviceInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E2C6E335F824D6CB817168DEE81B231 /* ImagePickerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B53A20D53D6BD691C0313A8C7DD747C8 /* ImagePickerManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6E540CCBD3CE098C96E9DD37A9F92ABA /* RCTActivityIndicatorViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8703A746817F83522353831FC7904C3E /* RCTActivityIndicatorViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6EA61C3DCB3B1C99090B23597F98D8BD /* jsilib-windows.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F93BDC4EDE4B9E2BFBFF1169ECB99E61 /* jsilib-windows.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		6ED3AE00C33B697D744D8F68EE3D3F55 /* RCTStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 427BE17C6BFEAF541950B8C61B496E61 /* RCTStatusBarManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
@@ -552,7 +553,6 @@
 		97721617D9EF5E33FB632ED42C8A9BBE /* RCTExceptionsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E8B35B3581ED1C3D6AFAB07A54AC2E /* RCTExceptionsManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		97D2A7F7FD98E52E23B336CFD3DF3548 /* RCTBaseTextViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AFC0ED6566B91FE20D8FE8C3198481C /* RCTBaseTextViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		97FC3286532F2FD85FE354EB2095D5D9 /* RCTBackedTextInputViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EC923D615A93842730C850E8F717FD7B /* RCTBackedTextInputViewProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		982187073177EC80E8637298D2307E23 /* react-native-image-picker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2BB29C1E547D3551823D6260276553 /* react-native-image-picker-dummy.m */; };
 		982DDE49D0D238B58ADD1174DC220DC8 /* RCTTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 65406265300D6D4536934F657C280492 /* RCTTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		985F05D68DA486B2AD6D1753D52444FB /* REAAlwaysNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3308B3A6F4771A7BB3AA9F7FE4E0252D /* REAAlwaysNode.m */; };
 		98785746063AFE3D4866C0E503C02919 /* fixed-dtoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 3191FE9696D1D8E69A2C2EF34540B562 /* fixed-dtoa.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1119,6 +1119,13 @@
 			remoteGlobalIDString = 680299219D3A48D42A648AF6706275A9;
 			remoteInfo = "React-RCTSettings";
 		};
+		58B3E817984D1AD39911473376EB40D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACAA9BE580DD31A5CB9D97C45D9492D;
+			remoteInfo = "React-Core";
+		};
 		5974F54D2FED1FA76F44D9D594166360 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1412,13 +1419,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = FF879E718031128A75E7DE54046E6219;
 			remoteInfo = RNReanimated;
-		};
-		BCE4FA2BB071F151EB8EE7867513269C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1BEE828C124E6416179B904A9F66D794;
-			remoteInfo = React;
 		};
 		BDC109C07A1C7E5213C436FE8070F948 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2692,13 +2692,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09D7692E2DC3DFAD05DD2833B93B91F3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0F22F363690501476F87C3CF49F3CAAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2770,6 +2763,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5211B1AE0520C4B0E09F1FAA07192F24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ACBC7C66621207C21D579713072CCD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5748,6 +5748,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		402FD463C4C0806DE4F868E4AE48AAA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2C6E335F824D6CB817168DEE81B231 /* ImagePickerManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55624BD664CDB4621E586E0A9C655C65 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -5841,14 +5849,6 @@
 				47ADC472B343533EA45DB65DCCF1D753 /* RCTUITextView.h in Headers */,
 				F08394990BE7A819D3DA47422CEDE78E /* RCTVirtualTextShadowView.h in Headers */,
 				3A910592899338D3CCCFF9FF9527FCC6 /* RCTVirtualTextViewManager.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6DB7A640EDCB5E59ED7124FEF80008BD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C341246D6F79FD29FDC3E681C8FCABF /* ImagePickerManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6323,16 +6323,16 @@
 		};
 		81C5C2512295143722B55D1C7F58FEAE /* react-native-image-picker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 327F6541D079AAD82263FB8FB829FC61 /* Build configuration list for PBXNativeTarget "react-native-image-picker" */;
+			buildConfigurationList = DA2F96B5C61806BF65406776F12BC6E0 /* Build configuration list for PBXNativeTarget "react-native-image-picker" */;
 			buildPhases = (
-				6DB7A640EDCB5E59ED7124FEF80008BD /* Headers */,
-				AD1E1B71B7F085CAB08230145A1B3104 /* Sources */,
-				09D7692E2DC3DFAD05DD2833B93B91F3 /* Frameworks */,
+				402FD463C4C0806DE4F868E4AE48AAA4 /* Headers */,
+				84B3380ED42CE304A37D829020190C7C /* Sources */,
+				5ACBC7C66621207C21D579713072CCD9 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				914BD8C769F9314A979E19A90E0B2CE2 /* PBXTargetDependency */,
+				6EF5427F107E5D852052D27472022C22 /* PBXTargetDependency */,
 			);
 			name = "react-native-image-picker";
 			productName = "react-native-image-picker";
@@ -7026,6 +7026,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84B3380ED42CE304A37D829020190C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DE7271A88F083D05967CA1D46776FAB /* ImagePickerManager.m in Sources */,
+				342B403309D2B83D2FFF8A9AB08DDA42 /* react-native-image-picker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89B648A1D56ECFC390F05F1DDAC1B71A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -7136,15 +7145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5020867DA8561F90EE0313B9A57B8797 /* Pods-ComGdsnetApp-tvOSTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD1E1B71B7F085CAB08230145A1B3104 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6BB4FBC97D09BB3CAEDFFA54D8285167 /* ImagePickerManager.m in Sources */,
-				982187073177EC80E8637298D2307E23 /* react-native-image-picker-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7777,6 +7777,12 @@
 			target = 4F265533AAB7C8985856EC78A33164BB /* React-RCTImage */;
 			targetProxy = 9B77A42C46A020A1CCD26607FDE35CA5 /* PBXContainerItemProxy */;
 		};
+		6EF5427F107E5D852052D27472022C22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "React-Core";
+			target = 7ACAA9BE580DD31A5CB9D97C45D9492D /* React-Core */;
+			targetProxy = 58B3E817984D1AD39911473376EB40D3 /* PBXContainerItemProxy */;
+		};
 		705577984A551131F3016F2A9933B01B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "boost-for-react-native";
@@ -7830,12 +7836,6 @@
 			name = "React-Core";
 			target = 7ACAA9BE580DD31A5CB9D97C45D9492D /* React-Core */;
 			targetProxy = 1C40D4C4EEEDCB446324416F8108EEC0 /* PBXContainerItemProxy */;
-		};
-		914BD8C769F9314A979E19A90E0B2CE2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = React;
-			target = 1BEE828C124E6416179B904A9F66D794 /* React */;
-			targetProxy = BCE4FA2BB071F151EB8EE7867513269C /* PBXContainerItemProxy */;
 		};
 		9653AC8C5DE2CB31C7F59291DBFCE271 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -9379,30 +9379,6 @@
 			};
 			name = Debug;
 		};
-		93E55E9686C229F31596673DACC14948 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4285548B9B176B87202A73A82735993A /* react-native-image-picker.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/react-native-image-picker/react-native-image-picker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = react_native_image_picker;
-				PRODUCT_NAME = "react-native-image-picker";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		9B5124261F35F981DAD0DB34BC1D8444 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B8DADF3818E491DB2705C6BC293019B /* RNShare.debug.xcconfig */;
@@ -9752,29 +9728,6 @@
 			};
 			name = Release;
 		};
-		D5FBC646777CB99B87A2E6CD5E71BFAC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE1A93CDB95CDF6ED0933694F793579D /* react-native-image-picker.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/react-native-image-picker/react-native-image-picker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = react_native_image_picker;
-				PRODUCT_NAME = "react-native-image-picker";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		DACC9A6CE5B38EDCF139BD25D1AD677B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA4B5E87477AEDCC935F400D193A45DF /* Folly.release.xcconfig */;
@@ -9893,6 +9846,30 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		E0E1636CE064B598F43EF49473220229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4285548B9B176B87202A73A82735993A /* react-native-image-picker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/react-native-image-picker/react-native-image-picker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = react_native_image_picker;
+				PRODUCT_NAME = "react-native-image-picker";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		E1F4B83DED2CFD3D636F2799BD824D9D /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -10031,6 +10008,29 @@
 			};
 			name = Release;
 		};
+		FFE34111FC997B8F9B15ED745206D7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE1A93CDB95CDF6ED0933694F793579D /* react-native-image-picker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/react-native-image-picker/react-native-image-picker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = react_native_image_picker;
+				PRODUCT_NAME = "react-native-image-picker";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -10048,15 +10048,6 @@
 			buildConfigurations = (
 				7E7585D6AB1E092C8EF3B2C4D3C30000 /* Debug */,
 				DACC9A6CE5B38EDCF139BD25D1AD677B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		327F6541D079AAD82263FB8FB829FC61 /* Build configuration list for PBXNativeTarget "react-native-image-picker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5FBC646777CB99B87A2E6CD5E71BFAC /* Debug */,
-				93E55E9686C229F31596673DACC14948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -10300,6 +10291,15 @@
 			buildConfigurations = (
 				6CFA054DE5A2FD3A448DA2BEC2FB7081 /* Debug */,
 				90F8BEFCFF4B26AB15717F6BBFD32200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2F96B5C61806BF65406776F12BC6E0 /* Build configuration list for PBXNativeTarget "react-native-image-picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE34111FC997B8F9B15ED745206D7E0 /* Debug */,
+				E0E1636CE064B598F43EF49473220229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
