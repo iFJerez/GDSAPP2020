@@ -7,7 +7,7 @@ import ActionCreators from '../../redux/actions';
 
 import * as constants from '../../herramientas/Const'
 import Objecion from './Objecion'
-import { ThemeColors } from 'react-navigation';
+
 
 class Accordian extends Component{
 

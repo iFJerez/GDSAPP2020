@@ -72,6 +72,10 @@ export const TAREA_SEND= 'TAREA_SEND';
 export const TAREA_DELETE= 'TAREA_DELETE';
 
 
+export const LOGIN_ON = 'LOGIN_ON';
+export const LOGIN_OFF = 'LOGIN_OFF';
+
+
 
 
 

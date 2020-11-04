@@ -130,9 +130,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     paddingVertical: 30,
     alignItems: 'center',
-    
-    
-    
   },
   scrollableModalText1: {
     fontSize: 20,

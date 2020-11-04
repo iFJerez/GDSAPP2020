@@ -7,7 +7,7 @@ import Preview from '../../../herramientas/camera/Preview';
 
 // Imports: Redux Actions
 import ActionCreators from "../../../redux/actions";
-import { ThemeColors } from "react-navigation";
+
 
 // Screen: Counter 14932
 class PreviewModal extends React.Component {

@@ -7,7 +7,6 @@ import * as constants from '../../herramientas/Const';
 import TextoBase from './EnvioTextBase';
 import TextoBase2 from '../../herramientas/textos/TextoBaseSinSizeAjust';
 import SwipeToDelete from '../../herramientas/ui/SwipeToDelete';
-import { ThemeColors } from 'react-navigation';
 import ActionCreators from '../../redux/actions'
 
 

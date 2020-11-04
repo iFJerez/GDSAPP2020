@@ -1,4 +1,8 @@
 
+
+export const VERSION_APP = 'Version 1.0'
+
+
 export const ICON_VERY_X_SMALL= 20
 export const ICON_VERY_SMALL= 25
 export const ICON_SMALL= 30

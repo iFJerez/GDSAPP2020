@@ -1,12 +1,12 @@
-// Imports: Dependencies
+import * as React from 'react';
+import { View, Text, Button } from 'react-native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import 'react-native-gesture-handler';
 
 
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
-import { createBottomTabNavigator } from 'react-navigation-tabs';
-import IconApp from '../herramientas/IconTabNav'
-import * as constants from '../herramientas/Const'
-// SCREEN
+import LoginScreen from '../screens/LoginScreen'
 import HomeScreen from '../screens/HomeScreen'
 import SalasScreen from '../screens/SalasScreen'
 import UsuarioScreen from '../screens/UsuarioScreen'
@@ -15,279 +15,225 @@ import DesarrolloScreen from '../screens/DesarrolloScreen'
 import SalasFotosScreen from '../screens/SalasFotosScreen'
 
 
-import Envio from '../components/pendientesEnvio/Envio'
-import {funFecha} from '../herramientas/Fechas'
-import {View} from 'react-native'
-import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-
-
-// Imports: Redux Actions
 import ActionCreators from '../redux/actions';
+import {transformaFecha} from '../herramientas/Fechas'
+import * as constants from '../herramientas/Const'
+import Icon from 'react-native-vector-icons/AntDesign';
 
 
-const DesarrolloStack = createStackNavigator(
+function HomeScreen2() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Home Screen</Text>
+    </View>
+  );
+}
 
-  {
-     Desarrollo: {
-       screen: DesarrolloScreen,
-       navigationOptions: () => ({
-         title: 'Desarrollo'
-       })
-     },
-   },
-   {
-     initialRouteName: 'Desarrollo',
-     defaultNavigationOptions: {
-       headerStyle: {
-         backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
-       },
-       headerTintColor: constants.COLOR_BLANCO,
-   
-       headerBackTitle: ' ',
-       headerTitleStyle: {
-         fontWeight: 'bold',
-         fontSize: constants.SIZE_LETRA_XXX_LARGE,
-         textAlign:"left", 
-         flex:1,
-         
-       },
-     },
-   }
- );
+const Stack = createStackNavigator();
 
-
- 
-
-const SalasStack = createStackNavigator(
-  {
-    Salas: {
-      screen: SalasScreen,
-      navigationOptions: () => ({
-        title: 'Salas'
-      })
-    },
-    SalasFotos: {
-      screen: SalasFotosScreen,
-      navigationOptions: () => ({
-        title: 'Salas Fotos'
-      })
-    },
-  },
-
-
-
-  
-  {
-    initialRouteName: 'Salas',
-    defaultNavigationOptions: {
-      headerStyle: {
-        backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
-      },
-      headerTintColor: constants.COLOR_BLANCO,
-  
-      headerBackTitle: ' ',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-        fontSize: constants.SIZE_LETRA_XXXX_LARGE,
-        textAlign:"left", 
-        flex:1,
-      },
-    },
-  }
-);
+function MyLogin() {
+  return (
+  <Stack.Navigator>
+    <Stack.Screen options={{headerShown: false}} name="Login" component={LoginScreen} />
+  </Stack.Navigator>
+  );
+}
+const HomeStack = createStackNavigator();
+function HomeStackScreen() {
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen
+        name={transformaFecha()}
+        component={HomeScreen}
+        options={{  tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO, color: constants.COLOR_BLANCO}, 
+        headerTitleAlign: 'left',
+        headerTitleStyle: {fontWeight: 'bold',
+        fontSize: constants.SIZE_LETRA_LARGE,
+        color: constants.COLOR_BLANCO,
+        headerTitleAlign: 'left',
+        flex: 1,
+        flexDirection: 'row'
+        }}}
+      />
+    </HomeStack.Navigator>
+  );
+}
+const TareaStack = createStackNavigator();
+function TareasStackScreen() {
+  return (
+    <TareaStack.Navigator>
+      <TareaStack.Screen
+        name={transformaFecha()}
+        component={TareasScreen}
+        options={{  tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO, color: constants.COLOR_BLANCO}, 
+        headerTitleAlign: 'left',
+        headerTitleStyle: {fontWeight: 'bold',
+        fontSize: constants.SIZE_LETRA_LARGE,
+        color: constants.COLOR_BLANCO,
+        headerTitleAlign: 'left',
+        flex: 1,
+        flexDirection: 'row'
+        }}}
+      />
+    </TareaStack.Navigator>
+  );
+}
 
 
-const HomeStack = createStackNavigator(
 
- {
-    Home: {
-      screen: HomeScreen,
-      navigationOptions: () => ({
-        title: funFecha()
-      })
-    },
-  },
-  {
-    initialRouteName: 'Home',
-    defaultNavigationOptions: {
-      headerStyle: {
-        backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
-      },
-      headerTintColor: constants.COLOR_BLANCO,
-  
-      headerBackTitle: ' ',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-        fontSize: constants.SIZE_LETRA_MEDIUM,
-        textAlign:"left", 
-        flex:1,
+const UsuarioStack = createStackNavigator();
+function UsuarioStackScreen() {
+  return (
+    <UsuarioStack.Navigator>
+      <UsuarioStack.Screen
+        name={transformaFecha()}
+        component={UsuarioScreen}
+        options={{  tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO, color: constants.COLOR_BLANCO}, 
+        headerTitleAlign: 'left',
+        headerTitleStyle: {fontWeight: 'bold',
+        fontSize: constants.SIZE_LETRA_LARGE,
+        color: constants.COLOR_BLANCO,
+        headerTitleAlign: 'left',
+        flex: 1,
+        flexDirection: 'row'
+        }}}
+      />
+    </UsuarioStack.Navigator>
+  );
+}
+
+const LoginStack = createStackNavigator();
+function LoginStackScreen() {
+  return (
+    <LoginStack.Navigator>
+      <LoginStack.Screen
+        name={transformaFecha()}
+        component={LoginScreen}
+        options={{  tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO, color: constants.COLOR_BLANCO}, 
+        headerTitleAlign: 'left',
+        headerTitleStyle: {fontWeight: 'bold',
+        fontSize: constants.SIZE_LETRA_LARGE,
+        color: constants.COLOR_BLANCO,
+        headerTitleAlign: 'left',
+        flex: 1,
+        flexDirection: 'row'
+        }}}
+      />
+    </LoginStack.Navigator>
+  );
+}
+
+
+const Tab = createBottomTabNavigator();
+
+function MyTabs() {
+  return (
+    <Tab.Navigator
+    screenOptions={({ route }) => ({
+      tabBarIcon: ({ focused, color, size }) => {
+        if (route.name === 'Home') {
+          return (
+            <Icon
+              name={
+                focused
+                  ? 'home'
+                  : 'home'
+              }
+              size={size}
+              color={color}
+            />
+          );
+        } else if (route.name === 'Settings') {
+          return (
+            <Icon
+              name={focused ? 'bars' : 'bars'}
+              size={size}
+              color={color}
+            />
+          );
+        } else if (route.name === 'Salas') {
+          return (
+            <Icon
+              name={focused ? 'shoppingcart' : 'shoppingcart'}
+              size={size}
+              color={color}
+            />
+          );
         
-      },
-    },
-  }
-);
-
-const UsuarioStack = createStackNavigator(
-
-  {
-     Usuario: {
-       screen: UsuarioScreen,
-     },
-   },
-
- );
-
-
-
-
-
-const TareasStack = createStackNavigator(
-  {
-    Tareas: {
-      screen: TareasScreen,
-      navigationOptions: () => ({
-        title: 'Tareas'
-      })
-    },
-  },
-  {
-    initialRouteName: 'Tareas',
-    defaultNavigationOptions: {
-      headerStyle: {
-        backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
-      },
-      headerTintColor: constants.COLOR_BLANCO,
-  
-      headerBackTitle: ' ',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-        fontSize: constants.SIZE_LETRA_X_LARGE,
-        textAlign:"left", 
-        flex:1,
-        
-      },
-    },
-  }
-);
-
-
-
-const HomeIcon = (valor) => props => {
-  return <IconApp {...props} numero={valor} />;
-};
-const SalasIcon = (valor) => props => {
-  return <IconApp {...props} numero={valor} />;
-};
-const UltimaIcon = (valor) => props => {
-  return <IconApp {...props} numero={valor} />;
-};
-
-
-class Home extends React.Component {
-
-
-  render() {
-    
-    
-    let TabNavigator =  createBottomTabNavigator(
-      {
-        Home: HomeStack,
-        Salas: SalasStack,
-        Tareas: TareasStack,
-        Usuario: UsuarioScreen,
-        Desarrollo: DesarrolloStack,
-         
-      },
-    
- 
-      {
-        defaultNavigationOptions: ({ navigation }) => ({
-          tabBarIcon: ({ tintColor }) => {
-            const { routeName } = navigation.state;
-            let IconComponent = IconApp;
-            let iconName;
-            if (routeName === 'Home') {
-              iconName = `home`;
-              IconComponent = HomeIcon(this.props.counter);
-            } else if (routeName === 'Tareas') {
-              iconName = `bars`;
-              IconComponent = SalasIcon(this.props.duo_new);
-            } else if (routeName === 'Desarrollo') {
-              iconName = `clockcircleo`;
-              IconComponent = SalasIcon(this.props.duo_new);
-            } else if (routeName === 'Salas') {
-              iconName = `shoppingcart`;
-              IconComponent = UltimaIcon(this.props.salas_new);
-            }else if (routeName === 'Usuario') {
-              iconName = `user`;
-              IconComponent = UltimaIcon(this.props.salas_new);
-            }
-    
-            return (
-            
-                  <IconComponent name={iconName} size={25} color={tintColor} />
-              
-            
-            )
-          },
-        }),
-        tabBarOptions: {
-          activeTintColor: constants.COLOR_PRIMARIO,
-          inactiveTintColor: constants.COLOR_GRIS,
-          
-          style: {
-            backgroundColor: constants.COLOR_PRIMARIO_OSCURO,
-            
-            
-  
-        },
-        },
-
+      } else if (route.name === 'Tareas') {
+        return (
+          <Icon
+            name={focused ? 'bars' : 'bars'}
+            size={size}
+            color={color}
+          />
+        );
+      } else if (route.name === 'Login') {
+        return (
+          <Icon
+            name={focused ? 'bars' : 'bars'}
+            size={size}
+            color={color}
+          />
+        );
+      } else if (route.name === 'Usuario') {
+        return (
+          <Icon
+            name={focused ? 'user' : 'user'}
+            size={size}
+            color={color}
+          />
+        );
       }
-    )
 
-    let Navigation = createAppContainer(TabNavigator);
-
-
-    return   <Navigation />
-
-
-  }
-}
-
-
-
-// Map State To Props (Redux Store Passes State To Component)
-const mapStateToProps = (state) => {
-  // Redux Store --> Component
-  return {
-    counter: state.counterReducer.counter,
-    loggedIn: state.authReducer.loggedIn,
-
-    home_new: state.userReducer.home_new,
-    duo_new: state.userReducer.duo_new,
-    salas_new: state.userReducer.salas_new,
+      
+      },
+    })}
+    tabBarOptions={{
+      activeTintColor: constants.COLOR_PRIMARIO,
+      inactiveTintColor: constants.COLOR_GRIS_H,
+    }}
+  >
+    <Tab.Screen name="Home" component={HomeStackScreen} options={{ tabBarBadge: 3 }} />
+    <Tab.Screen name="Salas" component={SalasScreen} options={{ tabBarBadge: 5 }} />
+    <Tab.Screen name="Tareas" component={TareasStackScreen} options={{ tabBarBadge: 5 }} />
+    <Tab.Screen name="Usuario" component={UsuarioStackScreen} options={{ tabBarBadge: 5 }} />
+    <Tab.Screen name="Login" component={LoginStackScreen} options={{ tabBarBadge: 5 }} />
     
-  };
-};
-
-// Map Dispatch To Props (Dispatch Actions To Reducers. Reducers Then Modify The Data And Assign It To Your Props)
-function mapDispatchToProps(dispatch) {
-  const combiner = Object.assign({},
-    ActionCreators,
-    { dispatch },
-  );
-  return bindActionCreators(
-    combiner,
-    dispatch,
+    
+  </Tab.Navigator>
   );
 }
 
 
 
-// Exports
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
 
 
+
+
+ export default function App() {
+  return (
+    <NavigationContainer>
+      <Validando />
+    </NavigationContainer>
+  );
+}
+
+
+
+
+
+function Validar({ value }) {
+
+  if(value)
+  {  
+    return(<MyTabs />)
+  }else{
+    return ( <MyLogin />) 
+  }
+  
+}
+
+const Validando = connect(state => ({ value: state.authReducer.loggedIn}))(Validar);

@@ -9,11 +9,9 @@ import CerrarSession from '../components/usuario/CerrarSession'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
-import { withNavigationFocus } from 'react-navigation';
 
-const FocusAwareStatusBar = withNavigationFocus(({ isFocused, ...rest }) =>
-  isFocused ? <StatusBar {...rest} /> : null
-);
+
+
 
 // Screen: Counter
 class UsuarioScreen extends React.Component {
@@ -22,7 +20,7 @@ class UsuarioScreen extends React.Component {
  
     return (
       <SafeAreaView style={styles.container}>
-       <FocusAwareStatusBar barStyle="dark-content"/>
+     
        <View style={styles.container}>
             <View style={styles.Usuario}>
                 <CardUsuario />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
-import * as colores from '../herramientas/Const'
+import * as colores from '../herramientas/Const';
 
 
 export default class IconApp extends React.Component {

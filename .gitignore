@@ -1,17 +1,10 @@
-ios
-android
-/ios
-
-/ios
-/android
-
 /node_modules
+/android
+/ios
+
 /ios/build
 ios/build
-
-
-
-/ios/build
+/android
 
 # dependencies
 /node_modules
@@ -81,3 +74,5 @@ ios/build/ComGdsnetApp/info.plist
 *.db
 ios/build/ComGdsnetApp/info.plist
 ios/build/ComGdsnetApp/Logs/Build/LogStoreManifest.plist
+*.db
+ios/build/ComGdsnetApp/Build/Intermediates.noindex/XCBuildData/build.db

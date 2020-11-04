@@ -3,7 +3,10 @@
 import * as types from '../redux_constants'; 
 
 
-export const login = (trueFalse) => ({
-  type: types.LOGON,
-  trueFalse: trueFalse,
+export const funLoginOn = (loggedIn, usuario, token) => ({
+  type: types.LOGIN_ON,
+  loggedIn: loggedIn,
+  usuario: usuario,
+  token: token,
+
 });
