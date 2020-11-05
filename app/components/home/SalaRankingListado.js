@@ -13,14 +13,15 @@ export default class ListadoContraido extends Component {
   crearIndicadores(item){
     try {
       return(
-          <FlatList  
-          numColumns={4}
-          key={1}
-          data={item}
-          renderItem={({item}) => <TouchIndicador data={item} />}
-          keyExtractor={(item, index) => '' + index}
-  />   
-      )
+        item.map((item, key)=>{
+        return(
+          <View key={key}> 
+            <TouchIndicador data={item} />
+          </View>
+
+        ) }
+         
+      ))
     
     } catch (error) {
       alert(error)

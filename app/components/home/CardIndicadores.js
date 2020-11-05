@@ -3,6 +3,7 @@ import { StyleSheet, View, ScrollView, FlatList} from 'react-native';
 import * as constants from '../../herramientas/Const'
 import Indicadores from './Indicadores'
 import {funMessage} from '../../herramientas/Mensaje'
+import TextHomeSubTitulos from './TextHomeSubTitulos'
 
 export default class SalasListadoInCo extends Component {
 
@@ -16,7 +17,7 @@ return(
 
   data.map((valores, x)=>{
 
-    return this.crearIndicadores(valores.indicadores)
+    return this.crearIndicadores(valores.indicadores, x)
   }
 
 
@@ -31,17 +32,17 @@ return(
 }
 
 
-crearIndicadores(item){
+crearIndicadores(item, i){
   try {
     return(
-        <FlatList  
-        horizontal={true}
-        key={1}
-        data={item}
-        renderItem={({item}) => <Indicadores data={item} />}
-        keyExtractor={(item, index) => '' + index}
-/>   
-    )
+      item.map((valores, x)=>{
+
+        return (<View key={'ante' + x}>
+          <Indicadores data={valores} i={x} />
+          </View>
+        )
+      }
+    ))
   
   } catch (error) {
     alert(error)
@@ -56,7 +57,9 @@ crearIndicadores(item){
    
     return (
       <View style={styles.container}>
+        <TextHomeSubTitulos text={'Indicadores'} />
            <View style={styles.card}>
+           
            <ScrollView horizontal={true}>
                  {this.funIndicadores()}
           </ScrollView>
@@ -70,7 +73,7 @@ crearIndicadores(item){
 
 const styles = StyleSheet.create({
   container: {
-    
+    flex: 1,
     padding: 10,
   },
   card: {

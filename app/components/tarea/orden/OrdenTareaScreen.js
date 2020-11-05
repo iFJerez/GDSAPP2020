@@ -44,7 +44,9 @@ class OrdenSalas extends React.Component {
    return data.map((item, i) => {
 
       return(
+        <View key={"botones" + i}>
         <BotonKeys funExec={funSalasOrdenKeys} itemkey={item.key} desc={item.desc} sala_orden_key={sala_orden_key}/>
+       </View>
       )
 
     })

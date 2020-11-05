@@ -18,9 +18,9 @@ export default class ListadoContraido extends Component {
 
         item.map((valores, i)=>{
           return  (
-          
+          <View key={"dentro" + i}>
             <TouchIndicador data={valores} dataAll={dataAll} />
-   
+          </View>
           )
 
         } )

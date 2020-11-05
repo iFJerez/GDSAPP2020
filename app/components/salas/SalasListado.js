@@ -119,7 +119,7 @@ this.setState({NewdataSala: obj})
 
 
 
- crearSala(item){
+ crearSala(item, i){
   const {NewdataSala} = this.state;
   let sala = 'sala' + item.id_sala
   let newData = NewdataSala[sala]
@@ -130,7 +130,7 @@ this.setState({NewdataSala: obj})
     //Buscamos su Informacion y luego se la compartimos.
 
 
-          <View>
+          <View key={"llave" + i}>
              <Listado item={obj}/>
              
           </View>
@@ -170,7 +170,7 @@ componentDidUpdate(prevProps) {
             <ScrollView>
             
             {this.state.NewdataSala.salas.map((valores, i) => {
-             return this.crearSala(valores)
+             return this.crearSala(valores, i)
             })}
             </ScrollView>
  </View>

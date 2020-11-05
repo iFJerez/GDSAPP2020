@@ -22,16 +22,13 @@ class Home extends React.Component {
     return (
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
-
-        <ScrollView style={{ backgroundColor: "transparent" }}>
           <View style={styles.styDown}>
-            <CardIndicadores data={data} />
+          <CardIndicadores data={data} />
             <SalaRanking />
             <TareaHome
               touchHandler={() => this.props.navigation.navigate("Tareas")}
             />
           </View>
-        </ScrollView>
         <EnvioBoton />
       </View>
     );
@@ -47,16 +44,6 @@ const styles = StyleSheet.create({
 
   styTop: { flex: 1, marginTop: 80, marginLeft: 30 },
   styDown: { flex: 1 },
-  styTarjeta: {
-    position: "absolute",
-    top: 0,
-    width: "100%",
-    height: 250,
-    borderRadius: 6,
-    justifyContent: "center",
-    alignItems: "center",
-    zIndex: 0,
-  },
 });
 
 // Map State To Props (Redux Store Passes State To Component)

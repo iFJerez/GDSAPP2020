@@ -47,12 +47,11 @@ function HomeStackScreen() {
       <HomeStack.Screen
         name={transformaFecha()}
         component={HomeScreen}
-        options={{  tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO, color: constants.COLOR_BLANCO}, 
+        options={{  tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
         headerTitleAlign: 'left',
         headerTitleStyle: {fontWeight: 'bold',
         fontSize: constants.SIZE_LETRA_LARGE,
         color: constants.COLOR_BLANCO,
-        headerTitleAlign: 'left',
         flex: 1,
         flexDirection: 'row'
         }}}
@@ -67,12 +66,11 @@ function TareasStackScreen() {
       <TareaStack.Screen
         name={transformaFecha()}
         component={TareasScreen}
-        options={{  tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO, color: constants.COLOR_BLANCO}, 
+        options={{  tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
         headerTitleAlign: 'left',
         headerTitleStyle: {fontWeight: 'bold',
         fontSize: constants.SIZE_LETRA_LARGE,
         color: constants.COLOR_BLANCO,
-        headerTitleAlign: 'left',
         flex: 1,
         flexDirection: 'row'
         }}}
@@ -90,12 +88,11 @@ function UsuarioStackScreen() {
       <UsuarioStack.Screen
         name={transformaFecha()}
         component={UsuarioScreen}
-        options={{  tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO, color: constants.COLOR_BLANCO}, 
+        options={{  tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
         headerTitleAlign: 'left',
         headerTitleStyle: {fontWeight: 'bold',
         fontSize: constants.SIZE_LETRA_LARGE,
         color: constants.COLOR_BLANCO,
-        headerTitleAlign: 'left',
         flex: 1,
         flexDirection: 'row'
         }}}
@@ -111,12 +108,11 @@ function LoginStackScreen() {
       <LoginStack.Screen
         name={transformaFecha()}
         component={LoginScreen}
-        options={{  tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO, color: constants.COLOR_BLANCO}, 
+        options={{  tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
         headerTitleAlign: 'left',
         headerTitleStyle: {fontWeight: 'bold',
         fontSize: constants.SIZE_LETRA_LARGE,
         color: constants.COLOR_BLANCO,
-        headerTitleAlign: 'left',
         flex: 1,
         flexDirection: 'row'
         }}}

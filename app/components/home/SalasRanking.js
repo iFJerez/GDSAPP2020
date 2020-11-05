@@ -30,7 +30,7 @@ class SalasListado extends React.Component {
 
     return  this.state.dataSala.map((item, i) => {
       return (
-      <View style={styles.container}>
+      <View key={"crearItem" + i} style={styles.container}>
         <View style={styles.container}>
       
       <RankingCard data={item}/>
@@ -52,9 +52,9 @@ class SalasListado extends React.Component {
 
     return (
       <View style={styles.container}>
-       
+       <TextHomeSubTitulos text={'Ranking'} />
         <View style={styles.card}>   
-        <TextHomeSubTitulos text={'Ranking'} />
+        
        {this.crearItem()} 
     </View>
  </View>
@@ -65,7 +65,7 @@ class SalasListado extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 2,
     padding: 2,
   },
   card: {

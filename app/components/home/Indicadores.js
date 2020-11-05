@@ -7,10 +7,10 @@ import IndicadoresDiferencia from './IndicadoresDiferencia'
 
 export default class HomeIndicadores extends Component {
   render() {
-    const {data} = this.props
+    const {data, i} = this.props
     // console.log(data)
     return (
-      <View style={styles.container}>
+      <View key={"ind" + i} style={styles.container}>
               <View style={styles.st_diferencia}>   
              <IndicadoresDiferencia numero={data.diferencia}/>
              

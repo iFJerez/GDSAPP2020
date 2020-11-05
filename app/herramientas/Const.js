@@ -18,8 +18,8 @@ export const SIZE_LETRA_XXX_LARGE= 20
 export const SIZE_LETRA_XXXX_LARGE= 25
 export const SIZE_LETRA_XXXXX_LARGE= 30
 
-export const COLOR_NEGRO="#000";
-export const COLOR_BLANCO="#FFF";
+export const COLOR_NEGRO="#000000";
+export const COLOR_BLANCO="#FFFFFF";
 export const COLOR_FONDO_SEMI_BLANCO="#FBFCFC";
 
 
