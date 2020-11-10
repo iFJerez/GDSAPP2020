@@ -29,21 +29,25 @@ export default class DetalleIndicadoresFila extends Component {
   try {
         return(    
         <View style={styles.view_fila} key={i} >
-          <View style={styles.view_indicadores}>
-              <IPromocion valor={data.promocion} />
-              <IPresencia valor={data.presencia}/>
-              <IPrecio valor={data.precio}/>
-              <IPorcentaje valor={data.porcentaje} />
-              
-          </View>
-
-          <View style={styles.view_textos}>
-            <Titulo text={data.titulo}></Titulo>
-            <Subtitulo text={data.subtitulo}></Subtitulo>
-          </View>
-          <View style={styles.view_status}>
-            <IStatus status={status}/>
-          </View>
+            <View style={styles.view_divisorPresencia}>
+                <IPresencia valor={data.presencia}/>    
+            </View>
+            <View style={styles.view_divisorTextosUno}>
+                  <View style={styles.view_divisorTextos}>
+                    <Titulo text={data.titulo}></Titulo>
+                    <Subtitulo text={data.subtitulo}></Subtitulo>
+                  </View>
+                  <View style={styles.view_indicadores}>
+                    
+                    <IPromocion valor={data.promocion} />              
+                    <IPrecio valor={data.precio}/>
+                    <IPorcentaje valor={data.porcentaje} />
+                  </View>
+      
+            </View>
+            <View style={styles.view_divisorStatus}>
+                <IStatus status={status}/>
+            </View>
         </View>
         )
       
@@ -82,13 +86,45 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   view_textos: {
+
+    alignItems: 'flex-start',
+    borderColor: constants.COLOR_CELESTE,
+    borderWidth: 1,
+    flex: 1,
+  },
+  view_divisor: {
     flexDirection: 'column',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    borderColor: constants.COLOR_CELESTE,
+    borderWidth: 1,
+  },
+  view_divisorPresencia: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    alignSelf: 'center',
+    borderColor: constants.COLOR_GRIS_F,
+    borderRightWidth: 1,
+    marginRight: 5,
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+  },
+  view_divisorTextos: {
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    borderColor: constants.COLOR_GRIS_F,
+    borderBottomWidth: 1,
+    flex: 5,
+    paddingBottom: 5
+  },
+  view_divisorTextosUno: {
+    flex: 5
+  },
+  view_divisorStatus: {
+    paddingRight: 10,
   },
   view_indicadores: {
-    paddingHorizontal: 20,
     flexDirection: 'row',
-    alignItems: 'center',
+    flex: 1,
   },
   view_scroll: {
     flex: 1,

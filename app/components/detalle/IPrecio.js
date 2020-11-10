@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { StyleSheet, View, Text} from 'react-native';
 import * as constants from '../../herramientas/Const'
 import Icon from '../../herramientas/IconSimple'
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 
 export default class IPrecio extends Component {
@@ -12,10 +12,10 @@ funLlenar(){
   if(valor != null) {
     return(
           <View style={styles.container}>
-              <View>
-                <Ionicons name="ios-cash" style={styles.IconStyle}/>
+              <View style={styles.viewCenter}>
+                <MaterialIcons name="monetization-on" style={styles.IconStyle}/>
               </View>
-              <View>
+              <View style={styles.viewCenter}>
                 <Text style={styles.TextStyle}>{valor} </Text>  
               </View>    
           </View>
@@ -38,25 +38,28 @@ funLlenar(){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: constants.COLOR_BLANCO,
-    borderColor: constants.COLOR_GRIS_F,
-    borderWidth: -2,
-    borderRadius: 5
+    borderRightWidth : 1,
+    borderRightColor: constants.COLOR_GRIS_F,
+    paddingTop: 1,
+    paddingHorizontal: 10,
   
+  },
+  viewCenter: {
+    alignItems: 'center',
+    padding: 1,
   },
   IconStyle: {
     flex: 1,
     color:constants.COLOR_PRIMARIO,
     fontSize:20,
-    paddingLeft:7,
-    paddingTop:3,
+    
   },
   TextStyle: {
     flex: 1,
     fontSize:15,
-    padding:3,
     fontFamily:"Futura",
-    color: constants.COLOR_GRIS
+    color: constants.COLOR_GRIS,
+    
   }
 
 })

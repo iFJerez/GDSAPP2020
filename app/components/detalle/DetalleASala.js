@@ -66,17 +66,13 @@ export default class DetalleIndicadores extends Component {
 
     return (
       <View style={styles.container}>
-          <View style={styles.sucHeader}>
-            <DetalleSucursalHeader {...{ cadena, desc_sala, direccion }}/>
-          </View>
-          <View style={styles.indicador}>
-           <Indicador {...{ indicador, valor, diferencia, fuente }}/>
-          </View>
-          <View style={styles.verFoto}>
-
-  
-
-      
+              <View style={styles.sucHeader}>
+                <DetalleSucursalHeader {...{ cadena, desc_sala, direccion }}/>
+              </View>
+              <View style={styles.indicador}>
+              <Indicador {...{ indicador, valor, diferencia, fuente }}/>
+              </View>
+              <View style={styles.verFoto}>
             <VerFotografia />
    
          </View>

@@ -12,20 +12,20 @@ funLlenar(){
   if(valor != null) {
     return(
           <View style={styles.container}>
-             <View >
-               <Ionicons name={'ios-arrow-dropup-circle'} style={styles.IconStyle}/>
-               </View>
-              <View>
-                <Text style={styles.TextStyle}>{valor}</Text>
+              <View style={styles.viewCenter}>
+                 <Ionicons name={'ios-arrow-dropup-circle'} style={styles.IconStyle}/>
+              </View>
+               <View style={styles.viewCenter}>
+                  <Text style={styles.TextStyle}>{valor}</Text>
                 </View>  
           </View>
         )
   }else {
     <View style={styles.container}>
-        <View >
+             <View style={styles.viewCenter}>
           <Ionicons name={'ios-arrow-dropdown-circle'} style={styles.IconStyle}/>
         </View>
-     <View>
+        <View style={styles.viewCenter}>
         <Text style={styles.TextStyle}>{valor}</Text>
         </View>  
      </View>
@@ -48,24 +48,28 @@ funLlenar(){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: constants.COLOR_BLANCO,
-    borderColor: constants.COLOR_GRIS_F,
-    borderWidth: -2,
-    borderRadius: 5,
-    margin:2
+    borderRightWidth : 1,
+    borderRightColor: constants.COLOR_GRIS_F,
+    paddingTop: 1,
+    paddingHorizontal: 10,
+
+  },
+  viewCenter: {
+    flex: 1,
+    alignItems: "center",
+    padding: 1,
   },
   IconStyle: {
     flex: 1,
     color:constants.COLOR_PRIMARIO,
     fontSize:20,
-    paddingLeft:12,
-    paddingTop:3,
     alignItems:"center"
   },
+  
   TextStyle: {
     flex: 1,
     fontSize:15,
-    padding:3,
+    
     fontFamily:"Futura",
     color: constants.COLOR_GRIS
   }
