@@ -48,9 +48,18 @@
       {
         "id_sala": 10,
         "indicadores": [
-          {"indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
+          {"indicador": "chocolate", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
+            "detalles": [
+              {"id_sku": 98765, "agrupador": "CHOCOLATE PREMIUN", "titulo": "choco 501", "subtitulo": "98765432", "presencia": true, "precio": "12.990", "porcentaje": "80%","promocion": "2% de descuento"} ,
+              {"id_sku": 98766, "agrupador": "CHOCOLATE PREMIUN", "titulo": "cacao 501", "subtitulo": "98765432", "presencia": false, "porcentaje": "78%"},
+              {"id_sku": 987657, "agrupador": "CHOCOLATE LATE", "titulo": "sannenusss 501", "subtitulo": "98765432", "presencia": false, "promocion": "2% de descuento"},
+              {"id_sku": 987658, "agrupador": "CHOCOLATE LATE", "titulo": "bañados 501", "subtitulo": "98765432", "presencia": true}
+
+              
+            ]},
+            {"indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
            "detalles": [
-             {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+             {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
              {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
              {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
              {"id_sku": 987658, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
