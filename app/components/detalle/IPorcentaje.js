@@ -8,12 +8,13 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 export default class IPorcentaje extends Component {
 
 funLlenar(){
-  const {valor} = this.props
+  const {valor, semaforo} = this.props
+  const iconStyle = semaforo!=null ? (semaforo? styles.IconStyleTrue:styles.IconStyleFalse) : styles.IconStyle
   if(valor != null) {
     return(
           <View style={styles.container}>
               <View style={styles.viewCenter}>
-                 <Ionicons name={'ios-arrow-dropup-circle'} style={styles.IconStyle}/>
+                 <Ionicons name={'ios-arrow-dropup-circle'} style={iconStyle}/>
               </View>
                <View style={styles.viewCenter}>
                   <Text style={styles.TextStyle}>{valor}</Text>
@@ -61,9 +62,18 @@ const styles = StyleSheet.create({
   },
   IconStyle: {
     flex: 1,
+    color:constants.COLOR_QUINTENARIO_CLARO,
+    fontSize:20,
+  },
+  IconStyleTrue: {
+    flex: 1,
     color:constants.COLOR_PRIMARIO,
     fontSize:20,
-    alignItems:"center"
+  },
+  IconStyleFalse: {
+    flex: 1,
+    color:constants.COLOR_SECUNDARIO,
+    fontSize:20,
   },
   
   TextStyle: {

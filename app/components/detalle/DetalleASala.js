@@ -66,19 +66,20 @@ export default class DetalleIndicadores extends Component {
 
     return (
       <View style={styles.container}>
-              <View style={styles.sucHeader}>
-                <DetalleSucursalHeader {...{ cadena, desc_sala, direccion }}/>
-              </View>
-              <View style={styles.indicador}>
-              <Indicador {...{ indicador, valor, diferencia, fuente }}/>
-              </View>
-              <View style={styles.verFoto}>
-            <VerFotografia />
-   
-         </View>
-         <View style={styles.view_detalle}>
-            {this.funDetalles()}
-         </View>
+              <View style={styles.header}>
+                    <View style={styles.sucHeader}>
+                      <DetalleSucursalHeader {...{ cadena, desc_sala, direccion }}/>
+                    </View>
+                    <View style={styles.indicador}>
+                      <Indicador {...{ indicador, valor, diferencia, fuente }}/>
+                    </View>
+                    <View style={styles.verFoto}>
+                      <VerFotografia />
+                  </View>
+             </View>
+            <View style={styles.view_detalle}>
+                {this.funDetalles()}
+            </View>
      </View>
     );
   }
@@ -87,22 +88,27 @@ export default class DetalleIndicadores extends Component {
 
 const styles = StyleSheet.create({
   container: {
-  flex: 1,
+  flex: 1
+  },
+  header: {
+    flex: 1,
+    paddingBottom: 5,
+    
   },
   sucHeader: {
-    flex: 1.5,
-    paddingBottom: '5 %'
+    flex: 1,
+    paddingBottom: 30
   },
   indicador: {
-    flex: 4,
+    flex: 2,
     alignItems: 'center'
   },
   verFoto: {
-    flex: 1.1,
+    height: 35,
     alignItems: 'center'
   },
   view_detalle: {
-    flex: 10,
+    flex: 2,
     
   }
 });

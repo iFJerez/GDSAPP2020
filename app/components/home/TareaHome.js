@@ -153,17 +153,17 @@ class TareaBody extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    
     backgroundColor: constants.COLOR_GRIS_D,
   },
   sty_texto: {
-    flex: 1,
+    
     alignItems: "center",
     paddingHorizontal: 10,
     flexDirection: "row",
   },
   sty_icon: {
-    flex: 1,
+    
     paddingVertical: 15,
     alignItems: "center",
     alignContent: "center",

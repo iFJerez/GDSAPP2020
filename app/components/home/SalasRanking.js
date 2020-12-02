@@ -65,7 +65,7 @@ class SalasListado extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 2,
+    flex: 3,
     padding: 2,
   },
   card: {

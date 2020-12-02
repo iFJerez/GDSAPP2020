@@ -16,12 +16,30 @@ import com.comgdsnetapp.R;
 
 // @react-native-community/async-storage
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+// @react-native-community/masked-view
+import org.reactnative.maskedview.RNCMaskedViewPackage;
+// react-native-camera
+import org.reactnative.camera.RNCameraPackage;
+// react-native-fs
+import com.rnfs.RNFSPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+// react-native-image-picker
+import com.imagepicker.ImagePickerPackage;
+// react-native-linear-gradient
+import com.BV.LinearGradient.LinearGradientPackage;
+// react-native-picker-module
+import com.taluttasgiran.pickermodule.ReactNativePickerModulePackage;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
+// react-native-safe-area-context
+import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
+// react-native-screens
+import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-share
 import cl.json.RNSharePackage;
+// react-native-svg
+import com.horcrux.svg.SvgPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
 
@@ -70,9 +88,18 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new AsyncStoragePackage(),
+      new RNCMaskedViewPackage(),
+      new RNCameraPackage(),
+      new RNFSPackage(),
       new RNGestureHandlerPackage(),
+      new ImagePickerPackage(),
+      new LinearGradientPackage(),
+      new ReactNativePickerModulePackage(),
       new ReanimatedPackage(),
+      new SafeAreaContextPackage(),
+      new RNScreensPackage(),
       new RNSharePackage(),
+      new SvgPackage(),
       new VectorIconsPackage()
     ));
   }

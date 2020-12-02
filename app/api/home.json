@@ -44,7 +44,7 @@
           ]
       },
       {
-        "id_sala": 3,
+        "id_sala": 4,
         "cadena": "jumbo",
         "desc_sala": "Otro Jumbo",
         "numero": 35,
@@ -52,7 +52,37 @@
         "indicadores": [
           {"indicador": "osa", "valor": "89", "diferencia": "35" }
         ]
-    }
+    },
+    {
+      "id_sala": 5,
+      "cadena": "jumbo",
+      "desc_sala": "Otro Jumbo",
+      "numero": 35,
+      "estado": 0,
+      "indicadores": [
+        {"indicador": "osa", "valor": "89", "diferencia": "35" }
+      ]
+  },
+  {
+    "id_sala": 6,
+    "cadena": "jumbo",
+    "desc_sala": "Otro Jumbo",
+    "numero": 35,
+    "estado": 0,
+    "indicadores": [
+      {"indicador": "osa", "valor": "89", "diferencia": "35" }
+    ]
+},
+{
+  "id_sala": 7,
+  "cadena": "jumbo",
+  "desc_sala": "Otro Jumbo",
+  "numero": 35,
+  "estado": 0,
+  "indicadores": [
+    {"indicador": "osa", "valor": "89", "diferencia": "35" }
+  ]
+}
 
 
        ]

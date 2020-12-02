@@ -50,9 +50,9 @@
         "indicadores": [
           {"indicador": "chocolate", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
             "detalles": [
-              {"id_sku": 98765, "agrupador": "CHOCOLATE PREMIUN", "titulo": "choco 501", "subtitulo": "98765432", "presencia": true, "precio": "12.990", "porcentaje": "80%","promocion": "2% de descuento"} ,
-              {"id_sku": 98766, "agrupador": "CHOCOLATE PREMIUN", "titulo": "cacao 501", "subtitulo": "98765432", "presencia": false, "porcentaje": "78%"},
-              {"id_sku": 987657, "agrupador": "CHOCOLATE LATE", "titulo": "sannenusss 501", "subtitulo": "98765432", "presencia": false, "promocion": "2% de descuento"},
+              {"id_sku": 98765, "agrupador": "CHOCOLATE PREMIUN", "titulo": "choco 501", "subtitulo": "98765432", "presencia": true, "precio": "12.990", "porcentaje": "80%","promocion": "2% de descuento", "numerico": "32"} ,
+              {"id_sku": 98766, "agrupador": "CHOCOLATE PREMIUN", "titulo": "cacao 501", "subtitulo": "98765432", "presencia": true, "porcentaje": "78%", "alfanumerico": "Mejor", "semaforo": true, "promocion": "4X" },
+              {"id_sku": 987657, "agrupador": "CHOCOLATE LATE", "titulo": "sannenusss 501", "subtitulo": "98765432", "presencia": false, "promocion": "2% de descuento", "alfanumerico": "Peor", "semaforo": false},
               {"id_sku": 987658, "agrupador": "CHOCOLATE LATE", "titulo": "bañados 501", "subtitulo": "98765432", "presencia": true}
 
               

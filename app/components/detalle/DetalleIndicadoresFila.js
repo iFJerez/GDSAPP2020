@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, Text} from 'react-native';
+import { StyleSheet, View, ScrollView} from 'react-native';
 
 import IPresencia from './IPresencia'
 import IPrecio from './IPrecio'
 import IPorcentaje from './IPorcentaje'
 import IPromocion from './IPromocion'
 import IStatus from './IStatus'
+import INumerico from './INumerico'
+import IAlfa from './IAlfa'
 
 import Titulo from './Titulo'
 import Subtitulo from './Subtitulo'
@@ -37,13 +39,23 @@ export default class DetalleIndicadoresFila extends Component {
                     <Titulo text={data.titulo}></Titulo>
                     <Subtitulo text={data.subtitulo}></Subtitulo>
                   </View>
+                  <ScrollView style={styles.view_indicadores} horizontal={true}>
                   <View style={styles.view_indicadores}>
-                    
-                    <IPromocion valor={data.promocion} />              
-                    <IPrecio valor={data.precio}/>
-                    <IPorcentaje valor={data.porcentaje} />
+
+                        <IPromocion valor={data.promocion} semaforo={data.semaforo}  />              
+                        <IPrecio valor={data.precio} semaforo={data.semaforo} />
+                        <IPorcentaje valor={data.porcentaje} semaforo={data.semaforo} />
+                        <INumerico valor={data.numerico} semaforo={data.semaforo} />
+                        <IAlfa valor={data.alfanumerico} semaforo={data.semaforo} />
+                        <IPromocion valor={data.promocion} semaforo={data.semaforo}  />              
+                        <IPrecio valor={data.precio} semaforo={data.semaforo} />
+                        <IPorcentaje valor={data.porcentaje} semaforo={data.semaforo} />
+                        
+                        
+                        <IAlfa valor={data.alfanumerico} semaforo={data.semaforo} />
+  
                   </View>
-      
+                  </ScrollView>
             </View>
             <View style={styles.view_divisorStatus}>
                 <IStatus status={status}/>

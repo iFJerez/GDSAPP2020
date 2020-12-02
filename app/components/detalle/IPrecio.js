@@ -8,12 +8,13 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 export default class IPrecio extends Component {
 
 funLlenar(){
-  const {valor} = this.props
+  const {valor, semaforo} = this.props
+  const iconStyle = semaforo!=null ? (semaforo? styles.IconStyleTrue:styles.IconStyleFalse) : styles.IconStyle
   if(valor != null) {
     return(
           <View style={styles.container}>
               <View style={styles.viewCenter}>
-                <MaterialIcons name="monetization-on" style={styles.IconStyle}/>
+                <MaterialIcons name="monetization-on" style={iconStyle}/>
               </View>
               <View style={styles.viewCenter}>
                 <Text style={styles.TextStyle}>{valor} </Text>  
@@ -50,9 +51,18 @@ const styles = StyleSheet.create({
   },
   IconStyle: {
     flex: 1,
+    color:constants.COLOR_QUINTENARIO_CLARO,
+    fontSize:20,
+  },
+  IconStyleTrue: {
+    flex: 1,
     color:constants.COLOR_PRIMARIO,
     fontSize:20,
-    
+  },
+  IconStyleFalse: {
+    flex: 1,
+    color:constants.COLOR_SECUNDARIO,
+    fontSize:20,
   },
   TextStyle: {
     flex: 1,

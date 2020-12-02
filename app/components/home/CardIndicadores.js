@@ -37,9 +37,10 @@ crearIndicadores(item, i){
     return(
       item.map((valores, x)=>{
 
-        return (<View key={'ante' + x}>
+        return (
+        <View style={styles.indicador} key={'ante' + x}>
           <Indicadores data={valores} i={x} />
-          </View>
+        </View>
         )
       }
     ))
@@ -73,16 +74,21 @@ crearIndicadores(item, i){
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    padding: 10,
+    padding: 2,
+    margin: 2,
+
+
   },
   card: {
-    flex: 1,
+    
     alignItems: 'center',
-    borderRadius: 5,
-    padding: 10,
+    padding: 3,
     backgroundColor: constants.COLOR_BLANCO
 
+
+  },
+  indicador: {
+  
 
   },
 

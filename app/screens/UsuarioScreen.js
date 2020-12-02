@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   CerrarSession: {
-    flex: 0.5
+    flex: 1
   },
   
 });

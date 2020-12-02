@@ -8,7 +8,7 @@ import Icon from '../../herramientas/IconSimple'
 export default class IPresencia extends Component {
 
 funLlenar(){
-  const {valor} = this.props
+  const {valor, semaforo} = this.props
   if(valor != null) {
     return(
           <View>

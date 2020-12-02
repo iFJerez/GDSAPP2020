@@ -107,7 +107,7 @@ class Buscador extends Component {
         underlayColor="transparent"
         hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
       >
-        <Icon size={constants.ICON_VERY_SMALL} name="ios-search" color={constants.COLOR_PRIMARIO} />
+        <Icon size={constants.ICON_VERY_X_SMALL} name="ios-search" color={constants.COLOR_PRIMARIO} />
       </TouchableHighlight>
       )
     }
@@ -115,11 +115,11 @@ class Buscador extends Component {
 return (
   <TouchableHighlight
   style={styles.searchIconButton}
-  onPress={()=>this.hideClean()}
-  underlayColor="transparent"
-  hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
+   onPress={()=>this.hideClean()}
+   underlayColor="transparent"
+   hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
 >
-  <Icon size={constants.ICON_VERY_SMALL} name="ios-close-circle" color={constants.COLOR_PRIMARIO} />
+  <Icon size={constants.ICON_VERY_X_SMALL} name="ios-close-circle" color={constants.COLOR_PRIMARIO} />
   
 </TouchableHighlight>
 )

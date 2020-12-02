@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
   },
   scrollableModalContent1: {
     flex: 1,
-    paddingVertical: 30,
+    paddingVertical: 10,
     
   },
   scrollableModalText1: {
@@ -136,6 +136,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   view_close: {
+    
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%'

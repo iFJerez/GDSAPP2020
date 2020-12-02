@@ -12,7 +12,6 @@ import {
   StyleSheet,
   Text,
   View,
-  AsyncStorage,
   Image,
   TextInput,
   TouchableOpacity,
@@ -115,7 +114,7 @@ async loginIn(){
           <Text style={styles.bienvenido}>Bienvenido</Text>
           <Text style={styles.bienvenido}>{this.props.usuario}</Text>
         </View>
-       
+        <View style={styles.view_bienvenido}>
         <Text style={styles.text}>Usuario</Text>
             <TextInput style = {styles.input} 
                 autoCapitalize="none" 
@@ -135,6 +134,9 @@ async loginIn(){
                   placeholder='Ingrese su Contraseña' 
                   placeholderTextColor={constants.COLOR_GRIS_H}
                   secureTextEntry/>
+        </View>
+       
+     
 
 
         </View>
@@ -209,7 +211,7 @@ const styles = StyleSheet.create({
   },
 
   view_bienvenido: {
-    paddingBottom: 50,
+    paddingBottom: 10,
     alignSelf: 'flex-start',
   },
 text_version: {
@@ -224,7 +226,7 @@ textGo: {
   input:{
 
     width: '100%',
-    marginTop: 10,
+    marginTop: 5,
     paddingBottom: 0,
     color: constants.COLOR_GRIS_J
 },
@@ -269,7 +271,7 @@ viewLoginText: {
 
 },
 viewLoginBotom: {
-  flex: 0.5,
+  flex: 1,
   paddingHorizontal: 20,
 
 

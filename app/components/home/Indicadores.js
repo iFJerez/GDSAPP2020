@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, View} from 'react-native';
 import TextTypeHomeInd from '../../herramientas/textos/TextTypeHomeInd'
+import TextTypeHomeLugar from '../../herramientas/textos/TextTypeHomeLugar'
 import TextTypeHomeName from '../../herramientas/textos/TextTypeHomeName'
 import * as constants from '../../herramientas/Const'
 import IndicadoresDiferencia from './IndicadoresDiferencia'
@@ -16,12 +17,12 @@ export default class HomeIndicadores extends Component {
              
             </View>  
             <View style={styles.st_indicadores_fuente}>   
-             <TextTypeHomeInd  text={data.fuente.toUpperCase().substr(0,2)}/>
+             <TextTypeHomeLugar  text={data.fuente.toUpperCase().substr(0,2)}/>
             </View> 
             
              <View style={styles.st_indicadores_valor}>   
              
-             <TextTypeHomeInd  text={data.valor + '%'}/>
+             <TextTypeHomeInd  text={data.valor}/>
             </View>  
             <View style={styles.st_indicadores_texto}>
                 <TextTypeHomeName  text={data.indicador  }/>
@@ -34,8 +35,8 @@ export default class HomeIndicadores extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    width: 90,
-    height: 90,
+    width: 80,
+    height: 80,
     backgroundColor: constants.COLOR_GRIS_C,
     marginHorizontal: 10,
     marginVertical: 8,
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
   st_indicadores_progres: {flex: 1, marginHorizontal: 10},
   st_indicadores_texto: {flex: 2,  alignItems: 'center'},
   st_indicadores_valor: {flex: 3, alignItems: 'center'},
-  st_diferencia: {flex: 1, alignItems: 'center'},
+  st_diferencia: {flex: 2, alignItems: 'center'},
   st_indicadores_fuente: {height: 22, position: 'absolute',
    top: -5, left: -5,  alignItems: 'center',
    backgroundColor: constants.COLOR_BLANCO,

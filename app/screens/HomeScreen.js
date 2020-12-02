@@ -23,11 +23,13 @@ class Home extends React.Component {
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
           <View style={styles.styDown}>
-          <CardIndicadores data={data} />
-            <SalaRanking />
-            <TareaHome
-              touchHandler={() => this.props.navigation.navigate("Tareas")}
-            />
+
+              <CardIndicadores data={data} />
+              <ScrollView >
+               <SalaRanking />
+              </ScrollView>
+              <TareaHome touchHandler={() => this.props.navigation.navigate("Tareas")}/>
+
           </View>
         <EnvioBoton />
       </View>
@@ -42,7 +44,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  styTop: { flex: 1, marginTop: 80, marginLeft: 30 },
   styDown: { flex: 1 },
 });
 

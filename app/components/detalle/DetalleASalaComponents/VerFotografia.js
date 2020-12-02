@@ -8,33 +8,42 @@ import {funMessage} from '../../../herramientas/Mensaje'
 
 const verFotografia = (props) => {
     return (
+        <TouchableOpacity style={styles.container} onPress={() => {funMessage('Ver Fotografias', 'Por construir...')}}>
         <View style={styles.container}>
-            <TouchableOpacity onPress={() => {funMessage('Ver Fotografias', 'Por construir...')}}>
-                <TextoBase
-                    style={styles.sty_txt_foto}>
-                        Ver foto  <Icon name={'camera'} size={constants.ICON_VERY_SMALL} color={'#fff'}/> 
-                </TextoBase> 
-            </TouchableOpacity>
+            
+            <View style={styles.boton}>
+                
+                    <TextoBase
+                        style={styles.sty_txt_foto}>
+                            Ver foto  <Icon name={'camera'} size={constants.ICON_VERY_SMALL} color={'#fff'}/> 
+                    </TextoBase> 
+            </View>
+    
         </View>
+        </TouchableOpacity>
         
     )
 }   
 
 const styles = StyleSheet.create({
     container: {
-      width: '94%',
       flex: 1,
-      backgroundColor: constants.COLOR_PRIMARIO,
-      opacity: 0.6,
-      margin: 5,
-      padding: 7,
       flexDirection: 'row',
-      borderRadius: 5,
-      justifyContent: 'center',
-      alignItems: 'center'
     },
+    boton: {
+        flex: 1,
+        opacity: 0.6,
+        marginTop: 5,
+        marginHorizontal: 15,
+        padding: 3,
+        backgroundColor: constants.COLOR_PRIMARIO,
+        borderRadius: 5,
+        alignItems: 'center',
+        alignSelf: 'center',
+        alignContent: 'center',
+      },
     sty_txt_foto: {
-        color: '#fff',
+        color: constants.COLOR_BLANCO,
         flex: 1,
         fontSize: constants.SIZE_LETRA_X_LARGE,
         fontWeight: 'bold'

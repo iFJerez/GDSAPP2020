@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "outputFile": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/20610096f27d3da79be124ee796cc108/res/values-port/values-port.xml",
+                    "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/c23dddf885881e2fce950d6453f1c842/appcompat-1.1.0/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

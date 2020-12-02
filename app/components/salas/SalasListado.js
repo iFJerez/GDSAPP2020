@@ -168,10 +168,9 @@ componentDidUpdate(prevProps) {
         
             <SalaMenu  filterSearch={this.filterSearch} />
             <ScrollView>
-            
-            {this.state.NewdataSala.salas.map((valores, i) => {
-             return this.crearSala(valores, i)
-            })}
+                {this.state.NewdataSala.salas.map((valores, i) => {
+                return this.crearSala(valores, i)
+                })}
             </ScrollView>
  </View>
     );
