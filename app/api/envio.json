@@ -7,21 +7,21 @@
     "direccion": "Corrientes 745",
     "acciones": [
       { 
-        "indicador": "Promocion",
+        "desc_indicador": "Promocion",
         "fechahora":"17 May",
         "item": "Producto 1000cc",
         "ean": "9876543210",
         "accion": "Quiebre"
       },
       { 
-        "indicador": "Osa",
+        "desc_indicador": "Osa",
         "fechahora":"17 May",
         "item": "Producto Mayonesa 1000cc",
         "ean": "9876543210",
         "accion": "Quiebre"
       },
       { 
-        "indicador": "Exhibicion",
+        "desc_indicador": "Exhibicion",
         "fechahora":"17 May",
         "item": "Producto Piña Colada en Lata 1000cc",
         "ean": "9876543210",
@@ -36,21 +36,21 @@
   "direccion": "nueces mas mariposas 7899",
   "acciones": [
     { 
-      "indicador": "Promocion",
+      "desc_indicador": "Promocion",
       "fechahora":"17 May",
       "item": "Producto 2000cc",
       "ean": "9876543210",
       "accion": "Quiebre"
     },
     { 
-      "indicador": "Osa",
+      "desc_indicador": "Osa",
       "fechahora":"17 May",
       "item": "Producto Mayonesa 2000cc",
       "ean": "9876543210",
       "accion": "Quiebre"
     },
     { 
-      "indicador": "Exhibicion",
+      "desc_indicador": "Exhibicion",
       "fechahora":"17 May",
       "item": "Producto Piña Colada en Lata 2000cc",
       "ean": "9876543210",
@@ -65,21 +65,21 @@
   "direccion": "Corrientes 745",
   "acciones": [
     { 
-      "indicador": "Promocion",
+      "desc_indicador": "Promocion",
       "fechahora":"17 May",
       "item": "Producto 1000cc",
       "ean": "9876543210",
       "accion": "Quiebre"
     },
     { 
-      "indicador": "Osa",
+      "desc_indicador": "Osa",
       "fechahora":"17 May",
       "item": "Producto Mayonesa 1000cc",
       "ean": "9876543210",
       "accion": "Quiebre"
     },
     { 
-      "indicador": "Exhibicion",
+      "desc_indicador": "Exhibicion",
       "fechahora":"17 May",
       "item": "Producto Piña Colada en Lata 1000cc",
       "ean": "9876543210",
@@ -94,21 +94,21 @@
 "direccion": "nueces mas mariposas 7899",
 "acciones": [
   { 
-    "indicador": "Promocion",
+    "desc_indicador": "Promocion",
     "fechahora":"17 May",
     "item": "Producto 2000cc",
     "ean": "9876543210",
     "accion": "Quiebre"
   },
   { 
-    "indicador": "Osa",
+    "desc_indicador": "Osa",
     "fechahora":"17 May",
     "item": "Producto Mayonesa 2000cc",
     "ean": "9876543210",
     "accion": "Quiebre"
   },
   { 
-    "indicador": "Exhibicion",
+    "desc_indicador": "Exhibicion",
     "fechahora":"17 May",
     "item": "Producto Piña Colada en Lata 2000cc",
     "ean": "9876543210",

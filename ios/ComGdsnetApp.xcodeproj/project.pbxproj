@@ -17,7 +17,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ComGdsnetAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ComGdsnetAppTests.m */; };
 		774B722344CC4930DF05725B /* libPods-ComGdsnetAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 669BDCBA9748009D58A3D11C /* libPods-ComGdsnetAppTests.a */; };
-		91FC221BEF0382382E1C438F /* libPods-ComGdsnetApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D42BF9349E4FD5179BEC884 /* libPods-ComGdsnetApp.a */; };
+		91FC221BEF0382382E1C438F /* libPods-ComGdsnetApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D42BF9349E4FD5179BEC884 /* libPods-ComGdsnetApp.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		C572A646C39A4DF095B39748 /* libPods-ComGdsnetApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC7DEA4639B65B8055C0DAB /* libPods-ComGdsnetApp-tvOS.a */; };
 		E3F642247821B11D2EC87C0D /* libPods-ComGdsnetApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A040E34FA427FA528C382CD2 /* libPods-ComGdsnetApp-tvOSTests.a */; };
 /* End PBXBuildFile section */

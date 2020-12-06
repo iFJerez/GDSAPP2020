@@ -21,7 +21,7 @@ class CardUsuario extends Component {
   funTareasRealizadas () {
     const { data_tareas, data } = this.props
     const objecionesReduced = data_tareas
-        .filter( v =>    data.indicador === v.indicador &&
+        .filter( v =>    data.desc_indicador === v.desc_indicador &&
           data.id_sala === v.id_sala)
         .reduce( (counter, item) => {
           counter[item] = counter.hasOwnProperty(item) ? counter[item] + 1 : 1;
@@ -45,7 +45,7 @@ class CardUsuario extends Component {
         <View style={[style_activa, styles.container ]}>
         
           <Icon name={data.name_icon} color={style_icon} size={constants.ICON_SMALL} />
-          <Text style={style_texto}>{data.indicador}</Text>
+          <Text style={style_texto}>{data.desc_indicador}</Text>
           <Text style={style_texto}> {this.funTareasRealizadas()} / {data.detalles.length}</Text>
 
       </View>

@@ -19,7 +19,7 @@ const detalleASalaTarjetaIndicador = (props) => {
                 </View>
                 <View style={styles.indicadorDesc}>
                     <TextoBase style={styles.sty_txt_indicador_ref}>{'Indicador'}</TextoBase>
-                    <TextoBase style={styles.sty_txt_indicador_nombre}>{props.indicador}</TextoBase>
+                    <TextoBase style={styles.sty_txt_indicador_nombre}>{props.desc_indicador}</TextoBase>
                 </View>
             </View>
             <View style={styles.separador}></View>

@@ -21,7 +21,7 @@ import ActionCreators from '../../../redux/actions';
   funPickers() {
     const { dataTareaPicker, data } = this.props
     const objecionesReduced = dataTareaPicker
-        .filter( v =>    data.indicador === v.indicador 
+        .filter( v =>    data.desc_indicador === v.desc_indicador 
           ).map((valor, i )=>{
             return valor.picker
           })
@@ -76,7 +76,7 @@ import ActionCreators from '../../../redux/actions';
 const { data_tareas, data } = this.props
 
 const dato = data_tareas
-.filter( v => data.indicador === v.indicador &&
+.filter( v => data.desc_indicador === v.desc_indicador &&
   data.id_sala === v.id_sala)
 
 return dato.length>0?dato.length:0
@@ -90,7 +90,7 @@ return dato.length>0?dato.length:0
   render() {
     const {data} = this.props
      //console.log('DetalleASALA', JSON.stringify(data))
-    const {cadena, desc_sala, direccion, indicador, fuente} = data
+    const {cadena, desc_sala, direccion, desc_indicador, fuente} = data
   
     let total = data.detalles.length
   let ok = this.funTareasRealizadas()
@@ -103,8 +103,8 @@ return dato.length>0?dato.length:0
           <View style={styles.sucHeader}>
             <DetalleSucursalHeader {...{ cadena, desc_sala, direccion }}/>
           </View>
-          <View style={styles.indicador}>
-           <Indicador {...{ indicador, total, ok, fuente }}/>
+          <View style={styles.desc_indicador}>
+           <Indicador {...{ desc_indicador, total, ok, fuente }}/>
           </View>
           <View style={styles.verFoto}>
             <VerFotografia />
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     flex: 1.5,
     paddingBottom: '5 %'
   },
-  indicador: {
+  desc_indicador: {
     flex: 4,
     alignItems: 'center'
   },

@@ -62,7 +62,7 @@ export default class DetalleIndicadores extends Component {
   render() {
     const {data} = this.props
     // console.log('DetalleASALA', JSON.stringify(data))
-    const {cadena, desc_sala, direccion, indicador, valor, diferencia, fuente} = data
+    const {cadena, desc_sala, direccion, desc_indicador, valor, diferencia, fuente} = data
 
     return (
       <View style={styles.container}>
@@ -70,8 +70,8 @@ export default class DetalleIndicadores extends Component {
                     <View style={styles.sucHeader}>
                       <DetalleSucursalHeader {...{ cadena, desc_sala, direccion }}/>
                     </View>
-                    <View style={styles.indicador}>
-                      <Indicador {...{ indicador, valor, diferencia, fuente }}/>
+                    <View style={styles.desc_indicador}>
+                      <Indicador {...{ desc_indicador, valor, diferencia, fuente }}/>
                     </View>
                     <View style={styles.verFoto}>
                       <VerFotografia />
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingBottom: 30
   },
-  indicador: {
+  desc_indicador: {
     flex: 2,
     alignItems: 'center'
   },

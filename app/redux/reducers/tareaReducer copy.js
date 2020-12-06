@@ -41,7 +41,7 @@ const authReducer = (state = initialState, action) => {
       console.log('TAREA_SAVE');
       const newState = state.data_tareas.filter(v => (
           !(action.objecion.id_sku === v.id_sku &&
-          action.objecion.indicador === v.indicador &&
+          action.objecion.desc_indicador === v.desc_indicador &&
           action.objecion.id_sala === v.id_sala &&
           action.objecion.fechaHora === v.fechaHora)
       ))
@@ -57,7 +57,7 @@ const authReducer = (state = initialState, action) => {
       console.log('TAREA_DELETE');
         const newState = state.data_tareas.filter(v => (
             !(action.objecion.id_sku === v.id_sku &&
-            action.objecion.indicador === v.indicador &&
+            action.objecion.desc_indicador === v.desc_indicador &&
             action.objecion.id_sala === v.id_sala &&
             action.objecion.fechaHora === v.fechaHora)
         ))

@@ -20,7 +20,8 @@ class DetalleB extends Component {
     const dataObjecion = {
       type: "TAREAS",
       id_sku: this.props.data.id_sku,
-      indicador: this.props.section.indicador,
+      id_indicador: this.props.section.id_indicador,
+      desc_indicador: this.props.section.desc_indicador,
       id_sala: this.props.section.id_sala,
       fechaHora: this.props.section.fechaHora,
       direccion: this.props.section.direccion,
@@ -52,7 +53,7 @@ class DetalleB extends Component {
     const objecion = this.props.data_tareas.find(
       (v) =>
         this.props.data.id_sku === v.id_sku &&
-        this.props.section.indicador === v.indicador &&
+        this.props.section.desc_indicador === v.desc_indicador &&
         this.props.section.id_sala === v.id_sala &&
         this.props.section.fechaHora === v.fechaHora &&
         "TAREAS" === v.type

@@ -38,7 +38,7 @@ crearIndicadores(item, i){
       item.map((valores, x)=>{
 
         return (
-        <View style={styles.indicador} key={'ante' + x}>
+        <View style={styles.desc_indicador} key={'ante' + x}>
           <Indicadores data={valores} i={x} />
         </View>
         )
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
 
 
   },
-  indicador: {
+  desc_indicador: {
   
 
   },

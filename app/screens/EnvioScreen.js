@@ -27,13 +27,14 @@ class ModalScreen extends React.Component {
     const objecionesReduced = objeciones
       .filter( v => v.status !== 'enviado')
       .reduce( (obj,val) => {
-        //console.info(val.indicador)
+        //console.info(val.desc_indicador)
         const key = 'sala' + val.id_sala
         if(obj[key]) {
           
           obj[key].acciones.push({
             type: val.type,
-            indicador: val.indicador,
+            id_indicador: val.id_indicador,
+            desc_indicador: val.desc_indicador,
             fechaHora:val.fechaHora,
             item: val.desc_sku,
             ean: val.ean,
@@ -53,7 +54,8 @@ class ModalScreen extends React.Component {
           obj[key].acciones = [
             {
               type: val.type,
-              indicador: val.indicador,
+              id_indicador: val.id_indicador,
+              desc_indicador: val.desc_indicador,
               fechaHora:val.fechaHora,
               item: val.desc_sku,
               ean: val.ean,
@@ -84,15 +86,60 @@ class ModalScreen extends React.Component {
     }
   };
 
-  handleEnviar = () => {
-    this.props.funEnviarEnvios();
-    this.props.funVerEnvio(false);
+handleEnviar  = async () => {
+    //this.props.funEnviarEnvios();
+    //this.props.funVerEnvio(false);
+    const {objeciones} = this.props;
+//console.log(objeciones)
+
+objeciones.map((v=>{
+
+  obj = {
+  "id_usuario": 10,
+	"fecha_objecion": '20201201',  //v.foto.fecha,
+	"id_sala": v.id_sala,
+	"id_indicador":v.id_indicador,
+	"id_sku":v.id_sku,
+	"objecion": v.objecion,
+  "foto": v.foto.uri,
+
+  "id_objecion":"3",
+
+	"fecha_envio": '20201201',
+}
+console.log(obj)
+
+ fetch('http://api.gdsnet.com:3009/post_insert_foto_64', 
+{method: 'POST',  
+headers: {
+  'Accept': 'application/json',
+  'Content-Type': 'application/json'
+},
+body: JSON.stringify(obj)
+})
+.then((response) => {
+  return response.json()})
+.then((datajsonsala) => {      
+  
+  alert (JSON.stringify(datajsonsala))
+
+});
+
+}))
+
+
+
+
+
+
+
   }
 
 
   render() {
     const {funVerEnvio, ver_envio, objeciones} = this.props;
     const data = this.convertirObjeciones(objeciones);
+    //console.log("objeciones", JSON.stringify(objeciones))
     return (
       <Modal
       testID={'modal'}

@@ -30,7 +30,7 @@ export default class PendienteEnvioBody extends Component {
         const key = val.type
         if(obj[key]) {
           obj[key].data.push({
-            indicador: val.indicador,
+            desc_indicador: val.desc_indicador,
             fechaHora:val.fechaHora,
             item: val.item,
             ean: val.ean,
@@ -49,7 +49,7 @@ export default class PendienteEnvioBody extends Component {
           obj[key].fechaHora = val.fechaHora;
           obj[key].data = [
             {
-              indicador: val.indicador,
+              desc_indicador: val.desc_indicador,
               fechaHora:val.fechaHora,
               item: val.item,
               ean: val.ean,
@@ -94,7 +94,7 @@ export default class PendienteEnvioBody extends Component {
 
   funLlenadoSalas() {
     const { data } = this.props;
-console.log(data)
+console.log(JSON.stringify(data))
     return data.map((sucursal, i) => {
       return (
         <View style={styles.card}>

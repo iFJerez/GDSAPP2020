@@ -26,10 +26,14 @@ export default class Preview extends Component {
         StatusBar.setBarStyle('light-content')
         const { foto } = this.props
         const fotoPreview = foto?.uri ?
-            (<Image
+            (       <View>
+                <Image
                 source={{ uri: foto.uri }}
                 style={styles.img}
-            />) : null;
+            />
+            <Text style={styles.actionText}>{JSON.stringify(this.props.foto.uri.length)}</Text>
+            </View>
+            ) : null;
 
         return (
             <SafeAreaView style={{ flex: 1, backgroundColor: 'black' }}>
@@ -46,6 +50,7 @@ export default class Preview extends Component {
                         <View style={styles.ring}>
                             <TouchableOpacity onPress={() => this.actionHandler()} style={styles.action}>
                                 <Text style={styles.actionText}>{this.props.action ? this.props.action.label : 'Confirmar'}</Text>
+                              
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -109,6 +114,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         alignSelf: 'center'
+    },
+    actionText: {
+        color: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center'
     }
+    
     
 })

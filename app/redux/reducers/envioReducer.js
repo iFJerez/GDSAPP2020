@@ -8,7 +8,7 @@ const envioReducer = (state = initialState, action) => {
         case types.ENVIO_SAVE: {
             const newState = state.filter(v => (
                 !(action.envio.id_sku === v.id_sku &&
-                action.envio.indicador === v.indicador &&
+                action.envio.desc_indicador === v.desc_indicador &&
                 action.envio.id_sala === v.id_sala &&
                 action.envio.fechaHora === v.fechaHora &&
                 action.envio.type === v.type)
@@ -18,7 +18,7 @@ const envioReducer = (state = initialState, action) => {
         case types.ENVIO_DELETE: {
             const newState = state.filter(v => (
                 !(action.envio.id_sku === v.id_sku &&
-                action.envio.indicador === v.indicador &&
+                action.envio.desc_indicador === v.desc_indicador &&
                 action.envio.id_sala === v.id_sala &&
                 action.envio.fechaHora === v.fechaHora &&
                 action.envio.type === v.type)
@@ -28,7 +28,7 @@ const envioReducer = (state = initialState, action) => {
         case types.ENVIO_DELETE_FOTO: {
             const newState = state.map(v => {
                 if (action.envio.id_sku === v.id_sku &&
-                action.envio.indicador === v.indicador &&
+                action.envio.desc_indicador === v.desc_indicador &&
                 action.envio.id_sala === v.id_sala &&
                 action.envio.fechaHora === v.fechaHora &&
                 action.envio.type === v.type) {

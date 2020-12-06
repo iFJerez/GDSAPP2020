@@ -28,7 +28,7 @@ class CardItems extends Component {
         <View style={styles.detailLine}>
         <View style={styles.variable}>
           <TextoBase style={styles.sty_text_ordinal}>{`${data.numero}. `}</TextoBase>
-          <TextoBase style={styles.sty_text_variable}>{data.indicador.toUpperCase()}</TextoBase>
+          <TextoBase style={styles.sty_text_variable}>{data.desc_indicador.toUpperCase()}</TextoBase>
         </View>
           <View style={styles.productDetail}>
             <View style={styles.productDesc}>

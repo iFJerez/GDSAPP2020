@@ -3,13 +3,19 @@
        "id_usuario": 1,
        "desc_usuario": "Kenny Bell",
        "estado": 0,
+       "objeciones": [
+        {"id_objecion": 0, "desc_objecion": "faltsa algo"},
+        {"id_objecion": 1, "desc_objecion": "no planogramado"},
+        {"id_objecion": 2, "desc_objecion": "producto quebrado"},
+        {"id_objecion": 3, "desc_objecion": "sin stock"}
+      ],
        "indicadores": [
-         {"indicador": "osa", "valor": "85", "diferencia": "20", "fuente": "transaccional" },
-         {"indicador": "precios", "valor": "86", "diferencia": "-15" , "fuente": "transaccional"},
-         {"indicador": "promocion", "valor": "67", "diferencia": "15" , "fuente": "transaccional"},
-         {"indicador": "catalogo", "valor": "56", "diferencia": "15", "fuente": "transaccional" },
-         {"indicador": "precios", "valor": "86", "diferencia": "-33", "fuente": "transaccional" },
-         {"indicador": "tareas", "valor": "56", "diferencia": "5", "fuente": "transaccional" }
+         {"desc_indicador": "osa", "valor": "85", "diferencia": "20", "fuente": "transaccional" },
+         {"desc_indicador": "precios", "valor": "86", "diferencia": "-15" , "fuente": "transaccional"},
+         {"desc_indicador": "promocion", "valor": "67", "diferencia": "15" , "fuente": "transaccional"},
+         {"desc_indicador": "catalogo", "valor": "56", "diferencia": "15", "fuente": "transaccional" },
+         {"desc_indicador": "precios", "valor": "86", "diferencia": "-33", "fuente": "transaccional" },
+         {"desc_indicador": "tareas", "valor": "56", "diferencia": "5", "fuente": "transaccional" }
          
        ],
        "ranking": [
@@ -20,7 +26,7 @@
               "numero": 35,
               "estado": 0,
               "indicadores": [
-                {"indicador": "osa", "valor": "85", "diferencia": "20" }
+                {"desc_indicador": "osa", "valor": "85", "diferencia": "20" }
               ]
           },
           {
@@ -30,7 +36,7 @@
             "numero": 35,
             "estado": 0,
             "indicadores": [
-              {"indicador": "osa", "valor": "85", "diferencia": "-35" }
+              {"desc_indicador": "osa", "valor": "85", "diferencia": "-35" }
             ]
         },
         {
@@ -40,7 +46,7 @@
           "numero": 35,
           "estado": 0,
           "indicadores": [
-            {"indicador": "osa", "valor": "89", "diferencia": "-20" }
+            {"desc_indicador": "osa", "valor": "89", "diferencia": "-20" }
           ]
       },
       {
@@ -50,7 +56,7 @@
         "numero": 35,
         "estado": 0,
         "indicadores": [
-          {"indicador": "osa", "valor": "89", "diferencia": "35" }
+          {"desc_indicador": "osa", "valor": "89", "diferencia": "35" }
         ]
     },
     {
@@ -60,7 +66,7 @@
       "numero": 35,
       "estado": 0,
       "indicadores": [
-        {"indicador": "osa", "valor": "89", "diferencia": "35" }
+        {"desc_indicador": "osa", "valor": "89", "diferencia": "35" }
       ]
   },
   {
@@ -70,7 +76,7 @@
     "numero": 35,
     "estado": 0,
     "indicadores": [
-      {"indicador": "osa", "valor": "89", "diferencia": "35" }
+      {"desc_indicador": "osa", "valor": "89", "diferencia": "35" }
     ]
 },
 {
@@ -80,7 +86,7 @@
   "numero": 35,
   "estado": 0,
   "indicadores": [
-    {"indicador": "osa", "valor": "89", "diferencia": "35" }
+    {"desc_indicador": "osa", "valor": "89", "diferencia": "35" }
   ]
 }
 

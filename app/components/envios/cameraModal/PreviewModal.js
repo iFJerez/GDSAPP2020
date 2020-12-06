@@ -20,7 +20,9 @@ class PreviewModal extends React.Component {
 
   render() {
     const { funSalaVerDetallePreviewFoto , ver_sala_detalle_preview_foto, envio_seleccionado_data } = this.props;
-    // console.log(envio_seleccionado_data)
+    
+    //console.log("....console.log(envio_seleccionado_data)")
+    //console.log(envio_seleccionado_data)
     return (
     <Modal
         isVisible={ver_sala_detalle_preview_foto}

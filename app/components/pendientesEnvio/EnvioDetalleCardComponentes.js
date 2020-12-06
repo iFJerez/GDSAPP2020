@@ -15,7 +15,7 @@ export default class CardItems extends Component {
                         <TextType1  text={data.descSala}/>
                     </View>  
                     <View style={styles.st_indicadores_texto}>
-                        <TextType2  text={data.indicador  }/>
+                        <TextType2  text={data.desc_indicador  }/>
                     </View>
                     <View style={styles.st_indicadores_texto}>
                         <TextType2  text={data.item}/>

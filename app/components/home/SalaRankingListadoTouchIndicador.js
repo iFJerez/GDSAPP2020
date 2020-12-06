@@ -16,7 +16,7 @@ export default class SalasListadoInCo extends Component {
              <TextTypeA  text={data.valor}/>
             </View>  
             <View style={styles.st_indicadores_texto}>
-                <TextTypeB  text={data.indicador  }/>
+                <TextTypeB  text={data.desc_indicador  }/>
             </View>
             <View style={styles.st_indicadores_progres}>
                 

@@ -34,9 +34,9 @@ class TareaBody extends Component {
       Object.keys(tareas).forEach((key) => {
         if (tareas[key]?.indicadores) {
           tareas[key].indicadores.forEach((v) =>
-            count.hasOwnProperty(v.indicador)
-              ? (count[v.indicador] += v?.detalles ? v.detalles.length : 0)
-              : (count[v.indicador] = v?.detalles ? v.detalles.length : 0)
+            count.hasOwnProperty(v.desc_indicador)
+              ? (count[v.desc_indicador] += v?.detalles ? v.detalles.length : 0)
+              : (count[v.desc_indicador] = v?.detalles ? v.detalles.length : 0)
           );
         }
       });
@@ -49,10 +49,10 @@ class TareaBody extends Component {
 
     if (this.props.envioTareas) {
       this.props.envioTareas.reduce((obj, val) => {
-        if (obj.hasOwnProperty(val.indicador)) {
-          obj[val.indicador] += 1;
+        if (obj.hasOwnProperty(val.desc_indicador)) {
+          obj[val.desc_indicador] += 1;
         } else {
-          obj[val.indicador] = 1;
+          obj[val.desc_indicador] = 1;
         }
         return obj;
       }, count);
@@ -78,8 +78,8 @@ class TareaBody extends Component {
     }, {});
   }
 
-  getIcon = (indicador) => {
-    switch(indicador) {
+  getIcon = (desc_indicador) => {
+    switch(desc_indicador) {
       case 'INTELIGENTE':
           return 'rocket1'
       case 'EJECUCION':

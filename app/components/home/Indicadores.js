@@ -25,7 +25,7 @@ export default class HomeIndicadores extends Component {
              <TextTypeHomeInd  text={data.valor}/>
             </View>  
             <View style={styles.st_indicadores_texto}>
-                <TextTypeHomeName  text={data.indicador  }/>
+                <TextTypeHomeName  text={data.desc_indicador  }/>
             </View>
       </View>
     );
