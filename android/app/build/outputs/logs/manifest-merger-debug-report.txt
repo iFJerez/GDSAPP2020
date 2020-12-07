@@ -12,6 +12,7 @@ MERGED from [:@react-native-community_masked-view] /Users/martinstone/Documents/
 MERGED from [:react-native-fs] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-gesture-handler] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:react-native-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-picker-module] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker-module/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -201,6 +202,8 @@ MERGED from [:react-native-gesture-handler] /Users/martinstone/Documents/GitHub/
 MERGED from [:react-native-gesture-handler] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-picker-module] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker-module/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-picker-module] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker-module/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -341,6 +344,8 @@ INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/deb
 		INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:5:5-77
+MERGED from [:react-native-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-78
+MERGED from [:react-native-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.CAMERA

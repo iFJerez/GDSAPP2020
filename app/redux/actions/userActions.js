@@ -39,7 +39,7 @@ export function funGetData() {
   console.log('userAction.funGetData: Rescatando Salas');
   
   let data =  JSON.stringify(
-      {"token": "1VLC3A8A3PZ04XXJLYI4"}
+      {"token": "AA123"}
   )
   
     const config =  {
@@ -49,20 +49,21 @@ export function funGetData() {
     }
     return dispatch => {
         dispatch(DataRequest());
-        fetch('http://api.gdsnet.com:3005/post_duo_pauta_V2', config)
+        fetch('http://api.gdsnet.com:3009/post_pre_salas', config)
         .then(res => res.json())
         .then(res => {
             if(res.error) {
                 throw(res.error);
             }
-            //dispatch(DataOK(true, res)); lo remplazo para probar con data_json
+            //dispatch(DataOK(true, res, json_tareas)); 
             dispatch(DataOK(true, json_salas, json_tareas));
             return res;
         })
         .catch(error => {
           // se cambia el error igual para meter la prueba
-           // dispatch(DataError(error));
-           dispatch(DataOK(true, json_salas, json_tareas));
+          console.log(error)
+           dispatch(DataError(error));
+           // dispatch(DataOK(true, json_salas, json_tareas));
         })
     }
   }

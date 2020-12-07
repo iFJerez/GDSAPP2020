@@ -43,6 +43,8 @@ anim fragment_open_exit
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim picker_enter
+anim picker_exit
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1489,11 +1491,13 @@ id always
 id async
 id auto
 id back
+id barLayout
 id beginning
 id blocking
 id bottom
 id button
 id buttonPanel
+id cancel
 id cancel_action
 id cancel_button
 id catalyst_redbox_title
@@ -1511,6 +1515,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id confirm
 id confirm_button
 id container
 id content
@@ -1580,6 +1585,9 @@ id line1
 id line3
 id listMode
 id list_item
+id loopViewOne
+id loopViewThree
+id loopViewTwo
 id masked
 id media_actions
 id message
@@ -1628,6 +1636,10 @@ id parentPanel
 id parent_matrix
 id password_toggle
 id peekHeight
+id pickerLayout
+id pickerViewAlone
+id pickerViewAloneLayout
+id pickerViewLinkage
 id pin
 id placeholder
 id progress_circular
@@ -1867,6 +1879,9 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout picker_view
+layout picker_view_alone
+layout picker_view_linkage
 layout redbox_item_frame
 layout redbox_item_title
 layout redbox_view
@@ -2274,6 +2289,7 @@ style ClockTimePickerStyle
 style DefaultExplainingPermissionsTheme
 style DialogAnimationFade
 style DialogAnimationSlide
+style Dialog_Full_Screen
 style EmptyTheme
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
@@ -2285,6 +2301,7 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style PickerAnim
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents

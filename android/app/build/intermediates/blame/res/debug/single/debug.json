@@ -316,6 +316,10 @@
         "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/b9adbc54299e2b17031a542d2360df30/material-1.1.0/res/xml/standalone_badge_gravity_top_start.xml"
     },
     {
+        "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/anim_picker_exit.xml.flat",
+        "source": "/Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/packaged_res/debug/anim/picker_exit.xml"
+    },
+    {
         "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/drawable_design_bottom_navigation_item_background.xml.flat",
         "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/b9adbc54299e2b17031a542d2360df30/material-1.1.0/res/drawable/design_bottom_navigation_item_background.xml"
     },
@@ -1124,6 +1128,10 @@
         "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
+        "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/layout_picker_view_linkage.xml.flat",
+        "source": "/Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/packaged_res/debug/layout/picker_view_linkage.xml"
+    },
+    {
         "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/interpolator_btn_radio_to_off_mtrl_animation_interpolator_0.xml.flat",
         "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/c23dddf885881e2fce950d6453f1c842/appcompat-1.1.0/res/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml"
     },
@@ -1358,6 +1366,10 @@
     {
         "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/c23dddf885881e2fce950d6453f1c842/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/layout_picker_view.xml.flat",
+        "source": "/Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/packaged_res/debug/layout/picker_view.xml"
     },
     {
         "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/layout_design_navigation_item.xml.flat",
@@ -2440,6 +2452,10 @@
         "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/c23dddf885881e2fce950d6453f1c842/appcompat-1.1.0/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/layout_picker_view_alone.xml.flat",
+        "source": "/Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/packaged_res/debug/layout/picker_view_alone.xml"
+    },
+    {
         "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/c23dddf885881e2fce950d6453f1c842/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
@@ -2562,6 +2578,10 @@
     {
         "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
         "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/c23dddf885881e2fce950d6453f1c842/appcompat-1.1.0/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/anim_picker_enter.xml.flat",
+        "source": "/Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/packaged_res/debug/anim/picker_enter.xml"
     },
     {
         "merged": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",

@@ -28,6 +28,8 @@ import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.imagepicker.ImagePickerPackage;
 // react-native-linear-gradient
 import com.BV.LinearGradient.LinearGradientPackage;
+// react-native-picker
+import com.beefe.picker.PickerViewPackage;
 // react-native-picker-module
 import com.taluttasgiran.pickermodule.ReactNativePickerModulePackage;
 // react-native-reanimated
@@ -94,6 +96,7 @@ public class PackageList {
       new RNGestureHandlerPackage(),
       new ImagePickerPackage(),
       new LinearGradientPackage(),
+      new PickerViewPackage(),
       new ReactNativePickerModulePackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
