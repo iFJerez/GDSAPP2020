@@ -102,9 +102,7 @@ objeciones.map((v=>{
 	"id_sku":v.id_sku,
 	"objecion": v.objecion,
   "foto": v.foto.uri,
-
-  "id_objecion":"3",
-
+  "desc_objecion":v.objecion,
 	"fecha_envio": '20201201',
 }
 console.log(obj)

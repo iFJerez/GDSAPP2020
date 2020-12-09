@@ -45,9 +45,9 @@ class PickerObjecion extends Component {
   render() {
 
     const placeholder = {
-      label: 'Select a sport...',
+      label: 'Objetar',
       value: null,
-      color: '#9EA0A4',
+      color: '#567856',
     };
 
 const sports = [

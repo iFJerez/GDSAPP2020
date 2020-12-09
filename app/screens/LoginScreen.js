@@ -146,12 +146,7 @@ async loginIn(){
             <View style={styles.viewicon}>  
             <TouchableOpacity style={styles.touchGo} onPress={()=>this.loginIn()} >            
             <Text style={styles.textGo}>Ingresar</Text>
-            <Text style={styles.textGo}>{this.props.usuario}</Text>
-            <Text style={styles.textGo}>{this.props.token}</Text>
-            <Text style={styles.textGo}>{this.props.id_cliente}</Text>
             
-            
-
             </TouchableOpacity>
             
             </View>

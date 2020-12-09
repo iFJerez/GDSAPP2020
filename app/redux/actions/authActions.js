@@ -34,7 +34,7 @@ function LoginOK(loggedIn, data) {
   return {
     type: types.LOGIN_OK,
     loggedIn: loggedIn,
-    usuario: data.nombre,
+    usuario: data.usuario,
     token: data.token,
     id_cliente: data.id_cliente,
   }
@@ -61,12 +61,23 @@ export function funGetLogin(usuario, pass) {
         fetch('http://api.gdsnet.com:3009/post_login_app', config)
         .then(res => res.json())
         .then(res => {
+
+          console.log("Usuario : " + res.usuario)
+          console.log("token : " + res.token)
+
             if(res.error) {
+              
                 throw(res.error);
-            }else if(res.token !== "") {
-              dispatch(LoginOK(true, res));
-            }
+           
+            }else if(res.usuario !== "NOUSER") {
+            
+            dispatch(LoginOK(true, res));
+          }else {
+            
+            dispatch(LoginError(true, res));
+          }
           
+            
             //dispatch(DataOK(true, json_salas, json_tareas));
             return res;
         })
