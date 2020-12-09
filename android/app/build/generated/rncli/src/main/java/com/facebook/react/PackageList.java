@@ -18,6 +18,8 @@ import com.comgdsnetapp.R;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// @react-native-picker/picker
+import com.reactnativecommunity.picker.RNCPickerPackage;
 // react-native-camera
 import org.reactnative.camera.RNCameraPackage;
 // react-native-fs
@@ -91,6 +93,7 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new AsyncStoragePackage(),
       new RNCMaskedViewPackage(),
+      new RNCPickerPackage(),
       new RNCameraPackage(),
       new RNFSPackage(),
       new RNGestureHandlerPackage(),

@@ -66,9 +66,8 @@ class LoginScreen extends React.Component {
   
 async loginIn(){
 
-  await this.MoverTexto();
-  await this.props.funLoginOn(true, 'mstoneh', '45678asd876asd')
-  
+  //await this.MoverTexto();
+  await this.props.funGetLogin(this.state.Usuario_Id, this.state.Password)
 }   
 
 
@@ -147,6 +146,12 @@ async loginIn(){
             <View style={styles.viewicon}>  
             <TouchableOpacity style={styles.touchGo} onPress={()=>this.loginIn()} >            
             <Text style={styles.textGo}>Ingresar</Text>
+            <Text style={styles.textGo}>{this.props.usuario}</Text>
+            <Text style={styles.textGo}>{this.props.token}</Text>
+            <Text style={styles.textGo}>{this.props.id_cliente}</Text>
+            
+            
+
             </TouchableOpacity>
             
             </View>
@@ -166,6 +171,9 @@ const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
     usuario: state.authReducer.usuario,
+    loggedIn: state.authReducer.loggedIn,
+    token: state.authReducer.token,
+    id_cliente: state.authReducer.id_cliente,
   };
 };
 

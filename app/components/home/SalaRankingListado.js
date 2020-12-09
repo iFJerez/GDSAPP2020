@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, FlatList, Image, Text} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import TouchIndicador from './SalaRankingListadoTouch'
 import TextTypeC from '../../herramientas/textos/TextTypeC'
 import * as constants from '../../herramientas/Const'
-import data from '../../api/cadenas.json'
+import Cadenas from "../../herramientas/Cadenas"
 import IconNueva from '../../herramientas/IconNueva'
 
 
@@ -29,25 +28,6 @@ export default class ListadoContraido extends Component {
     
      }
 
-     cargaImagen(cadena){
-
-      try {
-        return(
-        <Image
-        style={{width: '100%', height: 30, margin: 5, alignItems: "center"}}
-        source={{uri: data[cadena].uri}}
-          
-      />
-        )
-      } catch (error) {
-        return(
-          <Icon name={'store'} color={constants.COLOR_GRIS_F} size={40} style={styles.st_icono} />
-        )
-        
-      }
-
-
-     }
 
 
   render() {
@@ -59,6 +39,7 @@ export default class ListadoContraido extends Component {
           <View style={styles.st_arriba}>
               <View style={styles.st_icono}>
                     {this.cargaImagen(cadena)}
+                    <Cadenas cadena={cadena} />
                     <IconNueva text={'nueva'}/>  
               </View>  
               <View style={styles.st_sala}>

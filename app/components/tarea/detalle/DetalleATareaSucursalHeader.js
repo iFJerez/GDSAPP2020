@@ -3,44 +3,23 @@ import { StyleSheet, View, Image } from 'react-native';
 import * as constants from '../../../herramientas/Const'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import TextoBase from '../../../herramientas/textos/TextoBase';
-import data_cadena from '../../../api/cadenas.json';
+import Cadenas from "../../../herramientas/Cadenas"
 
 export default class DetalleATareaSucursalHeader extends Component {
 
   
 
-  cargaImagen(cadena) {
 
-    try {
-      return (
-        <View style={styles.sty_image}>
-          <Image
-            style={styles.st_icono}
-            source={{ uri: data_cadena[this.props.cadena].uri }}
-
-          />
-        </View>
-      )
-    } catch (error) {
-      return (
-        <View style={styles.sty_image}>
-          <Icon name={'store'} color={constants.COLOR_GRIS_G} size={50} style={styles.st_icono} />
-        </View>
-      )
-
-    }
-
-
-  }
 
   render() {
 
-    const { data } = this.props;
+    const { data, cadena } = this.props;
     return (
         <View style={styles.container}>
             <View style={styles.sucursalHeader}>
             <View style={styles.logo}>
-                {this.cargaImagen(this.props.cadena)}
+                
+                <Cadenas cadena={cadena} />
             </View>
             <View style={styles.detalleSuc}>
                 <TextoBase style={styles.sty_text_desc_sucursal}>

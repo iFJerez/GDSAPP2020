@@ -9,7 +9,9 @@ const initialState = {
   salas_new: 1,
   isSuccess: false,
   dataSala: [],
+  dataCadena: [],
   dataTarea: [],
+  dataHome: [],
   isRefresh: false,
   
 };
@@ -84,6 +86,54 @@ const authReducer = (state = initialState, action) => {
         dataSala: action.dataSala,
         dataTarea: action.dataTarea,
         status: 'Data OK',
+      }
+    }
+    case types.USER_GET_CADENA_REQUEST: { 
+      return {
+        ...state,
+        isRefresh: action.isRefresh,
+        dataCadena: null,
+        status: 'CADENA Request',
+      }
+    }
+    case types.USER_GET_CADENA_ERROR: { 
+      return {
+        ...state,
+        isRefresh: action.isRefresh,
+        dataCadena: null,
+        status: 'CADENA Error',
+      }
+    }
+    case types.USER_GET_CADENA_OK: { 
+      return {
+        ...state,
+        isRefresh: action.isRefresh,
+        dataCadena: action.dataCadena,
+        status: 'CADENA OK',
+      }
+    }
+    case types.USER_GET_HOME_REQUEST: { 
+      return {
+        ...state,
+        isRefresh: action.isRefresh,
+        dataHome: null,
+        status: 'HOME Request',
+      }
+    }
+    case types.USER_GET_HOME_ERROR: { 
+      return {
+        ...state,
+        isRefresh: action.isRefresh,
+        dataHome: null,
+        status: 'HOME Error',
+      }
+    }
+    case types.USER_GET_HOME_OK: { 
+      return {
+        ...state,
+        isRefresh: action.isRefresh,
+        dataHome: action.dataHome,
+        status: 'HOME OK',
       }
     }
     // Default

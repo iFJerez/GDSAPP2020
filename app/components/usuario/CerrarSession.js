@@ -7,7 +7,7 @@ import IconAntDesign from '../../herramientas/IconAntDesign'
 export default class CardItems extends Component {
   render() {
     return (
-      <TouchableOpacity style={styles.container}>
+      <TouchableOpacity onPress={this.props.cerrar} style={styles.container}>
        <View style={styles.linea}>
            <View style={styles.sty_texto}>
                 <TextType1  text={'Cerrar Session'}/>

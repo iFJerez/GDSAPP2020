@@ -9,6 +9,7 @@ import CerrarSession from '../components/usuario/CerrarSession'
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
+import { State } from 'react-native-gesture-handler';
 
 
 
@@ -28,7 +29,7 @@ class UsuarioScreen extends React.Component {
             </View>
 
             <View style={styles.CerrarSession}>
-            <CerrarSession />
+            <CerrarSession cerrar={this.props.LoginOFF} />
             </View>
         
        </View>
@@ -58,6 +59,7 @@ const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
     dataSala: state.userReducer.dataSala,
+    
     
   };
 };

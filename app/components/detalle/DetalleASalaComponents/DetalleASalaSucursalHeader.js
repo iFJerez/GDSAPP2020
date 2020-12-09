@@ -1,35 +1,11 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Text, Image } from "react-native";
 import * as constants from "../../../herramientas/Const";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import TextoBase from "../../../herramientas/textos/TextoBase";
-import data_cadena from "../../../api/cadenas.json";
+import Cadenas from "../../../herramientas/Cadenas"
 import LinearGradient from "react-native-linear-gradient";
 
 export default class DetalleSucursalHearer extends Component {
-  cargaImagen(cadena) {
-    try {
-      return (
-        <View style={styles.sty_image}>
-          <Image
-            style={styles.st_icono}
-            source={{ uri: data_cadena[this.props.cadena].uri }}
-          />
-        </View>
-      );
-    } catch (error) {
-      return (
-        <View style={styles.sty_image}>
-          <Icon
-            name={"store"}
-            color={constants.COLOR_GRIS_G}
-            size={50}
-            style={styles.st_icono}
-          />
-        </View>
-      );
-    }
-  }
 
   render() {
     const { data } = this.props;
@@ -42,7 +18,8 @@ export default class DetalleSucursalHearer extends Component {
           colors={[constants.COLOR_GRIS_D,'#fff','#fff', constants.COLOR_GRIS_D,]}>
           <View style={styles.sucursalHeader}>
             <View style={styles.logo}>
-              {this.cargaImagen(this.props.cadena)}
+              
+              <Cadenas cadena={this.props.cadena} />
             </View>
             <View style={styles.detalleSuc}>
               <TextoBase style={styles.sty_text_desc_sucursal}>

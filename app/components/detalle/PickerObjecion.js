@@ -3,6 +3,12 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import ReactNativePickerModule from "react-native-picker-module";
 import * as constants from "../../herramientas/Const";
 import TextoBase from "../../herramientas/textos/TextoBase";
+import RNPickerSelect from 'react-native-picker-select';
+
+
+this.state = {
+  country: 'uk'
+}
 
 class PickerObjecion extends Component {
   constructor(props) {
@@ -23,6 +29,13 @@ class PickerObjecion extends Component {
     };
   }
 
+ 
+  state = {
+    language: 'java',
+  };
+
+  
+  
   handleTouch(index) {
     //console.log(index)
     this.pickerRef.show();
@@ -30,49 +43,64 @@ class PickerObjecion extends Component {
   }
 
   render() {
+
+    const placeholder = {
+      label: 'Select a sport...',
+      value: null,
+      color: '#9EA0A4',
+    };
+
+const sports = [
+  {
+    label: 'Football',
+    value: 'football',
+  },
+  {
+    label: 'Baseball',
+    value: 'baseball',
+  },
+  {
+    label: 'Hockey',
+    value: 'hockey',
+  },
+];
+
     
     const { disabled } = this.props
 
     const selectedValue = this.props.objecion || "Sin objecion";
     return (
-      <View style={styles.container}>
-        <View style={styles.arrowDown} />
-        <View style={styles.estadoObjecion}>
-          <TextoBase style={styles.sty_txt_title}>Estado Objeción</TextoBase>
-          <TextoBase style={styles.sty_txt_selected}>
-            {selectedValue}
-          </TextoBase>
-        </View>
-        <TouchableOpacity
-          disabled={disabled}
-          style={styles.styleTouch}
-          onPress={() => {
-            this.pickerRef.show();
-          }}
-        >
-          <View style={styles.objetar}>
-            <TextoBase style={disabled ? styles.sty_txt_objetar_disabled : styles.sty_txt_objetar}>Objetar ></TextoBase>
-          </View>
-        </TouchableOpacity>
+   
+   
+        <RNPickerSelect
+            placeholder={placeholder}
+            items={sports}
+            onValueChange={value => {
+              this.setState({
+                favSport0: value,
+              });
+            }}
+            style={styles.inputIOS}
+            value={this.state.favSport0}
+          />
+      
 
-        <ReactNativePickerModule
-          pickerRef={(e) => (this.pickerRef = e)}
-          value={this.state.data.indexOf(this.props.objecion)}
-          title={"Seleccione Objeción"}
-          items={this.state.data}
-          onValueChange={(index) => {
-            // this.setState({
-            //   selectedValue: index
-            // })
-            this.handleTouch(index);
-          }}
-        />
-      </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  inputIOS: {
+    width: 100, height: 50,
+    fontSize: 16,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    borderWidth: 0.5,
+    borderColor: 'purple',
+    borderRadius: 8,
+    color: 'black',
+    paddingRight: 30, 
+  },
   container: {
     backgroundColor: constants.COLOR_GRIS_E,
     padding: 10,
@@ -128,6 +156,9 @@ const styles = StyleSheet.create({
     borderTopWidth: 12,
   },
 });
+
+
+
 
 // Exports
 export default PickerObjecion;

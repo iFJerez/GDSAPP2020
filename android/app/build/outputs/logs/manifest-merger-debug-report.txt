@@ -9,6 +9,7 @@ MERGED from [androidx.multidex:multidex:2.0.0] /Users/martinstone/.gradle/caches
 MERGED from [:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
 MERGED from [:@react-native-community_async-storage] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:@react-native-community_masked-view] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:@react-native-picker_picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-picker/picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-fs] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-gesture-handler] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
@@ -196,6 +197,8 @@ MERGED from [:@react-native-community_async-storage] /Users/martinstone/Document
 MERGED from [:@react-native-community_async-storage] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:@react-native-community_masked-view] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:@react-native-community_masked-view] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-picker_picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-picker/picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-picker_picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-picker/picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-fs] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-fs] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41

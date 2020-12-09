@@ -37,6 +37,8 @@ export const USER_GET_SALA_ERROR = 'USER_GET_SALA_ERROR';
 
 
 
+
+
 export const SALAS_CONTAR_VISTA= 'SALAS_CONTAR_VISTA';
 export const SALAS_VISTA = 'SALAS_VISTA';
 
@@ -72,11 +74,29 @@ export const TAREA_SEND= 'TAREA_SEND';
 export const TAREA_DELETE= 'TAREA_DELETE';
 
 
-export const LOGIN_ON = 'LOGIN_ON';
+
+
+
+
+// CADENAS
+
+
+export const USER_GET_CADENA_OK = 'USER_GET_CADENA_OK';
+export const USER_GET_CADENA_REQUEST = 'USER_GET_CADENA_REQUEST';
+export const USER_GET_CADENA_ERROR = 'USER_GET_CADENA_ERROR';
+
+
+// HOME
+
+
+export const USER_GET_HOME_OK = 'USER_GET_HOME_OK';
+export const USER_GET_HOME_REQUEST = 'USER_GET_HOME_REQUEST';
+export const USER_GET_HOME_ERROR = 'USER_GET_HOME_ERROR';
+
+// LOGIN
+export const LOGIN_OK = 'LOGIN_OK';
+export const LOGIN_REQUEST = 'LOGIN_REQUEST';
+export const LOGIN_ERROR = 'LOGIN_ERROR';
 export const LOGIN_OFF = 'LOGIN_OFF';
-
-
-
-
 
 

@@ -4,7 +4,6 @@ import { StyleSheet, View} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as constants from '../../herramientas/Const'
-import data from '../../api/home.json'
 import  RankingCard from './RankingCard'
 import TextHomeSubTitulos from './TextHomeSubTitulos'
 
@@ -18,30 +17,36 @@ class SalasListado extends React.Component {
   constructor(props){
     super(props)
     this.state = {  
-      dataSala: data[0].ranking
+      
     }
   }
 
   crearItem(){
 
 
+try {
 
+  return  this.props.dataHome.rankings.map((item, i) => {
+    return (
+    <View key={"crearItem" + i} style={styles.container}>
+      <View style={styles.container}>
+    
+    <RankingCard data={item}/>
+      </View>
+
+
+      
+    </View>
+    )
+
+  })
+  
+} catch (error) {
+  
+}
   
 
-    return  this.state.dataSala.map((item, i) => {
-      return (
-      <View key={"crearItem" + i} style={styles.container}>
-        <View style={styles.container}>
-      
-      <RankingCard data={item}/>
-        </View>
- 
 
-        
-      </View>
-      )
-
-    })
 
   
 }
@@ -97,7 +102,7 @@ const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
     
-    dataSala: state.userReducer.dataSala,
+    dataHome: state.userReducer.dataHome,
   };
 };
 

@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from "react";
-import { StyleSheet, View, StatusBar, ScrollView } from "react-native";
+import { StyleSheet, View, StatusBar, ScrollView , Text} from "react-native";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
@@ -17,14 +17,15 @@ import EnvioBoton from "../components/pendientesEnvio/EnvioBoton";
 // Screen: Counter
 class Home extends React.Component {
   render() {
-    const {} = this.props;
+    const {dataHome} = this.props;
 
     return (
+    
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
           <View style={styles.styDown}>
-
-              <CardIndicadores data={data} />
+          
+          <CardIndicadores data={dataHome} />
               <ScrollView >
                <SalaRanking />
               </ScrollView>
@@ -55,6 +56,7 @@ const mapStateToProps = (state) => {
     loggedIn: state.authReducer.loggedIn,
     home_modal: state.userReducer.home_modal,
     ms_help: state.userReducer.ms_help,
+    dataHome: state.userReducer.dataHome,
   };
 };
 

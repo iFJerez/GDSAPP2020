@@ -6,13 +6,9 @@ import AplicacionNavigation from './AplicacionNavigation'
 import ModalScreen from '../screens/ModalScreen'
 import HelpScreen from '../screens/HelpScreen'
 import EnvioScreen from '../screens/EnvioScreen'
-
-
-
-
-
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
+import { funGetHome } from '../redux/actions/userActions';
 
 
 class Applicacion extends React.Component {
@@ -30,14 +26,31 @@ class Applicacion extends React.Component {
    async componentDidMount(){
     console.log('Home: Aplicacion')
     
-    const {funGetData} = this.props;
-      return new Promise((resolve, reject) => {
-          resolve(funGetData())
+    const {funGetData, funGetCadena, funGetHome} = this.props;
+       new Promise((resolve, reject) => {
+          resolve(funGetData(this.props.token))
           
       }).then(res=>{
         console.log('Aplicacion:Inicio')
         this.setState({dato: 'recibe'}
         )})
+
+         new Promise((resolve, reject) => {
+          resolve(funGetCadena())
+          
+      }).then(res=>{
+        console.log('Descargando Cadenas')
+        })
+
+        new Promise((resolve, reject) => {
+          resolve(funGetHome(this.props.token, this.props.id_cliente))
+          
+      }).then(res=>{
+        console.log('Descargando Home')
+        })
+
+
+
    }
   
   render() {
@@ -66,6 +79,8 @@ const mapStateToProps = (state) => {
   return {
     
     isRefresh: state.userReducer.isRefresh,
+    token: state.authReducer.token,
+    id_cliente: state.authReducer.id_cliente,
     
   };
 };

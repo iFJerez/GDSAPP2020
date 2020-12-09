@@ -3,7 +3,7 @@ import { StyleSheet, View, Image, Text, SafeAreaView, SectionList } from 'react-
 import * as constants from '../../herramientas/Const'
 import EnvioDetalleCard from './EnvioDetalleCard'
 
-import data_cadena from '../../api/cadenas.json'
+import Cadenas from "../../herramientas/Cadenas"
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconAnt from 'react-native-vector-icons/AntDesign';
 import TextoBase from './EnvioTextBase';
@@ -100,7 +100,8 @@ console.log(JSON.stringify(data))
         <View style={styles.card}>
           <View style={styles.sucursalHeader}>
             <View style={styles.logo}>
-              {this.cargaImagen(sucursal.cadena)}
+              
+              <Cadenas cadena={sucursal.cadena} />
             </View>
             <View style={styles.detalleSuc}>
               <TextoBase style={styles.sty_text_desc_sucursal}>

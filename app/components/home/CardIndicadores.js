@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, ScrollView, FlatList} from 'react-native';
+import { StyleSheet, View, ScrollView} from 'react-native';
 import * as constants from '../../herramientas/Const'
 import Indicadores from './Indicadores'
 import {funMessage} from '../../herramientas/Mensaje'
@@ -15,9 +15,10 @@ funIndicadores(){
 
 return(
 
-  data.map((valores, x)=>{
-
-    return this.crearIndicadores(valores.indicadores, x)
+  data.indicadores.map((valores, x)=>{
+    console.log('va la cosa de nuevo')
+    console.log(valores)
+    return this.crearIndicadores(valores, x)
   }
 
 
@@ -26,7 +27,9 @@ return(
 )
 
 } catch (error) {
-  funMessage('mensaje', error)
+  funMessage('mensaje', "error")
+  console.log('va la cosa')
+
     
 }
 }
@@ -35,15 +38,10 @@ return(
 crearIndicadores(item, i){
   try {
     return(
-      item.map((valores, x)=>{
-
-        return (
-        <View style={styles.desc_indicador} key={'ante' + x}>
-          <Indicadores data={valores} i={x} />
-        </View>
-        )
-      }
-    ))
+      <View style={styles.desc_indicador} key={'ante' + i}>
+      <Indicadores data={item} i={i} />
+    </View>
+    )
   
   } catch (error) {
     alert(error)

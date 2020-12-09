@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, SectionList, Button } from 'react-native';
+import { StyleSheet, View, SectionList, ScrollView } from 'react-native';
 // import Indicador from '../salas/Indicadores'
 import {funMessage} from '../../herramientas/Mensaje'
 import DetalleBDesplegable from './DetalleBDesplegable'
@@ -62,16 +62,17 @@ export default class DetalleIndicadores extends Component {
   render() {
     const {data} = this.props
     // console.log('DetalleASALA', JSON.stringify(data))
-    const {cadena, desc_sala, direccion, desc_indicador, valor, diferencia, fuente} = data
+    const {cadena, desc_sala, direccion, indicador, valor, diferencia, fuente} = data
 
     return (
       <View style={styles.container}>
+        <ScrollView>
               <View style={styles.header}>
                     <View style={styles.sucHeader}>
                       <DetalleSucursalHeader {...{ cadena, desc_sala, direccion }}/>
                     </View>
-                    <View style={styles.desc_indicador}>
-                      <Indicador {...{ desc_indicador, valor, diferencia, fuente }}/>
+                    <View style={styles.indicador}>
+                      <Indicador {...{ indicador, valor, diferencia, fuente }}/>
                     </View>
                     <View style={styles.verFoto}>
                       <VerFotografia />
@@ -80,6 +81,7 @@ export default class DetalleIndicadores extends Component {
             <View style={styles.view_detalle}>
                 {this.funDetalles()}
             </View>
+            </ScrollView>
      </View>
     );
   }
@@ -99,7 +101,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingBottom: 30
   },
-  desc_indicador: {
+  indicador: {
     flex: 2,
     alignItems: 'center'
   },

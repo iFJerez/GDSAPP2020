@@ -1,37 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 import * as constants from '../../herramientas/Const'
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import TextoBase from './EnvioTextBase';
-import data_cadena from '../../api/cadenas.json';
+import Cadenas from "../../herramientas/Cadenas"
 
 export default class EnvioSucursalHeader extends Component {
 
   
-
-  cargaImagen(cadena) {
-
-    try {
-      return (
-        <View style={styles.sty_image}>
-          <Image
-            style={styles.st_icono}
-            source={{ uri: data_cadena[cadena].uri }}
-
-          />
-        </View>
-      )
-    } catch (error) {
-      return (
-        <View style={styles.sty_image}>
-          <Icon name={'store'} color={constants.COLOR_GRIS_G} size={50} style={styles.st_icono} />
-        </View>
-      )
-
-    }
-
-
-  }
 
   render() {
 
@@ -40,7 +15,8 @@ export default class EnvioSucursalHeader extends Component {
         <View style={styles.container}>
             <View style={styles.sucursalHeader}>
             <View style={styles.logo}>
-                {this.cargaImagen(data.cadena)}
+                
+                <Cadenas cadena={data.cadena} />
             </View>
             <View style={styles.detalleSuc}>
                 <TextoBase style={styles.sty_text_desc_sucursal}>

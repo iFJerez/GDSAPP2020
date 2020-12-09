@@ -17,14 +17,14 @@ export default class Objecion extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "row",
+    flexDirection: "column",
     alignItems: "center",
-    flex: 1,
+   
   },
   st_ind: { flex: 1 },
 
   StyleAction: {
-    flex: 1,
+
     backgroundColor: constants.COLOR_BLANCO,
     borderColor: constants.COLOR_GRIS_F,
     borderWidth: 1,

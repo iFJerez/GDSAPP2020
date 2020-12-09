@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react'
-import {TouchableOpacity, StyleSheet, View,Text} from 'react-native'
+import {TouchableOpacity, StyleSheet, View} from 'react-native'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import Modal from "react-native-modal"

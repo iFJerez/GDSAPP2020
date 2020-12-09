@@ -1,37 +1,15 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, Image} from 'react-native';
-import dataCadenas from '../../api/cadenas.json'
+import Cadenas from "../../herramientas/Cadenas"
 import TextHomeRankingSala from '../../herramientas/textos/TextHomeRankingSala'
 import * as constants from '../../herramientas/Const'
 import Indicadores from './RankingIndicadores'
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
 
 
 export default class CardItems extends Component {
 
-  cargaImagen(cadena){
 
-    try {
-      return(
-    <View style={styles.sty_image}>
-            <Image
-            style={styles.st_icono}
-            source={{uri: dataCadenas[cadena].uri}}
-              
-          />
-    </View>
-      )
-    } catch (error) {
-      return(
-        <View style={styles.sty_image}>
-            <Icon name={'store'} color={constants.COLOR_GRIS_G} size={50} style={styles.st_icono} />
-        </View>
-      )
-      
-    }
-  
-  
-   }
 
 
   render() {
@@ -40,7 +18,7 @@ export default class CardItems extends Component {
       <View style={styles.container}>
            <View style={styles.sty_texto}>
                     <View style={styles.st_indicadores_texto}>   
-                    {this.cargaImagen(data.cadena)}
+                    <Cadenas cadena={data.cadena} />
                         <TextHomeRankingSala  text={data.desc_sala}/>
                     </View>  
 

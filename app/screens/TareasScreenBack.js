@@ -26,7 +26,7 @@ function SettingsScreen() {
 
  function Titulo() {
   return (
-    'asdasd'
+    'titulo'
   );
 }
 

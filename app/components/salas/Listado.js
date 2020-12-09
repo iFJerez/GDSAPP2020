@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import TouchIndicador from './TouchIndicador'
 import TextTypeC from '../../herramientas/textos/TextTypeC'
 import * as constants from '../../herramientas/Const'
-import data from '../../api/cadenas.json'
+import Cadenas from "../../herramientas/Cadenas"
 import { ScrollView } from 'react-native-gesture-handler';
 
 
@@ -33,30 +33,7 @@ export default class ListadoContraido extends Component {
     
      }
 
-     cargaImagen(cadena){
 
-      try {
-        return(
-      <View style={styles.sty_image}>
-              <Image
-              style={styles.st_icono}
-              source={{uri: data[cadena].uri}}
-                
-            />
-      </View>
-        )
-      } catch (error) {
-        return(
-          <View style={styles.sty_image}>
-              <Icon name={'store'} color={constants.COLOR_GRIS_G} size={50} style={styles.st_icono} />
-              
-          </View>
-        )
-        
-      }
-
-
-     }
 
      cargaEstado(estado, cadena){
 
@@ -70,7 +47,7 @@ export default class ListadoContraido extends Component {
           <View style={styles.linea_nueva}>           
           </View>
           <View style={styles.conenedorEstadoImagen}>  
-              {this.cargaImagen(cadena)}
+          <Cadenas cadena={cadena} />
               <Text style={styles.text_nueva}>  Nuevo </Text>
           </View>     
       </View>
@@ -84,7 +61,7 @@ export default class ListadoContraido extends Component {
             <View style={styles.linea_objetada}>           
             </View>
             <View style={styles.conenedorEstadoImagen}>  
-                {this.cargaImagen(cadena)}
+              <Cadenas cadena={cadena} />
                 <Text style={styles.text_objetada}>  Objetada </Text>
             </View>     
         </View>
@@ -97,7 +74,7 @@ export default class ListadoContraido extends Component {
               <View style={styles.linea_normal}>           
               </View>
               <View style={styles.conenedorEstadoImagen}>  
-                  {this.cargaImagen(cadena)}
+              <Cadenas cadena={cadena} />
                   <Text style={styles.text_normal}>  Revisada </Text>
               </View>     
           </View>
