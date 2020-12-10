@@ -16,12 +16,10 @@ const {text} = this.props;
     return (
 
       <Text
-      adjustsFontSizeToFit
-      numberOfLines={1}
+      
+      numberOfLines={3}
       style={{
-        fontSize: constants.SIZE_LETRA_XX_LARGE,
-        textAlignVertical: "center",
-        textAlign: "center",
+        fontSize: constants.SIZE_LETRA_MEDIUM,
         color: constants.COLOR_QUINTENARIO_CLARO,
       }}>{text}</Text>
 

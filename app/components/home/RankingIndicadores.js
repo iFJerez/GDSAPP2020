@@ -14,7 +14,7 @@ export default class HomeIndicadores extends Component {
             
              <View style={styles.st_indicadores_valor}>   
              
-             <TextTypeHomeRankValor  text={data.valor + '%'}/>
+             <TextTypeHomeRankValor  text={data.valor}/>
             </View>  
             <View style={styles.st_diferencia}>   
              <IndicadoresDiferencia numero={data.diferencia}/>

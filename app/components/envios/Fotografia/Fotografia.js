@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
+import { StyleSheet, View, TouchableOpacity } from "react-native";
 import * as constants from "../../../herramientas/Const";
 import Icon from "react-native-vector-icons/AntDesign";
 import { funMessage } from "../../../herramientas/Mensaje";

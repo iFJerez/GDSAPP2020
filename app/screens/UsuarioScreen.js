@@ -24,7 +24,7 @@ class UsuarioScreen extends React.Component {
      
        <View style={styles.container}>
             <View style={styles.Usuario}>
-                <CardUsuario />
+                <CardUsuario usuario={this.props.usuario} />
                 <DetalleEnvios/> 
             </View>
 
@@ -59,6 +59,7 @@ const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
     dataSala: state.userReducer.dataSala,
+    usuario: state.authReducer.usuario,
     
     
   };

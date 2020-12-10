@@ -108,7 +108,7 @@ export default class ListadoContraido extends Component {
                    {this.cargaEstado(item.estado, cadena)}
                     
                     <View style={styles.st_nombreSala}>
-                        <TextTypeC text={item.desc_sala} />
+                        <Text style={styles.sty_sala}>{item.desc_sala} </Text> 
                     </View>
 
                     
@@ -138,6 +138,12 @@ const styles = StyleSheet.create({
 containerLista: {
   flexDirection: 'row',
   flex: 1
+},
+sty_sala: {
+  
+  fontWeight: 'bold',
+  color: constants.COLOR_QUINTENARIO_CLARO,
+  marginRight: 100,
 },
 conenedorEstado: {
   flexDirection: 'row',

@@ -1,14 +1,12 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, Platform, View } from "react-native";
 import ReactNativePickerModule from "react-native-picker-module";
 import * as constants from "../../herramientas/Const";
 import TextoBase from "../../herramientas/textos/TextoBase";
 import RNPickerSelect from 'react-native-picker-select';
+import { connect } from 'react-redux';
 
 
-this.state = {
-  country: 'uk'
-}
 
 class PickerObjecion extends Component {
   constructor(props) {
@@ -38,7 +36,7 @@ class PickerObjecion extends Component {
   
   handleTouch(index) {
     //console.log(index)
-    this.pickerRef.show();
+    //this.pickerRef.show();
     this.props.touchHandlder(index);
   }
 
@@ -47,59 +45,90 @@ class PickerObjecion extends Component {
     const placeholder = {
       label: 'Objetar',
       value: null,
-      color: '#567856',
+      color: constants.COLOR_SECUNDARIO,
     };
-
-const sports = [
-  {
-    label: 'Football',
-    value: 'football',
-  },
-  {
-    label: 'Baseball',
-    value: 'baseball',
-  },
-  {
-    label: 'Hockey',
-    value: 'hockey',
-  },
-];
-
     
-    const { disabled } = this.props
+    const { disabled, dataHome } = this.props
 
     const selectedValue = this.props.objecion || "Sin objecion";
+  
+    var obj = []
+      dataHome.objeciones.map((v)=>{
+      obj.push({
+        "label" : v.desc_objecion,
+        "value" : v.desc_objecion
+      }) 
+      });
+
+      const pickerStyle = {
+        inputIOS: {
+          color: constants.COLOR_SECUNDARIO,
+          paddingTop: 10,
+          paddingHorizontal: 10,
+          paddingBottom: 10,
+          borderRadius: 100,
+        },
+        inputAndroid: {
+          color: constants.COLOR_SECUNDARIO,
+                 borderRadius: 100,
+        },
+        placeholderColor: constants.COLOR_SECUNDARIO,
+        underline: { borderTopWidth: 0 },
+        borderRadius: 100,
+
+      };
+
+
     return (
-   
-   
-        <RNPickerSelect
-            placeholder={placeholder}
-            items={sports}
-            onValueChange={value => {
-              this.setState({
-                favSport0: value,
-              });
-            }}
-            style={styles.inputIOS}
-            value={this.state.favSport0}
-          />
+
       
+   
+      <View style={styles.objetar}>
+     
+
+        <RNPickerSelect
+          style={
+          Platform.OS === 'ios'
+          ? styles.inputIOS
+          : styles.inputAndroid
+      }
+        placeholder={{}}
+            items={obj}
+         //   onValueChange={value => {
+         //     this.setState({
+          //      favSport0: value,
+          //    });
+          //  }}
+          onValueChange={(index) => {
+             this.setState({
+               selectedValue: index
+             })
+            this.handleTouch(index);
+          }}
+            
+            //value={this.state.favSport0}
+            value={this.props.objecion}
+          />
+  </View>
 
     );
   }
 }
 
 const styles = StyleSheet.create({
+
+  
+  
   inputIOS: {
-    width: 100, height: 50,
-    fontSize: 16,
+    color: constants.COLOR_SECUNDARIO,
+    paddingTop: 10,
     paddingHorizontal: 10,
-    paddingVertical: 8,
-    borderWidth: 0.5,
-    borderColor: 'purple',
-    borderRadius: 8,
-    color: 'black',
-    paddingRight: 30, 
+    paddingBottom: 10,
+    borderRadius: 100,
+  },
+  inputAndroid: {
+    padding: 10,
+    color: constants.COLOR_SECUNDARIO,
   },
   container: {
     backgroundColor: constants.COLOR_GRIS_E,
@@ -113,10 +142,10 @@ const styles = StyleSheet.create({
     flex: 5,
   },
   objetar: {
+    width: '80%',
     borderRadius: 3,
     backgroundColor: "#ededed",
-    paddingVertical: 10,
-    paddingHorizontal: 20,
+
   },
   styleTouch: {
     justifyContent: "flex-end",
@@ -161,4 +190,5 @@ const styles = StyleSheet.create({
 
 
 // Exports
-export default PickerObjecion;
+//export default PickerObjecion;
+export default  connect(state => ({dataHome: state.userReducer.dataHome}))(PickerObjecion);

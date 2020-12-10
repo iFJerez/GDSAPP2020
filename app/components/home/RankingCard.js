@@ -18,8 +18,10 @@ export default class CardItems extends Component {
       <View style={styles.container}>
            <View style={styles.sty_texto}>
                     <View style={styles.st_indicadores_texto}>   
-                    <Cadenas cadena={data.cadena} />
-                        <TextHomeRankingSala  text={data.desc_sala}/>
+                        <Cadenas cadena={data.cadena} />
+                        <View style={styles.view_texto}>   
+                            <TextHomeRankingSala  text={data.desc_sala}/>
+                        </View>
                     </View>  
 
 
@@ -52,5 +54,6 @@ const styles = StyleSheet.create({
   st_indicadores_texto: { flex: 1, flexDirection: 'row', alignItems: 'center', alignContent: 'center'},
   sty_image: {width: 50, height: 50, paddingHorizontal: 5},
   st_icono: {width: '100%', height: '100%', resizeMode: 'center', alignItems: "center"},
+  view_texto: {padding: 10},
 
 });

@@ -1,4 +1,5 @@
-
+import React from 'react'
+import {} from 'react-native'
 
 var MesNombre = [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo','Junio',
 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
@@ -43,6 +44,21 @@ export function transformaFecha(fecha){
         return dia + ', ' + numero + ' de ' + mes
     }
 
+
+}
+
+export function fechaSQL(d){
+
+
+    var d = new Date,
+    dformat = [d.getFullYear() ,d.getMonth()+1,
+               d.getDate()
+               ].join('-')+' '+
+              [d.getHours(),
+               d.getMinutes(),
+               d.getSeconds()].join(':');
+
+    return dformat
 
 }
 

@@ -10,7 +10,7 @@ import SwipeToDelete from '../../herramientas/ui/SwipeToDelete';
 import ActionCreators from '../../redux/actions'
 
 
-class CardItems extends Component {
+class EnvioDetalleCard extends Component {
 
   handleDelete() {
     console.info('eliminando......', this.props.data)
@@ -28,7 +28,7 @@ class CardItems extends Component {
         <View style={styles.detailLine}>
         <View style={styles.variable}>
           <TextoBase style={styles.sty_text_ordinal}>{`${data.numero}. `}</TextoBase>
-          <TextoBase style={styles.sty_text_variable}>{data.desc_indicador.toUpperCase()}</TextoBase>
+          
         </View>
           <View style={styles.productDetail}>
             <View style={styles.productDesc}>
@@ -168,4 +168,4 @@ function mapDispatchToProps(dispatch) {
 }
 
 // Exports
-export default connect(null, mapDispatchToProps)(CardItems);
+export default connect(null, mapDispatchToProps)(EnvioDetalleCard);

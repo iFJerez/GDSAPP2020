@@ -3,6 +3,7 @@ import React, { PureComponent } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 import { RNCamera } from 'react-native-camera';
 import Icon from '../../herramientas/IconSimple'
+import {fechaSQL} from '../../herramientas/Fechas'
 
 class Camera extends PureComponent {
 
@@ -81,7 +82,7 @@ class Camera extends PureComponent {
     if (this.camera) {
       const options = { quality: 0.5, base64: true };
       const data = await this.camera.takePictureAsync(options);
-      this.takeHandler({ uri: data.uri, fecha: new Date() }) 
+      this.takeHandler({ uri: data.uri, fecha: fechaSQL() }) 
       // this.props.navigation.navigate('Preview', { foto: data.uri, fromCamera: true, fecha: new Date() })
       // this.setState({foto: data.uri})
     }

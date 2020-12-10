@@ -21,7 +21,9 @@ export default class CardUsuario extends Component {
   };
 
   render() {
-    const { data } = this.props;
+    
+    const { usuario } = this.props;
+    console.log(usuario)
     return (
       <View style={styles.container}>
         <View style={styles.card}>
@@ -33,7 +35,7 @@ export default class CardUsuario extends Component {
               />
             </View>
             <View style={styles.st_indicadores_valor}>
-              <TextType1 text={"Kenny Bell"} />
+              <TextType1 text={usuario} />
             </View>
             <View style={styles.st_indicadores_texto}>
               <TextType2 text={"Informacion"} />

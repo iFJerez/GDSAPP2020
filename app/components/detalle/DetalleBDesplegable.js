@@ -7,6 +7,7 @@ import ActionCreators from '../../redux/actions';
 
 import * as constants from '../../herramientas/Const'
 import Objecion from './Objecion'
+import {fechaSQL} from '../../herramientas/Fechas'
 
 
 class Accordian extends Component{
@@ -22,7 +23,8 @@ class Accordian extends Component{
       const dataObjecion = {
         type: 'OBJECIONES',
         id_sku: this.props.data.id_sku,
-        indicador: this.props.section.indicador,
+        id_indicador: this.props.section.id_indicador,
+        desc_indicador: this.props.section.desc_indicador,
         id_sala: this.props.section.id_sala,
         fechaHora: this.props.section.fechaHora,
         direccion: this.props.section.direccion,
@@ -31,7 +33,7 @@ class Accordian extends Component{
         desc_sku: this.props.data.titulo,
         ean: this.props.data.subtitulo,
         status: 'objetado',
-        fechaHoraEnvio: (new Date()).toISOString(),
+        fechaHoraEnvio: fechaSQL(),
         objecion: objItem,
         foto: objecion?.foto ? objecion.foto : null  
       } 
@@ -50,7 +52,7 @@ class Accordian extends Component{
     const objecion = 
     this.props.objeciones.find((v) => 
         ( this.props.data.id_sku === v.id_sku &&
-          this.props.section.indicador === v.indicador &&
+          this.props.section.desc_indicador === v.desc_indicador &&
           this.props.section.id_sala === v.id_sala &&
           this.props.section.fechaHora === v.fechaHora &&
           'OBJECIONES' === v.type)

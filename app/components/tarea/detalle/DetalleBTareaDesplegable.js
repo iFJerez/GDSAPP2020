@@ -4,6 +4,7 @@ import { View, StyleSheet } from "react-native";
 import { connect } from "react-redux";
 import DetalleIndicadoresFila from "./DetalleIndicadoresFila";
 import ActionCreators from "../../../redux/actions";
+import {fechaSQL} from '../../../herramientas/Fechas'
 
 import * as constants from "../../../herramientas/Const";
 import Tarea from "./Tarea";
@@ -30,7 +31,7 @@ class DetalleB extends Component {
       desc_sku: this.props.data.titulo,
       ean: this.props.data.subtitulo,
       status: "realizado",
-      fechaHoraEnvio: new Date().toISOString(),
+      fechaHoraEnvio: fechaSQL(),
       objecion: objItem,
       foto: objecion?.foto ? objecion.foto : null  
     };

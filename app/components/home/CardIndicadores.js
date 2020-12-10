@@ -16,8 +16,8 @@ funIndicadores(){
 return(
 
   data.indicadores.map((valores, x)=>{
-    console.log('va la cosa de nuevo')
-    console.log(valores)
+    //console.log('va la cosa de nuevo')
+    //console.log(valores)
     return this.crearIndicadores(valores, x)
   }
 

@@ -66,8 +66,9 @@ class LoginScreen extends React.Component {
   
 async loginIn(){
 
-  //await this.MoverTexto();
+  
   await this.props.funGetLogin(this.state.Usuario_Id, this.state.Password)
+  await this.MoverTexto();
 }   
 
 
@@ -144,16 +145,15 @@ async loginIn(){
         </View>
         <View style={styles.viewLoginBotom}>  
             <View style={styles.viewicon}>  
-            <TouchableOpacity style={styles.touchGo} onPress={()=>this.loginIn()} >            
-            <Text style={styles.textGo}>Ingresar</Text>
-            
+              <TouchableOpacity style={styles.touchGo} onPress={()=>this.loginIn()} >            
+              <Text style={styles.textGo}>Ingresar</Text>
             </TouchableOpacity>
             
             </View>
     
             <View style={styles.viewVersion}>  
-            <Text style={styles.text_version}>{this.state.comentario}</Text>
-            <Text style={styles.text_version}> {constants.VERSION_APP} </Text>
+                <Text style={styles.text_version}>{this.state.comentario}</Text>
+                <Text style={styles.text_version}> {constants.VERSION_APP} </Text>
             </View>
         </View>  
     </View>
@@ -248,12 +248,12 @@ viewicon: {
 
 },
 viewVersion: {
-padding:10,
+padding:2,
   alignItems: 'center'
 
 },
 viewimagenFondo: {
-  flex: 2,
+  flex: 1.5,
   backgroundColor: constants.COLOR_PRIMARIO,
   flexDirection: 'row',
   alignItems: 'center',

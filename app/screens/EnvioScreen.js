@@ -12,6 +12,8 @@ import ActionCreators from '../redux/actions'
 import { ScrollView } from 'react-native-gesture-handler'
 import EnvioDetalle from '../components/pendientesEnvio/EnvioDetalle'
 import EnvioBotonEnviar from '../components/pendientesEnvio/EnvioBotonEnviar'
+import {fechaSQL} from '../herramientas/Fechas'
+import {funMessage} from '../herramientas/Mensaje'
 
 class ModalScreen extends React.Component {
 
@@ -87,50 +89,62 @@ class ModalScreen extends React.Component {
   };
 
 handleEnviar  = async () => {
-    //this.props.funEnviarEnvios();
-    //this.props.funVerEnvio(false);
+
     const {objeciones} = this.props;
 //console.log(objeciones)
 
-objeciones.map((v=>{
+//console.log(objeciones)
 
-  obj = {
-  "id_usuario": 10,
-	"fecha_objecion": '20201201',  //v.foto.fecha,
-	"id_sala": v.id_sala,
-	"id_indicador":v.id_indicador,
-	"id_sku":v.id_sku,
-	"objecion": v.objecion,
-  "foto": v.foto.uri,
-  "desc_objecion":v.objecion,
-	"fecha_envio": '20201201',
+
+ objeciones.map((v=>{
+
+      obj = {
+      "id_usuario": this.props.dataHome.id_usuario,
+      "fecha_objecion": v.fechaHora,  
+      "id_sala": v.id_sala,
+      "id_indicador": v.id_indicador,
+      "id_sku":v.id_sku,
+      "desc_objecion":v.objecion,
+      "foto": v.foto!=null?v.foto.uri:"sin foto",
+      "fecha_envio": fechaSQL(),
+    }
+
+     this.funEnviarApi(obj)
+
+  }))
 }
-console.log(obj)
-
- fetch('http://api.gdsnet.com:3009/post_insert_foto_64', 
-{method: 'POST',  
-headers: {
-  'Accept': 'application/json',
-  'Content-Type': 'application/json'
-},
-body: JSON.stringify(obj)
-})
-.then((response) => {
-  return response.json()})
-.then((datajsonsala) => {      
-  
-  alert (JSON.stringify(datajsonsala))
-
-});
-
-}))
 
 
+  async funEnviarApi (obj) {
 
+    
+    const  responseDatas =    await fetch('http://api.gdsnet.com:3009/post_insert_foto_64', 
+    {method: 'POST',  
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(obj)
+    }).then((response) => response.json())
+        .then((responseData) => {
+          return  responseData
+        });
+     await   this.funExito(responseDatas)
+        
+  }
 
+  funExito(data){
+    if(data.mensaje ==="OK"){
+      funMessage("Enviado con exito!!", "Felicidades")
+      this.props.funEnviarEnvios();
+      this.props.funVerEnvio(false);
 
+    } else {
+      alert("Ups!! no eviado, intente luego")
+      console.log(data)
+    }
 
-
+    
   }
 
 
@@ -215,7 +229,8 @@ const mapStateToProps = (state) => {
   return {
     ver_envio: state.flashReducer.ver_envio,
     objeciones: state.envioReducer,
-    data_tareas: state.envioReducer
+    data_tareas: state.envioReducer,
+    dataHome: state.userReducer.dataHome,
   };
 };
 

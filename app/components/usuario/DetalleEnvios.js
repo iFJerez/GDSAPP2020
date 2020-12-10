@@ -11,7 +11,7 @@ class DetalleEnvios extends Component {
       const enviosReduced = data
         .reduce( (obj,val) => {
     
-          const key =  funFecha(val.fechaHoraEnvio) + val.id_sala
+          const key =  val.fechaHoraEnvio + val.id_sala
           if(obj[key]) {
             obj[key].cantidad = obj[key].cantidad + 1;
           } else {
@@ -20,7 +20,7 @@ class DetalleEnvios extends Component {
             obj[key].cadena = val.cadena;
             obj[key].desc_sala = val.desc_sala;
             obj[key].fechaHora = val.fechaHora;
-            obj[key].fechaHoraEnvio =  funFecha(val.fechaHoraEnvio);
+            obj[key].fechaHoraEnvio =  val.fechaHoraEnvio;
             obj[key].id_sala = val.id_sala;
             obj[key].cantidad = 1
           }
@@ -38,7 +38,7 @@ class DetalleEnvios extends Component {
     const enviosReduced = envios
       .filter( v => v.status === 'enviado')
       .reduce( (obj,val) => {
-        const key = funFecha(val.fechaHoraEnvio)
+        const key = val.fechaHoraEnvio
         if(obj[key]) {
           obj[key].data.push({
             id_sala: val.id_sala,
@@ -47,7 +47,7 @@ class DetalleEnvios extends Component {
           }) 
         } else {
           obj[key] = {}
-          obj[key].fechaHoraEnvio = funFecha(val.fechaHoraEnvio);
+          obj[key].fechaHoraEnvio = val.fechaHoraEnvio
           obj[key].data = [
             {
               id_sala: val.id_sala,

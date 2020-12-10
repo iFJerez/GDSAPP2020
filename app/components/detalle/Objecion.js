@@ -17,7 +17,7 @@ export default class Objecion extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "column",
+    flexDirection: "row",
     alignItems: "center",
    
   },

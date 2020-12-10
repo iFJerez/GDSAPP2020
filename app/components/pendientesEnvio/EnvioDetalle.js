@@ -30,6 +30,7 @@ export default class PendienteEnvioBody extends Component {
         const key = val.type
         if(obj[key]) {
           obj[key].data.push({
+            id_indicador: val.id_indicador,
             desc_indicador: val.desc_indicador,
             fechaHora:val.fechaHora,
             item: val.item,
@@ -49,6 +50,7 @@ export default class PendienteEnvioBody extends Component {
           obj[key].fechaHora = val.fechaHora;
           obj[key].data = [
             {
+              id_indicador: val.id_indicador,
               desc_indicador: val.desc_indicador,
               fechaHora:val.fechaHora,
               item: val.item,
