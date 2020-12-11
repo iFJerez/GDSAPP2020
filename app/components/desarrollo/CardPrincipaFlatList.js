@@ -4,25 +4,25 @@ import CardFilas from './CardFilas'
 import data from '../../api/salas.json'
 import Icon from 'react-native-vector-icons/FontAwesome';
 const fetchData = [
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-  {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true}
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": false},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": false},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": false},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+  {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true}
 ]
 
 

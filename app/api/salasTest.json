@@ -59,26 +59,26 @@
             ]},
             {"id_indicador": 102, "desc_indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
            "detalles": [
-             {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 987658, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 9876578, "agrupador": "agrupador3", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 9876567, "agrupador": "agrupador3", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 9876545, "agrupador": "agrupador3", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 9876534, "agrupador": "agrupador3", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 9876523, "agrupador": "agrupador4", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 9876534, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 9876534, "agrupador": "agrupador3", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 9876533, "agrupador": "agrupador4", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 98765223, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 9876522, "agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 98765123, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false}
+             {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 987658, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 9876578, "agrupador": "agrupador3", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 9876567, "agrupador": "agrupador3", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 9876545, "agrupador": "agrupador3", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 9876534, "agrupador": "agrupador3", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 9876523, "agrupador": "agrupador4", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 9876534, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 9876534, "agrupador": "agrupador3", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 9876533, "agrupador": "agrupador4", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 98765223, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 9876522, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 98765123, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
              
            ]},
            {"id_indicador": 102, "desc_indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
              "detalles": [
-               {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
                {"id_sku": 908989,"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
                {"id_sku": 78878,"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
                {"id_sku": 23232,"agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -105,16 +105,16 @@
       "indicadores": [
         {"desc_indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
          "detalles": [
-           {"id_sku": 987652, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-           {"id_sku": 987635, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-           {"id_sku": 987265, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-           {"id_sku": 987465, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true}
+           {"id_sku": 987652, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+           {"id_sku": 987635, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+           {"id_sku": 987265, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+           {"id_sku": 987465, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true}
            
            
          ]},
          {"desc_indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional", 
            "detalles": [
-             {"id_sku": 987625,"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 987625,"agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"id_sku": 987365,"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"id_sku": 987565,"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"id_sku": 987665,"agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -141,16 +141,16 @@
       "indicadores": [
         {"desc_indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
          "detalles": [
-           {"id_sku": 987565, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-           {"id_sku": 987665,"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-           {"id_sku": 987765,"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-           {"id_sku": 987865,"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true}
+           {"id_sku": 987565, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+           {"id_sku": 987665,"agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+           {"id_sku": 987765,"agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+           {"id_sku": 987865,"agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true}
            
            
          ]},
          {"desc_indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional", 
            "detalles": [
-             {"id_sku": 988765,"agrupador": "agrupador1", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 988765,"agrupador": "agrupador1", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"id_sku": 987765,"agrupador": "agrupador1", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"id_sku": 987565,"agrupador": "agrupador2", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"id_sku": 987645,"agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -177,16 +177,16 @@
       "indicadores": [
         {"desc_indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada", "fuente": "transaccional",
          "detalles": [
-           {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-           {"id_sku": 987365,"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-           {"id_sku": 987465,"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-           {"id_sku": 987655,"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true}
+           {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+           {"id_sku": 987365,"agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+           {"id_sku": 987465,"agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+           {"id_sku": 987655,"agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true}
            
            
          ]},
          {"desc_indicador": "precios", "valor": "86", "diferencia": "-15", "fuente": "transaccional", 
            "detalles": [
-             {"id_sku": 987265,"agrupador": "agrupador1", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 987265,"agrupador": "agrupador1", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"id_sku": 983765,"agrupador": "agrupador1", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"id_sku": 984765,"agrupador": "agrupador1", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
              {"id_sku": 987665,"agrupador": "agrupador1", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -213,16 +213,16 @@
     "indicadores": [
       {"desc_indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada",
        "detalles": [
-         {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-         {"id_sku": 987625,"agrupador": "agrupador1", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-         {"id_sku": 987365,"agrupador": "agrupador2", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-         {"id_sku": 987465,"agrupador": "agrupador3", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true}
+         {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+         {"id_sku": 987625,"agrupador": "agrupador1", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+         {"id_sku": 987365,"agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+         {"id_sku": 987465,"agrupador": "agrupador3", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true}
          
          
        ]},
        {"desc_indicador": "precios", "valor": "86", "diferencia": "-15", 
          "detalles": [
-           {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
            {"id_sku": 987625, "agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
            {"id_sku": 987365, "agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
            {"id_sku": 987465, "agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -249,16 +249,16 @@
   "indicadores": [
     {"desc_indicador": "osa", "valor": "85", "diferencia": "20",  "estado": "objetada",
      "detalles": [
-       {"id_sku": 987265, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-       {"id_sku": 987365, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-       {"id_sku": 987465, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-       {"id_sku": 985765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true}
+       {"id_sku": 987265, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+       {"id_sku": 987365, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+       {"id_sku": 987465, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+       {"id_sku": 985765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true}
        
        
      ]},
      {"desc_indicador": "precios", "valor": "86", "diferencia": "-15", 
        "detalles": [
-         {"id_sku": 982765, "agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"id_sku": 982765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
          {"id_sku": 987365, "agrupador": "agrupador2", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
          {"id_sku": 987465, "agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
          {"id_sku": 987365, "agrupador": "agrupador2", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "2.990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},

@@ -37,7 +37,7 @@
              ] },
              {"desc_indicador": "programada", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
               "detalles": [
-                {"id_sku": 98765, "agrupador": "Precios de sku lanzamientos", "titulo": "Tiene precio publicado la coca cola de 2l ret", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+                {"id_sku": 98765, "agrupador": "Precios de sku lanzamientos", "titulo": "Tiene precio publicado la Producto de pruebas de 2l ret", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
                 
               ] }
         ]
@@ -61,7 +61,7 @@
            ] },
            {"desc_indicador": "programada", "valor": "86", "diferencia": "-15", "fuente": "transaccional",
             "detalles": [
-              {"id_sku": 98765, "agrupador": "Precios de sku lanzamientos", "titulo": "Tiene precio publicado la coca cola de 2l ret", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+              {"id_sku": 98765, "agrupador": "Precios de sku lanzamientos", "titulo": "Tiene precio publicado la Producto de pruebas de 2l ret", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"}
               
             ] }
       ]

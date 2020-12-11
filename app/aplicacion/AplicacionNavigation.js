@@ -125,8 +125,8 @@ function LoginStackScreen() {
 const Tab = createBottomTabNavigator();
 
 
-function MyTabs() {
-  const cantSalas = 3
+function MyTabs(recibe) {
+  const cantSalas =  recibe //this.props.dataSala
 
   return (
     <Tab.Navigator
@@ -224,11 +224,15 @@ function MyTabs() {
 
 
 
-function Validar({ value }) {
-
+function Validar({ value, dataSala }) {
+  
+  if (dataSala) {
+    SalasNuevas = dataSala.salas.filter(word => word.estado===0).length
+  } 
+   
   if(value)
   {  
-    return(<MyTabs />)
+    return(MyTabs(SalasNuevas>0?SalasNuevas:null))
   }else{
     return ( <MyLogin />) 
   }

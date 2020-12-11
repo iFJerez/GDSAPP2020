@@ -23,30 +23,30 @@
      "indicadores": [
        {"desc_indicador": "osa", "valor": "85", "diferencia": "20", 
         "detalles": [
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": false},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true},
-          {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true}
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": false},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": false},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": false},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true},
+          {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true}
           
         ]},
         {"desc_indicador": "precios", "valor": "86", "diferencia": "-15", 
           "detalles": [
-            {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+            {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
             {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
             {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
             {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -76,7 +76,7 @@
   "indicadores": [
     {"desc_indicador": "osa", "valor": "85", "diferencia": "20", 
      "detalles": [
-       {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
        {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2 bakl a aksdkasjhd ","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
        {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
        {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "A1", "exhibicion": "caja", "porcentaje": "80%"},
@@ -87,7 +87,7 @@
      ] },
      {"desc_indicador": "precios", "valor": "86", "diferencia": "-15", 
        "detalles": [
-         {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
          {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
          {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
          {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
@@ -117,7 +117,7 @@
   "indicadores": [
     {"desc_indicador": "osa", "valor": "85", "diferencia": "20", 
      "detalles": [
-       {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+       {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
        {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2 bakl a aksdkasjhd ","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
        {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
        {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "A1", "exhibicion": "caja", "porcentaje": "80%"},
@@ -128,7 +128,7 @@
      ] },
      {"desc_indicador": "precios", "valor": "86", "diferencia": "-15", 
        "detalles": [
-         {"agrupador": "agrupador", "titulo": "Coca Cola Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+         {"agrupador": "agrupador", "titulo": "Producto de pruebas Original 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
          {"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
          {"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},
          {"agrupador": "agrupador", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "promocion": "isla", "exhibicion": "caja", "porcentaje": "80%"},

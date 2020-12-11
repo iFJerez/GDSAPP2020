@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import { SafeAreaView, StyleSheet, View, StatusBar, Text, TouchableOpacity} from 'react-native';
+import { SafeAreaView, StyleSheet, View, StatusBar, } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import SalasListado from '../components/salas/SalasListado'
@@ -28,10 +28,6 @@ class SalasScreen extends React.Component {
       return(
         <SafeAreaView style={styles.container}>
             <FocusAwareStatusBar barStyle="dark-content" />
-            <TouchableOpacity onPress={()=>this.props.funSalaCambiaEstado(68185, 2)}>
-              <Text> probar {status}</Text>
-            </TouchableOpacity>
-
             <SalasListado />
             <SalaDetallesScreen />
             <OrdenSalasScreen />
