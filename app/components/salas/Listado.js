@@ -40,7 +40,7 @@ export default class ListadoContraido extends Component {
 
 
       try {
-        if(estado=='nueva') {
+        if(estado==0) {
 
         return(
       <View style={styles.conenedorEstado}>
@@ -48,13 +48,13 @@ export default class ListadoContraido extends Component {
           </View>
           <View style={styles.conenedorEstadoImagen}>  
           <Cadenas cadena={cadena} />
-              <Text style={styles.text_nueva}>  Nuevo </Text>
+              <Text style={styles.text_nueva}>Nueva</Text>
           </View>     
       </View>
       
         )
         }
-        else if(estado=='objetada') {
+        else if(estado==2) {
 
           return(
         <View style={styles.conenedorEstado}>
@@ -62,11 +62,24 @@ export default class ListadoContraido extends Component {
             </View>
             <View style={styles.conenedorEstadoImagen}>  
               <Cadenas cadena={cadena} />
-                <Text style={styles.text_objetada}>  Objetada </Text>
+                <Text style={styles.text_objetada}>Objetada</Text>
             </View>     
         </View>
           )
           }
+          else if(estado==1) {
+
+            return(
+            <View style={styles.conenedorEstado}>
+              <View style={styles.linea_normal}>           
+              </View>
+              <View style={styles.conenedorEstadoImagen}>  
+              <Cadenas cadena={cadena} />
+                  <Text style={styles.text_normal}>Revisada</Text>
+              </View>     
+          </View>
+            )
+            }
           else {
 
             return(
@@ -75,7 +88,7 @@ export default class ListadoContraido extends Component {
               </View>
               <View style={styles.conenedorEstadoImagen}>  
               <Cadenas cadena={cadena} />
-                  <Text style={styles.text_normal}>  Revisada </Text>
+                  <Text style={styles.text_normal}>  ...  </Text>
               </View>     
           </View>
             )

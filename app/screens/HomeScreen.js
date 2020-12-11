@@ -1,8 +1,9 @@
 // Imports: Dependencies
 import React from "react";
-import { StyleSheet, View, StatusBar, ScrollView , Text} from "react-native";
+import { StyleSheet, View, StatusBar, ScrollView} from "react-native";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+import { useIsFocused } from '@react-navigation/native';
 
 import data from "../api/home.json";
 import CardIndicadores from "../components/home/CardIndicadores";
@@ -14,15 +15,22 @@ import SalaRanking from "../components/home/SalasRanking";
 import ActionCreators from "../redux/actions";
 import EnvioBoton from "../components/pendientesEnvio/EnvioBoton";
 
+function FocusAwareStatusBar(props) {
+  const isFocused = useIsFocused();
+
+  return isFocused ? <StatusBar {...props} /> : null;
+}
+
 // Screen: Counter
 class Home extends React.Component {
+  
   render() {
     const {dataHome} = this.props;
 
     return (
     
       <View style={styles.container}>
-        <StatusBar barStyle="light-content" />
+          <FocusAwareStatusBar barStyle="light-content" />
           <View style={styles.styDown}>
           
           <CardIndicadores data={dataHome} />

@@ -6,10 +6,16 @@ import { bindActionCreators } from 'redux';
 import CardUsuario from '../components/usuario/CardUsuario'
 import DetalleEnvios from "../components/usuario/DetalleEnvios"
 import CerrarSession from '../components/usuario/CerrarSession'
+import { useIsFocused } from '@react-navigation/native';
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
-import { State } from 'react-native-gesture-handler';
+
+function FocusAwareStatusBar(props) {
+  const isFocused = useIsFocused();
+
+  return isFocused ? <StatusBar {...props} /> : null;
+}
 
 
 
@@ -21,7 +27,7 @@ class UsuarioScreen extends React.Component {
  
     return (
       <SafeAreaView style={styles.container}>
-     
+     <FocusAwareStatusBar barStyle="light-content" />
        <View style={styles.container}>
             <View style={styles.Usuario}>
                 <CardUsuario usuario={this.props.usuario} />

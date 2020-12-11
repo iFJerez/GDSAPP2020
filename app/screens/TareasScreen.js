@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import {StyleSheet, View, SafeAreaView } from 'react-native';
+import {StyleSheet, View, SafeAreaView, StatusBar } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as constants from '../herramientas/Const';
@@ -10,10 +10,16 @@ import ActionCreators from '../redux/actions';
 import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
 import Activity from './ActivityScreen'
 import TareaDetallesScreen from './TareaDetallesScreen'
+import { useIsFocused } from '@react-navigation/native';
 
 // Screen: Tarea
 import TareaIndex from '../components/tarea/TareaIndex'
 
+function FocusAwareStatusBar(props) {
+  const isFocused = useIsFocused();
+
+  return isFocused ? <StatusBar {...props} /> : null;
+}
 
 class TareasScreen extends React.Component {
 
@@ -23,7 +29,7 @@ class TareasScreen extends React.Component {
     if(dataTarea){
       return(
         <SafeAreaView style={styles.container}>
-
+        <FocusAwareStatusBar barStyle="light-content" />
                <TareaIndex />
                <TareaDetallesScreen />
               <EnvioBoton />

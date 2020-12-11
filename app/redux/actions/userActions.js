@@ -22,7 +22,7 @@ function DataError(isRefresh) {
 
 function   DataOK(isRefresh, api_salas, api_tareas) {
   console.log('DataOK');
-  //console.log(api_tareas)
+  //console.log(api_salas)
   return {
     type: types.USER_GET_SALA_OK,
     dataSala: api_salas,
@@ -229,3 +229,38 @@ let data =  JSON.stringify(
 }
 
 
+
+
+export function funSalaCambiaEstado(id_sala, estado, id_usuario) {
+  
+  
+  let data =  JSON.stringify(
+      {"id_usuario": id_usuario, "id_sala": id_sala, "id_estado": estado}
+  )
+
+  console.log(data)
+  
+    const config =  {
+      method: 'POST',
+      headers: {"Content-Type": "application/json"},
+      body: data
+    }
+     
+        fetch('http://api.gdsnet.com:3009/post_update_sala', config)
+        .then(res => res.json())
+        .then(res => {
+       console.log("enviando Respuesta ", res)
+          return res;
+      })
+        .catch(error => {
+          console.log(error)
+        })
+    
+
+  return {
+    type: types.SALAS_CAMBIA_ESTADO,
+    id_sala: id_sala,
+    estado: estado,
+    isRefresh: true
+  }
+}

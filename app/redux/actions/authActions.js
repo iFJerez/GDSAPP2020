@@ -3,13 +3,6 @@
 import * as types from '../redux_constants'; 
 
 
-export const funLoginOn = (loggedIn, usuario, token) => ({
-  type: types.LOGIN_ON,
-  loggedIn: loggedIn,
-  usuario: usuario,
-  token: token,
-
-});
 
 
 
@@ -37,6 +30,7 @@ function LoginOK(loggedIn, data) {
     usuario: data.usuario,
     token: data.token,
     id_cliente: data.id_cliente,
+    id_usuario: data.id_usuario,
   }
 }
 
@@ -96,6 +90,10 @@ export function funGetLogin(usuario, pass) {
     return {
       type: types.LOGIN_OFF,
       loggedIn: false,
+      usuario: null,
+      token: null,
+      id_cliente: null,
+      id_usuario: null,
 
     }
   }

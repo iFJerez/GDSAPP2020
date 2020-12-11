@@ -124,7 +124,10 @@ function LoginStackScreen() {
 
 const Tab = createBottomTabNavigator();
 
+
 function MyTabs() {
+  const cantSalas = 3
+
   return (
     <Tab.Navigator
     screenOptions={({ route }) => ({
@@ -192,11 +195,11 @@ function MyTabs() {
       inactiveTintColor: constants.COLOR_GRIS_H,
     }}
   >
-    <Tab.Screen name="Home" component={HomeStackScreen} options={{ tabBarBadge: 3 }} />
-    <Tab.Screen name="Salas" component={SalasScreen} options={{ tabBarBadge: 5 }} />
-    <Tab.Screen name="Tareas" component={TareasStackScreen} options={{ tabBarBadge: 5 }} />
-    <Tab.Screen name="Usuario" component={UsuarioStackScreen} options={{ tabBarBadge: 5 }} />
-    <Tab.Screen name="Login" component={LoginStackScreen} options={{ tabBarBadge: 5 }} />
+    <Tab.Screen name="Home" component={HomeStackScreen} options={{ tabBarBadge: null }} />
+    <Tab.Screen name="Salas" component={SalasScreen} options={{ tabBarBadge: cantSalas }} />
+    <Tab.Screen name="Tareas" component={TareasStackScreen} options={{ tabBarBadge: null }} />
+    <Tab.Screen name="Usuario" component={UsuarioStackScreen} options={{ tabBarBadge: null }} />
+    
     
     
   </Tab.Navigator>
@@ -232,4 +235,7 @@ function Validar({ value }) {
   
 }
 
-const Validando = connect(state => ({ value: state.authReducer.loggedIn}))(Validar);
+const Validando = connect(state => ({
+  value: state.authReducer.loggedIn,
+  dataSala: state.userReducer.dataSala
+}))(Validar);

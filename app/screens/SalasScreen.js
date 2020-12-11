@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import { SafeAreaView, StyleSheet, View, StatusBar} from 'react-native';
+import { SafeAreaView, StyleSheet, View, StatusBar, Text, TouchableOpacity} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import SalasListado from '../components/salas/SalasListado'
@@ -8,21 +8,30 @@ import Activity from './ActivityScreen'
 import SalaDetallesScreen from './SalaDetallesScreen'
 import OrdenSalasScreen from '../components/salas/OrdenSalasScreen'
 import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
+import { useIsFocused } from '@react-navigation/native';
 
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
 
+function FocusAwareStatusBar(props) {
+  const isFocused = useIsFocused();
 
+  return isFocused ? <StatusBar {...props} /> : null;
+}
 // Screen: Counter
 class SalasScreen extends React.Component {
 
   funRevisarData(){
-    const {dataSala} = this.props;
+    const {dataSala, status} = this.props;
 
     if(dataSala){
       return(
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle="dark-content" />
+            <FocusAwareStatusBar barStyle="dark-content" />
+            <TouchableOpacity onPress={()=>this.props.funSalaCambiaEstado(68185, 2)}>
+              <Text> probar {status}</Text>
+            </TouchableOpacity>
+
             <SalasListado />
             <SalaDetallesScreen />
             <OrdenSalasScreen />
@@ -66,6 +75,7 @@ const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
     dataSala: state.userReducer.dataSala,
+    status: state.userReducer.status
   };
 };
 

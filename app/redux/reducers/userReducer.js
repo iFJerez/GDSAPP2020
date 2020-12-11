@@ -17,9 +17,27 @@ const initialState = {
 };
 
 // Reducers (Modifies The State And Returns A New State)
-const authReducer = (state = initialState, action) => {
+const userReducer = (state = initialState, action) => {
   switch (action.type) {
-   
+
+
+    case types.SALAS_CAMBIA_ESTADO: {
+      console.log(state.status, 'SALAS_CAMBIA_ESTADO');
+
+      let dsOrdernar= state.dataSala;
+      const newData =  dsOrdernar.salas.map(v => {
+        if (v.id_sala === action.id_sala) {
+            v.estado = action.estado;
+        }
+        return v
+      })
+      obj = Object.assign({...dsOrdernar})
+      obj.salas = newData
+
+            return   {...state,   status: 'Cambio estado', dataSala: obj}
+          }
+      
+    
     case types.USER_HELP: {
       console.log(state.status, 'USER_HELP');
       return {
@@ -144,4 +162,4 @@ const authReducer = (state = initialState, action) => {
 };
 
 // Exports
-export default authReducer;
+export default userReducer;

@@ -6,6 +6,7 @@ const initialState = {
   usuario: '',
   token: '',
   id_cliente: '',
+  id_usuario: '',
 };
 
 // Reducers (Modifies The State And Returns A New State)
@@ -18,7 +19,8 @@ const authReducer = (state = initialState, action) => {
         loggedIn: action.loggedIn,
         usuario: action.usuario,
         token: action.token,
-        id_cliente: action.id_cliente
+        id_cliente: action.id_cliente,
+        id_usuario: action.id_usuario
       }
     }
     case types.LOGIN_ERROR: { 
