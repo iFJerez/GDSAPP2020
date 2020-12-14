@@ -227,7 +227,12 @@ function MyTabs(recibe) {
 function Validar({ value, dataSala }) {
   
   if (dataSala) {
-    SalasNuevas = dataSala.salas.filter(word => word.estado===0).length
+    try {
+      SalasNuevas = dataSala.salas.filter(word => word.estado===0).length
+    } catch (error) {
+      SalasNuevas = 0
+    }
+   
   } 
    
   if(value)
