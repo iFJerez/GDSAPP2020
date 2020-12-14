@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>logFormatVersion</key>
-	<integer>9</integer>
+	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>A3539CF6-F75E-4052-84B2-A0C6970A9215</key>
+		<key>BB48A8E8-E92D-4CD0-8099-223EF5D93493</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>A3539CF6-F75E-4052-84B2-A0C6970A9215.xcactivitylog</string>
+			<string>BB48A8E8-E92D-4CD0-8099-223EF5D93493.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,13 +32,47 @@
 			<key>signature</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>629392964.96920097</real>
+			<real>629400094.61642396</real>
 			<key>timeStoppedRecording</key>
-			<real>629392967.94641197</real>
+			<real>629400097.70271504</real>
 			<key>title</key>
 			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>A3539CF6-F75E-4052-84B2-A0C6970A9215</string>
+			<string>BB48A8E8-E92D-4CD0-8099-223EF5D93493</string>
+		</dict>
+		<key>DCC97462-916B-4962-B292-8BE450FA92EB</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DCC97462-916B-4962-B292-8BE450FA92EB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ComGdsnetApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ComGdsnetApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>629412423.45048904</real>
+			<key>timeStoppedRecording</key>
+			<real>629412432.42365205</real>
+			<key>title</key>
+			<string>Building workspace ComGdsnetApp with scheme ComGdsnetApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>DCC97462-916B-4962-B292-8BE450FA92EB</string>
 		</dict>
 	</dict>
 </dict>

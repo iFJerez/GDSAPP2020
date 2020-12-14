@@ -44,6 +44,7 @@ class Accordian extends Component{
         this.props.funEliminarEnvio(dataObjecion);
       } else {
         this.props.funGuardarEnvio(dataObjecion);
+        this.props.funSalaCambiaEstado(this.props.section.id_sala, 2,this.props.id_usuario)
       }
       
     }
@@ -111,6 +112,7 @@ const mapStateToProps = (state) => {
   // Redux Store --> Component
   return {
     objeciones: state.envioReducer,
+    id_usuario: state.authReducer.id_usuario,
   };
 };
 
