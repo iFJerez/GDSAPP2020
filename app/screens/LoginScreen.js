@@ -7,7 +7,7 @@ import { bindActionCreators } from 'redux';
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
 
-import React, { Component } from 'react';
+import React from 'react';
 import {
   StyleSheet,
   Text,
@@ -248,42 +248,48 @@ viewicon: {
 
 },
 viewVersion: {
-padding:2,
-  alignItems: 'center'
+bottom: 0,
+position:'relative',
+
+
 
 },
 viewimagenFondo: {
-  flex: 1.5,
+  
   backgroundColor: constants.COLOR_PRIMARIO,
   flexDirection: 'row',
   alignItems: 'center',
   alignContent: 'center',
   alignSelf: 'center',
+  paddingTop:50,
+  paddingBottom:50,
 },
+ImageLogo: {
+  width: '80%',
+  
+  },
 viewimagen: {
-  flex: 1,
+  width: '100%',
+
   alignItems: 'center',
   alignContent: 'center',
   alignSelf: 'center',
 
 },
 viewLoginText: {
-  flex: 1.5,
+  
   paddingLeft: 20,
   paddingTop: 50,
 
 },
 viewLoginBotom: {
-  flex: 1,
+  
   paddingHorizontal: 20,
 
 
 
 },
-ImageLogo: {
-width: '50%',
-height: '20%'
-},
+
 });
 
 

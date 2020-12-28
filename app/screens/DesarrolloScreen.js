@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
-import RNFS from 'react-native-fs';
+//import RNFS from 'react-native-fs';
 import Picker from '../components/desarrollo/PickerTest'
 
 

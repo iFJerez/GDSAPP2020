@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text,Button, Alert } from 'react-native';
+import { View, Text } from 'react-native';
 
 export default class SalaResumen extends React.Component {
 

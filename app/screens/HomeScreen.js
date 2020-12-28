@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { useIsFocused } from '@react-navigation/native';
 
-import data from "../api/home.json";
+//import data from "../api/home.json";
 import CardIndicadores from "../components/home/CardIndicadores";
 import * as constants from "../herramientas/Const";
 import TareaHome from "../components/home/TareaHome";

@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import { SafeAreaView, StyleSheet, View, StatusBar, } from 'react-native';
+import { SafeAreaView, StyleSheet, View, StatusBar} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import SalasListado from '../components/salas/SalasListado'

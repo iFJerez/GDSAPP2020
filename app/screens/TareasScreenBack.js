@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 import { View, Text } from 'react-native';
-import CardTareas from '../components/tareas/CardTareas'
-import CardLista from '../components/tareas/CardLista'
-import NavigationContainer from 'react-navigation';
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 import { createAppContainer } from 'react-navigation';
 

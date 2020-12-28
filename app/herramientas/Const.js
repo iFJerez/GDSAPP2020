@@ -1,6 +1,6 @@
 
 
-export const VERSION_APP = 'Version 1.0'
+export const VERSION_APP = 'Version 2.0'
 
 
 export const ICON_VERY_X_SMALL= 20

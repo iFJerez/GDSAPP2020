@@ -3,7 +3,6 @@ import React from 'react';
 import {View, StyleSheet, Text, Button} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Modal from "react-native-modal";
 import ModaScene from '../Components/ModalComponents'
 
 

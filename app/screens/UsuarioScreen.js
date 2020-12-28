@@ -17,9 +17,6 @@ function FocusAwareStatusBar(props) {
   return isFocused ? <StatusBar {...props} /> : null;
 }
 
-
-
-
 // Screen: Counter
 class UsuarioScreen extends React.Component {
  
