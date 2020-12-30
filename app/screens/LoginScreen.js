@@ -255,7 +255,7 @@ position:'relative',
 
 },
 viewimagenFondo: {
-  
+
   backgroundColor: constants.COLOR_PRIMARIO,
   flexDirection: 'row',
   alignItems: 'center',
@@ -265,7 +265,10 @@ viewimagenFondo: {
   paddingBottom:50,
 },
 ImageLogo: {
-  width: '80%',
+  height: 200,
+  width: 200,
+    
+  
   
   },
 viewimagen: {
