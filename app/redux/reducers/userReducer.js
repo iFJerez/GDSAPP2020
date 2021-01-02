@@ -54,15 +54,6 @@ const userReducer = (state = initialState, action) => {
         status: 'modal on-off',
       }
     }
-    // Login
-    case types.USER_HOME_NEW: {
-      console.log(state.status, 'USER_HOME_NEW');
-      return {
-        ...state,
-        home_new: action.home_new,
-        status: 'Home New',
-      }
-    }
     case types.USER_DUO_NEW: {
       console.log(state.status, 'USER_DUO_NEW');
       return {

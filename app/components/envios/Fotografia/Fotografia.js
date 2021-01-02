@@ -4,7 +4,6 @@ import { bindActionCreators } from "redux";
 import { StyleSheet, View, TouchableOpacity } from "react-native";
 import * as constants from "../../../herramientas/Const";
 import Icon from "react-native-vector-icons/AntDesign";
-import { funMessage } from "../../../herramientas/Mensaje";
 import ActionCreators from "../../../redux/actions";
 
 class Fotografia extends Component {

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { StyleSheet, View} from 'react-native';
-import {funMessage} from '../../herramientas/Mensaje'
 import * as constants from '../../herramientas/Const'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import TextoBase from './OrdenSalasScreenTextBase';

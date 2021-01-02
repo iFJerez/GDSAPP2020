@@ -69,6 +69,7 @@ async loginIn(){
   
   await this.props.funGetLogin(this.state.Usuario_Id, this.state.Password)
   await this.MoverTexto();
+  
 }   
 
 

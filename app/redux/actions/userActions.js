@@ -6,6 +6,7 @@ import json_tareas from '../../api/tareas.json'
 
 
 function DataRequest() {
+  console.log('Salas Rquest');
   return {
     type: types.USER_GET_SALA_REQUEST,
     isRefresh: false
@@ -21,7 +22,7 @@ function DataError(isRefresh) {
 }
 
 function   DataOK(isRefresh, api_salas, api_tareas) {
-  console.log('DataOK');
+  console.log('Salas OK');
   //console.log(api_salas)
   return {
     type: types.USER_GET_SALA_OK,
@@ -71,6 +72,7 @@ export function funGetData(token) {
 
 
 function CadenaRequest() {
+  console.log('Cadena Rquest');
   return {
     type: types.USER_GET_CADENA_REQUEST,
     isRefresh: false
@@ -133,6 +135,7 @@ export function funGetCadena() {
 
   
 function HomeRequest() {
+  console.log('HOME Rquest');
   return {
     type: types.USER_GET_HOME_REQUEST,
     isRefresh: false
@@ -158,10 +161,11 @@ function HomeOK(isRefresh, apiHome) {
 }
 
 
-export function funGetHome(token, id_cliente) {
+export function funGetHome(id_cliente, token) {
   // esta api funciona y extra un ejemplo que hicimos con felipe
   // esta trabajando local por ahora
-  console.log('userAction.funGetHome: Rescatando HOME');
+  
+  console.log('userAction.funGetHome: TOKEN:'  + token + ' CLIENTE: ' + id_cliente);
   
   let data =  JSON.stringify(
       {"token": token, "cliente": id_cliente}

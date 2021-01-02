@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
   st_icono: {
     width: "100%",
     height: "100%",
-    resizeMode: "center",
     alignItems: "center",
   },
   sty_image: { width: 90, height: 90, padding: 10 },

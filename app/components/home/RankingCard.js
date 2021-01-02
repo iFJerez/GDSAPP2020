@@ -49,11 +49,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   sty_texto: {flex: 3, alignItems: 'flex-start', paddingHorizontal: 10},
-  sty_icon: {flex: 1,paddingVertical: 1, alignItems: 'center', alignContent: 'center'},
+  sty_icon: {flex: 1,paddingVertical: 1,paddingLeft: 30, alignItems: 'center', alignContent: 'center'},
   st_indicadores_progres: { marginHorizontal: 1},
   st_indicadores_texto: { flex: 1, flexDirection: 'row', alignItems: 'center', alignContent: 'center'},
   sty_image: {width: 50, height: 50, paddingHorizontal: 5},
-  st_icono: {width: '100%', height: '100%', resizeMode: 'center', alignItems: "center"},
+  st_icono: {width: '100%', height: '100%', alignItems: "center"},
   view_texto: {padding: 10},
 
 });

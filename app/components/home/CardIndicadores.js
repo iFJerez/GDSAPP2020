@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { StyleSheet, View, ScrollView} from 'react-native';
 import * as constants from '../../herramientas/Const'
 import Indicadores from './Indicadores'
-import {funMessage} from '../../herramientas/Mensaje'
 import TextHomeSubTitulos from './TextHomeSubTitulos'
 
 export default class SalasListadoInCo extends Component {
@@ -27,8 +26,8 @@ return(
 )
 
 } catch (error) {
-  funMessage('mensaje', "error")
-  console.log('va la cosa')
+  
+  console.log('Error en CarIndicadores')
 
     
 }

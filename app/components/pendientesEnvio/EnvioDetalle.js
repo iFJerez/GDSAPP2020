@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
   st_icono: { 
     width: 50,
     height: 50,
-    resizeMode: 'center',
+    
     alignItems: "center"
   },
   sucursalHeader: {

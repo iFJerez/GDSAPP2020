@@ -98,3 +98,13 @@ export function funGetLogin(usuario, pass) {
     }
   }
   
+  export function funNetwork(value) {
+    console.log('network');
+    
+    return {
+      type: types.NETWORK_ON,
+      network: value,
+
+    }
+  }
+  

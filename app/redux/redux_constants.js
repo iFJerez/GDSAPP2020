@@ -97,4 +97,6 @@ export const LOGIN_REQUEST = 'LOGIN_REQUEST';
 export const LOGIN_ERROR = 'LOGIN_ERROR';
 export const LOGIN_OFF = 'LOGIN_OFF';
 
+export const NETWORK_ON = 'NETWORK_ON';
+
 

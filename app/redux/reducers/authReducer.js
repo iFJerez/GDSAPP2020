@@ -7,6 +7,7 @@ const initialState = {
   token: '',
   id_cliente: '',
   id_usuario: '',
+  network: true,
 };
 
 // Reducers (Modifies The State And Returns A New State)
@@ -42,6 +43,13 @@ const authReducer = (state = initialState, action) => {
         usuario: null,
         token: null,
         id_cliente: null
+      }
+    }
+    case types.NETWORK_ON: { 
+      return {
+        ...state,
+        network: action.network,
+
       }
     }
     // Default

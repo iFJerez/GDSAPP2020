@@ -170,7 +170,7 @@ conenedorEstadoImagen: {
    
    width: '100%',
   padding: 5 },
-  st_icono: {width: '100%', height: '100%', resizeMode: 'center', alignItems: "center"},
+  st_icono: {width: '100%', height: '100%', alignItems: "center"},
   sty_image: {width: 50, height: 50},
 
 
