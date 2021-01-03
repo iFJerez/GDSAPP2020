@@ -1,24 +1,52 @@
 // Imports: Dependencies
 import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View, RefreshControl  } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Listado from './Listado'
 import SalaMenu from './SalasMenu'
+import NetworkScreen from '../../screens/NetworkScreen'
 import * as constants from '../../herramientas/Const'
 
 // Imports: Redux Actions
 import ActionCreators from '../../redux/actions';
 import { ScrollView } from 'react-native-gesture-handler';
 
+
+
+
 // Screen: Counter
 class SalasListado extends React.Component {
   constructor(props){
     super(props)
     this.state = {  
-      NewdataSala: props.dataSala
+      NewdataSala: props.dataSala,
+      refreshing: false
     }
   }
+
+   wait (timeout) {
+    return new Promise(resolve => {
+      setTimeout(resolve, timeout);
+    });
+  }
+  
+  onRefresh = ()=>  {
+    this.funRefresh(true)
+    const {funGetData, token} = this.props;
+    this.wait(2000).then(() => funGetData(token));
+    this.wait(2000).then(() => this.funRefresh(false) );
+  }
+
+  funRefresh=(valor) => {
+    
+    console.log(valor)
+    this.setState({refreshing: valor})
+    
+
+  }
+
+
 
   OrderSearchAsc=(text) => {
     
@@ -132,7 +160,7 @@ this.setState({NewdataSala: obj})
 
           <View key={"llave" + i}>
              <Listado item={obj}/>
-             
+       
           </View>
     
   )
@@ -161,13 +189,17 @@ componentDidUpdate(prevProps) {
 
 }
 
+
+
   render() {
 //    this.props.sala_orden_key
     return (
       <View style={styles.container}>
-        
             <SalaMenu  filterSearch={this.filterSearch} />
-            <ScrollView>
+            <ScrollView
+        contentContainerStyle={styles.scrollView}
+        refreshControl={
+          <RefreshControl refreshing={this.state.refreshing} onRefresh={this.onRefresh} />}>
                 {this.state.NewdataSala.salas.map((valores, i) => {
                 return this.crearSala(valores, i)
                 })}
@@ -208,6 +240,7 @@ const mapStateToProps = (state) => {
   return {
     
     dataSala: state.userReducer.dataSala,
+    token: state.authReducer.token,
     sala_orden_key: state.salasReducer.sala_orden_key,
     sala_orden_asc: state.salasReducer.sala_orden_asc,
   };

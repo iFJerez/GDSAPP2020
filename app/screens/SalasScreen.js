@@ -10,6 +10,7 @@ import OrdenSalasScreen from '../components/salas/OrdenSalasScreen'
 import EnvioBoton from '../components/pendientesEnvio/EnvioBoton'
 import { useIsFocused } from '@react-navigation/native';
 
+
 // Imports: Redux Actions
 import ActionCreators from '../redux/actions';
 
@@ -32,6 +33,7 @@ class SalasScreen extends React.Component {
             <SalaDetallesScreen />
             <OrdenSalasScreen />
             <EnvioBoton />
+            
         </SafeAreaView>      
         )
     }

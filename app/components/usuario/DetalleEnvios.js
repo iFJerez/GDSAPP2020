@@ -38,7 +38,9 @@ class DetalleEnvios extends Component {
     const enviosReduced = envios
       .filter( v => v.status === 'enviado')
       .reduce( (obj,val) => {
-        const key = val.fechaHoraEnvio
+        let fecha = val.fechaHoraEnvio
+        let  key = fecha.substring(0,10)
+        //console.log(key)
         if(obj[key]) {
           obj[key].data.push({
             id_sala: val.id_sala,
@@ -47,7 +49,7 @@ class DetalleEnvios extends Component {
           }) 
         } else {
           obj[key] = {}
-          obj[key].fechaHoraEnvio = val.fechaHoraEnvio
+          obj[key].fechaHoraEnvio = key
           obj[key].data = [
             {
               id_sala: val.id_sala,

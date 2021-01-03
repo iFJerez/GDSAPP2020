@@ -15,9 +15,10 @@ export function funFecha(fecha){
 
   var hoy = transformaFecha()
 
-    
+    console.log()
     if(transformaFecha(fecha)===hoy){
           return 'Hoy'
+
     }
     else 
     {
@@ -47,7 +48,7 @@ export function transformaFecha(fecha){
 
 }
 
-export function fechaSQL(d){
+export function fechaSQL2(d){
 
 
     var d = new Date,
@@ -62,4 +63,6 @@ export function fechaSQL(d){
 
 }
 
-
+export function fechaSQL(){
+    return new Date().toISOString().slice(0, 19).replace('T', ' ');
+}

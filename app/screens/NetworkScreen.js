@@ -60,7 +60,6 @@ setTimeout(() => funNetwork(false), 3000)
 setTimeout(() => funMessage("Conectado", "Datos refrescados"), 4000)
 
       
-   
 }
 
 informacion(){
