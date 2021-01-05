@@ -11,9 +11,6 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-import com.comgdsnetapp.BuildConfig;
-import com.comgdsnetapp.R;
-
 // @react-native-community/async-storage
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/masked-view
@@ -42,8 +39,6 @@ import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-share
 import cl.json.RNSharePackage;
-// react-native-svg
-import com.horcrux.svg.SvgPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
 
@@ -105,7 +100,6 @@ public class PackageList {
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
       new RNSharePackage(),
-      new SvgPackage(),
       new VectorIconsPackage()
     ));
   }
