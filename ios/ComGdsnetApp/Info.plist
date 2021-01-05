@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>ComGdsnetApp</string>
+	<string>GDSAPP</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -22,6 +22,9 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSApplicationCategoryType</key>
+	<string>La aplicacion $(PRODUCT_NAME) 
+La aplicación </string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -38,19 +41,20 @@
 		</dict>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>La aplicacion $(PRODUCT_NAME) requiere acceso a la cámara</string>
+	<string>La aplicacion $(PRODUCT_NAME) desea acceder a su Camara para tomar fotos que se compartirán cuando nos envie informacion de objeciones.
+No se compartiran fotos sin tu permiso.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>La aplicacion $(PRODUCT_NAME) requiere acceso al Microfono</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>La aplicacion $(PRODUCT_NAME) requiere acceso al Camera Roll</string>
+	<string>La aplicacion $(PRODUCT_NAME) La aplicación desea acceder a su galería de fotos para cargar su foto de perfil. Tus fotos no se compartirán sin tu permiso</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>La aplicacion $(PRODUCT_NAME) requiere acceso al Camera Roll</string>
+	<string>La aplicacion $(PRODUCT_NAME) La aplicación desea acceder a su galería de fotos para cargar su foto de perfil. Tus fotos no se compartirán sin tu permiso</string>
 	<key>Privacy – Camera Usage Description</key>
-	<string>App needs Camera Access Permission for testing</string>
+	<string>La aplicación desea acceder a su galería de fotos para cargar su foto de perfil. Tus fotos no se compartirán sin tu permiso</string>
 	<key>Privacy – Photo Library Additions Usage Description</key>
-	<string>App needs photo library Access</string>
+	<string>La aplicación desea acceder a su galería de fotos para cargar su foto de perfil. Tus fotos no se compartirán sin tu permiso.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Zocial.ttf</string>
