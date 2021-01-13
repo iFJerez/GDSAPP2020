@@ -1,0 +1,134 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.comgdsnetapp"
+4    android:versionCode="3"
+5    android:versionName="3.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->[:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
+13-->[:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:22-62
+14
+15    <uses-feature
+15-->[:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+16        android:name="android.hardware.camera"
+16-->[:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:12:9-47
+17        android:required="false" />
+17-->[:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:13:9-33
+18    <uses-feature
+18-->[:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+19        android:name="android.hardware.camera.autofocus"
+19-->[:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:15:9-57
+20        android:required="false" />
+20-->[:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:16:9-33
+21
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->[:react-native-fs] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
+22-->[:react-native-fs] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-78
+23
+24    <application
+24-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:6:5-24:19
+25        android:name="com.comgdsnetapp.MainApplication"
+25-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:7:7-38
+26        android:allowBackup="false"
+26-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:11:7-34
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/12e6e66baa82d1e6cfaba9e4100d45c4/core-1.1.0/AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:9:7-41
+30        android:label="@string/app_name"
+30-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:8:7-39
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:10:7-52
+32        android:theme="@style/AppTheme"
+32-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:12:7-38
+33        android:usesCleartextTraffic="true" >
+33-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:7:18-53
+34        <activity
+34-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:13:7-22:18
+35            android:name="com.comgdsnetapp.MainActivity"
+35-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:14:9-37
+36            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+36-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:16:9-79
+37            android:label="@string/app_name"
+37-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:15:9-41
+38            android:windowSoftInputMode="adjustResize" >
+38-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:17:9-51
+39            <intent-filter>
+39-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:18:9-21:25
+40                <action android:name="android.intent.action.MAIN" />
+40-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:19:13-65
+40-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:19:21-62
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:20:13-73
+42-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:20:23-70
+43            </intent-filter>
+44        </activity>
+45        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+45-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:23:7-84
+45-->/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:23:17-81
+46
+47        <provider
+47-->[:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-18:20
+48            android:name="com.imagepicker.FileProvider"
+48-->[:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-56
+49            android:authorities="com.comgdsnetapp.provider"
+49-->[:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-60
+50            android:exported="false"
+50-->[:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
+51            android:grantUriPermissions="true" >
+51-->[:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-47
+52            <meta-data
+52-->[:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
+53                android:name="android.support.FILE_PROVIDER_PATHS"
+53-->[:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
+54                android:resource="@xml/provider_paths" />
+54-->[:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
+55        </provider>
+56        <provider
+56-->[:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-25:20
+57            android:name="cl.json.RNShareFileProvider"
+57-->[:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-55
+58            android:authorities="com.comgdsnetapp.rnshare.fileprovider"
+58-->[:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-72
+59            android:exported="false"
+59-->[:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+60            android:grantUriPermissions="true" >
+60-->[:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-47
+61            <meta-data
+61-->[:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
+62                android:name="android.support.FILE_PROVIDER_PATHS"
+62-->[:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
+63                android:resource="@xml/share_download_paths" />
+63-->[:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
+64        </provider>
+65
+66        <activity
+66-->[com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+67            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+67-->[com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+68            android:exported="false"
+68-->[com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+69            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+69-->[com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+70
+71        <meta-data
+71-->[com.google.android.gms:play-services-basement:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/1fb3c3a6aa0b301b9a491f15d9c745b6/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
+72            android:name="com.google.android.gms.version"
+72-->[com.google.android.gms:play-services-basement:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/1fb3c3a6aa0b301b9a491f15d9c745b6/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
+73            android:value="@integer/google_play_services_version" />
+73-->[com.google.android.gms:play-services-basement:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/1fb3c3a6aa0b301b9a491f15d9c745b6/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
+74    </application>
+75
+76</manifest>
