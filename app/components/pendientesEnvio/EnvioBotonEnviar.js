@@ -10,15 +10,14 @@ import TextoBase from './EnvioTextBase';
 export default class CardItems extends Component {
   render() {
     return (
-      <TouchableOpacity onPress={this.props.touchHandler}>
-      <View style={styles.container}>
-
-        <View style={styles.button}>
-          <TextoBase style={styles.sty_text_enviar}>Enviar</TextoBase>
-        </View>
-          
-        </View>
-            </TouchableOpacity>
+      <TouchableOpacity onPress={()=>this.props.touchHandler()}>
+        <View style={styles.container}>
+          <View style={styles.button}>
+            <TextoBase style={styles.sty_text_enviar}>Enviar</TextoBase>
+          </View>
+            
+          </View>
+      </TouchableOpacity>
       
     );
   }

@@ -88,13 +88,10 @@ class ModalScreen extends React.Component {
     }
   };
 
-handleEnviar  = async () => {
+  async handleEnviar (){
+    console.log("entro a handleEnviar")
 
     const {objeciones} = this.props;
-//console.log(objeciones)
-
-//console.log(objeciones)
-
 
  objeciones.map((v=>{
 
@@ -179,7 +176,7 @@ handleEnviar  = async () => {
           <EnvioDetalle data={data} />
           </View>
         </ScrollView>
-        <EnvioBotonEnviar touchHandler={this.handleEnviar.bind(this)}/>
+        <EnvioBotonEnviar touchHandler={this.handleEnviar()}/>
       </View>
     </Modal>
     )
