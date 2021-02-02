@@ -44,7 +44,7 @@ La aplicación </string>
 	<string>La aplicacion $(PRODUCT_NAME) desea acceder a su Camara para tomar fotos que se compartirán cuando nos envie informacion de objeciones.
 No se compartiran fotos sin tu permiso.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>La aplicacion $(PRODUCT_NAME) requiere acceso al Microfono</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
@@ -70,6 +70,10 @@ No se compartiran fotos sin tu permiso.</string>
 		<string>Ionicons.ttf</string>
 		<string>EvilIcons.ttf</string>
 		<string>Fundation.ttf</string>
+		<string>FontAwesome5_Brands.ttf</string>
+		<string>FontAwesome5_Regular.ttf</string>
+		<string>FontAwesome5_Solid.ttf</string>
+		<string>Foundation.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
