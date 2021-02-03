@@ -8,7 +8,7 @@ export function funMessage(message, description){
     message: message,
     description: description,
     type: "success",
-    backgroundColor: colores.COLOR_PRIMARIO_CLARO, // background color
+    backgroundColor: colores.COLOR_PRIMARIO, // background color
     color:  colores.COLOR_BLANCO, // text color
   })
   

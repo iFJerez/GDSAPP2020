@@ -5,6 +5,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import 'react-native-gesture-handler';
 
+import Imagen from './Imagegds'
+
 
 import LoginScreen from '../screens/LoginScreen'
 import HomeScreen from '../screens/HomeScreen'
@@ -21,6 +23,7 @@ import ActionCreators from '../redux/actions';
 import {transformaFecha} from '../herramientas/Fechas'
 import * as constants from '../herramientas/Const'
 import Icon from 'react-native-vector-icons/AntDesign';
+import NetworkScreen from '../screens/NetworkScreen'
 
 
 function HomeScreen2() {
@@ -47,14 +50,16 @@ function HomeStackScreen() {
       <HomeStack.Screen
         name={transformaFecha()}
         component={HomeScreen}
-        options={{  tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
-        headerTitleAlign: 'left',
-        headerTitleStyle: {fontWeight: 'bold',
-        fontSize: constants.SIZE_LETRA_LARGE,
-        color: constants.COLOR_BLANCO,
-        flex: 1,
-        flexDirection: 'row'
-        }}}
+        options={{
+          headerTitle: "hola",
+          headerRight: () => (
+            <Button
+              onPress={() => alert('This is a button!')}
+              title="Info"
+              color="#000"
+            />
+          ),
+        }}
       />
     </HomeStack.Navigator>
   );
@@ -66,8 +71,11 @@ function TareasStackScreen() {
       <TareaStack.Screen
         name={transformaFecha()}
         component={TareasScreen}
-        options={{  tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
+        options={{      headerRight: () => (
+          <Imagen />
+        ),  tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
         headerTitleAlign: 'left',
+        headerLeft: null,
         headerTitleStyle: {fontWeight: 'bold',
         fontSize: constants.SIZE_LETRA_LARGE,
         color: constants.COLOR_BLANCO,
@@ -79,6 +87,26 @@ function TareasStackScreen() {
   );
 }
 
+const SalasStack = createStackNavigator();
+function SalasStackScreen() {
+  return (
+    <SalasStack.Navigator>
+      <SalasStack.Screen
+        name={transformaFecha()}
+        component={SalasScreen}
+        options={{  tabBarLabel: 'Salas!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
+        headerTitleAlign: 'left',
+        headerLeft: null,
+        headerTitleStyle: {fontWeight: 'bold',
+        fontSize: constants.SIZE_LETRA_LARGE,
+        color: constants.COLOR_BLANCO,
+        flex: 1,
+        flexDirection: 'row'
+        }}}
+      />
+    </SalasStack.Navigator>
+  );
+}
 
 
 const UsuarioStack = createStackNavigator();
@@ -90,6 +118,7 @@ function UsuarioStackScreen() {
         component={UsuarioScreen}
         options={{  tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
         headerTitleAlign: 'left',
+        headerLeft: null,
         headerTitleStyle: {fontWeight: 'bold',
         fontSize: constants.SIZE_LETRA_LARGE,
         color: constants.COLOR_BLANCO,
@@ -108,9 +137,11 @@ function LoginStackScreen() {
       <LoginStack.Screen
         name={transformaFecha()}
         component={LoginScreen}
+   
         options={{  tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
         headerTitleAlign: 'left',
         headerTitleStyle: {fontWeight: 'bold',
+        
         fontSize: constants.SIZE_LETRA_LARGE,
         color: constants.COLOR_BLANCO,
         flex: 1,
@@ -125,8 +156,8 @@ function LoginStackScreen() {
 const Tab = createBottomTabNavigator();
 
 
-function MyTabs(recibe) {
-  const cantSalas =  recibe //this.props.dataSala
+function MyTabs() {
+  const cantSalas =  5 //this.props.dataSala
 
   return (
     <Tab.Navigator
@@ -195,9 +226,9 @@ function MyTabs(recibe) {
       inactiveTintColor: constants.COLOR_GRIS_H,
     }}
   >
-    <Tab.Screen name="Home" component={HomeStackScreen} options={{ tabBarBadge: null }} />
-    <Tab.Screen name="Salas" component={SalasScreen} options={{ tabBarBadge: cantSalas }} />
-    <Tab.Screen name="Tareas" component={TareasStackScreen} options={{ tabBarBadge: null }} />
+    <Tab.Screen name="Home" component={HomeStackScreen} options={{ tabBarBadge: null,}} />
+    <Tab.Screen name="Salas" component={SalasStackScreen} options={{ tabBarBadge: cantSalas }} />
+    <Tab.Screen name="Tareas" component={TareasStackScreen} options={{ tabBarBadge: null}} />
     <Tab.Screen name="Usuario" component={UsuarioStackScreen} options={{ tabBarBadge: null }} />
     
     
@@ -207,15 +238,46 @@ function MyTabs(recibe) {
 }
 
 
+function DetailsScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Details!</Text>
+    </View>
+  );
+}
+
+function PruebaScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Home screen</Text>
+      <Button
+        title="Go to Details"
+        onPress={() => navigation.navigate('Settings')}
+      />
+    </View>
+  );
+}
 
 
+const RootStack = createStackNavigator();
+
+function RootStackStar() {
+  return (
+    <RootStack.Navigator>
+      <RootStack.Screen name="Principal" component={NetworkScreen} options={{headerShown: false}} />
+      <RootStack.Screen name="Login" component={MyLogin} options={{headerShown: false}} />
+      <RootStack.Screen name="Secundaria" component={MyTabs} options={{headerShown: false, headerBackTitleVisible: false, headerBackTitle: ''}} /> 
+      
+    </RootStack.Navigator>
+  );
+}
 
 
 
  export default function App() {
   return (
     <NavigationContainer>
-      <Validando />
+      <RootStackStar />
     </NavigationContainer>
   );
 }
@@ -237,7 +299,7 @@ function Validar({ value, dataSala }) {
    
   if(value)
   {  
-    return(MyTabs(SalasNuevas>0?SalasNuevas:null))
+    return(MyLogin())
   }else{
     return ( <MyLogin />) 
   }

@@ -17,8 +17,25 @@ function FocusAwareStatusBar(props) {
   return isFocused ? <StatusBar {...props} /> : null;
 }
 
+
+
 // Screen: Counter
 class UsuarioScreen extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {  
+      dato: 'algo'
+    }
+
+    this.cerrarSeccion = this.cerrarSeccion.bind(this)
+  }
+
+
+
+  cerrarSeccion(){
+    this.props.LoginOFF()
+    this.props.navigation.navigate('Login')
+  }
  
   render() {
  
@@ -32,7 +49,7 @@ class UsuarioScreen extends React.Component {
             </View>
 
             <View style={styles.CerrarSession}>
-            <CerrarSession cerrar={this.props.LoginOFF} />
+            <CerrarSession cerrar={this.cerrarSeccion} />
             </View>
         
        </View>

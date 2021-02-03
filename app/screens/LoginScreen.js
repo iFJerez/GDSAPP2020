@@ -16,10 +16,12 @@ import {
   TextInput,
   TouchableOpacity,
   Animated,
-  KeyboardAwareScrollView
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
 } from 'react-native';
 import * as constants from '../herramientas/Const'
-var ImageLoad = require ('../images/gds_v_blanco.png')
+const ImageLoad = require ('../images/gds_v_blanco.png')
 import LinearGradient from "react-native-linear-gradient";
 
 
@@ -38,6 +40,10 @@ class LoginScreen extends React.Component {
       offsetX: new Animated.Value(3),
       
     }
+  }
+
+  componentDidUpdate(){
+    this.Validar()
   }
 
  MoverTexto() {
@@ -63,6 +69,22 @@ class LoginScreen extends React.Component {
 
 }
 
+ Validar() {
+
+  const {loggedIn} = this.props;
+
+
+   
+  if(loggedIn)
+  {  
+    return( this.props.navigation.navigate('Principal'))
+  }else{
+    return (null) 
+  }
+  
+}
+
+
 
   
 async loginIn(){  
@@ -81,16 +103,22 @@ async loginIn(){
 
   return(
 
-
-
-        <KeyboardAwareScrollView
-      style={styles.container}
-
-    >
-          <View style={styles.container}>    
-      <LinearGradient 
+    <LinearGradient 
           style={styles.container}
           colors={[constants.COLOR_PRIMARIO_CLARO, constants.COLOR_PRIMARIO_OSCURO, constants.COLOR_PRIMARIO_OSCURO,constants.COLOR_PRIMARIO_OSCURO]}>
+    
+
+    <ScrollView contentContainerStyle={{flex:1}} >
+
+    <KeyboardAvoidingView
+    style={styles.container}
+    behavior={Platform.OS == "ios" ? "padding" : "height"}
+    enabled
+    keyboardVerticalOffset={10}
+>
+  
+       
+      
        <View style={styles.viewimagenFondo}>  
        <View style={styles.viewimagen}>  
         
@@ -103,34 +131,29 @@ async loginIn(){
             </View>
             
       </View>
-  
+      
 
 
+                    
 
-<View style={styles.viewCard}>  
-
-              <View style={styles.viewLoginContainer}>  
-               <View style={styles.viewLoginText}>  
+              <View style={styles.viewCard}>  
+              
 
                               <Animated.View style={{...this.props.style,opacity: fadeAnim,  }} >
                               </Animated.View>
                               <Animated.View style={{ transform: [{translateX: this.state.offsetX}], flex: 1 }}>
-
-
-                                <View style={styles.viewinput}>  
+                              <View style={styles.viewinput}>  
                                           <View style={styles.viewBienvenidot}>
                                              <View style={styles.viewBienvenidoIntro}>
                                                 <Text style={styles.bienvenido}>Bienvenido</Text>
                                                 <Text style={styles.bienvenido}>{this.props.usuario}</Text>
                                              </View>
                                           </View>
-                                      <View style={styles.view_bienvenido_container}>
-                                            <View style={styles.view_bienvenido}>
-                                            <View style={styles.v_text}>  
-                                                <Text style={styles.text}>Usuario</Text> 
-                                            </View>
-                                            <View style={styles.v_input}>  
-                                            <TextInput style = {styles.input} 
+                                      
+                                      <View style={styles.viewBienvenidot}>
+                                             <View style={styles.viewBienvenidoIntro}>
+                                                 <Text style={styles.text}>Usuario</Text> 
+                                                <TextInput style = {styles.input} 
                                                     autoCapitalize="none" 
                                                     onSubmitEditing={() => this.PasswordInput.focus()} 
                                                     onChangeText={(Usuario_Id) => this.setState({ Usuario_Id })}
@@ -139,35 +162,37 @@ async loginIn(){
                                                     returnKeyType="next" 
                                                     placeholder='Ingrese su usuario' 
                                                     placeholderTextColor={constants.COLOR_GRIS_H} />
-                                            </View>
-                                    
-                                          
-                                              
-                                            </View> 
-                                      </View> 
-                                      <View style={styles.view_bienvenido_container}>
-                                            <View style={styles.view_bienvenido}>
-                                            <View style={styles.v_text}>  
-                                            <Text style={styles.text}>Contraseña</Text>
-                                            </View>
-                                            <View style={styles.v_input}>  
-                                            <TextInput style = {styles.input}   
+                                             </View>
+                                          </View>
+                                      
+                                      
+
+
+
+                                      <View style={styles.viewBienvenidot}>
+                                             <View style={styles.viewBienvenidoIntro}>
+                                             <Text style={styles.text}>Contraseña</Text>
+                                             <TextInput style = {styles.input}   
                                                       returnKeyType="go" 
                                                       onChangeText={(Password) => this.setState({ Password })}
                                                       ref={(input)=> this.PasswordInput = input} 
                                                       placeholder='Ingrese su Contraseña' 
                                                       placeholderTextColor={constants.COLOR_GRIS_H}
                                                       secureTextEntry/>
-                                            </View>
-                                      </View> 
-                                      </View> 
+                                             </View>
+                                          </View>
+
+
+                             
 
 
                                 </View>
 
+                            
+
                                 </Animated.View>
-                              </View>
-                  </View>
+                          
+                  
 
 
                   <TouchableOpacity style={styles.touchGo} onPress={()=>this.loginIn()} >            
@@ -178,15 +203,18 @@ async loginIn(){
                   <View style={styles.viewBotom}>  
                       <View style={styles.viewVersion}>  
                           <Text style={styles.text_version}>{this.state.comentario}</Text>
+                          <Text style={styles.text_version}> powered by gds - {constants.VERSION_APP} </Text>
                           
-                          <Text style={styles.text_version}> {constants.VERSION_APP} </Text>
-                          <Text style={styles.text_version}> powered by gds </Text>
                       </View>
-                  </View> 
+         
         </View> 
-        </LinearGradient>
         </View>
-        </KeyboardAwareScrollView>
+
+       </KeyboardAvoidingView>
+       </ScrollView>
+        </LinearGradient>
+
+
 
 
   );
@@ -227,16 +255,21 @@ export default connect(mapStateToProps, mapDispatchToProps)(LoginScreen);
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',  
-    backgroundColor: '#FFF',
-
-
+    
   },
+  scroll_view: {
+    flex: 1 
+  },
+  keyboard: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+ },
   viewCard: {
     backgroundColor: constants.COLOR_BLANCO,
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
-    flex: 1.2,
+    flex: 1,
   },
   st_icono: {
     width: "50%",
@@ -256,6 +289,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     alignItems: 'center',
     borderRadius: 50,
+    
     
 
 
@@ -287,13 +321,12 @@ textGo: {
 },
 
   input:{
-
-    
+    flex: 1,
     fontSize: constants.SIZE_LETRA_X_LARGE,
     color: constants.COLOR_GRIS_J
 },
 viewinput: {
-  flex: 1,
+  flex: 2,
   
 
 },
@@ -325,6 +358,7 @@ viewimagenFondo: {
   
 },
 view_bienvenido_container: {
+  backgroundColor: 'blue',
 flex: 1,
 flexDirection: 'row',
 paddingLeft: 20,
@@ -360,7 +394,7 @@ viewLoginText: {
 viewBienvenidot: {
   
   flexDirection: 'row',
-  flex: 1.5,
+  flex: 1,
 alignItems: 'center',
 alignContent: 'center',
 alignSelf: 'center',
@@ -408,8 +442,8 @@ viewBotom: {
   alignContent: 'center',
   alignSelf: 'center',
 },
-v_text: {flex: 0.7,   alignSelf: 'flex-start',},
-v_input: {flex: 1},
+v_text: {flex: 0.5,   alignSelf: 'flex-start',},
+v_input: {flex: 0.5},
 
 
 });

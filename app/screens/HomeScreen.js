@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from "react";
-import { StyleSheet, View, StatusBar, ScrollView, Text} from "react-native";
+import { StyleSheet, View, StatusBar, ScrollView, Button} from "react-native";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { useIsFocused } from '@react-navigation/native';
@@ -14,7 +14,7 @@ import SalaRanking from "../components/home/SalasRanking";
 // Imports: Redux Actions
 import ActionCreators from "../redux/actions";
 import EnvioBoton from "../components/pendientesEnvio/EnvioBoton";
-import NetworkScreen from './NetworkScreen'
+
 
 function FocusAwareStatusBar(props) {
   const isFocused = useIsFocused();
@@ -33,9 +33,8 @@ class Home extends React.Component {
     return (
       <View style={styles.container}>
           <FocusAwareStatusBar barStyle="light-content" />
-          <NetworkScreen />
-          <View style={styles.styDown}>
           
+          <View style={styles.styDown}>
           <CardIndicadores data={dataHome} />
               <ScrollView >
                <SalaRanking />
