@@ -28,7 +28,7 @@ class SalasScreen extends React.Component {
     if(dataSala){
       return(
         <SafeAreaView style={styles.container}>
-            <FocusAwareStatusBar barStyle="dark-content" />
+            <FocusAwareStatusBar barStyle="light-content" />
             <SalasListado />
             <SalaDetallesScreen />
             <OrdenSalasScreen />

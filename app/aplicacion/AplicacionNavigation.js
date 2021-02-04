@@ -6,6 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import 'react-native-gesture-handler';
 
 import Imagen from './Imagegds'
+import CountSalas from './CountSalas'
 
 
 import LoginScreen from '../screens/LoginScreen'
@@ -48,19 +49,19 @@ function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen
-        name={transformaFecha()}
-        component={HomeScreen}
-        options={{
-          headerTitle: "hola",
-          headerRight: () => (
-            <Button
-              onPress={() => alert('This is a button!')}
-              title="Info"
-              color="#000"
-            />
-          ),
-        }}
-      />
+          name={transformaFecha()}
+          component={HomeScreen}
+          options={{headerRight: () => (<Imagen />), 
+             tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
+          headerTitleAlign: 'left',
+          headerLeft: null,
+          headerTitleStyle: {fontWeight: 'bold',
+          fontSize: constants.SIZE_LETRA_LARGE,
+          color: constants.COLOR_BLANCO,
+          flex: 1,
+          flexDirection: 'row'
+          }}}
+        />
     </HomeStack.Navigator>
   );
 }
@@ -71,9 +72,8 @@ function TareasStackScreen() {
       <TareaStack.Screen
         name={transformaFecha()}
         component={TareasScreen}
-        options={{      headerRight: () => (
-          <Imagen />
-        ),  tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
+        options={{headerRight: () => (<Imagen />), 
+           tabBarLabel: 'Home!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
         headerTitleAlign: 'left',
         headerLeft: null,
         headerTitleStyle: {fontWeight: 'bold',
@@ -94,7 +94,7 @@ function SalasStackScreen() {
       <SalasStack.Screen
         name={transformaFecha()}
         component={SalasScreen}
-        options={{  tabBarLabel: 'Salas!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
+        options={{ headerRight: () => (<Imagen />),  tabBarLabel: 'Salas!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
         headerTitleAlign: 'left',
         headerLeft: null,
         headerTitleStyle: {fontWeight: 'bold',
@@ -116,7 +116,7 @@ function UsuarioStackScreen() {
       <UsuarioStack.Screen
         name={transformaFecha()}
         component={UsuarioScreen}
-        options={{  tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
+        options={{headerRight: () => (<Imagen />),   tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
         headerTitleAlign: 'left',
         headerLeft: null,
         headerTitleStyle: {fontWeight: 'bold',
@@ -138,7 +138,7 @@ function LoginStackScreen() {
         name={transformaFecha()}
         component={LoginScreen}
    
-        options={{  tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
+        options={{  headerRight: () => (<Imagen />), tabBarLabel: 'Login!', headerStyle:{backgroundColor: constants.COLOR_PRIMARIO}, 
         headerTitleAlign: 'left',
         headerTitleStyle: {fontWeight: 'bold',
         
@@ -155,8 +155,15 @@ function LoginStackScreen() {
 
 const Tab = createBottomTabNavigator();
 
+const MyTabsRedux = connect(state => ({
+  value: state.authReducer.loggedIn,
+  dataSala: state.userReducer.dataSala
+}))(MyTabs);
 
-function MyTabs() {
+
+function MyTabs(value, dataSala) {
+
+  
   const cantSalas =  5 //this.props.dataSala
 
   return (
@@ -227,7 +234,7 @@ function MyTabs() {
     }}
   >
     <Tab.Screen name="Home" component={HomeStackScreen} options={{ tabBarBadge: null,}} />
-    <Tab.Screen name="Salas" component={SalasStackScreen} options={{ tabBarBadge: cantSalas }} />
+    <Tab.Screen name="Salas" component={SalasStackScreen} options={{ tabBarBadge: <CountSalas /> }} />
     <Tab.Screen name="Tareas" component={TareasStackScreen} options={{ tabBarBadge: null}} />
     <Tab.Screen name="Usuario" component={UsuarioStackScreen} options={{ tabBarBadge: null }} />
     
@@ -284,29 +291,3 @@ function RootStackStar() {
 
 
 
-
-
-function Validar({ value, dataSala }) {
-  var SalasNuevas = 0
-  if (dataSala) {
-    try {
-      SalasNuevas = dataSala.salas.filter(word => word.estado===0).length
-    } catch (error) {
-      SalasNuevas = 0
-    }
-   
-  } 
-   
-  if(value)
-  {  
-    return(MyLogin())
-  }else{
-    return ( <MyLogin />) 
-  }
-  
-}
-
-const Validando = connect(state => ({
-  value: state.authReducer.loggedIn,
-  dataSala: state.userReducer.dataSala
-}))(Validar);

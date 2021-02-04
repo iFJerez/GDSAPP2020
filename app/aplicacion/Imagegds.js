@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, Image} from 'react-native';
-
+const ImageLoad = require ('../images/gds_v_transparente.png')
 
 export default class Imagegds extends Component {
 
   render() {
 
-const {fila, i} = this.props;
+
 
     return (
       
@@ -40,14 +40,14 @@ const styles = StyleSheet.create({
   
     },
     st_icono: {
-      width: "50%",
-      height: "50%",
+      width: 50,
+      height: 50,
       resizeMode: "center",
       alignItems: "center",
     },
       viewimagenFondo: {
         flex: 1,
-        
+        paddingHorizontal: 20,
         flexDirection: 'row',
         alignItems: 'center',
         alignContent: 'center',
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
         
       },
       viewimagen: {
-        width: '100%',
+        
       
         alignItems: 'center',
         alignContent: 'center',
