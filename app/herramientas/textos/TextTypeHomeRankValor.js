@@ -27,11 +27,11 @@ const {text} = this.props;
       adjustsFontSizeToFit
       numberOfLines={1}
       style={{
-        fontSize: constants.SIZE_LETRA_XX_LARGE,
+        fontSize: constants.SIZE_LETRA_X_LARGE,
         textAlignVertical: "center",
         textAlign: "center",
         fontWeight: 'bold',
-        color: constants.COLOR_QUINTENARIO_CLARO,
+        color: constants.COLOR_QUINTENARIO,
       }}>{text}</Text>
     </View>
     )

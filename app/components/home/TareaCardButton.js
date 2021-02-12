@@ -4,7 +4,7 @@ import * as constants from '../../herramientas/Const'
 import Icon from '../../herramientas/IconAntDesign'
 
 
-export default class CardUsuario extends Component {
+export default class TareaCardButton extends Component {
   render() {
     const {activa, selectionOnPress, nombre, base, cantidad, name_icon} = this.props
     let style_activa = activa === nombre ? styles.sty_botonOn: styles.sty_botonOff
@@ -15,9 +15,10 @@ export default class CardUsuario extends Component {
       <TouchableOpacity
       onPress={() => selectionOnPress(nombre)}>
         <View style={[style_activa, styles.container ]}>
-          <Icon name={name_icon} color={style_icon} size={constants.ICON_SMALL} />
-          <Text style={style_texto}>{nombre}</Text>
-          <Text style={style_texto}>{cantidad} / {base}</Text>
+          <Text style={styles.textoCant}>{cantidad} / <Text style={styles.textoCantBold}>{base}</Text></Text>
+          <Icon name={name_icon} color={constants.COLOR_QUINTENARIO_CLARO} size={constants.ICON_VERY_X_SMALL} />
+          <Text style={styles.textoSubTitle}>{nombre}</Text>
+          
       
       </View>
     </TouchableOpacity>
@@ -30,11 +31,13 @@ export default class CardUsuario extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    
+    flex: 1,
     padding: 10,
     borderRadius: 5,
     margin: 5,
     alignItems: 'center',
-    backgroundColor: constants.COLOR_BLANCO
+    backgroundColor: constants.COLOR_GRIS_B,
   },
 
   sty_botonOff: {
@@ -48,10 +51,25 @@ const styles = StyleSheet.create({
     padding: 10
     
   },
+  textoCant: {
+    paddingBottom: 5,
+    color: constants.COLOR_QUINTENARIO,
+    fontSize: constants.SIZE_LETRA_XX_LARGE,
+
+  },
+  textoCantBold: {
+    color: constants.COLOR_QUINTENARIO,
+    fontSize: constants.SIZE_LETRA_XX_LARGE,
+    fontWeight: 'bold'
+  },
   textoOn: {
-    color: constants.COLOR_PRIMARIO},
+    color: constants.COLOR_QUINTENARIO},
     
-  textoOff: {
-      color: constants.COLOR_PRIMARIO}
+    textoSubTitle: {
+      paddingTop: 5,
+      color: constants.COLOR_QUINTENARIO_CLARO,
+      fontSize: constants.SIZE_LETRA_SMALL,
+  
+    },
   
 });

@@ -10,16 +10,14 @@ export default class HomeIndicadores extends Component {
     const {data} = this.props
     return (
       <View style={styles.container}>
- 
-            
-             <View style={styles.st_indicadores_valor}>   
-             
-             <TextTypeHomeRankValor  text={data.valor}/>
-            </View>  
-            <View style={styles.st_diferencia}>   
-             <IndicadoresDiferencia numero={data.diferencia}/>
-             
-            </View> 
+          <View style={styles.container_plop}>
+                <View style={styles.st_indicadores_valor}>   
+                    <TextTypeHomeRankValor  text={data.valor}/>
+                </View>  
+                <View style={styles.st_diferencia}>   
+                    <IndicadoresDiferencia numero={data.diferencia}/>
+                </View> 
+          </View>
       </View>
     );
   }
@@ -28,11 +26,17 @@ export default class HomeIndicadores extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    width: '100%',
     
+  },
+  container_plop: {
+    flex: 1,
+    alignItems: 'flex-end',
     
   },
 
-  st_indicadores_texto: {flex: 1,  alignItems: 'center'},
-  st_indicadores_valor: {flex: 1, alignItems: 'center'},
-  st_diferencia: {flex: 1, alignItems: 'center'}
+  st_indicadores_texto: {flex: 1,  alignItems: 'flex-end'},
+  st_indicadores_valor: {flex: 1, alignItems: 'flex-end'},
+  st_diferencia: {flex: 1, alignItems: 'flex-start'}
 });

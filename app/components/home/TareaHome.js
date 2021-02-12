@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, LayoutAnimation, StyleSheet, ActivityIndicator, ActivityIndicatorComponent } from "react-native";
+import { View, LayoutAnimation, StyleSheet, ActivityIndicator, ScrollView } from "react-native";
 import { connect } from "react-redux";
 import TareaCardButton from "./TareaCardButton";
 import * as constants from "../../herramientas/Const";
@@ -117,35 +117,19 @@ class TareaBody extends Component {
     const tarjetas = this.generarTarjetas() 
     return (
       <View style={styles.container}>
-        <TextHomeSubTitulos text={"Tareas"} />
-        <View style={styles.botones}>
-         {tarjetas ? tarjetas : <ActivityIndicator/>}
-          {/* <TareaCardButton
-            activa={this.state.selectedButton}
-            selectionOnPress={this.selectionOnPress}
-            nombre={"INTELIGENTE"}
-            base={7}
-            cantidad={2}
-            name_icon={"rocket1"}
-          />
-
-          <TareaCardButton
-            activa={this.state.selectedButton}
-            selectionOnPress={this.selectionOnPress}
-            nombre={"EJECUCION"}
-            base={6}
-            cantidad={4}
-            name_icon={"team"}
-          />
-          <TareaCardButton
-            activa={this.state.selectedButton}
-            selectionOnPress={this.selectionOnPress}
-            nombre={"PROGRAMADAS"}
-            base={5}
-            cantidad={3}
-            name_icon={"setting"}
-          /> */}
-        </View>
+     
+        
+          <TextHomeSubTitulos text={"Tareas"} />
+          
+          
+            <View style={styles.botones}>
+   
+              <View style={styles.botones_fila}>
+              {tarjetas ? tarjetas : <ActivityIndicator/>}
+              </View>
+    
+            </View>
+ 
       </View>
     );
   }
@@ -153,11 +137,10 @@ class TareaBody extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    
+    flex: 1,
     backgroundColor: constants.COLOR_GRIS_D,
   },
   sty_texto: {
-    
     alignItems: "center",
     paddingHorizontal: 10,
     flexDirection: "row",
@@ -171,10 +154,17 @@ const styles = StyleSheet.create({
   st_indicadores_progres: { marginHorizontal: 10 },
   st_indicadores_texto: {},
   botones: {
+    flex: 1,
+    backgroundColor: constants.COLOR_BLANCO,
+
+    
+  },
+  botones_fila: {
+    flex: 1,
+    
+    backgroundColor: constants.COLOR_BLANCO,
     flexDirection: "row",
-    alignItems: "center",
-    alignContent: "center",
-    alignSelf: "center",
+    alignSelf: 'center'
   },
 
   body: { flex: 1, alignItems: "center" },

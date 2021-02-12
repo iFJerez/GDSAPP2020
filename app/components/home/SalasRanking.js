@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import { StyleSheet, View} from 'react-native';
+import { StyleSheet, View, ScrollView} from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as constants from '../../herramientas/Const'
@@ -30,38 +30,27 @@ try {
     return (
     <View key={"crearItem" + i} style={styles.container}>
       <View style={styles.container}>
-    
-    <RankingCard data={item}/>
+        <RankingCard data={item}/>
       </View>
-
-
-      
     </View>
     )
-
   })
   
 } catch (error) {
   
+  }
 }
-  
-
-
-
-  
-}
-
-
 
   render() {
 
     return (
-      <View style={styles.container}>
+  <View style={styles.container}>
+    <ScrollView>
        <TextHomeSubTitulos text={'Ranking'} />
         <View style={styles.card}>   
-        
-       {this.crearItem()} 
+        {this.crearItem()} 
     </View>
+    </ScrollView>
  </View>
     );
   }

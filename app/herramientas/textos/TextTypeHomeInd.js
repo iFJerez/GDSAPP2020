@@ -31,7 +31,7 @@ const {text} = this.props;
         textAlignVertical: "center",
         textAlign: "center",
         fontWeight: 'bold',
-        color: constants.COLOR_QUINTENARIO_CLARO,
+        color: constants.COLOR_QUINTENARIO,
       }}>{text}</Text>
     </View>
     )

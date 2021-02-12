@@ -28,7 +28,6 @@ export default class CardItems extends Component {
             </View>
             <View style={styles.sty_icon}>
                 <Indicadores data={data.indicadores[0]} />
-                
             </View>
         </View>
       
