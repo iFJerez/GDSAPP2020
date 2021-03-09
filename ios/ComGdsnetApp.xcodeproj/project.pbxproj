@@ -34,6 +34,8 @@
 		E3F642247821B11D2EC87C0D /* libPods-ComGdsnetApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A040E34FA427FA528C382CD2 /* libPods-ComGdsnetApp-tvOSTests.a */; };
 		E5D00D67B46A482EBDC0F16A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0227351FBE134465A3C22295 /* FontAwesome.ttf */; };
 		F826CD1170254E07BFBDB9DB /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB601A5752A4B558BF48316 /* EvilIcons.ttf */; };
+		F83C6B9B25F7D1AD00CB374E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F83C6B9A25F7D1AD00CB374E /* GoogleService-Info.plist */; };
+		F83C6B9C25F7D1AD00CB374E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F83C6B9A25F7D1AD00CB374E /* GoogleService-Info.plist */; };
 		FCA03841917746189FFCA38F /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18D9B052EA89494EA00A63A2 /* Zocial.ttf */; };
 		FDEF55E690844AF2B37F5F43 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33E6FC488ED3442DBA30B9BB /* SimpleLineIcons.ttf */; };
 /* End PBXBuildFile section */
@@ -114,6 +116,7 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EF879091D005490D814E7F18 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		F2B2DC36427D49DFBD5B56C3 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		F83C6B9A25F7D1AD00CB374E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F8892A5725F280CF00282910 /* ComGdsnetApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ComGdsnetApp.entitlements; path = ComGdsnetApp/ComGdsnetApp.entitlements; sourceTree = "<group>"; };
 		FBFD311EC9440C65777D21E5 /* Pods-ComGdsnetApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComGdsnetApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ComGdsnetApp-tvOSTests/Pods-ComGdsnetApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +185,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				F83C6B9A25F7D1AD00CB374E /* GoogleService-Info.plist */,
 			);
 			name = ComGdsnetApp;
 			sourceTree = "<group>";
@@ -443,6 +447,7 @@
 				2C09C56DB8B849B4B54B7A57 /* FontAwesome5_Regular.ttf in Resources */,
 				4CE3651C61C749DDA7B9A13C /* FontAwesome5_Solid.ttf in Resources */,
 				999B270AE644488BAC7E9461 /* Fontisto.ttf in Resources */,
+				F83C6B9B25F7D1AD00CB374E /* GoogleService-Info.plist in Resources */,
 				DDDDD923E26A4328868B4E19 /* Foundation.ttf in Resources */,
 				ADDFCA0BDF6E47E39161B362 /* Ionicons.ttf in Resources */,
 				937C2358FB12409E92CBD683 /* MaterialCommunityIcons.ttf in Resources */,
@@ -458,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+				F83C6B9C25F7D1AD00CB374E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,6 +751,7 @@
 			baseConfigurationReference = 00D6851AE2F2AC8E51F80688 /* Pods-ComGdsnetAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				DEVELOPMENT_TEAM = 6NLS6X986X;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -769,6 +776,7 @@
 			baseConfigurationReference = B1B7EC06546B0065828A5AD1 /* Pods-ComGdsnetAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 6NLS6X986X;
 				INFOPLIST_FILE = ComGdsnetAppTests/Info.plist;
