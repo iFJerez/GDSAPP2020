@@ -21,6 +21,7 @@ class ModalScreen extends React.Component {
     super(props);
     this.state = { scrollOffset: 0, scrollViewRef: 0 };
     this.scrollViewRef = React.createRef();
+    this.handleEnviar = this.handleEnviar.bind(this)
     
   }
 
@@ -90,11 +91,9 @@ class ModalScreen extends React.Component {
 
   async handleEnviar (){
     console.log("entro a handleEnviar")
-
     const {objeciones} = this.props;
 
  objeciones.map((v=>{
-
       obj = {
       "id_usuario": this.props.dataHome.id_usuario,
       "fecha_objecion": v.fechaHora,  
@@ -176,7 +175,7 @@ class ModalScreen extends React.Component {
           <EnvioDetalle data={data} />
           </View>
         </ScrollView>
-        <EnvioBotonEnviar touchHandler={this.handleEnviar()}/>
+        <EnvioBotonEnviar touchHandler={this.handleEnviar}/>
       </View>
     </Modal>
     )

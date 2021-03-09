@@ -13,6 +13,8 @@ import java.util.ArrayList;
 
 // @react-native-community/async-storage
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+// @react-native-community/geolocation
+import com.reactnativecommunity.geolocation.GeolocationPackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // @react-native-picker/picker
@@ -31,6 +33,8 @@ import com.BV.LinearGradient.LinearGradientPackage;
 import com.beefe.picker.PickerViewPackage;
 // react-native-picker-module
 import com.taluttasgiran.pickermodule.ReactNativePickerModulePackage;
+// react-native-push-notification
+import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
@@ -87,6 +91,7 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new AsyncStoragePackage(),
+      new GeolocationPackage(),
       new RNCMaskedViewPackage(),
       new RNCPickerPackage(),
       new RNCameraPackage(),
@@ -96,6 +101,7 @@ public class PackageList {
       new LinearGradientPackage(),
       new PickerViewPackage(),
       new ReactNativePickerModulePackage(),
+      new ReactNativePushNotificationPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),

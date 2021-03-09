@@ -1,16 +1,18 @@
 // Imports: Dependencies
 import React from "react";
-import { StyleSheet, View, StatusBar, ScrollView, Button} from "react-native";
+import { StyleSheet, View, StatusBar} from "react-native";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { useIsFocused } from '@react-navigation/native';
-
-//import data from "../api/home.json";
-import CardIndicadores from "../components/home/CardIndicadores";
 import * as constants from "../herramientas/Const";
-import TareaHome from "../components/home/TareaHome";
 
+//Components";
+import CardIndicadores from "../components/home/CardIndicadores";
+import TareaHome from "../components/home/TareaHome";
 import SalaRanking from "../components/home/SalasRanking";
+import Geolocation from "../components/home/Geolocation";
+import Notification from "../components/home/Notification";
+
 // Imports: Redux Actions
 import ActionCreators from "../redux/actions";
 import EnvioBoton from "../components/pendientesEnvio/EnvioBoton";
@@ -35,10 +37,7 @@ class Home extends React.Component {
           <FocusAwareStatusBar barStyle="light-content" />
           
           <View style={styles.styDown}>
- 
-            <CardIndicadores data={dataHome} />
-            <SalaRanking />  
-            <TareaHome touchHandler={() => this.props.navigation.navigate("Tareas")}/>
+            <Notification />
    
           </View>
         <EnvioBoton />

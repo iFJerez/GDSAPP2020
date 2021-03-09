@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "501871985076",
+    "project_id": "gdsapp2021-56ecb",
+    "storage_bucket": "gdsapp2021-56ecb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501871985076:android:7cd0d722224405f18632e1",
+        "android_client_info": {
+          "package_name": "com.comgdsnetapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501871985076-2prnplo2l65ilnir3v84ie16ck80h781.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEVOQ5sf8_eNGW7Gr2HjQP5OwvAKlausU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501871985076-2prnplo2l65ilnir3v84ie16ck80h781.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

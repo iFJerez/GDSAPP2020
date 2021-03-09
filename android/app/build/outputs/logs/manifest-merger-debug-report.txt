@@ -1,13 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from [androidx.multidex:multidex:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/72c78afa313feceb85e7b1f859c652d0/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-56:12
+INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-56:12
+INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-56:12
+INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-56:12
+MERGED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-56:12
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/637415d56836396ca67c8ecfd177a0ea/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
 MERGED from [:react-native-community_async-storage] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_geolocation] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_masked-view] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-picker_picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-picker/picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-fs] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
@@ -15,69 +16,94 @@ MERGED from [:react-native-gesture-handler] /Users/martinstone/Documents/GitHub/
 MERGED from [:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [:react-native-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-picker-module] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker-module/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-push-notification] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-push-notification/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-28:12
 MERGED from [:react-native-vector-icons] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.63.4] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0ebedc0ed19e02e6170acee8c2ec6960/jetified-react-native-0.63.4/AndroidManifest.xml:2:1-13:12
-MERGED from [org.webkit:android-jsc:r245459] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e1011017b7569e811da316caf8f2ab6d/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.63.4] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/35bf5d0a5019ac622900828fe1bab9d8/jetified-react-native-0.63.4/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-analytics:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7407c1b1f22ef53792a6c787b2c1a09f/firebase-analytics-18.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2078b1b16ddf78d3e56b4bd5a90ea61c/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-linear-gradient] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.material:material:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b9adbc54299e2b17031a542d2360df30/material-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c23dddf885881e2fce950d6453f1c842/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/bf2815928d3fec1f6596d1256f1950d7/play-services-vision-17.0.2/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e5756bb3b3cf31ece34c1aea5f97a37b/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/ce1418cef383ab6c0a03575d961013c4/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c2d58d24aac7128ae98bd0fc2d3ced8a/play-services-flags-16.0.1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0edc99e564f651cb368f8e5c203650ef/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/220bc2b4c03828c8d1a372be5b94ba1c/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/1fb3c3a6aa0b301b9a491f15d9c745b6/jetified-play-services-basement-16.1.0/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fe432d8477f21659d0f863b3cc73433/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d9077936d66cac5483f874550b248c58/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6f2e7aedebbe883a9e52ee3c92a523de/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6b907d07bc6e33abc3cdd6062748df2c/fresco-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/71f5ceb9d5ef2051f8b0dc6f2216d031/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/cf740965aac9c1a7afa31bbef82d4447/drawee-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5616e623add4ee21b9d577689ac8ddbf/nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f408ba1ae9952c25cc249e0b61e979c5/imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2517d9628fcac1a0ee9131ac02b81d65/nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2231e5cb00713bb119f3ca3eda7f0116/imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/79ede560434d6f45def97410ab7d38e2/soloader-0.9.0/AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/781c8672e2fb9816e42bbef9eafef9c3/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20bc40ab5f3f7dbf60dbb9291e00fc9a/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f29ba713777a0f2555cf4d6d00d50c58/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5934748dd4654a25b77c7746bdb4ee7e/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c821b185d9cf6102cadf8a2e45200402/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/369096329927eb4cba9aa9911c0ca305/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2f6bab083b22adf392ec0b77a58c5661/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0f756a09176afa1e7035e1660752a8dc/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6014a5b506d6a1e78f13d3541357512a/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/bd839343b0db3425baecbdaade87898e/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/90e3d8b49aa10e8790c6c657152cd27e/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4b06c146a85d66885675ace87622e9be/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7817cf144322275a802c0e6b56bb19ef/activity-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d9e5b24e3d62f1fcd364197f0fd499fa/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5e7aa9c2265750df3f3b2f2a164ea26f/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/40a3d9889ee849b9bd812fe8fd6dc69b/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f1ec6cd97adccb7f27d658845bd91f4a/transition-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2cd18cd241b6f27e4bf09cafb8a914a7/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2d1002739da837eae1c5aa61afa4926d/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/12e6e66baa82d1e6cfaba9e4100d45c4/core-1.1.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/380d0b6636477768af91e4865a832fd5/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d568c5167796fc64f8c393bbc03698b0/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/34c44231bbf9dd5dd3a5baa3a18d5aca/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7b4a4fc3a6f80716aae4463991e109d5/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/677eef58e63b378d8a132495b11d8c5a/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e72e4d85efb4ac5422806fdd33fbcb0e/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/10565f6171bb465927513a8180a9c8dc/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6b42609a4b0bf017f5551a7639b8ec5/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0f356ca273969d1629b5993ff9453a09/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0d87e94910f050454e7e0140bf20f9cd/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c22dce67ec7bcde1e56cdd60b10d267d/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e7c466496f74775176bdb527b56418d8/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/46dc6809d92f3be6408c1aa6db59b2a6/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/bc16ef5b71ad21667328a22e93b92009/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:17:1-45:12
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9fbdc277135f56299ac0fb4c1420dda1/firebase-datatransport-17.0.10/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.material:material:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b4a8b9f76c1058f9b74e96e8f288ffb3/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0e4bf32dc0eb246988d67d2c8dbdec4f/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/efb214fcaaf1e27a7a5a77180b85ae79/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a09cc860e0f9f855a8ff4f03beb8ba67/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/97ed5187729fbb87cca4824675cac95b/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/914cb70c220573c4247e6d6a93252492/fresco-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c8dd3937b9ca70fc47788865d7b26ed9/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5151c1f823df2d05335d9c6bfd474ae1/drawee-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/38b3764b67766692b6043fcf75be5903/nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e29a01bd1c04aef33ebfc767eb4fed90/imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d38d954654fb33a2af3cbef4a3df3006/nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/af0e06138a466d6dcf4dd8dacbfbce48/imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4fd6905ab924b8a107a555d8c4c23663/soloader-0.9.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f46864430dfe5ce8c779a7e871009951/play-services-vision-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f2b3c167e07ed181009aa5ff99c8cca6/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/24d82c3d9253031745e028257aa8b138/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/50bb5f6a6d68c28fb34806c88a3c1952/play-services-measurement-sdk-18.0.2/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56317e82ca4aa0d3a528f4e9609bd0fe/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56b7eebcb97b469abc7deaca971b8939/play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0eb8a4906aa65c07cf6c1cab0b9dc4ed/firebase-installations-interop-16.0.1/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:15:1-49:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e02d3ae64e056e5c4204f2865e6ecba8/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/89f3ec88a0808461f752809552b8c233/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/77233af4df7cba291ed4b0c9ec66a403/play-services-flags-16.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2d4ae447a33d679f1374a0dcf9e69a4c/firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fc4e0fc73475fdf4c433f298b3660fb/play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/10ae8443daf099bae33ca071eca178d4/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4cc48b6feb97d32a625fbe4fdfb19c78/firebase-measurement-connector-18.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/27147b0d739486d87406f74424bfdae1/play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/da47d56cb2cfca1e1ef94be2de5bd51a/play-services-measurement-sdk-api-18.0.2/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/cc1c517e54eec492f132dcfc73f043cc/play-services-measurement-base-18.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/19296796e5d91ead2a6aebcf762da67f/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b55f641b295dd0ad9c447007105a0090/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/3c8931a28e5d92143843aa313fc79c4c/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c4e22d7ccae951db2cd4584d86bc5685/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b6fcf235eb3e1bc032c36c2ed9815e42/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/df08bf0483376965be5f2c9278b31fb3/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/14f76079c978e7e957f58ce44e2edb48/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2c22533141efcfd8409f1e50194060ab/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/68b1f26732de0cb20cdc377488cdd422/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0649e577800dc03553c743bdfe0fddfa/jetified-firebase-components-16.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a6e4f6ace3c75070bb4ca8672aa2f783/firebase-encoders-json-17.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2db9aa1121a52eb41d331a10d288212b/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9b7fba83ccedb58cb02a5c653391ea4e/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e769db00d3a6f1e7761c105e2960f762/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f65d0916206d7dea7c38be1822099c10/activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/cea29817a9bd6ed9a7c9281f5bc05bf4/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/054feeeb70f2d2a2028690a906bf7533/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a964765823e51a7460ea26c1e64a7d41/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a8aace042d734b7042aa23c868b534ff/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b03021522a4540bd789d75c8fcad4c8a/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e5083b6004891c50e9c1ddb2689200a3/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/14e9e79cd274059a3053ecd49a614f50/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/32a643873f85a3557878900f7c61a131/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/09a8df2dbb10ec647013426c9f0e75ac/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/62304d939ff195e92899d271ef1420da/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/757244ebdea7bef5702be89d9daaf7a6/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/336ea3253dfeb53d74ebb86fc4f3e1f9/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d0deabf0868e933aa70f0dab94ed262a/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f55683e605b454ebc172ebdde818d95b/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/479f0c648b23c1eefa111cb239ce0880/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a34b9ae6e39d4457ccea0eb6b9d30dea/jetified-transport-api-2.2.1/AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/200bf59658ba07e44fd1a412263cb3c6/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f5b89bd39c03cf10464e5eaec71f659d/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5050faf19adadc1ed87ff13cf854db1d/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e5a41ff38cb8e715d121088ac4be9e4b/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6057cbd22812ff5f5c6c34127c607b27/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:2:1-52:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/09a3f0db04a80679bc189e453756b5dc/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
 INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -88,112 +114,222 @@ INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/deb
 		INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-56:12
 		INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:1-56:12
 		INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56317e82ca4aa0d3a528f4e9609bd0fe/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56317e82ca4aa0d3a528f4e9609bd0fe/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/da47d56cb2cfca1e1ef94be2de5bd51a/play-services-measurement-sdk-api-18.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/da47d56cb2cfca1e1ef94be2de5bd51a/play-services-measurement-sdk-api-18.0.2/AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:6:7-68
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:6:24-65
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:7:22-78
 application
-ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:6:5-24:19
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:10:5-54:19
+MERGED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:10:5-54:19
+MERGED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:10:5-54:19
 MERGED from [:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [:react-native-image-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-26:19
 MERGED from [:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-26:19
-MERGED from [com.facebook.react:react-native:0.63.4] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0ebedc0ed19e02e6170acee8c2ec6960/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.63.4] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0ebedc0ed19e02e6170acee8c2ec6960/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.material:material:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b9adbc54299e2b17031a542d2360df30/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b9adbc54299e2b17031a542d2360df30/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/bf2815928d3fec1f6596d1256f1950d7/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/bf2815928d3fec1f6596d1256f1950d7/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e5756bb3b3cf31ece34c1aea5f97a37b/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e5756bb3b3cf31ece34c1aea5f97a37b/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/ce1418cef383ab6c0a03575d961013c4/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/ce1418cef383ab6c0a03575d961013c4/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0edc99e564f651cb368f8e5c203650ef/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0edc99e564f651cb368f8e5c203650ef/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/220bc2b4c03828c8d1a372be5b94ba1c/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/220bc2b4c03828c8d1a372be5b94ba1c/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/1fb3c3a6aa0b301b9a491f15d9c745b6/jetified-play-services-basement-16.1.0/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/1fb3c3a6aa0b301b9a491f15d9c745b6/jetified-play-services-basement-16.1.0/AndroidManifest.xml:22:5-26:19
-MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/79ede560434d6f45def97410ab7d38e2/soloader-0.9.0/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/79ede560434d6f45def97410ab7d38e2/soloader-0.9.0/AndroidManifest.xml:11:5-20
-MERGED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/12e6e66baa82d1e6cfaba9e4100d45c4/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/12e6e66baa82d1e6cfaba9e4100d45c4/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d568c5167796fc64f8c393bbc03698b0/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d568c5167796fc64f8c393bbc03698b0/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.facebook.react:react-native:0.63.4] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/35bf5d0a5019ac622900828fe1bab9d8/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.63.4] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/35bf5d0a5019ac622900828fe1bab9d8/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
+MERGED from [com.google.firebase:firebase-analytics:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7407c1b1f22ef53792a6c787b2c1a09f/firebase-analytics-18.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7407c1b1f22ef53792a6c787b2c1a09f/firebase-analytics-18.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:22:5-43:19
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:22:5-43:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9fbdc277135f56299ac0fb4c1420dda1/firebase-datatransport-17.0.10/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9fbdc277135f56299ac0fb4c1420dda1/firebase-datatransport-17.0.10/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.material:material:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b4a8b9f76c1058f9b74e96e8f288ffb3/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b4a8b9f76c1058f9b74e96e8f288ffb3/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4fd6905ab924b8a107a555d8c4c23663/soloader-0.9.0/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4fd6905ab924b8a107a555d8c4c23663/soloader-0.9.0/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f46864430dfe5ce8c779a7e871009951/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f46864430dfe5ce8c779a7e871009951/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/24d82c3d9253031745e028257aa8b138/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/24d82c3d9253031745e028257aa8b138/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/50bb5f6a6d68c28fb34806c88a3c1952/play-services-measurement-sdk-18.0.2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/50bb5f6a6d68c28fb34806c88a3c1952/play-services-measurement-sdk-18.0.2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56b7eebcb97b469abc7deaca971b8939/play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56b7eebcb97b469abc7deaca971b8939/play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:25:5-47:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:25:5-47:19
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e02d3ae64e056e5c4204f2865e6ecba8/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e02d3ae64e056e5c4204f2865e6ecba8/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/89f3ec88a0808461f752809552b8c233/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/89f3ec88a0808461f752809552b8c233/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2d4ae447a33d679f1374a0dcf9e69a4c/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2d4ae447a33d679f1374a0dcf9e69a4c/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fc4e0fc73475fdf4c433f298b3660fb/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fc4e0fc73475fdf4c433f298b3660fb/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/10ae8443daf099bae33ca071eca178d4/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/10ae8443daf099bae33ca071eca178d4/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4cc48b6feb97d32a625fbe4fdfb19c78/firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4cc48b6feb97d32a625fbe4fdfb19c78/firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/27147b0d739486d87406f74424bfdae1/play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/27147b0d739486d87406f74424bfdae1/play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/cc1c517e54eec492f132dcfc73f043cc/play-services-measurement-base-18.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/cc1c517e54eec492f132dcfc73f043cc/play-services-measurement-base-18.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/19296796e5d91ead2a6aebcf762da67f/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/19296796e5d91ead2a6aebcf762da67f/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/14e9e79cd274059a3053ecd49a614f50/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/14e9e79cd274059a3053ecd49a614f50/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/09a8df2dbb10ec647013426c9f0e75ac/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/09a8df2dbb10ec647013426c9f0e75ac/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/12e6e66baa82d1e6cfaba9e4100d45c4/core-1.1.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/14e9e79cd274059a3053ecd49a614f50/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:8:7-39
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:12:7-39
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:12:7-39
 	tools:ignore
 		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:7:75-114
 	android:roundIcon
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:10:7-52
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:14:7-52
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:14:7-52
 	tools:targetApi
 		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:7:54-74
 	android:icon
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:9:7-41
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:13:7-41
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:13:7-41
 	android:allowBackup
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:11:7-34
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:15:7-34
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:15:7-34
 	android:theme
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:12:7-38
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:16:7-38
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:16:7-38
 	android:usesCleartextTraffic
 		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml:7:18-53
 	android:name
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:7:7-38
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:11:7-38
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:11:7-38
+meta-data#com.dieam.reactnativepushnotification.notification_foreground
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:19:7-20:44
+	android:value
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:20:21-42
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:19:19-95
+meta-data#com.dieam.reactnativepushnotification.notification_color
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:22:9-23:54
+	android:resource
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:23:21-52
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:22:21-92
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationActions
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:25:9-108
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:25:19-105
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:26:9-110
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:26:19-107
+receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:27:9-33:20
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:27:19-115
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:28:13-32:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:29:17-79
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:29:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:30:25-79
+action#com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:31:17-81
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:31:25-79
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:35:9-41:19
+	android:exported
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:36:13-107
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:38:13-40:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:39:25-75
 activity#com.comgdsnetapp.MainActivity
-ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:13:7-22:18
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:43:7-52:18
 	android:label
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:45:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:17:9-51
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:47:9-51
 	android:configChanges
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:16:9-79
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:46:9-79
 	android:name
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:14:9-37
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:44:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:18:9-21:25
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:48:9-51:25
 action#android.intent.action.MAIN
-ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:19:13-65
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:49:13-65
 	android:name
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:19:21-62
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:49:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:20:13-73
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:50:13-73
 	android:name
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:20:23-70
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:50:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:23:7-84
+ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:53:7-84
 	android:name
-		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:23:17-81
+		ADDED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml:53:17-81
 uses-sdk
 INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/main/AndroidManifest.xml
-MERGED from [androidx.multidex:multidex:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/72c78afa313feceb85e7b1f859c652d0/multidex-2.0.0/AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/72c78afa313feceb85e7b1f859c652d0/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/637415d56836396ca67c8ecfd177a0ea/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/637415d56836396ca67c8ecfd177a0ea/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-camera] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_async-storage] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_async-storage] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_geolocation] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_geolocation] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/geolocation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-picker_picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/@react-native-picker/picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -208,6 +344,8 @@ MERGED from [:react-native-picker] /Users/martinstone/Documents/GitHub/GDSAPP202
 MERGED from [:react-native-picker] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-picker-module] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker-module/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-picker-module] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-picker-module/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-push-notification/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-push-notification/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-safe-area-context] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -218,122 +356,170 @@ MERGED from [:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020
 MERGED from [:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
 MERGED from [:react-native-vector-icons] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.4] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0ebedc0ed19e02e6170acee8c2ec6960/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.4] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0ebedc0ed19e02e6170acee8c2ec6960/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e1011017b7569e811da316caf8f2ab6d/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e1011017b7569e811da316caf8f2ab6d/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.4] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/35bf5d0a5019ac622900828fe1bab9d8/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.4] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/35bf5d0a5019ac622900828fe1bab9d8/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-analytics:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7407c1b1f22ef53792a6c787b2c1a09f/firebase-analytics-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7407c1b1f22ef53792a6c787b2c1a09f/firebase-analytics-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [org.webkit:android-jsc:r245459] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2078b1b16ddf78d3e56b4bd5a90ea61c/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2078b1b16ddf78d3e56b4bd5a90ea61c/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-linear-gradient] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-linear-gradient] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.material:material:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b9adbc54299e2b17031a542d2360df30/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b9adbc54299e2b17031a542d2360df30/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c23dddf885881e2fce950d6453f1c842/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c23dddf885881e2fce950d6453f1c842/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/bf2815928d3fec1f6596d1256f1950d7/play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/bf2815928d3fec1f6596d1256f1950d7/play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e5756bb3b3cf31ece34c1aea5f97a37b/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e5756bb3b3cf31ece34c1aea5f97a37b/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/ce1418cef383ab6c0a03575d961013c4/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/ce1418cef383ab6c0a03575d961013c4/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c2d58d24aac7128ae98bd0fc2d3ced8a/play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c2d58d24aac7128ae98bd0fc2d3ced8a/play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0edc99e564f651cb368f8e5c203650ef/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0edc99e564f651cb368f8e5c203650ef/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/220bc2b4c03828c8d1a372be5b94ba1c/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/220bc2b4c03828c8d1a372be5b94ba1c/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/1fb3c3a6aa0b301b9a491f15d9c745b6/jetified-play-services-basement-16.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/1fb3c3a6aa0b301b9a491f15d9c745b6/jetified-play-services-basement-16.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fe432d8477f21659d0f863b3cc73433/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fe432d8477f21659d0f863b3cc73433/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d9077936d66cac5483f874550b248c58/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d9077936d66cac5483f874550b248c58/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6f2e7aedebbe883a9e52ee3c92a523de/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6f2e7aedebbe883a9e52ee3c92a523de/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6b907d07bc6e33abc3cdd6062748df2c/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6b907d07bc6e33abc3cdd6062748df2c/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/71f5ceb9d5ef2051f8b0dc6f2216d031/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/71f5ceb9d5ef2051f8b0dc6f2216d031/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/cf740965aac9c1a7afa31bbef82d4447/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/cf740965aac9c1a7afa31bbef82d4447/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5616e623add4ee21b9d577689ac8ddbf/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5616e623add4ee21b9d577689ac8ddbf/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f408ba1ae9952c25cc249e0b61e979c5/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f408ba1ae9952c25cc249e0b61e979c5/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2517d9628fcac1a0ee9131ac02b81d65/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2517d9628fcac1a0ee9131ac02b81d65/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2231e5cb00713bb119f3ca3eda7f0116/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2231e5cb00713bb119f3ca3eda7f0116/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/79ede560434d6f45def97410ab7d38e2/soloader-0.9.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/79ede560434d6f45def97410ab7d38e2/soloader-0.9.0/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/781c8672e2fb9816e42bbef9eafef9c3/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/781c8672e2fb9816e42bbef9eafef9c3/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20bc40ab5f3f7dbf60dbb9291e00fc9a/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20bc40ab5f3f7dbf60dbb9291e00fc9a/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f29ba713777a0f2555cf4d6d00d50c58/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f29ba713777a0f2555cf4d6d00d50c58/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5934748dd4654a25b77c7746bdb4ee7e/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5934748dd4654a25b77c7746bdb4ee7e/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c821b185d9cf6102cadf8a2e45200402/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c821b185d9cf6102cadf8a2e45200402/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/369096329927eb4cba9aa9911c0ca305/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/369096329927eb4cba9aa9911c0ca305/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2f6bab083b22adf392ec0b77a58c5661/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2f6bab083b22adf392ec0b77a58c5661/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0f756a09176afa1e7035e1660752a8dc/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0f756a09176afa1e7035e1660752a8dc/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6014a5b506d6a1e78f13d3541357512a/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6014a5b506d6a1e78f13d3541357512a/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/bd839343b0db3425baecbdaade87898e/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/bd839343b0db3425baecbdaade87898e/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/90e3d8b49aa10e8790c6c657152cd27e/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/90e3d8b49aa10e8790c6c657152cd27e/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4b06c146a85d66885675ace87622e9be/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4b06c146a85d66885675ace87622e9be/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7817cf144322275a802c0e6b56bb19ef/activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7817cf144322275a802c0e6b56bb19ef/activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d9e5b24e3d62f1fcd364197f0fd499fa/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d9e5b24e3d62f1fcd364197f0fd499fa/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5e7aa9c2265750df3f3b2f2a164ea26f/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5e7aa9c2265750df3f3b2f2a164ea26f/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/40a3d9889ee849b9bd812fe8fd6dc69b/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/40a3d9889ee849b9bd812fe8fd6dc69b/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f1ec6cd97adccb7f27d658845bd91f4a/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f1ec6cd97adccb7f27d658845bd91f4a/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2cd18cd241b6f27e4bf09cafb8a914a7/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2cd18cd241b6f27e4bf09cafb8a914a7/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2d1002739da837eae1c5aa61afa4926d/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2d1002739da837eae1c5aa61afa4926d/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/12e6e66baa82d1e6cfaba9e4100d45c4/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/12e6e66baa82d1e6cfaba9e4100d45c4/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/380d0b6636477768af91e4865a832fd5/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/380d0b6636477768af91e4865a832fd5/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d568c5167796fc64f8c393bbc03698b0/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d568c5167796fc64f8c393bbc03698b0/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/34c44231bbf9dd5dd3a5baa3a18d5aca/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/34c44231bbf9dd5dd3a5baa3a18d5aca/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7b4a4fc3a6f80716aae4463991e109d5/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7b4a4fc3a6f80716aae4463991e109d5/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/677eef58e63b378d8a132495b11d8c5a/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/677eef58e63b378d8a132495b11d8c5a/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e72e4d85efb4ac5422806fdd33fbcb0e/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e72e4d85efb4ac5422806fdd33fbcb0e/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/10565f6171bb465927513a8180a9c8dc/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/10565f6171bb465927513a8180a9c8dc/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6b42609a4b0bf017f5551a7639b8ec5/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6b42609a4b0bf017f5551a7639b8ec5/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0f356ca273969d1629b5993ff9453a09/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0f356ca273969d1629b5993ff9453a09/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0d87e94910f050454e7e0140bf20f9cd/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0d87e94910f050454e7e0140bf20f9cd/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c22dce67ec7bcde1e56cdd60b10d267d/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c22dce67ec7bcde1e56cdd60b10d267d/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e7c466496f74775176bdb527b56418d8/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e7c466496f74775176bdb527b56418d8/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/46dc6809d92f3be6408c1aa6db59b2a6/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/46dc6809d92f3be6408c1aa6db59b2a6/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/bc16ef5b71ad21667328a22e93b92009/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/bc16ef5b71ad21667328a22e93b92009/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9fbdc277135f56299ac0fb4c1420dda1/firebase-datatransport-17.0.10/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9fbdc277135f56299ac0fb4c1420dda1/firebase-datatransport-17.0.10/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.material:material:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b4a8b9f76c1058f9b74e96e8f288ffb3/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b4a8b9f76c1058f9b74e96e8f288ffb3/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0e4bf32dc0eb246988d67d2c8dbdec4f/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0e4bf32dc0eb246988d67d2c8dbdec4f/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/efb214fcaaf1e27a7a5a77180b85ae79/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/efb214fcaaf1e27a7a5a77180b85ae79/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a09cc860e0f9f855a8ff4f03beb8ba67/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a09cc860e0f9f855a8ff4f03beb8ba67/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/97ed5187729fbb87cca4824675cac95b/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/97ed5187729fbb87cca4824675cac95b/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/914cb70c220573c4247e6d6a93252492/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/914cb70c220573c4247e6d6a93252492/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c8dd3937b9ca70fc47788865d7b26ed9/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c8dd3937b9ca70fc47788865d7b26ed9/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5151c1f823df2d05335d9c6bfd474ae1/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5151c1f823df2d05335d9c6bfd474ae1/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/38b3764b67766692b6043fcf75be5903/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/38b3764b67766692b6043fcf75be5903/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e29a01bd1c04aef33ebfc767eb4fed90/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e29a01bd1c04aef33ebfc767eb4fed90/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d38d954654fb33a2af3cbef4a3df3006/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d38d954654fb33a2af3cbef4a3df3006/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/af0e06138a466d6dcf4dd8dacbfbce48/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/af0e06138a466d6dcf4dd8dacbfbce48/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4fd6905ab924b8a107a555d8c4c23663/soloader-0.9.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4fd6905ab924b8a107a555d8c4c23663/soloader-0.9.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f46864430dfe5ce8c779a7e871009951/play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f46864430dfe5ce8c779a7e871009951/play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f2b3c167e07ed181009aa5ff99c8cca6/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f2b3c167e07ed181009aa5ff99c8cca6/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/24d82c3d9253031745e028257aa8b138/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/24d82c3d9253031745e028257aa8b138/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/50bb5f6a6d68c28fb34806c88a3c1952/play-services-measurement-sdk-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/50bb5f6a6d68c28fb34806c88a3c1952/play-services-measurement-sdk-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56317e82ca4aa0d3a528f4e9609bd0fe/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56317e82ca4aa0d3a528f4e9609bd0fe/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56b7eebcb97b469abc7deaca971b8939/play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56b7eebcb97b469abc7deaca971b8939/play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0eb8a4906aa65c07cf6c1cab0b9dc4ed/firebase-installations-interop-16.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0eb8a4906aa65c07cf6c1cab0b9dc4ed/firebase-installations-interop-16.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e02d3ae64e056e5c4204f2865e6ecba8/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e02d3ae64e056e5c4204f2865e6ecba8/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/89f3ec88a0808461f752809552b8c233/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/89f3ec88a0808461f752809552b8c233/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/77233af4df7cba291ed4b0c9ec66a403/play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/77233af4df7cba291ed4b0c9ec66a403/play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2d4ae447a33d679f1374a0dcf9e69a4c/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2d4ae447a33d679f1374a0dcf9e69a4c/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fc4e0fc73475fdf4c433f298b3660fb/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fc4e0fc73475fdf4c433f298b3660fb/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/10ae8443daf099bae33ca071eca178d4/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/10ae8443daf099bae33ca071eca178d4/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4cc48b6feb97d32a625fbe4fdfb19c78/firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4cc48b6feb97d32a625fbe4fdfb19c78/firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/27147b0d739486d87406f74424bfdae1/play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/27147b0d739486d87406f74424bfdae1/play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/da47d56cb2cfca1e1ef94be2de5bd51a/play-services-measurement-sdk-api-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/da47d56cb2cfca1e1ef94be2de5bd51a/play-services-measurement-sdk-api-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/cc1c517e54eec492f132dcfc73f043cc/play-services-measurement-base-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/cc1c517e54eec492f132dcfc73f043cc/play-services-measurement-base-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/19296796e5d91ead2a6aebcf762da67f/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/19296796e5d91ead2a6aebcf762da67f/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b55f641b295dd0ad9c447007105a0090/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b55f641b295dd0ad9c447007105a0090/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/3c8931a28e5d92143843aa313fc79c4c/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/3c8931a28e5d92143843aa313fc79c4c/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c4e22d7ccae951db2cd4584d86bc5685/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/c4e22d7ccae951db2cd4584d86bc5685/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b6fcf235eb3e1bc032c36c2ed9815e42/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b6fcf235eb3e1bc032c36c2ed9815e42/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/df08bf0483376965be5f2c9278b31fb3/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/df08bf0483376965be5f2c9278b31fb3/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/14f76079c978e7e957f58ce44e2edb48/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/14f76079c978e7e957f58ce44e2edb48/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2c22533141efcfd8409f1e50194060ab/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2c22533141efcfd8409f1e50194060ab/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/68b1f26732de0cb20cdc377488cdd422/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/68b1f26732de0cb20cdc377488cdd422/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0649e577800dc03553c743bdfe0fddfa/jetified-firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/0649e577800dc03553c743bdfe0fddfa/jetified-firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a6e4f6ace3c75070bb4ca8672aa2f783/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a6e4f6ace3c75070bb4ca8672aa2f783/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2db9aa1121a52eb41d331a10d288212b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/2db9aa1121a52eb41d331a10d288212b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9b7fba83ccedb58cb02a5c653391ea4e/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9b7fba83ccedb58cb02a5c653391ea4e/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e769db00d3a6f1e7761c105e2960f762/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e769db00d3a6f1e7761c105e2960f762/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f65d0916206d7dea7c38be1822099c10/activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f65d0916206d7dea7c38be1822099c10/activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/cea29817a9bd6ed9a7c9281f5bc05bf4/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/cea29817a9bd6ed9a7c9281f5bc05bf4/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/054feeeb70f2d2a2028690a906bf7533/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/054feeeb70f2d2a2028690a906bf7533/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a964765823e51a7460ea26c1e64a7d41/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a964765823e51a7460ea26c1e64a7d41/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a8aace042d734b7042aa23c868b534ff/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a8aace042d734b7042aa23c868b534ff/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b03021522a4540bd789d75c8fcad4c8a/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/b03021522a4540bd789d75c8fcad4c8a/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e5083b6004891c50e9c1ddb2689200a3/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e5083b6004891c50e9c1ddb2689200a3/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/14e9e79cd274059a3053ecd49a614f50/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/14e9e79cd274059a3053ecd49a614f50/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/32a643873f85a3557878900f7c61a131/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/32a643873f85a3557878900f7c61a131/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/09a8df2dbb10ec647013426c9f0e75ac/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/09a8df2dbb10ec647013426c9f0e75ac/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/62304d939ff195e92899d271ef1420da/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/62304d939ff195e92899d271ef1420da/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/757244ebdea7bef5702be89d9daaf7a6/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/757244ebdea7bef5702be89d9daaf7a6/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/336ea3253dfeb53d74ebb86fc4f3e1f9/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/336ea3253dfeb53d74ebb86fc4f3e1f9/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d0deabf0868e933aa70f0dab94ed262a/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/d0deabf0868e933aa70f0dab94ed262a/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f55683e605b454ebc172ebdde818d95b/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f55683e605b454ebc172ebdde818d95b/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/479f0c648b23c1eefa111cb239ce0880/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/479f0c648b23c1eefa111cb239ce0880/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a34b9ae6e39d4457ccea0eb6b9d30dea/jetified-transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/a34b9ae6e39d4457ccea0eb6b9d30dea/jetified-transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/200bf59658ba07e44fd1a412263cb3c6/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/200bf59658ba07e44fd1a412263cb3c6/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f5b89bd39c03cf10464e5eaec71f659d/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f5b89bd39c03cf10464e5eaec71f659d/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5050faf19adadc1ed87ff13cf854db1d/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/5050faf19adadc1ed87ff13cf854db1d/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e5a41ff38cb8e715d121088ac4be9e4b/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e5a41ff38cb8e715d121088ac4be9e4b/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6057cbd22812ff5f5c6c34127c607b27/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/6057cbd22812ff5f5c6c34127c607b27/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/09a3f0db04a80679bc189e453756b5dc/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/09a3f0db04a80679bc189e453756b5dc/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -398,17 +584,271 @@ ADDED from [:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/
 		ADDED from [:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-48
 	android:name
 		ADDED from [:react-native-share] /Users/martinstone/Documents/GitHub/GDSAPP2020/node_modules/react-native-share/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-55
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:28:9-35:19
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:31:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:30:13-43
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/67a3a5c8f9258d0a361a5f7aafba7cfb/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/1fb3c3a6aa0b301b9a491f15d9c745b6/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:29:13-82
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:36:9-42:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9fbdc277135f56299ac0fb4c1420dda1/firebase-datatransport-17.0.10/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.10] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9fbdc277135f56299ac0fb4c1420dda1/firebase-datatransport-17.0.10/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:33:9-46:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:33:9-46:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:38:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:37:13-84
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:39:13-41:85
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/1fb3c3a6aa0b301b9a491f15d9c745b6/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:41:17-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/1fb3c3a6aa0b301b9a491f15d9c745b6/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.firebase:firebase-messaging:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/20b79cc09cb94cc7b91c967b1f776a95/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:40:17-119
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:17.0.10] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9fbdc277135f56299ac0fb4c1420dda1/firebase-datatransport-17.0.10/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.10] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9fbdc277135f56299ac0fb4c1420dda1/firebase-datatransport-17.0.10/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.10] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/9fbdc277135f56299ac0fb4c1420dda1/firebase-datatransport-17.0.10/AndroidManifest.xml:29:17-115
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56317e82ca4aa0d3a528f4e9609bd0fe/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56317e82ca4aa0d3a528f4e9609bd0fe/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/da47d56cb2cfca1e1ef94be2de5bd51a/play-services-measurement-sdk-api-18.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/da47d56cb2cfca1e1ef94be2de5bd51a/play-services-measurement-sdk-api-18.0.2/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/45cb7752e20539c222f4da57a1c2a7ad/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f6555758b8f6a9f3cdda3c658b7f1f1d/jetified-transport-runtime-2.2.5/AndroidManifest.xml:33:13-132
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56317e82ca4aa0d3a528f4e9609bd0fe/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56317e82ca4aa0d3a528f4e9609bd0fe/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/da47d56cb2cfca1e1ef94be2de5bd51a/play-services-measurement-sdk-api-18.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/da47d56cb2cfca1e1ef94be2de5bd51a/play-services-measurement-sdk-api-18.0.2/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:25:22-65
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/4f7fdcf531de23a7bf0373a6260cbb0e/play-services-measurement-impl-18.0.2/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/02de0254321e7ec96838d1e8ec2f576d/play-services-measurement-18.0.2/AndroidManifest.xml:40:13-87
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:18.0.2] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/f486d1198f662e4bbd26259890b4bfe2/play-services-measurement-api-18.0.2/AndroidManifest.xml:31:17-139
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:26:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56317e82ca4aa0d3a528f4e9609bd0fe/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/56317e82ca4aa0d3a528f4e9609bd0fe/play-services-cloud-messaging-16.0.0/AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.0.1] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7aceaafa0cf6715edf1b3bb28b45af95/firebase-iid-21.0.1/AndroidManifest.xml:42:25-78
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:16.3.5] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7434a7165f179c02816b556c2022764d/firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+meta-data#com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar
+ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/e08e933fb635984893fa5db96515ed7d/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fc4e0fc73475fdf4c433f298b3660fb/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fc4e0fc73475fdf4c433f298b3660fb/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fc4e0fc73475fdf4c433f298b3660fb/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/7fc4e0fc73475fdf4c433f298b3660fb/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/19296796e5d91ead2a6aebcf762da67f/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/19296796e5d91ead2a6aebcf762da67f/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/19296796e5d91ead2a6aebcf762da67f/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/martinstone/.gradle/caches/transforms-2/files-2.1/82cc3c5ee38ea9fb511ace1f2498748e/ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86

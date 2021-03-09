@@ -3,6 +3,8 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 target 'ComGdsnetApp' do
   # Pods for ComGdsnetApp
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -39,6 +41,8 @@ target 'ComGdsnetApp' do
   #agregado mstone
 
 
+
+  pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
 
   target 'ComGdsnetAppTests' do
     inherit! :search_paths

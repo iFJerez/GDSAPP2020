@@ -1,19 +1,22 @@
 // Imports: Dependencies
 import React from "react";
-import { StyleSheet, View, StatusBar, ScrollView, Text} from "react-native";
+import { StyleSheet, View, StatusBar} from "react-native";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { useIsFocused } from '@react-navigation/native';
-
-//import data from "../api/home.json";
-import CardIndicadores from "../components/home/CardIndicadores";
 import * as constants from "../herramientas/Const";
-import TareaHome from "../components/home/TareaHome";
 
+//Components";
+import CardIndicadores from "../components/home/CardIndicadores";
+import TareaHome from "../components/home/TareaHome";
 import SalaRanking from "../components/home/SalasRanking";
+import Geolocation from "../components/home/Geolocation";
+import Notification from "../components/home/Notification";
+
 // Imports: Redux Actions
 import ActionCreators from "../redux/actions";
 import EnvioBoton from "../components/pendientesEnvio/EnvioBoton";
+
 
 function FocusAwareStatusBar(props) {
   const isFocused = useIsFocused();
@@ -21,56 +24,29 @@ function FocusAwareStatusBar(props) {
   return isFocused ? <StatusBar {...props} /> : null;
 }
 
-
-
-
 // Screen: Counter
 class Home extends React.Component {
-  funCargadoApp(){
-    const {dataHome} = this.props;
-    try {
 
-  
-        if(dataHome.desc_usuario){
-          return(
-            <View style={styles.container}>
-            <FocusAwareStatusBar barStyle="light-content" />
-            <View style={styles.styDown}>
-              <Text>{JSON.stringify(dataHome.desc_usuario)}</Text>
-            
-            <CardIndicadores data={dataHome} />
-                <ScrollView >
-                 <SalaRanking />
-                </ScrollView>
-                <TareaHome touchHandler={() => this.props.navigation.navigate("Tareas")}/>
-  
-            </View>
-          <EnvioBoton />
-          </View>
-          )
-
-        }
-        else {
-          <View style={styles.container}>
-            <Text>Cargando</Text>
-        </View>
-
-        }
-      
-      
-    } catch (error) {
-      
-    }
-  }
+ 
   
   render() {
- 
-    
+    const {dataHome} = this.props;
 
     return (
-    this.funCargadoApp()
-      
+      <View style={styles.container}>
+          <FocusAwareStatusBar barStyle="light-content" />
+          
+          <View style={styles.styDown}>
+            <Notification />
+            <Geolocation />
+            <CardIndicadores data={dataHome} />
+            <SalaRanking />  
+            <TareaHome touchHandler={() => this.props.navigation.navigate("Tareas")}/>
+   
+          </View>
+        <EnvioBoton />
 
+      </View>
 
     );
   }

@@ -4,7 +4,7 @@
             "outputFile": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/c23dddf885881e2fce950d6453f1c842/appcompat-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/0e4bf32dc0eb246988d67d2c8dbdec4f/appcompat-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/b9adbc54299e2b17031a542d2360df30/material-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/b4a8b9f76c1058f9b74e96e8f288ffb3/material-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
