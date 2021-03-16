@@ -68,7 +68,7 @@ export function funGetLogin(usuario, pass) {
             dispatch(LoginOK(true, res));
           }else {
             
-            dispatch(LoginError(true, res));
+            dispatch(LoginError(false, res));
           }
           
             

@@ -89,7 +89,11 @@ class LoginScreen extends React.Component {
   
 async loginIn(){  
   await this.props.funGetLogin(this.state.Usuario_Id, this.state.Password)
-  await this.MoverTexto();
+  if(!this.props.loggedIn){
+  await setTimeout(() =>  this.MoverTexto(), 1000)
+ 
+  }
+ 
   
 }   
 
