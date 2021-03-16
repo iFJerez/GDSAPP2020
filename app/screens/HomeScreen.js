@@ -37,7 +37,12 @@ class Home extends React.Component {
           <FocusAwareStatusBar barStyle="light-content" />
           
           <View style={styles.styDown}>
-            <Notification />
+  
+   
+            <CardIndicadores data={dataHome} />
+            <SalaRanking />  
+            <TareaHome touchHandler={() => this.props.navigation.navigate("Tareas")}/>
+   
    
           </View>
         <EnvioBoton />
