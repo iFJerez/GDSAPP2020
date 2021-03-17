@@ -13,7 +13,6 @@ import Preview from '../components/envios/cameraModal/PreviewModal'
 import ActionCreators from '../redux/actions'
 import DetalleASala from '../components/tarea/detalle/DetalleA'
 
-import { ScrollView } from 'react-native-gesture-handler';
 
 // Screen: Counter 14932
 class ModalScreen extends React.Component {

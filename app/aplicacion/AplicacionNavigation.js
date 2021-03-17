@@ -9,6 +9,7 @@ import Imagen from './Imagegds'
 import CountSalas from './CountSalas'
 
 
+
 import LoginScreen from '../screens/LoginScreen'
 import HomeScreen from '../screens/HomeScreen'
 import SalasScreen from '../screens/SalasScreen'
@@ -25,6 +26,9 @@ import {transformaFecha} from '../herramientas/Fechas'
 import * as constants from '../herramientas/Const'
 import Icon from 'react-native-vector-icons/AntDesign';
 import NetworkScreen from '../screens/NetworkScreen'
+
+
+
 
 
 function HomeScreen2() {
@@ -233,8 +237,10 @@ function MyTabs(value, dataSala) {
       inactiveTintColor: constants.COLOR_GRIS_H,
     }}
   >
-    <Tab.Screen name="Home" component={HomeStackScreen} options={{ tabBarBadge: null,}} />
-    <Tab.Screen name="Salas" component={SalasStackScreen} options={{ tabBarBadge: <CountSalas /> }} />
+
+
+    <Tab.Screen name="Home" component={HomeStackScreen} options={{ tabBarBadge: null}} />
+    <Tab.Screen name="Salas" component={SalasStackScreen} options={{ tabBarBadge: <CountSalas />}} />
     <Tab.Screen name="Tareas" component={TareasStackScreen} options={{ tabBarBadge: null}} />
     <Tab.Screen name="Usuario" component={UsuarioStackScreen} options={{ tabBarBadge: null }} />
     

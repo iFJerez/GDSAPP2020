@@ -23,6 +23,8 @@ class SalasListado extends React.Component {
       NewdataSala: props.dataSala,
       refreshing: false
     }
+
+    this.onRefresh = this.onRefresh.bind(this)
   }
 
    wait (timeout) {
@@ -31,7 +33,7 @@ class SalasListado extends React.Component {
     });
   }
   
-  onRefresh = ()=>  {
+  onRefresh = () =>  {
     this.funRefresh(true)
     const {funGetData, token} = this.props;
     this.wait(2000).then(() => funGetData(token));
@@ -200,9 +202,11 @@ componentDidUpdate(prevProps) {
         contentContainerStyle={styles.scrollView}
         refreshControl={
           <RefreshControl refreshing={this.state.refreshing} onRefresh={this.onRefresh} />}>
-                {this.state.NewdataSala.salas.map((valores, i) => {
+                {
+                this.state.NewdataSala.salas.map((valores, i) => {
                 return this.crearSala(valores, i)
-                })}
+                })
+                }
             </ScrollView>
  </View>
     );

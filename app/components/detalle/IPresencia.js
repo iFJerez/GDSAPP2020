@@ -7,17 +7,19 @@ import Icon from '../../herramientas/IconSimple'
 
 export default class IPresencia extends Component {
 
-funLlenar(){
-  const {valor, semaforo} = this.props
-  if(valor != null) {
-    return(
-          <View>
-              {valor?<Icon name={'ios-checkmark'} size={constants.ICON_SMALL} color={constants.COLOR_PRIMARIO}/>:<Icon name={'ios-close'} size={constants.ICON_SMALL} color={constants.COLOR_SECUNDARIO}/>  }
-          </View>
-        )
-  }
 
-}
+  funLlenar(){
+    const {valor, semaforo} = this.props
+    const newpresensia = valor==="1"?true:false
+    if(valor != null) {
+      return(
+            <View>
+                {newpresensia?<Icon name={'ios-checkmark'} size={constants.ICON_SMALL} color={constants.COLOR_PRIMARIO}/>:<Icon name={'ios-close'} size={constants.ICON_SMALL} color={constants.COLOR_SECUNDARIO}/>  }
+            </View>
+          )
+    }
+  
+  }
 
   render() {
     return  (

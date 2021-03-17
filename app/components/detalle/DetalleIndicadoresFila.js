@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, ScrollView} from 'react-native';
+import { StyleSheet, View, ScrollView, Text} from 'react-native';
 
 import IPresencia from './IPresencia'
 import IPrecio from './IPrecio'
@@ -33,6 +33,7 @@ export default class DetalleIndicadoresFila extends Component {
         <View style={styles.view_fila} key={i} >
             <View style={styles.view_divisorPresencia}>
                 <IPresencia valor={data.presencia}/>    
+                
             </View>
             <View style={styles.view_divisorTextosUno}>
                   <View style={styles.view_divisorTextos}>
@@ -48,7 +49,6 @@ export default class DetalleIndicadoresFila extends Component {
                         <INumerico valor={data.numerico} semaforo={data.semaforo} />
                         <IAlfa valor={data.alfanumerico} semaforo={data.semaforo} />
                         <IPromocion valor={data.promocion} semaforo={data.semaforo}  />              
-                        <IPrecio valor={data.precio} semaforo={data.semaforo} />
                         <IPorcentaje valor={data.porcentaje} semaforo={data.semaforo} />
                         
                         

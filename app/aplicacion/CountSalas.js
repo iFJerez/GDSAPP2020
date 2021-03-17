@@ -5,10 +5,15 @@ import { connect } from 'react-redux';
 
 
 function Counter({ dataSala }) {
+  
+  let cant = null
   try {
-    return dataSala.salas.filter(word => word.estado===0).length
+    cant = dataSala.salas.filter(word => word.estado===0).length
+
+
+    return cant>0?cant:null
   } catch (error) {
-    
+    return null
   }
 
 }

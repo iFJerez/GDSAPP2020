@@ -23,8 +23,8 @@ class Accordian extends Component{
       const dataObjecion = {
         type: 'OBJECIONES',
         id_sku: this.props.data.id_sku,
-        id_indicador: this.props.section.id_indicador,
-        desc_indicador: this.props.section.desc_indicador,
+        id_indicador: this.props.data.id_indicador,
+        desc_indicador: this.props.data.desc_indicador,
         id_sala: this.props.section.id_sala,
         fechaHora: this.props.section.fechaHora,
         direccion: this.props.section.direccion,
@@ -53,7 +53,7 @@ class Accordian extends Component{
     const objecion = 
     this.props.objeciones.find((v) => 
         ( this.props.data.id_sku === v.id_sku &&
-          this.props.section.desc_indicador === v.desc_indicador &&
+          this.props.section.id_indicador === v.id_indicador &&
           this.props.section.id_sala === v.id_sala &&
           this.props.section.fechaHora === v.fechaHora &&
           'OBJECIONES' === v.type)
