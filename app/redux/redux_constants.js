@@ -25,6 +25,7 @@ export const ENVIO_VIEW= 'ENVIO_VIEW';
 
 export const ENVIO_SAVE = 'ENVIO_SAVE';
 export const ENVIO_DELETE = 'ENVIO_DELETE';
+export const ENVIO_CLEAN = 'ENVIO_CLEAN';
 export const ENVIO_SEND = 'ENVIO_SEND';
 export const ENVIO_DELETE_FOTO = 'ENVIO_DELETE_FOTO';
 

@@ -4,6 +4,7 @@ import * as constants from "../../../herramientas/Const";
 import TextoBase from "../../../herramientas/textos/TextoBase";
 import Cadenas from "../../../herramientas/Cadenas"
 import LinearGradient from "react-native-linear-gradient";
+import {fechaConvierteSQLTZ} from '../../../herramientas/Fechas'
 
 export default class DetalleSucursalHearer extends Component {
 
@@ -28,6 +29,10 @@ export default class DetalleSucursalHearer extends Component {
               <TextoBase style={styles.sty_text_direccion}>
                 {this.props.direccion}
               </TextoBase>
+              <TextoBase style={styles.sty_text_fechaHora}>
+                {fechaConvierteSQLTZ(this.props.fechaHora)}
+              </TextoBase>
+              
             </View>
           </View>
         </LinearGradient>
@@ -61,11 +66,22 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: constants.COLOR_QUINTENARIO,
   },
+  sty_text_fechaHora:{
+    fontSize: constants.SIZE_LETRA_X_LARGE,
+    textAlignVertical: "center",
+    textAlign: "left",
+    color: constants.COLOR_QUINTENARIO,
+    marginBottom: 5,
+    marginTop: 5,
+    fontWeight: "bold",
+  },
+
   sty_text_direccion: {
     fontSize: constants.SIZE_LETRA_X_LARGE,
     textAlignVertical: "center",
     textAlign: "left",
     color: constants.COLOR_QUINTENARIO_CLARO,
+
   },
   detalleSuc: {
     flex: 3,

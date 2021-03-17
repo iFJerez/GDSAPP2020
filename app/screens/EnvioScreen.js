@@ -92,20 +92,26 @@ class ModalScreen extends React.Component {
   async handleEnviar (){
     console.log("entro a handleEnviar")
     const {objeciones} = this.props;
-
- objeciones.map((v=>{
+    console.info("enviando...", JSON.stringify(objeciones))
+ 
+    objeciones.filter( v =>  "enviado" !== v.status 
+      ).map((v=>{
       obj = {
       "id_usuario": this.props.dataHome.id_usuario,
       "fecha_objecion": v.fechaHora,  
       "id_sala": v.id_sala,
       "id_indicador": v.id_indicador,
       "id_sku":v.id_sku,
+      "desc_type":v.type,
       "desc_objecion":v.objecion,
       "foto": v.foto!=null?v.foto.uri:"sin foto",
       "fecha_envio": fechaSQL(),
-    }
+      "latitude" : "33.456789",
+      "longitude": "44.456789"
 
+    }
      this.funEnviarApi(obj)
+     // STATUS
 
   }))
 }
@@ -113,8 +119,9 @@ class ModalScreen extends React.Component {
 
   async funEnviarApi (obj) {
 
+    console.info("enviando INTRO ...", JSON.stringify(obj))
     
-    const  responseDatas =    await fetch('http://api.gdsnet.com:3009/post_insert_foto_64', 
+    const  responseDatas =    await fetch('http://api.gdsnet.com:3009/post_recibe_acciones', 
     {method: 'POST',  
     headers: {
       'Accept': 'application/json',
@@ -136,7 +143,8 @@ class ModalScreen extends React.Component {
       this.props.funVerEnvio(false);
 
     } else {
-      alert("Ups!! no eviado, intente luego")
+    
+      funMessage("Ups!! no eviado", "intente luego")
       console.log(data)
     }
 
@@ -147,7 +155,7 @@ class ModalScreen extends React.Component {
   render() {
     const {funVerEnvio, ver_envio, objeciones} = this.props;
     const data = this.convertirObjeciones(objeciones);
-    //console.log("objeciones", JSON.stringify(objeciones))
+    console.log("objeciones", JSON.stringify(data))
     return (
       <Modal
       testID={'modal'}

@@ -66,3 +66,7 @@ export function fechaSQL2(d){
 export function fechaSQL(){
     return new Date().toISOString().slice(0, 19).replace('T', ' ');
 }
+
+export function fechaConvierteSQLTZ(fecha){
+    return fecha.replace('T', ' ').replace('.000Z', '');
+}

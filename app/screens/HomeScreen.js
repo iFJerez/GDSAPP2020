@@ -38,7 +38,7 @@ class Home extends React.Component {
           
           <View style={styles.styDown}>
   
-   
+   <Geolocation />
             <CardIndicadores data={dataHome} />
             <SalaRanking />  
             <TareaHome touchHandler={() => this.props.navigation.navigate("Tareas")}/>

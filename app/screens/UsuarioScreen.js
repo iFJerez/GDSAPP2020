@@ -34,6 +34,7 @@ class UsuarioScreen extends React.Component {
 
   cerrarSeccion(){
     this.props.LoginOFF()
+    this.props.funCleanEnvio()
     this.props.navigation.navigate('Login')
   }
  

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, Text, Platform, View } from "react-native";
+import ReactNativePickerModule from "react-native-picker-module";
 import * as constants from "../../herramientas/Const";
+import TextoBase from "../../herramientas/textos/TextoBase";
 import RNPickerSelect from 'react-native-picker-select';
 import { connect } from 'react-redux';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
 
@@ -51,25 +52,31 @@ class PickerObjecion extends Component {
 
     const selectedValue = this.props.objecion || "Sin objecion";
   
-    let obj = []
-    try {
+    var obj = []
       dataHome.objeciones.map((v)=>{
       obj.push({
         "label" : v.desc_objecion,
         "value" : v.desc_objecion
       }) 
       });
-      
-    } catch (error) {
 
-      obj.push({
-        "label" : "Sin objecion",
-        "value" : "0"
-      }) 
-      
-    }
+      const pickerStyle = {
+        inputIOS: {
+          color: constants.COLOR_SECUNDARIO,
+          paddingTop: 10,
+          paddingHorizontal: 10,
+          paddingBottom: 10,
+          borderRadius: 100,
+        },
+        inputAndroid: {
+          color: constants.COLOR_SECUNDARIO,
+                 borderRadius: 100,
+        },
+        placeholderColor: constants.COLOR_SECUNDARIO,
+        underline: { borderTopWidth: 0 },
+        borderRadius: 100,
 
-
+      };
 
 
     return (
@@ -77,88 +84,51 @@ class PickerObjecion extends Component {
       
    
       <View style={styles.objetar}>
-              
-
-<RNPickerSelect
-            placeholder={placeholder}
-            items={obj}
-            onValueChange={(index) => {
-              this.setState({
-                selectedValue: index
-              })
-             this.handleTouch(index);
-           }}
-            style={{
-              ...pickerSelectStyles,
-              iconContainer: {
-                top: 10,
-                right: 12,
-              },
-            }}
-            value={this.props.objecion}
-            useNativeAndroidPickerStyle={false}
-            textInputProps={{ underlineColor: 'green' }}
-            Icon={() => {
-              return <Ionicons name="md-arrow-down" size={24} color="gray" />;
-            }}
-          />
      
+
+        <RNPickerSelect
+          style={
+          Platform.OS === 'ios'
+          ? styles.inputIOS
+          : styles.inputAndroid
+      }
+        placeholder={{}}
+            items={obj}
+         //   onValueChange={value => {
+         //     this.setState({
+          //      favSport0: value,
+          //    });
+          //  }}
+          onValueChange={(index) => {
+             this.setState({
+               selectedValue: index
+             })
+            this.handleTouch(index);
+          }}
+            
+            //value={this.state.favSport0}
+            value={this.props.objecion}
+          />
   </View>
 
     );
   }
 }
 
-
-const pickerSelectStyles = StyleSheet.create({
-  inputIOS: {
-    fontSize: 16,
-    paddingVertical: 12,
-    paddingHorizontal: 10,
-    margin: 5,
-    borderWidth: 1,
-    borderColor: constants.COLOR_QUINTENARIO_CLARO,
-    borderRadius: 4,
-    color: constants.COLOR_SECUNDARIO,
-    paddingRight: 30, // to ensure the text is never behind the icon
-  },
-  inputAndroid: {
-    fontSize: 16,
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    borderWidth: 0.5,
-    borderColor: 'purple',
-    borderRadius: 8,
-    color: 'green',
-    paddingRight: 30, // to ensure the text is never behind the icon
-  },
-});
-
-
 const styles = StyleSheet.create({
 
   
   
   inputIOS: {
-    fontSize: 25,
-    paddingVertical: 12,
+    color: constants.COLOR_SECUNDARIO,
+    paddingTop: 10,
     paddingHorizontal: 10,
-    borderWidth: 1,
-    borderColor: 'purple',
-    borderRadius: 4,
-    color: constants.COLOR_PRIMARIO,
-    
-    paddingRight: 30, // to ensure the text is never behind the icon
+    paddingBottom: 10,
+    borderRadius: 100,
   },
   inputAndroid: {
-    fontSize: 16,
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    borderWidth: 0.5,
-    borderColor: 'purple',
-    borderRadius: 8,
-    color: 'green',
-    paddingRight: 30, // to ensure the text is never behind the icon
+    padding: 10,
+    color: constants.COLOR_SECUNDARIO,
   },
   container: {
     backgroundColor: constants.COLOR_GRIS_E,
@@ -172,7 +142,7 @@ const styles = StyleSheet.create({
     flex: 5,
   },
   objetar: {
-    flex: 1,
+    width: '80%',
     borderRadius: 3,
     backgroundColor: "#ededed",
 

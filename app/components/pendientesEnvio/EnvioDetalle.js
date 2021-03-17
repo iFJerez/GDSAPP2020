@@ -24,6 +24,8 @@ export default class PendienteEnvioBody extends Component {
 
 
   agruparData (data) {
+console.info('agrupando data???',data )
+
     const dataReduced = data
       .reduce( (obj,val) => {
         
@@ -37,7 +39,8 @@ export default class PendienteEnvioBody extends Component {
             ean: val.ean,
             id_sku: val.id_sku,
             accion: val.accion,
-            fechaHoraEnvio: val.fechaHoraEnvio
+            fechaHoraEnvio: val.fechaHoraEnvio,
+            type: val.type
           
           }) 
         } else {
@@ -57,7 +60,8 @@ export default class PendienteEnvioBody extends Component {
               ean: val.ean,
               id_sku: val.id_sku,
               accion: val.accion,
-              fechaHoraEnvio: val.fechaHoraEnvio
+              fechaHoraEnvio: val.fechaHoraEnvio,
+              type: val.type
             }
           ]
         }
@@ -220,11 +224,12 @@ const styles = StyleSheet.create({
   
   },
   sty_text_desc_sucursal: {
-    fontSize: constants.SIZE_LETRA_XX_LARGE,
+    fontSize: constants.SIZE_LETRA_X_LARGE,
     textAlignVertical: "center",
     textAlign: "left",
     fontWeight: 'bold',
-    color: constants.COLOR_GRIS_J
+    color: constants.COLOR_GRIS_J,
+    
   },
   sty_text_direccion: {
     fontSize: constants.SIZE_LETRA_LARGE,
@@ -233,7 +238,7 @@ const styles = StyleSheet.create({
     color: constants.COLOR_QUINTENARIO_CLARO
   },
   detalleSuc: {
-  
+  flex: 1,
     flexDirection: 'column',
     alignContent: 'flex-start',
     paddingLeft: 10,
