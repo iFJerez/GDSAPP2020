@@ -37,63 +37,63 @@
         "indicadores": [
           {"desc_indicador": "INTELIGENTE", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "rocket1",
            "detalles": [
-             {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-             {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
-             {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
+             {"id_sku": 98765, "id_indicador": "1",  "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+             {"id_sku": 98766, "id_indicador": "1","agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 987657, "id_indicador": "1","agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+             {"id_sku": 987657,"id_indicador": "1", "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
              
              
            ]},
            {"desc_indicador": "EJECUCION", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "team",
             "detalles": [
-              {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-              {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
-              {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
+              {"id_sku": 98765,"id_indicador": "2", "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+              {"id_sku": 98766, "id_indicador": "2","agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+              {"id_sku": 987657, "id_indicador": "2","agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
               
               
             ]},
            {"desc_indicador": "PROGRAMADAS", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "ejecucion", "name_icon": "setting",
              "detalles": [
-               {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-               {"id_sku": 908989,"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-               {"id_sku": 78878,"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-               {"id_sku": 23232,"agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-               {"id_sku": 1232, "agrupador": "agrupador2", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-               {"id_sku": 1233, "agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-               {"id_sku": 1234, "agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+               {"id_sku": 98765, "id_indicador": "3","agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 908989,"id_indicador": "3","agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 78878,"id_indicador": "3","agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 23232,"id_indicador": "3","agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 1232, "id_indicador": "3","agrupador": "agrupador2", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 1233, "id_indicador": "3","agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+               {"id_sku": 1234, "id_indicador": "3","agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"}
                
              ] }
          ]
     },
     "sala11" : 
     {
-      "id_sala": 11,
       "indicadores": [
         {"desc_indicador": "INTELIGENTE", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "rocket1",
          "detalles": [
-           {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-           {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
-           {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
+           {"id_sku": 98765, "id_indicador": "1",  "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+           {"id_sku": 98766, "id_indicador": "1","agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+           {"id_sku": 987657, "id_indicador": "1","agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+           {"id_sku": 987657,"id_indicador": "1", "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
            
            
          ]},
          {"desc_indicador": "EJECUCION", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "team",
           "detalles": [
-            {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-            {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
-            {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
+            {"id_sku": 98765,"id_indicador": "2", "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+            {"id_sku": 98766, "id_indicador": "2","agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+            {"id_sku": 987657, "id_indicador": "2","agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
             
             
           ]},
          {"desc_indicador": "PROGRAMADAS", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "ejecucion", "name_icon": "setting",
            "detalles": [
-             {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-             {"id_sku": 908989,"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-             {"id_sku": 78878,"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-             {"id_sku": 23232,"agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-             {"id_sku": 1232, "agrupador": "agrupador2", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-             {"id_sku": 1233, "agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-             {"id_sku": 1234, "agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+             {"id_sku": 98765, "id_indicador": "3","agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 908989,"id_indicador": "3","agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 78878,"id_indicador": "3","agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 23232,"id_indicador": "3","agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 1232, "id_indicador": "3","agrupador": "agrupador2", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 1233, "id_indicador": "3","agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+             {"id_sku": 1234, "id_indicador": "3","agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"}
              
            ] }
        ]
@@ -104,29 +104,30 @@
     "indicadores": [
       {"desc_indicador": "INTELIGENTE", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "rocket1",
        "detalles": [
-         {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-         {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
-         {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
+         {"id_sku": 98765, "id_indicador": "1",  "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+         {"id_sku": 98766, "id_indicador": "1","agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+         {"id_sku": 987657, "id_indicador": "1","agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+         {"id_sku": 987657,"id_indicador": "1", "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
          
          
        ]},
        {"desc_indicador": "EJECUCION", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "inteligente", "name_icon": "team",
         "detalles": [
-          {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
-          {"id_sku": 98766, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
-          {"id_sku": 987657, "agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
+          {"id_sku": 98765,"id_indicador": "2", "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false, "objetado": "sin stock"},
+          {"id_sku": 98766, "id_indicador": "2","agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false},
+          {"id_sku": 987657, "id_indicador": "2","agrupador": "agrupador2", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": false}
           
           
         ]},
        {"desc_indicador": "PROGRAMADAS", "base": "7", "cantidad": "2", "diferencia": "20",  "estado": "objetada", "fuente": "ejecucion", "name_icon": "setting",
          "detalles": [
-           {"id_sku": 98765, "agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-           {"id_sku": 908989,"agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-           {"id_sku": 78878,"agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-           {"id_sku": 23232,"agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-           {"id_sku": 1232, "agrupador": "agrupador2", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-           {"id_sku": 1233, "agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
-           {"id_sku": 1234, "agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"}
+           {"id_sku": 98765, "id_indicador": "3","agrupador": "agrupador", "titulo": "Producto PruebaOriginal 501", "subtitulo": "98765432", "presencia": true, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 908989,"id_indicador": "3","agrupador": "agrupador", "titulo": "Nueva Ken Pisco + frutal 2","subtitulo": "98765432",  "presencia": false, "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 78878,"id_indicador": "3","agrupador": "agrupador", "titulo": "titulo 3","subtitulo": "98765432",  "presencia": false, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 23232,"id_indicador": "3","agrupador": "agrupador2", "titulo": "titulo 4","subtitulo": "98765432",   "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 1232, "id_indicador": "3","agrupador": "agrupador2", "titulo": "titulo 5", "subtitulo": "98765432", "precio": "990", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 1233, "id_indicador": "3","agrupador": "agrupador", "titulo": "titulo 6", "subtitulo": "98765432", "valor": true, "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"},
+           {"id_sku": 1234, "id_indicador": "3","agrupador": "agrupador", "titulo": "titulo 7","subtitulo": "98765432",  "presencia": false, "precio": "780", "programadas": "isla", "exhibicion": "caja", "porcentaje": "80%"}
            
          ] }
      ]
