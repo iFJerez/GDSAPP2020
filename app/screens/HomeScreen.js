@@ -24,10 +24,17 @@ function FocusAwareStatusBar(props) {
   return isFocused ? <StatusBar {...props} /> : null;
 }
 
+
 // Screen: Counter
 class Home extends React.Component {
 
- 
+  componentDidMount(){
+    this.props.navigation.setParams({
+      badgesSala: '35',
+    })
+  }
+
+
   
   render() {
     const {dataHome} = this.props;
