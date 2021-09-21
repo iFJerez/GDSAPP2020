@@ -1,6 +1,7 @@
 // Login
 
 import * as types from '../redux_constants'; 
+import axios from 'axios';
 
 
 
