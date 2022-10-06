@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "/Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/14e9e79cd274059a3053ecd49a614f50/core-1.1.0/res/values-en-rXC/values-en-rXC.xml",
+                    "source": "/Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/14e9e79cd274059a3053ecd49a614f50/core-1.1.0/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/0e4bf32dc0eb246988d67d2c8dbdec4f/appcompat-1.1.0/res/values-en-rXC/values-en-rXC.xml",
+                    "source": "/Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/0e4bf32dc0eb246988d67d2c8dbdec4f/appcompat-1.1.0/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

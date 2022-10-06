@@ -21,7 +21,7 @@ import { Button } from 'react-native-share';
 PushNotification.configure({
   // (optional) Called when Token is generated (iOS and Android)
   onRegister: function (token) {
-    console.log("TOKEN:", token);
+    console.log("TOKEN NOTIFICACION:", token);
   },
 
   // (required) Called when a remote is received or opened, or local notification is opened

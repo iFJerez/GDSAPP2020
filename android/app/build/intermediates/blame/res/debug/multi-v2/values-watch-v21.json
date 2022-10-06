@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/martinstone/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "/Users/mac_gdsnet/Documents/GitHub/GDSAPP2020/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "/Users/martinstone/.gradle/caches/transforms-2/files-2.1/0e4bf32dc0eb246988d67d2c8dbdec4f/appcompat-1.1.0/res/values-watch-v21/values-watch-v21.xml",
+                    "source": "/Users/mac_gdsnet/.gradle/caches/transforms-2/files-2.1/0e4bf32dc0eb246988d67d2c8dbdec4f/appcompat-1.1.0/res/values-watch-v21/values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",
