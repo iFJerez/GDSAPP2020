@@ -1,5 +1,13 @@
 import * as types from '../redux_constants'; 
 
+
+export function funSalaVerImagen(ver_imagen) {
+  return {
+    type: types.SALA_VER_IMAGEN,
+    ver_imagen: ver_imagen
+  }
+}
+
 // Increase Counter
 export function funSalaVerDetalle(ver_sala_detalle) {
   return {

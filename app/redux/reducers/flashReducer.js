@@ -2,6 +2,7 @@ import * as types from '../redux_constants';
 import { AccessibilityInfo, ActivityIndicatorComponent } from 'react-native';
 // Initial State
 const initialState = {
+  ver_imagen: false,
   ver_sala_detalle: false,
   ver_tarea_detalle: false,
   ver_activity: false,
@@ -19,7 +20,13 @@ const initialState = {
 // Reducers (Modifies The State And Returns A New State)
 const flashReducer = (state = initialState, action) => {
   switch (action.type) {
-
+    case types.SALA_VER_IMAGEN: {
+      console.log('VER IMAGEN');
+      return {
+        ...state,
+        ver_imagen: action.ver_imagen,
+      }
+    }
         // Guarda Detalle de Sala
     case types.SALA_DETALLES_VIEW: {
       console.log('VER SALA DETALLE');

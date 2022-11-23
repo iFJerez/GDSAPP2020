@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, ScrollView, Text} from 'react-native';
+import { StyleSheet, View, ScrollView, Image} from 'react-native';
 
 import IPresencia from './IPresencia'
 import IPrecio from './IPrecio'
+import IPrecioX2 from './IPrecioX2'
 import IPorcentaje from './IPorcentaje'
 import IPromocion from './IPromocion'
 import IStatus from './IStatus'
 import INumerico from './INumerico'
 import IAlfa from './IAlfa'
+import IImagen from './IFoto'
+import IExhibicion from './IExhibicion'
 
 import Titulo from './Titulo'
 import Subtitulo from './Subtitulo'
@@ -29,7 +32,7 @@ export default class DetalleIndicadoresFila extends Component {
     }
 
   try {
-        return(    
+        return(
         <View style={styles.view_fila} key={i} >
             <View style={styles.view_divisorPresencia}>
                 <IPresencia valor={data.presencia}/>    
@@ -43,16 +46,14 @@ export default class DetalleIndicadoresFila extends Component {
                   <ScrollView style={styles.view_indicadores} horizontal={true}>
                   <View style={styles.view_indicadores}>
 
+                        <IImagen valor={data.imagen} semaforo={data.semaforo} />  
                         <IPromocion valor={data.promocion} semaforo={data.semaforo}  />              
                         <IPrecio valor={data.precio} semaforo={data.semaforo} />
+                        <IPrecioX2 valor={data.precio_x} semaforo={data.semaforo} />
                         <IPorcentaje valor={data.porcentaje} semaforo={data.semaforo} />
                         <INumerico valor={data.numerico} semaforo={data.semaforo} />
-                        <IAlfa valor={data.alfanumerico} semaforo={data.semaforo} />
-                        <IPromocion valor={data.promocion} semaforo={data.semaforo}  />              
-                        <IPorcentaje valor={data.porcentaje} semaforo={data.semaforo} />
-                        
-                        
-                        <IAlfa valor={data.alfanumerico} semaforo={data.semaforo} />
+                        <IAlfa valor={data.alfanumerico} semaforo={data.semaforo} />                              
+                        <IExhibicion valor={data.exhibicion} semaforo={data.semaforo} />
   
                   </View>
                   </ScrollView>
